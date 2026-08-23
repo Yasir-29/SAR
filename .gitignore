@@ -1,0 +1,23 @@
+# OS/IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Python Virtual Environments and cache
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Credentials
+.env
+.env.*
+.s5cfg
+
+# Ignore the xbd-s12 root data directory specifically, while keeping src/data/
+/xbd-s12/data/
+
+# Temporary and log files
+*.log
+*.tmp
+*.gpkg-journal
