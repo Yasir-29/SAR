@@ -1,0 +1,71 @@
+[
+  {
+    "region": "chennai",
+    "total_found": 400,
+    "retained": 400,
+    "excluded": 0,
+    "valid_pct_mean": 100.0,
+    "cols": [
+      "properties",
+      "total_pixels",
+      "valid_pixels",
+      "valid_pixel_pct",
+      "mean_pre_vv",
+      "mean_post_vv",
+      "mean_change_vv",
+      "median_change_vv",
+      "std_change_vv",
+      "mean_pre_vh",
+      "mean_post_vh",
+      "mean_change_vh",
+      "median_change_vh",
+      "std_change_vh"
+    ]
+  },
+  {
+    "region": "cuddalore",
+    "total_found": 400,
+    "retained": 400,
+    "excluded": 0,
+    "valid_pct_mean": 100.0,
+    "cols": [
+      "properties",
+      "total_pixels",
+      "valid_pixels",
+      "valid_pixel_pct",
+      "mean_pre_vv",
+      "mean_post_vv",
+      "mean_change_vv",
+      "median_change_vv",
+      "std_change_vv",
+      "mean_pre_vh",
+      "mean_post_vh",
+      "mean_change_vh",
+      "median_change_vh",
+      "std_change_vh"
+    ]
+  },
+  {
+    "region": "nagapattinam",
+    "total_found": 400,
+    "retained": 54,
+    "excluded": 346,
+    "valid_pct_mean": 13.5,
+    "cols": [
+      "properties",
+      "total_pixels",
+      "valid_pixels",
+      "valid_pixel_pct",
+      "mean_pre_vv",
+      "mean_post_vv",
+      "mean_change_vv",
+      "median_change_vv",
+      "std_change_vv",
+      "mean_pre_vh",
+      "mean_post_vh",
+      "mean_change_vh",
+      "median_change_vh",
+      "std_change_vh"
+    ]
+  }
+]

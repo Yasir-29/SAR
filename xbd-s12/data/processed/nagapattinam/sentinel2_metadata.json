@@ -1,0 +1,75 @@
+{
+    "region": "nagapattinam",
+    "bbox": [
+        79.65,
+        10.65,
+        79.9,
+        10.9
+    ],
+    "pre_date_range": [
+        "2015-11-01",
+        "2015-11-30"
+    ],
+    "post_date_range": [
+        "2015-12-01",
+        "2015-12-31"
+    ],
+    "CRS": "EPSG:4326",
+    "resolution": [
+        0.000125,
+        0.000125
+    ],
+    "bounds": [
+        79.65,
+        10.65,
+        79.9,
+        10.9
+    ],
+    "selected_pre_acquisition": {
+        "date": "2015-11-28",
+        "scenes": [
+            {
+                "id": "S2A_MSIL2A_20151128T050142_N0500_R119_T44PLS_20231017T062052.SAFE",
+                "cloud_cover": 87.13
+            },
+            {
+                "id": "S2A_MSIL2A_20151128T050142_N0500_R119_T44PLT_20231017T062052.SAFE",
+                "cloud_cover": 61.43
+            }
+        ]
+    },
+    "cloud_percentage": {
+        "pre": 74.28,
+        "post": 98.215
+    },
+    "selected_post_acquisition": {
+        "date": "2015-12-28",
+        "scenes": [
+            {
+                "id": "S2A_MSIL2A_20151228T050222_N0500_R119_T44PLS_20231009T231712.SAFE",
+                "cloud_cover": 100.0
+            },
+            {
+                "id": "S2A_MSIL2A_20151228T050222_N0500_R119_T44PLT_20231009T231712.SAFE",
+                "cloud_cover": 96.43
+            }
+        ]
+    },
+    "bands": [
+        "B02",
+        "B03",
+        "B04",
+        "B08",
+        "SCL"
+    ],
+    "feature_names": [
+        "B02",
+        "B03",
+        "B04",
+        "B08",
+        "B11",
+        "NDVI",
+        "NDWI",
+        "NDBI"
+    ]
+}

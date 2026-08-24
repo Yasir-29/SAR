@@ -1,0 +1,119 @@
+[
+  {
+    "region": "chennai",
+    "total_found": 3022,
+    "retained": 3022,
+    "excluded": 0,
+    "valid_pct_mean": 100.0,
+    "cols": [
+      "properties",
+      "building_id",
+      "total_pixels",
+      "valid_pixels",
+      "valid_pixel_pct",
+      "mean_pre_vv",
+      "mean_post_vv",
+      "mean_change_vv",
+      "median_change_vv",
+      "std_change_vv",
+      "mean_pre_vh",
+      "mean_post_vh",
+      "mean_change_vh",
+      "median_change_vh",
+      "std_change_vh"
+    ],
+    "sar_stats": {
+      "mean_change_vv": {
+        "min": -8.810280799865723,
+        "max": 9.551907539367676,
+        "mean": -0.9796507926389856,
+        "std": 2.026928445968041
+      },
+      "mean_change_vh": {
+        "min": -9.518139839172363,
+        "max": 8.094815254211426,
+        "mean": -0.349703356975313,
+        "std": 2.0617402707545187
+      }
+    },
+    "using_synthetic": false
+  },
+  {
+    "region": "cuddalore",
+    "total_found": 212,
+    "retained": 212,
+    "excluded": 0,
+    "valid_pct_mean": 100.0,
+    "cols": [
+      "properties",
+      "building_id",
+      "total_pixels",
+      "valid_pixels",
+      "valid_pixel_pct",
+      "mean_pre_vv",
+      "mean_post_vv",
+      "mean_change_vv",
+      "median_change_vv",
+      "std_change_vv",
+      "mean_pre_vh",
+      "mean_post_vh",
+      "mean_change_vh",
+      "median_change_vh",
+      "std_change_vh"
+    ],
+    "sar_stats": {
+      "mean_change_vv": {
+        "min": -6.273791313171387,
+        "max": 10.164565086364746,
+        "mean": 2.0937197775558376,
+        "std": 2.3089606113949235
+      },
+      "mean_change_vh": {
+        "min": -3.9381086826324463,
+        "max": 8.317715644836426,
+        "mean": 1.4930833207810807,
+        "std": 2.0048953960184788
+      }
+    },
+    "using_synthetic": false
+  },
+  {
+    "region": "nagapattinam",
+    "total_found": 41,
+    "retained": 0,
+    "excluded": 41,
+    "valid_pct_mean": 0.0,
+    "cols": [
+      "properties",
+      "building_id",
+      "total_pixels",
+      "valid_pixels",
+      "valid_pixel_pct",
+      "mean_pre_vv",
+      "mean_post_vv",
+      "mean_change_vv",
+      "median_change_vv",
+      "std_change_vv",
+      "mean_pre_vh",
+      "mean_post_vh",
+      "mean_change_vh",
+      "median_change_vh",
+      "std_change_vh"
+    ],
+    "sar_stats": {
+      "mean_change_vv": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "std": 0
+      },
+      "mean_change_vh": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "std": 0
+      }
+    },
+    "using_synthetic": false
+  }
+]

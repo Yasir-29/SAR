@@ -1,0 +1,29 @@
+# Unignore data directory if ignored by parent
+!data/
+
+# Python Virtual Environments and cache
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.log
+.DS_Store
+
+# Secrets & Local Configs
+.env
+.s5cfg
+credentials/
+secrets/
+
+# Large raw and processed satellite data
+data/raw/
+data/optical_data/
+data/south_coastal/
+data/processed/**/*.tif
+data/processed/**/*.png
+data/processed/**/*.zip
+
+# Exclude generated training chips but keep model-ready index, report, and normalization
+data/model_ready/chennai/
+data/model_ready/cuddalore/
+data/model_ready/visualizations/

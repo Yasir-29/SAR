@@ -1,0 +1,125 @@
+[
+  {
+    "region": "chennai",
+    "files_created": [
+      "PRE_VV_dB.tif",
+      "PRE_VH_dB.tif",
+      "POST_VV_dB.tif",
+      "POST_VH_dB.tif",
+      "CHANGE_VV.tif",
+      "CHANGE_VH.tif",
+      "PRE_VV.png",
+      "POST_VV.png",
+      "CHANGE_VV.png",
+      "PRE_VH.png",
+      "POST_VH.png",
+      "CHANGE_VH.png",
+      "DASHBOARD.png"
+    ],
+    "dimensions": "2000 x 2000",
+    "crs": "EPSG:4326",
+    "resolution": "(0.00017499999999999715, 0.00017499999999999984)",
+    "stats": {
+      "VV": {
+        "valid_pct": 99.9332,
+        "masked_pct": 0.06680000000000064,
+        "min": -50.4890022277832,
+        "max": 57.55774688720703,
+        "mean": 0.5337257385253906,
+        "median": 0.16779613494873047,
+        "std": 4.387637138366699
+      },
+      "VH": {
+        "valid_pct": 92.93289999999999,
+        "masked_pct": 7.067100000000011,
+        "min": -64.92723846435547,
+        "max": 57.0732536315918,
+        "mean": 0.1813948005437851,
+        "median": 0.06436872482299805,
+        "std": 4.494265556335449
+      }
+    }
+  },
+  {
+    "region": "cuddalore",
+    "files_created": [
+      "PRE_VV_dB.tif",
+      "PRE_VH_dB.tif",
+      "POST_VV_dB.tif",
+      "POST_VH_dB.tif",
+      "CHANGE_VV.tif",
+      "CHANGE_VH.tif",
+      "PRE_VV.png",
+      "POST_VV.png",
+      "CHANGE_VV.png",
+      "PRE_VH.png",
+      "POST_VH.png",
+      "CHANGE_VH.png",
+      "DASHBOARD.png"
+    ],
+    "dimensions": "2000 x 2000",
+    "crs": "EPSG:4326",
+    "resolution": "(0.000125, 0.000125)",
+    "stats": {
+      "VV": {
+        "valid_pct": 99.955475,
+        "masked_pct": 0.04452499999999304,
+        "min": -43.925472259521484,
+        "max": 50.140907287597656,
+        "mean": 0.5277184844017029,
+        "median": 0.5819387435913086,
+        "std": 3.9559760093688965
+      },
+      "VH": {
+        "valid_pct": 83.569025,
+        "masked_pct": 16.430975000000004,
+        "min": -70.65487670898438,
+        "max": 59.85933303833008,
+        "mean": 0.48986202478408813,
+        "median": 0.6122283935546875,
+        "std": 5.038949012756348
+      }
+    }
+  },
+  {
+    "region": "nagapattinam",
+    "files_created": [
+      "PRE_VV_dB.tif",
+      "PRE_VH_dB.tif",
+      "POST_VV_dB.tif",
+      "POST_VH_dB.tif",
+      "CHANGE_VV.tif",
+      "CHANGE_VH.tif",
+      "PRE_VV.png",
+      "POST_VV.png",
+      "CHANGE_VV.png",
+      "PRE_VH.png",
+      "POST_VH.png",
+      "CHANGE_VH.png",
+      "DASHBOARD.png"
+    ],
+    "dimensions": "2000 x 2000",
+    "crs": "EPSG:4326",
+    "resolution": "(0.000125, 0.000125)",
+    "stats": {
+      "VV": {
+        "valid_pct": 79.997175,
+        "masked_pct": 20.002825,
+        "min": -42.20370101928711,
+        "max": 48.31940460205078,
+        "mean": 0.5231889486312866,
+        "median": 0.5088043212890625,
+        "std": 3.603492259979248
+      },
+      "VH": {
+        "valid_pct": 74.60725000000001,
+        "masked_pct": 25.392749999999992,
+        "min": -56.514076232910156,
+        "max": 55.26956558227539,
+        "mean": 1.6477798223495483,
+        "median": 1.6678428649902344,
+        "std": 4.4549713134765625
+      }
+    }
+  }
+]

@@ -1,0 +1,83 @@
+{
+    "region": "chennai",
+    "bbox": [
+        80.0,
+        12.85,
+        80.35,
+        13.2
+    ],
+    "pre_date_range": [
+        "2015-11-01",
+        "2015-11-30"
+    ],
+    "post_date_range": [
+        "2015-12-01",
+        "2015-12-31"
+    ],
+    "CRS": "EPSG:4326",
+    "resolution": [
+        0.00017499999999999715,
+        0.00017499999999999984
+    ],
+    "bounds": [
+        80.0,
+        12.85,
+        80.35,
+        13.2
+    ],
+    "selected_pre_acquisition": {
+        "date": "2015-11-28",
+        "scenes": [
+            {
+                "id": "S2A_MSIL2A_20151128T050142_N0500_R119_T44PLV_20231017T062052.SAFE",
+                "cloud_cover": 42.83
+            },
+            {
+                "id": "S2A_MSIL2A_20151128T050142_N0500_R119_T44PMV_20231017T062052.SAFE",
+                "cloud_cover": 57.26
+            },
+            {
+                "id": "S2A_MSIL2A_20151128T050142_N0500_R119_T44PLV_20231027T151725.SAFE",
+                "cloud_cover": 40.15
+            },
+            {
+                "id": "S2A_MSIL2A_20151128T050142_N0500_R119_T44PMV_20231027T151725.SAFE",
+                "cloud_cover": 54.39
+            }
+        ]
+    },
+    "cloud_percentage": {
+        "pre": 48.6575,
+        "post": 51.015
+    },
+    "selected_post_acquisition": {
+        "date": "2015-12-28",
+        "scenes": [
+            {
+                "id": "S2A_MSIL2A_20151228T050222_N0500_R119_T44PLV_20231009T231712.SAFE",
+                "cloud_cover": 47.54
+            },
+            {
+                "id": "S2A_MSIL2A_20151228T050222_N0500_R119_T44PMV_20231009T231712.SAFE",
+                "cloud_cover": 54.49
+            }
+        ]
+    },
+    "bands": [
+        "B02",
+        "B03",
+        "B04",
+        "B08",
+        "SCL"
+    ],
+    "feature_names": [
+        "B02",
+        "B03",
+        "B04",
+        "B08",
+        "B11",
+        "NDVI",
+        "NDWI",
+        "NDBI"
+    ]
+}
