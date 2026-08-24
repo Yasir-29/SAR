@@ -1,0 +1,17 @@
+disaster,disaster_type,peril,number_of_patches,intact,minor,major,destroyed,unclassified,total_buildings
+guatemala-volcano,volcano,volcano,28,731,26,23,33,178,991
+hurricane-florence,flooding,flood,546,8466,232,1949,81,820,11548
+hurricane-harvey,flooding,flood,522,18638,4510,13378,848,581,37955
+hurricane-matthew,wind,storm,405,4058,12331,2717,3524,1334,23964
+hurricane-michael,wind,storm,550,22692,8292,2919,1225,373,35501
+lower-puna-volcano,volcano,volcano,291,2277,49,26,504,554,3410
+mexico-earthquake,earthquake,earthquake,193,51084,221,54,3,111,51473
+midwest-flooding,flooding,flood,445,12819,246,193,165,473,13896
+nepal-flooding,flooding,flood,619,31225,5134,4721,502,1683,43265
+palu-tsunami,tsunami,earthquake,196,46796,1,1178,7203,611,55789
+pinery-bushfire,fire,wildfire,1845,5027,82,99,229,524,5961
+portugal-wildfire,fire,wildfire,1869,20787,176,296,1090,1064,23413
+santa-rosa-wildfire,fire,wildfire,377,15843,121,95,5810,86,21955
+socal-fire,fire,wildfire,1403,15697,136,110,2333,693,18969
+sunda-tsunami,tsunami,earthquake,148,14078,0,100,179,2590,16947
+woolsey-fire,fire,wildfire,878,4638,189,126,1876,186,7015

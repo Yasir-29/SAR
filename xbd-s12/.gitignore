@@ -27,3 +27,11 @@ data/processed/**/*.zip
 data/model_ready/chennai/
 data/model_ready/cuddalore/
 data/model_ready/visualizations/
+
+# Phase 6 Large Satellite Data & Archives
+xbd_s12.tar.gz
+phase6_training_data.zip
+phase6_training_data/
+data/xbd_s12/
+data/phase6/*.zip
+
