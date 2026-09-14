@@ -1,0 +1,175 @@
+# configs/phase0_config.yaml
+
+# Data sources configuration
+data_sources:
+  primary: "GEE"  # "GEE" or "CDSE"
+  fallback: "CDSE"  # "GEE" or "CDSE"
+  env_file: "/Users/yasir/Desktop/Data/.env"
+  gee_project: "urbanease-cfcf0"
+
+# General pipeline settings
+settings:
+  target_resolution: 10.0  # meters
+  output_crs_strategy: "auto_utm"  # "auto_utm" or a specific EPSG code like 32644
+  cloud_threshold: 20.0  # max cloud percentage for Sentinel-2
+  valid_pixel_threshold: 80.0  # min valid pixel percentage for QA
+
+# Sentinel-1 SAR selection rules
+sentinel1_rules:
+  polarizations: ["VV", "VH"]
+  instrument_mode: "IW"
+  processing_level: "GRD"
+  temporal_search_window_days: 30  # Search up to 30 days before/after event impact
+
+# Sentinel-2 Optical selection rules
+sentinel2_rules:
+  bands: ["B2", "B3", "B4", "B8"]
+  processing_level: "L2A"
+  temporal_search_window_days: 45  # Search up to 45 days before/after event impact
+
+# Event configurations - coordinates, dates, and offsets to avoid hardcoding
+events:
+  TN_CHENNAI_FLOOD_2015:
+    name: "Chennai Floods 2015"
+    disaster_type: "floods"
+    impact_date: "2015-12-01"
+    lat: 13.0827
+    lon: 80.2707
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2015-10-01", "2015-11-05"]
+    s1_post_window: ["2015-12-03", "2015-12-25"]
+    s2_pre_window: ["2015-10-01", "2015-11-05"]
+    s2_post_window: ["2015-12-03", "2015-12-31"]
+  
+  TN_VARDAH_2016:
+    name: "Cyclone Vardah 2016"
+    disaster_type: "cyclones"
+    impact_date: "2016-12-12"
+    lat: 13.0827
+    lon: 80.2707
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2016-11-01", "2016-12-10"]
+    s1_post_window: ["2016-12-13", "2016-12-31"]
+    s2_pre_window: ["2016-11-01", "2016-12-10"]
+    s2_post_window: ["2016-12-13", "2016-12-31"]
+  
+  TN_GAJA_2018:
+    name: "Cyclone Gaja 2018"
+    disaster_type: "cyclones"
+    impact_date: "2018-11-16"
+    lat: 10.7656
+    lon: 79.8427
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2018-10-15", "2018-11-14"]
+    s1_post_window: ["2018-11-17", "2018-12-10"]
+    s2_pre_window: ["2018-10-15", "2018-11-14"]
+    s2_post_window: ["2018-11-17", "2018-12-15"]
+  
+  TN_NIVAR_2020:
+    name: "Cyclone Nivar 2020"
+    disaster_type: "cyclones"
+    impact_date: "2020-11-26"
+    lat: 11.7480
+    lon: 79.7714
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2020-10-25", "2020-11-24"]
+    s1_post_window: ["2020-11-27", "2020-12-20"]
+    s2_pre_window: ["2020-10-25", "2020-11-24"]
+    s2_post_window: ["2020-11-27", "2020-12-25"]
+  
+  TN_MICHAUNG_2023:
+    name: "Cyclone Michaung 2023"
+    disaster_type: "extreme rainfall"
+    impact_date: "2023-12-04"
+    lat: 13.0827
+    lon: 80.2707
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2023-11-01", "2023-12-02"]
+    s1_post_window: ["2023-12-06", "2024-01-25"]
+    s2_pre_window: ["2023-11-01", "2023-12-02"]
+    s2_post_window: ["2023-12-06", "2024-01-25"]
+
+  TN_MANDOUS_2022:
+    name: "Cyclone Mandous 2022"
+    disaster_type: "cyclones"
+    impact_date: "2022-12-09"
+    lat: 12.6205
+    lon: 80.1947
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2022-10-10", "2022-12-02"]
+    s1_post_window: ["2022-12-10", "2023-01-08"]
+    s2_pre_window: ["2022-10-10", "2022-12-08"]
+    s2_post_window: ["2022-12-10", "2023-01-08"]
+
+  TN_SOUTHERN_FLOOD_2023:
+    name: "Southern Districts Floods 2023"
+    disaster_type: "floods"
+    impact_date: "2023-12-17"
+    lat: 8.7300
+    lon: 77.7000
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2023-10-18", "2023-12-10"]
+    s1_post_window: ["2023-12-18", "2024-01-25"]
+    s2_pre_window: ["2023-10-18", "2023-12-16"]
+    s2_post_window: ["2023-12-18", "2024-01-25"]
+
+  TN_OCKHI_2017:
+    name: "Cyclone Ockhi 2017"
+    disaster_type: "cyclones"
+    impact_date: "2017-11-30"
+    lat: 8.0900
+    lon: 77.5400
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2017-10-01", "2017-11-23"]
+    s1_post_window: ["2017-12-01", "2017-12-30"]
+    s2_pre_window: ["2017-10-01", "2017-11-29"]
+    s2_post_window: ["2017-12-01", "2017-12-30"]
+
+  TN_FENGAL_2024:
+    name: "Cyclone Fengal 2024"
+    disaster_type: "cyclones"
+    impact_date: "2024-11-30"
+    lat: 11.9400
+    lon: 79.8100
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2024-10-01", "2024-11-23"]
+    s1_post_window: ["2024-12-01", "2024-12-30"]
+    s2_pre_window: ["2024-10-01", "2024-11-29"]
+    s2_post_window: ["2024-12-01", "2024-12-30"]
+
+  TN_CHENNAI_FLOOD_2021:
+    name: "Chennai Floods 2021"
+    disaster_type: "floods"
+    impact_date: "2021-11-07"
+    lat: 13.0827
+    lon: 80.2707
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2021-09-08", "2021-10-31"]
+    s1_post_window: ["2021-11-08", "2021-12-07"]
+    s2_pre_window: ["2021-09-08", "2021-11-06"]
+    s2_post_window: ["2021-11-08", "2021-12-07"]
+
+  TN_BUREVI_2020:
+    name: "Cyclone Burevi 2020"
+    disaster_type: "cyclones"
+    impact_date: "2020-12-03"
+    lat: 8.8100
+    lon: 78.1400
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2020-10-04", "2020-11-26"]
+    s1_post_window: ["2020-12-04", "2021-01-02"]
+    s2_pre_window: ["2020-10-04", "2020-12-02"]
+    s2_post_window: ["2020-12-04", "2021-01-02"]
+
+  TN_NADA_2016:
+    name: "Cyclone Nada 2016"
+    disaster_type: "cyclones"
+    impact_date: "2016-12-02"
+    lat: 11.7480
+    lon: 79.7714
+    aoi_size_deg: 0.15
+    s1_pre_window: ["2016-10-03", "2016-11-25"]
+    s1_post_window: ["2016-12-03", "2017-01-01"]
+    s2_pre_window: ["2016-10-03", "2016-12-01"]
+    s2_post_window: ["2016-12-03", "2017-01-01"]
+

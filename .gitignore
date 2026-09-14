@@ -1,23 +1,31 @@
-# OS/IDE files
-.DS_Store
-.vscode/
-.idea/
-
-# Python Virtual Environments and cache
+# Virtual environments
+venv/
 .venv/
+*/venv/
+*/.venv/
+
+# Node / Next.js
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/.turbo/
+.next/
+
+# OS / IDE
+.DS_Store
+*.DS_Store
+.idea/
+.vscode/
+
+# Python cache / logs
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
-
-# Credentials
-.env
-.env.*
-.s5cfg
-
-# Ignore the xbd-s12 root data directory specifically, while keeping src/data/
-/xbd-s12/data/
-
-# Temporary and log files
+*.pyo
+*.pyd
+.pytest_cache/
 *.log
+.env
+.env.local
+
+# Split temporary work
 *.tmp
-*.gpkg-journal

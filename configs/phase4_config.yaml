@@ -1,0 +1,14 @@
+settings:
+  # Target building count to sample per event
+  scale_samples_per_event: 1100
+  
+  # Approximate split distribution ratios
+  train_val_test_split: [0.70, 0.15, 0.15]
+  
+  # Resolution scale and chip size
+  resolution_meters: 10
+  chip_size_pixels: 32
+  
+  # Folder destinations
+  chips_scaled_dir: "data/tamil_nadu/chips_scaled/"
+  final_dataset_dir: "data/tamil_nadu/final_dataset/"

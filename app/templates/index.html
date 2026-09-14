@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamil Nadu Disaster Assessment Portal</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0b0f19; color: #fff; display: flex; flex-direction: column; }
+        .header { height: 60px; background-color: #111827; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; box-sizing: border-box; border-bottom: 2px solid #1f2937; }
+        .title { font-size: 20px; font-weight: bold; color: #3b82f6; }
+        .warning { font-size: 10px; color: #ef4444; max-width: 50%; text-align: right; line-height: 1.3; }
+        .main-container { display: flex; flex: 1; height: calc(100vh - 60px); }
+        .sidebar { width: 350px; background-color: #111827; border-right: 2px solid #1f2937; padding: 20px; display: flex; flex-direction: column; gap: 15px; box-sizing: border-box; overflow-y: auto; }
+        #map { flex: 1; }
+        h3, h4 { margin: 0; padding-bottom: 5px; border-bottom: 1px solid #374151; color: #3b82f6; }
+        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .stat-card { background: #1f2937; padding: 10px; border-radius: 5px; border: 1px solid #374151; text-align: center; }
+        .stat-val { font-size: 20px; font-weight: bold; margin-top: 5px; }
+        .btn { background: #3b82f6; border: none; color: #fff; padding: 10px; border-radius: 4px; font-weight: bold; cursor: pointer; text-align: center; text-decoration: none; font-size: 13px; }
+        .btn:hover { background: #2563eb; }
+        .btn-secondary { background: #4b5563; }
+        .btn-secondary:hover { background: #374151; }
+        select { background: #1f2937; color: #fff; border: 1px solid #4b5563; padding: 8px; border-radius: 4px; font-size: 13px; width: 100%; box-sizing: border-box; }
+        .selected-panel { background: #1f2937; border: 1px solid #374151; border-radius: 5px; padding: 12px; font-size: 13px; display: flex; flex-direction: column; gap: 8px; }
+        .selected-val { font-weight: bold; color: #f3f4f6; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Copernicus Live Assessment Dashboard</div>
+        <div class="warning">
+            WARNING: Experimental automated assessment. Current Tamil Nadu training labels are LEGACY_UNVERIFIED; predictions are not authoritative building-level damage ground truth.
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <h3>System Status: <span style="color:#10b981;" id="cdseStatus">CONNECTED</span></h3>
+            
+            <div class="stat-grid">
+                <div class="stat-card" style="grid-column: span 2;">
+                    <div>Buildings Assessed</div>
+                    <div class="stat-val" id="totalCount">0</div>
+                </div>
+                <div class="stat-card">
+                    <div style="color:#10b981;">Intact</div>
+                    <div class="stat-val" id="intactCount">0</div>
+                </div>
+                <div class="stat-card">
+                    <div style="color:#f59e0b;">Damaged</div>
+                    <div class="stat-val" id="damagedCount">0</div>
+                </div>
+                <div class="stat-card">
+                    <div style="color:#ef4444;">Destroyed</div>
+                    <div class="stat-val" id="destroyedCount">0</div>
+                </div>
+                <div class="stat-card">
+                    <div style="color:#eab308;">Review</div>
+                    <div class="stat-val" id="reviewCount">0</div>
+                </div>
+            </div>
+            
+            <h4>Model Control</h4>
+            <div>
+                <select id="modelSelect" onchange="updateMapAndStats()">
+                    <option value="6.0">Model A: Phase 6.0 (Dual-Stream CNN)</option>
+                    <option value="6.3">Model B: Phase 6.3 (ResNet34 Transfer)</option>
+                </select>
+            </div>
+            
+            <h4>Coordinate Search</h4>
+            <div style="display:flex; gap:6px;">
+                <input type="text" id="coordInput" placeholder="e.g. 13.0429, 80.2486" style="background:#1f2937; color:#fff; border:1px solid #4b5563; padding:8px; border-radius:4px; font-size:12px; flex:1;" />
+                <button class="btn" style="padding:6px 12px; font-size:12px;" onclick="searchCoordinates()">[ SEARCH ]</button>
+            </div>
+            
+            <h4>Actions</h4>
+            <button class="btn" onclick="runAssessment()">[ RUN NEW ASSESSMENT ]</button>
+            <button class="btn btn-secondary" onclick="startMonitoring()">[ START LIVE MONITORING ]</button>
+            <a class="btn btn-secondary" href="/predictions" download="predictions.geojson">[ EXPORT GEOJSON ]</a>
+            
+            <h4>Selected Building</h4>
+            <div class="selected-panel" id="selectedBuildingPanel">
+                <div>Click a building polygon on the map to inspect properties.</div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <!-- Predictions data javascript loaded dynamically -->
+    <script src="/predictions_data.js"></script>
+    <script>
+        var map = L.map('map').setView([11.75, 79.76], 13);
+        
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+        }).addTo(map);
+
+        var geojsonLayer = null;
+
+        function getColor(status, prediction) {
+            if (status === 'DATA_REVIEW' || status === 'TEMPORAL_REVIEW') return '#000000';
+            if (status === 'HIGH_RISK_REVIEW') return '#ef4444'; // Destroyed / High Risk
+            if (status === 'REVIEW') return '#eab308'; // Low confidence Review
+            
+            switch(prediction) {
+                case 'INTACT': return '#10b981';
+                case 'DAMAGED': return '#f59e0b';
+                case 'DESTROYED': return '#ef4444';
+                default: return '#9ca3af';
+            }
+        }
+
+        function updateMapAndStats() {
+            var selectedModel = document.getElementById('modelSelect').value;
+            
+            // Calculate stats
+            var total = 0, intact = 0, damaged = 0, destroyed = 0, review = 0;
+            predictionsData.features.forEach(function(feat) {
+                var props = feat.properties;
+                var pred = selectedModel === '6.0' ? props.prediction_A : props.prediction_B;
+                var status = selectedModel === '6.0' ? props.status_A : props.status_B;
+                
+                total++;
+                if (status === 'REVIEW' || status === 'HIGH_RISK_REVIEW') {
+                    review++;
+                } else {
+                    if (pred === 'INTACT') intact++;
+                    else if (pred === 'DAMAGED') damaged++;
+                    else if (pred === 'DESTROYED') destroyed++;
+                }
+            });
+            
+            document.getElementById('totalCount').innerText = total;
+            document.getElementById('intactCount').innerText = intact;
+            document.getElementById('damagedCount').innerText = damaged;
+            document.getElementById('destroyedCount').innerText = destroyed;
+            document.getElementById('reviewCount').innerText = review;
+
+            // Render Map
+            if (geojsonLayer) {
+                map.removeLayer(geojsonLayer);
+            }
+            
+            geojsonLayer = L.geoJSON(predictionsData, {
+                pointToLayer: function(feature, latlng) {
+                    var props = feature.properties;
+                    var pred = selectedModel === '6.0' ? props.prediction_A : props.prediction_B;
+                    var status = selectedModel === '6.0' ? props.status_A : props.status_B;
+                    
+                    return L.circleMarker(latlng, {
+                        radius: 8,
+                        fillColor: getColor(status, pred),
+                        color: '#fff',
+                        weight: 1.5,
+                        opacity: 1,
+                        fillOpacity: 0.85
+                    });
+                },
+                onEachFeature: function(feature, layer) {
+                    layer.on('click', function() {
+                        var props = feature.properties;
+                        var isA = selectedModel === '6.0';
+                        var pred = isA ? props.prediction_A : props.prediction_B;
+                        var conf = isA ? props.confidence_A : props.confidence_B;
+                        var status = isA ? props.status_A : props.status_B;
+                        
+                        var p_int = isA ? props.prob_intact_A : props.prob_intact_B;
+                        var p_dmg = isA ? props.prob_damaged_A : props.prob_damaged_B;
+                        var p_dst = isA ? props.prob_destroyed_A : props.prob_destroyed_B;
+                        
+                        var html = `
+                            <div><b>Building ID:</b> <span class="selected-val">${props.building_id}</span></div>
+                            <div><b>Prediction:</b> <span class="selected-val">${pred}</span></div>
+                            <div><b>Confidence:</b> <span class="selected-val">${(conf * 100).toFixed(1)}%</span></div>
+                            <div><b>Decision Status:</b> <span class="selected-val">${status}</span></div>
+                            <div><b>Intact Probability:</b> <span class="selected-val">${(p_int * 100).toFixed(1)}%</span></div>
+                            <div><b>Damaged Probability:</b> <span class="selected-val">${(p_dmg * 100).toFixed(1)}%</span></div>
+                            <div><b>Destroyed Probability:</b> <span class="selected-val">${(p_dst * 100).toFixed(1)}%</span></div>
+                            <div><b>PRE Scene:</b> <span class="selected-val">${props.pre_scene}</span></div>
+                            <div><b>POST Scene:</b> <span class="selected-val">${props.post_scene}</span></div>
+                            <div><b>Timestamp:</b> <span class="selected-val">${props.prediction_time}</span></div>
+                        `;
+                        document.getElementById('selectedBuildingPanel').innerHTML = html;
+                    });
+                }
+            }).addTo(map);
+        }
+
+        // Initialize Map & Sidebar Stats
+        updateMapAndStats();
+
+        function runAssessment() {
+            var statusDiv = document.getElementById('cdseStatus');
+            statusDiv.innerText = "PROCESSING...";
+            statusDiv.style.color = "#eab308";
+            
+            fetch('/assessment/run', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ aoi: "79.7,11.7,79.8,11.8", demo: true })
+            })
+            .then(res => res.json())
+            .then(data => {
+                statusDiv.innerText = "CONNECTED";
+                statusDiv.style.color = "#10b981";
+                alert("Assessment completed successfully!");
+                location.reload();
+            })
+            .catch(err => {
+                statusDiv.innerText = "ERROR";
+                statusDiv.style.color = "#ef4444";
+                alert("Error running assessment: " + err);
+            });
+        }
+
+        function searchCoordinates(overrideRadius) {
+            var radius = overrideRadius || 100.0;
+            var raw = document.getElementById('coordInput').value.trim();
+            if (!raw) {
+                alert("Please enter coordinates, e.g. 13.0429, 80.2486");
+                return;
+            }
+            var cleanStr = raw.replace(/,/g, ' ').trim();
+            var parts = cleanStr.split(/\s+/).filter(Boolean);
+            if (parts.length < 2) {
+                alert("Please enter both latitude and longitude, e.g. 13.0429, 80.2486");
+                return;
+            }
+            var lat = parseFloat(parts[0]);
+            var lon = parseFloat(parts[1]);
+            if (isNaN(lat) || lat < -90 || lat > 90) {
+                alert("Invalid latitude! Must be between -90 and 90 degrees.");
+                return;
+            }
+            if (isNaN(lon) || lon < -180 || lon > 180) {
+                alert("Invalid longitude! Must be between -180 and 180 degrees.");
+                return;
+            }
+
+            var statusDiv = document.getElementById('cdseStatus');
+            statusDiv.innerText = "LOCATING...";
+            statusDiv.style.color = "#eab308";
+
+            fetch('/building/nearest?lat=' + lat + '&lon=' + lon + '&radius=' + radius)
+            .then(res => res.json())
+            .then(data => {
+                if (data && data.found && data.building) {
+                    statusDiv.innerText = "CONNECTED";
+                    statusDiv.style.color = "#10b981";
+                    var bld = data.building;
+                    var bldLat = lat, bldLon = lon;
+                    if (bld.centroid) {
+                        bldLat = bld.centroid.latitude;
+                        bldLon = bld.centroid.longitude;
+                    }
+
+                    map.flyTo([bldLat, bldLon], 18, { animate: true, duration: 0.8 });
+
+                    var distStr = data.distance_m < 1000 ? data.distance_m + " m" : (data.distance_m / 1000).toFixed(2) + " km";
+                    var html = `
+                        <div style="color:#38bdf8; font-weight:bold;">Nearest building: ${distStr}</div>
+                        <div><b>Building ID:</b> <span class="selected-val">${bld.building_id || bld.osm_id}</span></div>
+                        <div><b>Prediction:</b> <span class="selected-val">${bld.prediction}</span></div>
+                        <div><b>Confidence:</b> <span class="selected-val">${(bld.confidence * 100).toFixed(1)}%</span></div>
+                        <div><b>Review Status:</b> <span class="selected-val">${bld.review_status}</span></div>
+                    `;
+                    document.getElementById('selectedBuildingPanel').innerHTML = html;
+                } else {
+                    statusDiv.innerText = "NOT FOUND";
+                    statusDiv.style.color = "#eab308";
+                    var nearestDist = data.nearest_distance_m || data.distance_m;
+                    var nearestStr = nearestDist ? (nearestDist < 1000 ? nearestDist + " m" : (nearestDist / 1000).toFixed(2) + " km") : "N/A";
+                    var html = `
+                        <div style="color:#f59e0b; font-weight:bold;">No building found within ${radius} m.</div>
+                        <div style="color:#e2e8f0; font-size:12px; margin-top:4px;">Nearest known building: <b>${nearestStr}</b> away.</div>
+                        <button class="btn" style="margin-top:8px; padding:6px; font-size:12px; width:100%;" onclick="searchCoordinates(5000)">[ SEARCH WITHIN 5 KM ]</button>
+                    `;
+                    document.getElementById('selectedBuildingPanel').innerHTML = html;
+                }
+            })
+            .catch(err => {
+                statusDiv.innerText = "ERROR";
+                statusDiv.style.color = "#ef4444";
+                alert(err.message);
+            });
+        }
+    </script>
+</body>
+</html>

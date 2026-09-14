@@ -7,7 +7,7 @@ constants_path = Path(__file__)
 SRC_PATH = constants_path.parent
 PROJECT_PATH = SRC_PATH.parent
 DATA_PATH = PROJECT_PATH / "data"
-XBD_S12_PATH = DATA_PATH / "xbd_s12"
+XBD_S12_PATH = Path("/Users/yasir/Desktop/Data/xbd_s12_data")
 HYDRA_CONFIG_PATH = SRC_PATH / "configs"
 LOGS_PATH = PROJECT_PATH / "logs"
 

@@ -1,0 +1,11 @@
+earthengine-api
+requests
+rasterio
+pandas
+numpy
+shapely
+geojson
+pyyaml
+python-dotenv
+pyproj
+matplotlib

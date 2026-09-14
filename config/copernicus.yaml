@@ -1,0 +1,15 @@
+cdse:
+  endpoint: "https://catalogue.dataspace.copernicus.eu/odata/v1/Products"
+  token_url: "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token"
+search:
+  aoi: [79.7, 11.7, 79.8, 11.8]  # Cuddalore bounds
+  start_date: "2020-10-01"
+  end_date: "2020-12-31"
+download:
+  cache_dir: "data/tamil_nadu/live/cache"
+model:
+  path_6_0: "data/tamil_nadu/phase6/models/best_model.pt"
+  path_6_3: "data/tamil_nadu/phase6_3/models/best_xbd_s12_transfer_model.pt"
+  normalization_path: "data/tamil_nadu/phase6/config/normalization.json"
+buildings:
+  footprint_path: "data/tamil_nadu/final_dataset_audited.csv"

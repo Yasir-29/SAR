@@ -1,0 +1,12 @@
+settings:
+  # Number of buildings to sample per event for the pilot dataset
+  pilot_samples_per_event: 200
+  
+  # Chip bounding box size in pixels (centered on building centroid)
+  chip_size_pixels: 32
+  
+  # Analysis resolution scale in meters
+  resolution_meters: 10
+  
+  # Directory where pilot numpy chips and metadata are saved
+  pilot_output_dir: "data/tamil_nadu/chips_pilot/"
