@@ -1,0 +1,6 @@
+{
+  "model_name": "DualStreamUNet (Fine-Tuned)",
+  "architecture": "DualStreamUNet",
+  "parameters": 3139142,
+  "checkpoint_sha256": "76d671fd67ea9207992f82ce6171ea08b38698703bf04b63f8405ade3756ab97"
+}

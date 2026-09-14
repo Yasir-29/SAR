@@ -1,0 +1,14 @@
+{
+    "threshold_multipliers": {
+        "INTACT": 1.0,
+        "DAMAGED": 0.8,
+        "DESTROYED": 0.9
+    },
+    "validation_macro_f1_before": 0.3393,
+    "validation_macro_f1_after": 0.3591,
+    "validation_recalls_after": [
+        85.44,
+        11.43,
+        13.51
+    ]
+}

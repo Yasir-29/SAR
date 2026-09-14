@@ -1,0 +1,11 @@
+{
+  "production_model": "DualStreamUNet",
+  "checkpoint_path": "data/tamil_nadu/final/checkpoints/tamil_nadu_final_production.pt",
+  "checkpoint_sha256": "13a4500bfe8ce277b2132bb66a6cda93cfc0b964dadc301f1804572506f43d86",
+  "certified_status": "INVALID_RESULT_LEAKAGE_ELIMINATED",
+  "leakage_findings": "Previous 100% results were caused by label-dependent optical delta generation. Strict leakage-free evaluation results in honest baseline generalization metrics.",
+  "test_accuracy": "8.27%",
+  "test_macro_f1": "7.84%",
+  "holdout_accuracy": "7.08%",
+  "holdout_macro_f1": "7.19%"
+}

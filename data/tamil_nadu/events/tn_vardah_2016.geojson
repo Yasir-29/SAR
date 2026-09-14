@@ -1,0 +1,4361 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "event_id": "TN_VARDAH_2016",
+    "event_title": "Cyclone Vardah 2016",
+    "building_count": 75,
+    "created_at": "2026-09-01T13:40:51.136663+00:00"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00000",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1824423053044,
+              13.039840206591617
+            ],
+            [
+              80.18270307057891,
+              13.039840206591617
+            ],
+            [
+              80.18270307057891,
+              13.04010702479485
+            ],
+            [
+              80.1824423053044,
+              13.04010702479485
+            ],
+            [
+              80.1824423053044,
+              13.039840206591617
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00000",
+        "osm_id": "900010500",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6224,
+        "prediction_margin": 0.35,
+        "entropy": 0.9241,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00001",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1747054296142,
+              13.00946631034531
+            ],
+            [
+              80.1750943013903,
+              13.00946631034531
+            ],
+            [
+              80.1750943013903,
+              13.009766741685251
+            ],
+            [
+              80.1747054296142,
+              13.009766741685251
+            ],
+            [
+              80.1747054296142,
+              13.00946631034531
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00001",
+        "osm_id": "900010511",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7231,
+        "prediction_margin": 0.35,
+        "entropy": 0.7819,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00002",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.151168468877,
+              12.996654374022228
+            ],
+            [
+              80.15153976110729,
+              12.996654374022228
+            ],
+            [
+              80.15153976110729,
+              12.996888603343304
+            ],
+            [
+              80.151168468877,
+              12.996888603343304
+            ],
+            [
+              80.151168468877,
+              12.996654374022228
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00002",
+        "osm_id": "900010522",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6751,
+        "prediction_margin": 0.35,
+        "entropy": 0.8506,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00003",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19705808322507,
+              12.993249290310732
+            ],
+            [
+              80.19737901270068,
+              12.993249290310732
+            ],
+            [
+              80.19737901270068,
+              12.993516532151656
+            ],
+            [
+              80.19705808322507,
+              12.993516532151656
+            ],
+            [
+              80.19705808322507,
+              12.993249290310732
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00003",
+        "osm_id": "900010533",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9995,
+        "prediction_margin": 0.35,
+        "entropy": 0.0046,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00004",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1711269341178,
+              13.026622631682887
+            ],
+            [
+              80.1714545526939,
+              13.026622631682887
+            ],
+            [
+              80.1714545526939,
+              13.026899489678065
+            ],
+            [
+              80.1711269341178,
+              13.026899489678065
+            ],
+            [
+              80.1711269341178,
+              13.026622631682887
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00004",
+        "osm_id": "900010544",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.3411,
+        "prediction_margin": 0.35,
+        "entropy": 1.0981,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00005",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15491890938024,
+              12.99700587375735
+            ],
+            [
+              80.15523894104992,
+              12.99700587375735
+            ],
+            [
+              80.15523894104992,
+              12.997306726887418
+            ],
+            [
+              80.15491890938024,
+              12.997306726887418
+            ],
+            [
+              80.15491890938024,
+              12.99700587375735
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00005",
+        "osm_id": "900010555",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9989,
+        "prediction_margin": 0.35,
+        "entropy": 0.0088,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00006",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19719094170125,
+              13.0109470250445
+            ],
+            [
+              80.197493930803,
+              13.0109470250445
+            ],
+            [
+              80.197493930803,
+              13.01117004982663
+            ],
+            [
+              80.19719094170125,
+              13.01117004982663
+            ],
+            [
+              80.19719094170125,
+              13.0109470250445
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00006",
+        "osm_id": "900010566",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00007",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.18533123078406,
+              13.049206229104325
+            ],
+            [
+              80.18557870035524,
+              13.049206229104325
+            ],
+            [
+              80.18557870035524,
+              13.049499772906145
+            ],
+            [
+              80.18533123078406,
+              13.049499772906145
+            ],
+            [
+              80.18533123078406,
+              13.049206229104325
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00007",
+        "osm_id": "900010577",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00008",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19962591414232,
+              13.032096481831704
+            ],
+            [
+              80.19993134250005,
+              13.032096481831704
+            ],
+            [
+              80.19993134250005,
+              13.032375918212438
+            ],
+            [
+              80.19962591414232,
+              13.032375918212438
+            ],
+            [
+              80.19962591414232,
+              13.032096481831704
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00008",
+        "osm_id": "900010588",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6734,
+        "prediction_margin": 0.35,
+        "entropy": 0.8545,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00009",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.18767469004524,
+              13.016844219308377
+            ],
+            [
+              80.1879959536318,
+              13.016844219308377
+            ],
+            [
+              80.1879959536318,
+              13.01710764941255
+            ],
+            [
+              80.18767469004524,
+              13.01710764941255
+            ],
+            [
+              80.18767469004524,
+              13.016844219308377
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00009",
+        "osm_id": "900010599",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00010",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19395359304437,
+              13.029697479127105
+            ],
+            [
+              80.19430889165088,
+              13.029697479127105
+            ],
+            [
+              80.19430889165088,
+              13.029957515745867
+            ],
+            [
+              80.19395359304437,
+              13.029957515745867
+            ],
+            [
+              80.19395359304437,
+              13.029697479127105
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00010",
+        "osm_id": "900010610",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9993,
+        "prediction_margin": 0.35,
+        "entropy": 0.0056,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00011",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2050692402566,
+              12.993187365258565
+            ],
+            [
+              80.20531527183907,
+              12.993187365258565
+            ],
+            [
+              80.20531527183907,
+              12.993431425613648
+            ],
+            [
+              80.2050692402566,
+              12.993431425613648
+            ],
+            [
+              80.2050692402566,
+              12.993187365258565
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00011",
+        "osm_id": "900010621",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6957,
+        "prediction_margin": 0.35,
+        "entropy": 0.8242,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00012",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15875255999376,
+              13.034643980944352
+            ],
+            [
+              80.15901953584151,
+              13.034643980944352
+            ],
+            [
+              80.15901953584151,
+              13.034913676563935
+            ],
+            [
+              80.15875255999376,
+              13.034913676563935
+            ],
+            [
+              80.15875255999376,
+              13.034643980944352
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00012",
+        "osm_id": "900010632",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9983,
+        "prediction_margin": 0.35,
+        "entropy": 0.0126,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00013",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20484703886993,
+              13.032229722050545
+            ],
+            [
+              80.20515013345334,
+              13.032229722050545
+            ],
+            [
+              80.20515013345334,
+              13.03242987618161
+            ],
+            [
+              80.20484703886993,
+              13.03242987618161
+            ],
+            [
+              80.20484703886993,
+              13.032229722050545
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00013",
+        "osm_id": "900010643",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00014",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.18189481836446,
+              13.030376481412945
+            ],
+            [
+              80.18225172700629,
+              13.030376481412945
+            ],
+            [
+              80.18225172700629,
+              13.030639104888385
+            ],
+            [
+              80.18189481836446,
+              13.030639104888385
+            ],
+            [
+              80.18189481836446,
+              13.030376481412945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00014",
+        "osm_id": "900010654",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4375,
+        "prediction_margin": 0.35,
+        "entropy": 1.0714,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00015",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16132939409913,
+              13.040292839959688
+            ],
+            [
+              80.16171255601704,
+              13.040292839959688
+            ],
+            [
+              80.16171255601704,
+              13.040506946829582
+            ],
+            [
+              80.16132939409913,
+              13.040506946829582
+            ],
+            [
+              80.16132939409913,
+              13.040292839959688
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00015",
+        "osm_id": "900010665",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4752,
+        "prediction_margin": 0.35,
+        "entropy": 1.0467,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00016",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16242191692616,
+              12.990566711410047
+            ],
+            [
+              80.16270688874785,
+              12.990566711410047
+            ],
+            [
+              80.16270688874785,
+              12.99084687374435
+            ],
+            [
+              80.16242191692616,
+              12.99084687374435
+            ],
+            [
+              80.16242191692616,
+              12.990566711410047
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00016",
+        "osm_id": "900010676",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7611,
+        "prediction_margin": 0.35,
+        "entropy": 0.7153,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00017",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.18464009161387,
+              13.044130824971944
+            ],
+            [
+              80.18498733225003,
+              13.044130824971944
+            ],
+            [
+              80.18498733225003,
+              13.0443533734026
+            ],
+            [
+              80.18464009161387,
+              13.0443533734026
+            ],
+            [
+              80.18464009161387,
+              13.044130824971944
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00017",
+        "osm_id": "900010687",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9989,
+        "prediction_margin": 0.35,
+        "entropy": 0.0089,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00018",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.17005271382358,
+              13.002518380548807
+            ],
+            [
+              80.17032132839454,
+              13.002518380548807
+            ],
+            [
+              80.17032132839454,
+              13.002826610481748
+            ],
+            [
+              80.17005271382358,
+              13.002826610481748
+            ],
+            [
+              80.17005271382358,
+              13.002518380548807
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00018",
+        "osm_id": "900010698",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 0.4148,
+        "prediction_margin": 0.35,
+        "entropy": 1.0664,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00019",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16453720475816,
+              13.016746197266242
+            ],
+            [
+              80.16489631183877,
+              13.016746197266242
+            ],
+            [
+              80.16489631183877,
+              13.01706274365567
+            ],
+            [
+              80.16453720475816,
+              13.01706274365567
+            ],
+            [
+              80.16453720475816,
+              13.016746197266242
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00019",
+        "osm_id": "900010709",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00020",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20148675417897,
+              13.023820978343748
+            ],
+            [
+              80.2018372538177,
+              13.023820978343748
+            ],
+            [
+              80.2018372538177,
+              13.024082590483404
+            ],
+            [
+              80.20148675417897,
+              13.024082590483404
+            ],
+            [
+              80.20148675417897,
+              13.023820978343748
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00020",
+        "osm_id": "900010720",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9996,
+        "prediction_margin": 0.35,
+        "entropy": 0.0036,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00021",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20320119123316,
+              13.01629675794381
+            ],
+            [
+              80.20356129827546,
+              13.01629675794381
+            ],
+            [
+              80.20356129827546,
+              13.016555390534915
+            ],
+            [
+              80.20320119123316,
+              13.016555390534915
+            ],
+            [
+              80.20320119123316,
+              13.01629675794381
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00021",
+        "osm_id": "900010731",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9997,
+        "prediction_margin": 0.35,
+        "entropy": 0.0029,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00022",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16941136020294,
+              13.04889624066998
+            ],
+            [
+              80.16965837569934,
+              13.04889624066998
+            ],
+            [
+              80.16965837569934,
+              13.049135435298671
+            ],
+            [
+              80.16941136020294,
+              13.049135435298671
+            ],
+            [
+              80.16941136020294,
+              13.04889624066998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00022",
+        "osm_id": "900010742",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6784,
+        "prediction_margin": 0.35,
+        "entropy": 0.8509,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00023",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15323338145359,
+              12.991306753562666
+            ],
+            [
+              80.15352661188234,
+              12.991306753562666
+            ],
+            [
+              80.15352661188234,
+              12.991559349395631
+            ],
+            [
+              80.15323338145359,
+              12.991559349395631
+            ],
+            [
+              80.15323338145359,
+              12.991306753562666
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00023",
+        "osm_id": "900010753",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9992,
+        "prediction_margin": 0.35,
+        "entropy": 0.0062,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00024",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15974705247969,
+              13.031229426053244
+            ],
+            [
+              80.16001907715348,
+              13.031229426053244
+            ],
+            [
+              80.16001907715348,
+              13.031467776784396
+            ],
+            [
+              80.15974705247969,
+              13.031467776784396
+            ],
+            [
+              80.15974705247969,
+              13.031229426053244
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00024",
+        "osm_id": "900010764",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5538,
+        "prediction_margin": 0.35,
+        "entropy": 0.9947,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00025",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15414877550974,
+              12.998702036001976
+            ],
+            [
+              80.15451874628296,
+              12.998702036001976
+            ],
+            [
+              80.15451874628296,
+              12.998992325109963
+            ],
+            [
+              80.15414877550974,
+              12.998992325109963
+            ],
+            [
+              80.15414877550974,
+              12.998702036001976
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00025",
+        "osm_id": "900010775",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4804,
+        "prediction_margin": 0.35,
+        "entropy": 1.0496,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00026",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19280813835549,
+              13.030060823726904
+            ],
+            [
+              80.19315090286166,
+              13.030060823726904
+            ],
+            [
+              80.19315090286166,
+              13.030265427113479
+            ],
+            [
+              80.19280813835549,
+              13.030265427113479
+            ],
+            [
+              80.19280813835549,
+              13.030060823726904
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00026",
+        "osm_id": "900010786",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9985,
+        "prediction_margin": 0.35,
+        "entropy": 0.0112,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00027",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19653046819343,
+              13.019882933500053
+            ],
+            [
+              80.19681485647101,
+              13.019882933500053
+            ],
+            [
+              80.19681485647101,
+              13.020160069746073
+            ],
+            [
+              80.19653046819343,
+              13.020160069746073
+            ],
+            [
+              80.19653046819343,
+              13.019882933500053
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00027",
+        "osm_id": "900010797",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6348,
+        "prediction_margin": 0.35,
+        "entropy": 0.9056,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00028",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20209314752583,
+              13.010387074758219
+            ],
+            [
+              80.2024229644577,
+              13.010387074758219
+            ],
+            [
+              80.2024229644577,
+              13.010693015137099
+            ],
+            [
+              80.20209314752583,
+              13.010693015137099
+            ],
+            [
+              80.20209314752583,
+              13.010387074758219
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00028",
+        "osm_id": "900010808",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9994,
+        "prediction_margin": 0.35,
+        "entropy": 0.0049,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00029",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.18086061446557,
+              13.024568211085201
+            ],
+            [
+              80.1812549649422,
+              13.024568211085201
+            ],
+            [
+              80.1812549649422,
+              13.024777038687708
+            ],
+            [
+              80.18086061446557,
+              13.024777038687708
+            ],
+            [
+              80.18086061446557,
+              13.024568211085201
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00029",
+        "osm_id": "900010819",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9044,
+        "prediction_margin": 0.35,
+        "entropy": 0.3796,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00030",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20609442635632,
+              13.021686918083935
+            ],
+            [
+              80.20641161413258,
+              13.021686918083935
+            ],
+            [
+              80.20641161413258,
+              13.021898156978247
+            ],
+            [
+              80.20609442635632,
+              13.021898156978247
+            ],
+            [
+              80.20609442635632,
+              13.021686918083935
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00030",
+        "osm_id": "900010830",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5338,
+        "prediction_margin": 0.35,
+        "entropy": 1.014,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00031",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19464645139485,
+              13.008597857854102
+            ],
+            [
+              80.1950205060158,
+              13.008597857854102
+            ],
+            [
+              80.1950205060158,
+              13.008806540725033
+            ],
+            [
+              80.19464645139485,
+              13.008806540725033
+            ],
+            [
+              80.19464645139485,
+              13.008597857854102
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00031",
+        "osm_id": "900010841",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5221,
+        "prediction_margin": 0.35,
+        "entropy": 1.023,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00032",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16522545159364,
+              13.02545421907658
+            ],
+            [
+              80.16557395119389,
+              13.02545421907658
+            ],
+            [
+              80.16557395119389,
+              13.025703950654078
+            ],
+            [
+              80.16522545159364,
+              13.025703950654078
+            ],
+            [
+              80.16522545159364,
+              13.02545421907658
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00032",
+        "osm_id": "900010852",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00033",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.17045871496049,
+              13.006496821782308
+            ],
+            [
+              80.17081884139748,
+              13.006496821782308
+            ],
+            [
+              80.17081884139748,
+              13.006774188179593
+            ],
+            [
+              80.17045871496049,
+              13.006774188179593
+            ],
+            [
+              80.17045871496049,
+              13.006496821782308
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00033",
+        "osm_id": "900010863",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9996,
+        "prediction_margin": 0.35,
+        "entropy": 0.0037,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00034",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15276868713163,
+              12.991731169810683
+            ],
+            [
+              80.15313061236698,
+              12.991731169810683
+            ],
+            [
+              80.15313061236698,
+              12.991995655313536
+            ],
+            [
+              80.15276868713163,
+              12.991995655313536
+            ],
+            [
+              80.15276868713163,
+              12.991731169810683
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00034",
+        "osm_id": "900010874",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9994,
+        "prediction_margin": 0.35,
+        "entropy": 0.0051,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00035",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15184981014815,
+              13.011900782001964
+            ],
+            [
+              80.15216137382305,
+              13.011900782001964
+            ],
+            [
+              80.15216137382305,
+              13.012109467169148
+            ],
+            [
+              80.15184981014815,
+              13.012109467169148
+            ],
+            [
+              80.15184981014815,
+              13.011900782001964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00035",
+        "osm_id": "900010885",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7577,
+        "prediction_margin": 0.35,
+        "entropy": 0.7156,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00036",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16319648213351,
+              13.045205223026008
+            ],
+            [
+              80.16359416599482,
+              13.045205223026008
+            ],
+            [
+              80.16359416599482,
+              13.045471710032023
+            ],
+            [
+              80.16319648213351,
+              13.045471710032023
+            ],
+            [
+              80.16319648213351,
+              13.045205223026008
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00036",
+        "osm_id": "900010896",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4805,
+        "prediction_margin": 0.35,
+        "entropy": 1.0507,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00037",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1501897616763,
+              13.03478856081975
+            ],
+            [
+              80.15045211696702,
+              13.03478856081975
+            ],
+            [
+              80.15045211696702,
+              13.035000095921957
+            ],
+            [
+              80.1501897616763,
+              13.035000095921957
+            ],
+            [
+              80.1501897616763,
+              13.03478856081975
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00037",
+        "osm_id": "900010907",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00038",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20588944427851,
+              13.02244314624076
+            ],
+            [
+              80.20615202445745,
+              13.02244314624076
+            ],
+            [
+              80.20615202445745,
+              13.022643240982092
+            ],
+            [
+              80.20588944427851,
+              13.022643240982092
+            ],
+            [
+              80.20588944427851,
+              13.02244314624076
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00038",
+        "osm_id": "900010918",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6754,
+        "prediction_margin": 0.35,
+        "entropy": 0.8546,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00039",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15511778162613,
+              13.027891072753945
+            ],
+            [
+              80.15539116593223,
+              13.027891072753945
+            ],
+            [
+              80.15539116593223,
+              13.028170905494292
+            ],
+            [
+              80.15511778162613,
+              13.028170905494292
+            ],
+            [
+              80.15511778162613,
+              13.027891072753945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00039",
+        "osm_id": "900010929",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7807,
+        "prediction_margin": 0.35,
+        "entropy": 0.6738,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00040",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.18608121012669,
+              12.999708099796665
+            ],
+            [
+              80.18636940713385,
+              12.999708099796665
+            ],
+            [
+              80.18636940713385,
+              12.99996370671772
+            ],
+            [
+              80.18608121012669,
+              12.99996370671772
+            ],
+            [
+              80.18608121012669,
+              12.999708099796665
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00040",
+        "osm_id": "900010940",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9989,
+        "prediction_margin": 0.35,
+        "entropy": 0.0083,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00041",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1601034148912,
+              13.034388772134015
+            ],
+            [
+              80.16044939438878,
+              13.034388772134015
+            ],
+            [
+              80.16044939438878,
+              13.034607766100098
+            ],
+            [
+              80.1601034148912,
+              13.034607766100098
+            ],
+            [
+              80.1601034148912,
+              13.034388772134015
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00041",
+        "osm_id": "900010951",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5351,
+        "prediction_margin": 0.35,
+        "entropy": 1.0015,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00042",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15751141434869,
+              13.015405667675928
+            ],
+            [
+              80.15787115438859,
+              13.015405667675928
+            ],
+            [
+              80.15787115438859,
+              13.015637111876469
+            ],
+            [
+              80.15751141434869,
+              13.015637111876469
+            ],
+            [
+              80.15751141434869,
+              13.015405667675928
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00042",
+        "osm_id": "900010962",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9997,
+        "prediction_margin": 0.35,
+        "entropy": 0.0028,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00043",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20338219527306,
+              13.001662986687391
+            ],
+            [
+              80.20363623009575,
+              13.001662986687391
+            ],
+            [
+              80.20363623009575,
+              13.001909971139343
+            ],
+            [
+              80.20338219527306,
+              13.001909971139343
+            ],
+            [
+              80.20338219527306,
+              13.001662986687391
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00043",
+        "osm_id": "900010973",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9997,
+        "prediction_margin": 0.35,
+        "entropy": 0.0027,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00044",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.18941515281504,
+              13.027375863395713
+            ],
+            [
+              80.18971563680695,
+              13.027375863395713
+            ],
+            [
+              80.18971563680695,
+              13.027588216933077
+            ],
+            [
+              80.18941515281504,
+              13.027588216933077
+            ],
+            [
+              80.18941515281504,
+              13.027375863395713
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00044",
+        "osm_id": "900010984",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6673,
+        "prediction_margin": 0.35,
+        "entropy": 0.8647,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00045",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1800873727492,
+              13.032405885020502
+            ],
+            [
+              80.18037928286577,
+              13.032405885020502
+            ],
+            [
+              80.18037928286577,
+              13.032645990860974
+            ],
+            [
+              80.1800873727492,
+              13.032645990860974
+            ],
+            [
+              80.1800873727492,
+              13.032405885020502
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00045",
+        "osm_id": "900010995",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5255,
+        "prediction_margin": 0.35,
+        "entropy": 1.0206,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00046",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.17030141490459,
+              13.038070944309368
+            ],
+            [
+              80.17062432983509,
+              13.038070944309368
+            ],
+            [
+              80.17062432983509,
+              13.038325604512796
+            ],
+            [
+              80.17030141490459,
+              13.038325604512796
+            ],
+            [
+              80.17030141490459,
+              13.038070944309368
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00046",
+        "osm_id": "900011006",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4379,
+        "prediction_margin": 0.35,
+        "entropy": 1.0746,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00047",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20259312295524,
+              12.990660096735937
+            ],
+            [
+              80.20291139755501,
+              12.990660096735937
+            ],
+            [
+              80.20291139755501,
+              12.990901128875166
+            ],
+            [
+              80.20259312295524,
+              12.990901128875166
+            ],
+            [
+              80.20259312295524,
+              12.990660096735937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00047",
+        "osm_id": "900011017",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00048",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15132591395451,
+              13.024759760446264
+            ],
+            [
+              80.15160100521871,
+              13.024759760446264
+            ],
+            [
+              80.15160100521871,
+              13.025011226938025
+            ],
+            [
+              80.15132591395451,
+              13.025011226938025
+            ],
+            [
+              80.15132591395451,
+              13.024759760446264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00048",
+        "osm_id": "900011028",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9986,
+        "prediction_margin": 0.35,
+        "entropy": 0.0106,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00049",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19349470978312,
+              12.98992899669634
+            ],
+            [
+              80.19376103384272,
+              12.98992899669634
+            ],
+            [
+              80.19376103384272,
+              12.990157026348447
+            ],
+            [
+              80.19349470978312,
+              12.990157026348447
+            ],
+            [
+              80.19349470978312,
+              12.98992899669634
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00049",
+        "osm_id": "900011039",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6732,
+        "prediction_margin": 0.35,
+        "entropy": 0.8584,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00050",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15212399085414,
+              12.99727620935
+            ],
+            [
+              80.15241442553213,
+              12.99727620935
+            ],
+            [
+              80.15241442553213,
+              12.99749004548084
+            ],
+            [
+              80.15212399085414,
+              12.99749004548084
+            ],
+            [
+              80.15212399085414,
+              12.99727620935
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00050",
+        "osm_id": "900011050",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.613,
+        "prediction_margin": 0.35,
+        "entropy": 0.9314,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00051",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19304592529922,
+              13.04116073444085
+            ],
+            [
+              80.19328927082118,
+              13.04116073444085
+            ],
+            [
+              80.19328927082118,
+              13.041387505243065
+            ],
+            [
+              80.19304592529922,
+              13.041387505243065
+            ],
+            [
+              80.19304592529922,
+              13.04116073444085
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00051",
+        "osm_id": "900011061",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9979,
+        "prediction_margin": 0.35,
+        "entropy": 0.0149,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00052",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15604242052753,
+              13.015775277565664
+            ],
+            [
+              80.15636497186809,
+              13.015775277565664
+            ],
+            [
+              80.15636497186809,
+              13.016005696816054
+            ],
+            [
+              80.15604242052753,
+              13.016005696816054
+            ],
+            [
+              80.15604242052753,
+              13.015775277565664
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00052",
+        "osm_id": "900011072",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9994,
+        "prediction_margin": 0.35,
+        "entropy": 0.0052,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00053",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20420614632502,
+              13.023883655163639
+            ],
+            [
+              80.20450712982614,
+              13.023883655163639
+            ],
+            [
+              80.20450712982614,
+              13.024133077437616
+            ],
+            [
+              80.20420614632502,
+              13.024133077437616
+            ],
+            [
+              80.20420614632502,
+              13.023883655163639
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00053",
+        "osm_id": "900011083",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5857,
+        "prediction_margin": 0.35,
+        "entropy": 0.9641,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00054",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.17695146403886,
+              13.04127015512147
+            ],
+            [
+              80.1772452154234,
+              13.04127015512147
+            ],
+            [
+              80.1772452154234,
+              13.041537438459237
+            ],
+            [
+              80.17695146403886,
+              13.041537438459237
+            ],
+            [
+              80.17695146403886,
+              13.04127015512147
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00054",
+        "osm_id": "900011094",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4314,
+        "prediction_margin": 0.35,
+        "entropy": 1.0706,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00055",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16183801802673,
+              13.014698448827245
+            ],
+            [
+              80.16221826770526,
+              13.014698448827245
+            ],
+            [
+              80.16221826770526,
+              13.014917443177973
+            ],
+            [
+              80.16183801802673,
+              13.014917443177973
+            ],
+            [
+              80.16183801802673,
+              13.014698448827245
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00055",
+        "osm_id": "900011105",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4844,
+        "prediction_margin": 0.35,
+        "entropy": 1.041,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00056",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1861524265021,
+              13.031377735340586
+            ],
+            [
+              80.1865314823531,
+              13.031377735340586
+            ],
+            [
+              80.1865314823531,
+              13.031645933638716
+            ],
+            [
+              80.1861524265021,
+              13.031645933638716
+            ],
+            [
+              80.1861524265021,
+              13.031377735340586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00056",
+        "osm_id": "900011116",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.999,
+        "prediction_margin": 0.35,
+        "entropy": 0.0079,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00057",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15386527476167,
+              13.017731438359485
+            ],
+            [
+              80.15420360132458,
+              13.017731438359485
+            ],
+            [
+              80.15420360132458,
+              13.018031297853932
+            ],
+            [
+              80.15386527476167,
+              13.018031297853932
+            ],
+            [
+              80.15386527476167,
+              13.017731438359485
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00057",
+        "osm_id": "900011127",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00058",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15693186306795,
+              12.990670975155917
+            ],
+            [
+              80.1572835415434,
+              12.990670975155917
+            ],
+            [
+              80.1572835415434,
+              12.99096580634439
+            ],
+            [
+              80.15693186306795,
+              12.99096580634439
+            ],
+            [
+              80.15693186306795,
+              12.990670975155917
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00058",
+        "osm_id": "900011138",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7657,
+        "prediction_margin": 0.35,
+        "entropy": 0.7057,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00059",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.17960072735593,
+              13.015158951999743
+            ],
+            [
+              80.17987774315006,
+              13.015158951999743
+            ],
+            [
+              80.17987774315006,
+              13.015375316532348
+            ],
+            [
+              80.17960072735593,
+              13.015375316532348
+            ],
+            [
+              80.17960072735593,
+              13.015158951999743
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00059",
+        "osm_id": "900011149",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9986,
+        "prediction_margin": 0.35,
+        "entropy": 0.0108,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00060",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15314976255775,
+              13.00176886198497
+            ],
+            [
+              80.15349012390186,
+              13.00176886198497
+            ],
+            [
+              80.15349012390186,
+              13.002006827033856
+            ],
+            [
+              80.15314976255775,
+              13.002006827033856
+            ],
+            [
+              80.15314976255775,
+              13.00176886198497
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00060",
+        "osm_id": "900011160",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5434,
+        "prediction_margin": 0.35,
+        "entropy": 1.0054,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00061",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16150234692691,
+              13.010599361741392
+            ],
+            [
+              80.16174369916627,
+              13.010599361741392
+            ],
+            [
+              80.16174369916627,
+              13.010900066695758
+            ],
+            [
+              80.16150234692691,
+              13.010900066695758
+            ],
+            [
+              80.16150234692691,
+              13.010599361741392
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00061",
+        "osm_id": "900011171",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6819,
+        "prediction_margin": 0.35,
+        "entropy": 0.8459,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00062",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.20624730243777,
+              13.04338523439024
+            ],
+            [
+              80.20657427772976,
+              13.04338523439024
+            ],
+            [
+              80.20657427772976,
+              13.043663687740995
+            ],
+            [
+              80.20624730243777,
+              13.043663687740995
+            ],
+            [
+              80.20624730243777,
+              13.04338523439024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00062",
+        "osm_id": "900011182",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7674,
+        "prediction_margin": 0.35,
+        "entropy": 0.7012,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00063",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.18867675857031,
+              12.99255312598324
+            ],
+            [
+              80.18898991543746,
+              12.99255312598324
+            ],
+            [
+              80.18898991543746,
+              12.992819080659375
+            ],
+            [
+              80.18867675857031,
+              12.992819080659375
+            ],
+            [
+              80.18867675857031,
+              12.99255312598324
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00063",
+        "osm_id": "900011193",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9981,
+        "prediction_margin": 0.35,
+        "entropy": 0.0137,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00064",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1561281113426,
+              13.039239879485544
+            ],
+            [
+              80.15643116472636,
+              13.039239879485544
+            ],
+            [
+              80.15643116472636,
+              13.039477871777722
+            ],
+            [
+              80.1561281113426,
+              13.039477871777722
+            ],
+            [
+              80.1561281113426,
+              13.039239879485544
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00064",
+        "osm_id": "900011204",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.4055,
+        "prediction_margin": 0.35,
+        "entropy": 1.0815,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00065",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15887440716354,
+              13.02008476764966
+            ],
+            [
+              80.1591850526052,
+              13.02008476764966
+            ],
+            [
+              80.1591850526052,
+              13.020343641278767
+            ],
+            [
+              80.15887440716354,
+              13.020343641278767
+            ],
+            [
+              80.15887440716354,
+              13.02008476764966
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00065",
+        "osm_id": "900011215",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9989,
+        "prediction_margin": 0.35,
+        "entropy": 0.0085,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00066",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19217269273855,
+              13.019292643287086
+            ],
+            [
+              80.19255428101803,
+              13.019292643287086
+            ],
+            [
+              80.19255428101803,
+              13.019561885735287
+            ],
+            [
+              80.19217269273855,
+              13.019561885735287
+            ],
+            [
+              80.19217269273855,
+              13.019292643287086
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00066",
+        "osm_id": "900011226",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5195,
+        "prediction_margin": 0.35,
+        "entropy": 1.0251,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00067",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16594781778333,
+              13.03808016423539
+            ],
+            [
+              80.16634655253326,
+              13.03808016423539
+            ],
+            [
+              80.16634655253326,
+              13.038295806436958
+            ],
+            [
+              80.16594781778333,
+              13.038295806436958
+            ],
+            [
+              80.16594781778333,
+              13.03808016423539
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00067",
+        "osm_id": "900011237",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6701,
+        "prediction_margin": 0.35,
+        "entropy": 0.8625,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00068",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.17353348611114,
+              13.019400721372026
+            ],
+            [
+              80.17383955190148,
+              13.019400721372026
+            ],
+            [
+              80.17383955190148,
+              13.019665220622468
+            ],
+            [
+              80.17353348611114,
+              13.019665220622468
+            ],
+            [
+              80.17353348611114,
+              13.019400721372026
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00068",
+        "osm_id": "900011248",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7019,
+        "prediction_margin": 0.35,
+        "entropy": 0.8159,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00069",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.15001114724059,
+              13.004581166662575
+            ],
+            [
+              80.15027054962353,
+              13.004581166662575
+            ],
+            [
+              80.15027054962353,
+              13.004794818097633
+            ],
+            [
+              80.15001114724059,
+              13.004794818097633
+            ],
+            [
+              80.15001114724059,
+              13.004581166662575
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00069",
+        "osm_id": "900011259",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9993,
+        "prediction_margin": 0.35,
+        "entropy": 0.0059,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00070",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1887438552647,
+              13.032567895712837
+            ],
+            [
+              80.18899658936829,
+              13.032567895712837
+            ],
+            [
+              80.18899658936829,
+              13.032880743356912
+            ],
+            [
+              80.1887438552647,
+              13.032880743356912
+            ],
+            [
+              80.1887438552647,
+              13.032567895712837
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00070",
+        "osm_id": "900011270",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8006,
+        "prediction_margin": 0.35,
+        "entropy": 0.6374,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00071",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.201067283168,
+              13.041660178940212
+            ],
+            [
+              80.20133429654506,
+              13.041660178940212
+            ],
+            [
+              80.20133429654506,
+              13.041958795115324
+            ],
+            [
+              80.201067283168,
+              13.041958795115324
+            ],
+            [
+              80.201067283168,
+              13.041660178940212
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00071",
+        "osm_id": "900011281",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9996,
+        "prediction_margin": 0.35,
+        "entropy": 0.0038,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00072",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.18567362826941,
+              13.010101536686124
+            ],
+            [
+              80.18593313054335,
+              13.010101536686124
+            ],
+            [
+              80.18593313054335,
+              13.010362707534151
+            ],
+            [
+              80.18567362826941,
+              13.010362707534151
+            ],
+            [
+              80.18567362826941,
+              13.010101536686124
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00072",
+        "osm_id": "900011292",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5092,
+        "prediction_margin": 0.35,
+        "entropy": 1.033,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00073",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.17138905894637,
+              13.018367468508384
+            ],
+            [
+              80.17173161991553,
+              13.018367468508384
+            ],
+            [
+              80.17173161991553,
+              13.018675619613319
+            ],
+            [
+              80.17138905894637,
+              13.018675619613319
+            ],
+            [
+              80.17138905894637,
+              13.018367468508384
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00073",
+        "osm_id": "900011303",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6411,
+        "prediction_margin": 0.35,
+        "entropy": 0.9,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00074",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.17270621895344,
+              12.998296201473094
+            ],
+            [
+              80.17306283823496,
+              12.998296201473094
+            ],
+            [
+              80.17306283823496,
+              12.998608031001007
+            ],
+            [
+              80.17270621895344,
+              12.998608031001007
+            ],
+            [
+              80.17270621895344,
+              12.998296201473094
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_CHENNAI_FLOOD_2021_00074",
+        "osm_id": "900011314",
+        "event_id": "TN_VARDAH_2016",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4071,
+        "prediction_margin": 0.35,
+        "entropy": 1.0726,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    }
+  ]
+}

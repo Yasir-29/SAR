@@ -1,0 +1,372 @@
+{
+    "baseline_checkpoint_evaluated": "archive/phase6_3/models/best_xbd_s12_transfer_model.pt",
+    "class_distributions_across_splits": {
+        "train": {
+            "total": 5187,
+            "INTACT (0)": 4362,
+            "DAMAGED (1)": 654,
+            "DESTROYED (2)": 171,
+            "INTACT_pct": 84.09,
+            "DAMAGED_pct": 12.61,
+            "DESTROYED_pct": 3.3
+        },
+        "val": {
+            "total": 1111,
+            "INTACT (0)": 934,
+            "DAMAGED (1)": 140,
+            "DESTROYED (2)": 37,
+            "INTACT_pct": 84.07,
+            "DAMAGED_pct": 12.6,
+            "DESTROYED_pct": 3.33
+        },
+        "test": {
+            "total": 1112,
+            "INTACT (0)": 935,
+            "DAMAGED (1)": 140,
+            "DESTROYED (2)": 37,
+            "INTACT_pct": 84.08,
+            "DAMAGED_pct": 12.59,
+            "DESTROYED_pct": 3.33
+        },
+        "holdout": {
+            "total": 438,
+            "INTACT (0)": 381,
+            "DAMAGED (1)": 43,
+            "DESTROYED (2)": 14,
+            "INTACT_pct": 86.99,
+            "DAMAGED_pct": 9.82,
+            "DESTROYED_pct": 3.2
+        }
+    },
+    "test_diagnosis": {
+        "num_samples": 1112,
+        "accuracy": 84.08,
+        "balanced_accuracy": 33.33,
+        "macro_f1": 0.3045,
+        "precision_per_class": [
+            0.8408,
+            0.0,
+            0.0
+        ],
+        "recall_per_class": [
+            1.0,
+            0.0,
+            0.0
+        ],
+        "f1_per_class": [
+            0.9135,
+            0.0,
+            0.0
+        ],
+        "destroyed_recall": 0.0,
+        "damaged_recall": 0.0,
+        "predictions_made_per_class": {
+            "0": 1112,
+            "1": 0,
+            "2": 0
+        },
+        "mean_probability_distribution": {
+            "INTACT": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "DAMAGED": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "DESTROYED": [
+                1.0,
+                0.0,
+                0.0
+            ]
+        },
+        "ece_calibration": 0.1592,
+        "confusion_matrix": [
+            [
+                935,
+                0,
+                0
+            ],
+            [
+                140,
+                0,
+                0
+            ],
+            [
+                37,
+                0,
+                0
+            ]
+        ],
+        "error_examples": [
+            {
+                "building_id": "TN_NADA_2016_002066",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_OCKHI_2017_000991",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_FENGAL_2024_074820",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_CHENNAI_FLOOD_2021_183255",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_FENGAL_2024_000137",
+                "true_label": 2,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_MANDOUS_2022_030948",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_FENGAL_2024_095874",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_FENGAL_2024_085962",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_VARDAH_2016_178974",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_NIVAR_2020_083333",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        ]
+    },
+    "holdout_diagnosis": {
+        "num_samples": 438,
+        "accuracy": 86.99,
+        "balanced_accuracy": 33.33,
+        "macro_f1": 0.3101,
+        "precision_per_class": [
+            0.8699,
+            0.0,
+            0.0
+        ],
+        "recall_per_class": [
+            1.0,
+            0.0,
+            0.0
+        ],
+        "f1_per_class": [
+            0.9304,
+            0.0,
+            0.0
+        ],
+        "destroyed_recall": 0.0,
+        "damaged_recall": 0.0,
+        "predictions_made_per_class": {
+            "0": 438,
+            "1": 0,
+            "2": 0
+        },
+        "mean_probability_distribution": {
+            "INTACT": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "DAMAGED": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "DESTROYED": [
+                1.0,
+                0.0,
+                0.0
+            ]
+        },
+        "ece_calibration": 0.1301,
+        "confusion_matrix": [
+            [
+                381,
+                0,
+                0
+            ],
+            [
+                43,
+                0,
+                0
+            ],
+            [
+                14,
+                0,
+                0
+            ]
+        ],
+        "error_examples": [
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_150703",
+                "true_label": 2,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_145867",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_160408",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_168797",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_150024",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_159062",
+                "true_label": 2,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_159781",
+                "true_label": 2,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_150037",
+                "true_label": 2,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_139067",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "building_id": "TN_SOUTHERN_FLOOD_2023_156903",
+                "true_label": 1,
+                "pred_label": 0,
+                "probabilities": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        ]
+    },
+    "diagnostic_conclusion": "Model severely collapses toward INTACT due to heavy class imbalance (84.2% INTACT) and unweighted cross-entropy loss, resulting in 0% DESTROYED recall."
+}

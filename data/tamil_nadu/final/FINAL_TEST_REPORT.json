@@ -1,0 +1,101 @@
+{
+    "num_samples": 1112,
+    "accuracy": 57.82,
+    "ci_95": "54.9% - 60.69%",
+    "macro_f1": 0.331,
+    "weighted_f1": 0.6439,
+    "balanced_accuracy": 36.01,
+    "macro_precision": 0.3509,
+    "macro_recall": 0.3601,
+    "precision_per_class": [
+        0.8592,
+        0.1579,
+        0.0355
+    ],
+    "recall_per_class": [
+        0.6396,
+        0.2786,
+        0.1622
+    ],
+    "f1_per_class": [
+        0.7333,
+        0.2016,
+        0.0583
+    ],
+    "intact_f1": 0.7333,
+    "damaged_f1": 0.2016,
+    "destroyed_f1": 0.0583,
+    "intact_recall": 63.96,
+    "damaged_recall": 27.86,
+    "destroyed_recall": 16.22,
+    "confusion_matrix": [
+        [
+            598,
+            199,
+            138
+        ],
+        [
+            76,
+            39,
+            25
+        ],
+        [
+            22,
+            9,
+            6
+        ]
+    ],
+    "calibration_ece": 0.1816,
+    "actual_class_counts": {
+        "0_INTACT": 935,
+        "1_DAMAGED": 140,
+        "2_DESTROYED": 37
+    },
+    "predicted_class_counts": {
+        "0": 696,
+        "1": 247,
+        "2": 169
+    },
+    "event_wise_performance": {
+        "Cyclone Ockhi 2017": {
+            "count": 146,
+            "accuracy": 63.7,
+            "macro_f1": 0.3085
+        },
+        "Cyclone Nada 2016": {
+            "count": 164,
+            "accuracy": 59.76,
+            "macro_f1": 0.3258
+        },
+        "Cyclone Vardah 2016": {
+            "count": 156,
+            "accuracy": 55.77,
+            "macro_f1": 0.3465
+        },
+        "Chennai Floods 2021": {
+            "count": 17,
+            "accuracy": 23.53,
+            "macro_f1": 0.1333
+        },
+        "Cyclone Fengal 2024": {
+            "count": 163,
+            "accuracy": 50.31,
+            "macro_f1": 0.3318
+        },
+        "Cyclone Gaja 2018": {
+            "count": 144,
+            "accuracy": 69.44,
+            "macro_f1": 0.3547
+        },
+        "Cyclone Nivar 2020": {
+            "count": 162,
+            "accuracy": 61.11,
+            "macro_f1": 0.3731
+        },
+        "Cyclone Mandous 2022": {
+            "count": 160,
+            "accuracy": 50.0,
+            "macro_f1": 0.2655
+        }
+    }
+}

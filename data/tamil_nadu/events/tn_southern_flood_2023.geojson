@@ -1,0 +1,4651 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "event_id": "TN_SOUTHERN_FLOOD_2023",
+    "event_title": "Southern Flood 2023",
+    "building_count": 80,
+    "created_at": "2026-09-01T13:40:51.160463+00:00"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0051",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7651,
+              11.7451
+            ],
+            [
+              79.7661,
+              11.7451
+            ],
+            [
+              79.7661,
+              11.7461
+            ],
+            [
+              79.7651,
+              11.7461
+            ],
+            [
+              79.7651,
+              11.7451
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0051",
+        "osm_id": "osm_way_ind_0051",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.789,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0052",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76520000000001,
+              11.7452
+            ],
+            [
+              79.7662,
+              11.7452
+            ],
+            [
+              79.7662,
+              11.7462
+            ],
+            [
+              79.76520000000001,
+              11.7462
+            ],
+            [
+              79.76520000000001,
+              11.7452
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0052",
+        "osm_id": "osm_way_ind_0052",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.796,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0053",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76530000000001,
+              11.7453
+            ],
+            [
+              79.7663,
+              11.7453
+            ],
+            [
+              79.7663,
+              11.7463
+            ],
+            [
+              79.76530000000001,
+              11.7463
+            ],
+            [
+              79.76530000000001,
+              11.7453
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0053",
+        "osm_id": "osm_way_ind_0053",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9845,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0054",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7654,
+              11.7454
+            ],
+            [
+              79.76639999999999,
+              11.7454
+            ],
+            [
+              79.76639999999999,
+              11.7464
+            ],
+            [
+              79.7654,
+              11.7464
+            ],
+            [
+              79.7654,
+              11.7454
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0054",
+        "osm_id": "osm_way_ind_0054",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7981,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0055",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7655,
+              11.7455
+            ],
+            [
+              79.7665,
+              11.7455
+            ],
+            [
+              79.7665,
+              11.7465
+            ],
+            [
+              79.7655,
+              11.7465
+            ],
+            [
+              79.7655,
+              11.7455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0055",
+        "osm_id": "osm_way_ind_0055",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9571,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0056",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7656,
+              11.7456
+            ],
+            [
+              79.7666,
+              11.7456
+            ],
+            [
+              79.7666,
+              11.746599999999999
+            ],
+            [
+              79.7656,
+              11.746599999999999
+            ],
+            [
+              79.7656,
+              11.7456
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0056",
+        "osm_id": "osm_way_ind_0056",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7851,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0057",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76570000000001,
+              11.7457
+            ],
+            [
+              79.7667,
+              11.7457
+            ],
+            [
+              79.7667,
+              11.746699999999999
+            ],
+            [
+              79.76570000000001,
+              11.746699999999999
+            ],
+            [
+              79.76570000000001,
+              11.7457
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0057",
+        "osm_id": "osm_way_ind_0057",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9174,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0058",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7658,
+              11.745800000000001
+            ],
+            [
+              79.76679999999999,
+              11.745800000000001
+            ],
+            [
+              79.76679999999999,
+              11.7468
+            ],
+            [
+              79.7658,
+              11.7468
+            ],
+            [
+              79.7658,
+              11.745800000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0058",
+        "osm_id": "osm_way_ind_0058",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4574,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0059",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7659,
+              11.7459
+            ],
+            [
+              79.76689999999999,
+              11.7459
+            ],
+            [
+              79.76689999999999,
+              11.7469
+            ],
+            [
+              79.7659,
+              11.7469
+            ],
+            [
+              79.7659,
+              11.7459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0059",
+        "osm_id": "osm_way_ind_0059",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.4457,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0060",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.766,
+              11.746
+            ],
+            [
+              79.767,
+              11.746
+            ],
+            [
+              79.767,
+              11.747
+            ],
+            [
+              79.766,
+              11.747
+            ],
+            [
+              79.766,
+              11.746
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0060",
+        "osm_id": "osm_way_ind_0060",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6712,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0061",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76610000000001,
+              11.7461
+            ],
+            [
+              79.7671,
+              11.7461
+            ],
+            [
+              79.7671,
+              11.7471
+            ],
+            [
+              79.76610000000001,
+              11.7471
+            ],
+            [
+              79.76610000000001,
+              11.7461
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0061",
+        "osm_id": "osm_way_ind_0061",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9654,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0062",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76620000000001,
+              11.7462
+            ],
+            [
+              79.7672,
+              11.7462
+            ],
+            [
+              79.7672,
+              11.7472
+            ],
+            [
+              79.76620000000001,
+              11.7472
+            ],
+            [
+              79.76620000000001,
+              11.7462
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0062",
+        "osm_id": "osm_way_ind_0062",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9886,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0063",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7663,
+              11.7463
+            ],
+            [
+              79.76729999999999,
+              11.7463
+            ],
+            [
+              79.76729999999999,
+              11.7473
+            ],
+            [
+              79.7663,
+              11.7473
+            ],
+            [
+              79.7663,
+              11.7463
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0063",
+        "osm_id": "osm_way_ind_0063",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9615,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0064",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7664,
+              11.7464
+            ],
+            [
+              79.7674,
+              11.7464
+            ],
+            [
+              79.7674,
+              11.747399999999999
+            ],
+            [
+              79.7664,
+              11.747399999999999
+            ],
+            [
+              79.7664,
+              11.7464
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0064",
+        "osm_id": "osm_way_ind_0064",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9697,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0065",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76650000000001,
+              11.746500000000001
+            ],
+            [
+              79.7675,
+              11.746500000000001
+            ],
+            [
+              79.7675,
+              11.7475
+            ],
+            [
+              79.76650000000001,
+              11.7475
+            ],
+            [
+              79.76650000000001,
+              11.746500000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0065",
+        "osm_id": "osm_way_ind_0065",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.736,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0066",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76660000000001,
+              11.7466
+            ],
+            [
+              79.7676,
+              11.7466
+            ],
+            [
+              79.7676,
+              11.7476
+            ],
+            [
+              79.76660000000001,
+              11.7476
+            ],
+            [
+              79.76660000000001,
+              11.7466
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0066",
+        "osm_id": "osm_way_ind_0066",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8004,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0067",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7667,
+              11.7467
+            ],
+            [
+              79.76769999999999,
+              11.7467
+            ],
+            [
+              79.76769999999999,
+              11.7477
+            ],
+            [
+              79.7667,
+              11.7477
+            ],
+            [
+              79.7667,
+              11.7467
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0067",
+        "osm_id": "osm_way_ind_0067",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0068",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7668,
+              11.7468
+            ],
+            [
+              79.7678,
+              11.7468
+            ],
+            [
+              79.7678,
+              11.7478
+            ],
+            [
+              79.7668,
+              11.7478
+            ],
+            [
+              79.7668,
+              11.7468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0068",
+        "osm_id": "osm_way_ind_0068",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9902,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0069",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7669,
+              11.7469
+            ],
+            [
+              79.7679,
+              11.7469
+            ],
+            [
+              79.7679,
+              11.7479
+            ],
+            [
+              79.7669,
+              11.7479
+            ],
+            [
+              79.7669,
+              11.7469
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0069",
+        "osm_id": "osm_way_ind_0069",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9255,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0070",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76700000000001,
+              11.747
+            ],
+            [
+              79.768,
+              11.747
+            ],
+            [
+              79.768,
+              11.748
+            ],
+            [
+              79.76700000000001,
+              11.748
+            ],
+            [
+              79.76700000000001,
+              11.747
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0070",
+        "osm_id": "osm_way_ind_0070",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8827,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0071",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7671,
+              11.7471
+            ],
+            [
+              79.76809999999999,
+              11.7471
+            ],
+            [
+              79.76809999999999,
+              11.748099999999999
+            ],
+            [
+              79.7671,
+              11.748099999999999
+            ],
+            [
+              79.7671,
+              11.7471
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0071",
+        "osm_id": "osm_way_ind_0071",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5927,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0072",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7672,
+              11.7472
+            ],
+            [
+              79.7682,
+              11.7472
+            ],
+            [
+              79.7682,
+              11.748199999999999
+            ],
+            [
+              79.7672,
+              11.748199999999999
+            ],
+            [
+              79.7672,
+              11.7472
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0072",
+        "osm_id": "osm_way_ind_0072",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7346,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0073",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7673,
+              11.747300000000001
+            ],
+            [
+              79.7683,
+              11.747300000000001
+            ],
+            [
+              79.7683,
+              11.7483
+            ],
+            [
+              79.7673,
+              11.7483
+            ],
+            [
+              79.7673,
+              11.747300000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0073",
+        "osm_id": "osm_way_ind_0073",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8186,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0074",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76740000000001,
+              11.7474
+            ],
+            [
+              79.7684,
+              11.7474
+            ],
+            [
+              79.7684,
+              11.7484
+            ],
+            [
+              79.76740000000001,
+              11.7484
+            ],
+            [
+              79.76740000000001,
+              11.7474
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0074",
+        "osm_id": "osm_way_ind_0074",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8112,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0075",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7675,
+              11.7475
+            ],
+            [
+              79.76849999999999,
+              11.7475
+            ],
+            [
+              79.76849999999999,
+              11.7485
+            ],
+            [
+              79.7675,
+              11.7485
+            ],
+            [
+              79.7675,
+              11.7475
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0075",
+        "osm_id": "osm_way_ind_0075",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9745,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0076",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7676,
+              11.7476
+            ],
+            [
+              79.76859999999999,
+              11.7476
+            ],
+            [
+              79.76859999999999,
+              11.7486
+            ],
+            [
+              79.7676,
+              11.7486
+            ],
+            [
+              79.7676,
+              11.7476
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0076",
+        "osm_id": "osm_way_ind_0076",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4882,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0077",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7677,
+              11.7477
+            ],
+            [
+              79.7687,
+              11.7477
+            ],
+            [
+              79.7687,
+              11.7487
+            ],
+            [
+              79.7677,
+              11.7487
+            ],
+            [
+              79.7677,
+              11.7477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0077",
+        "osm_id": "osm_way_ind_0077",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5326,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0078",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76780000000001,
+              11.7478
+            ],
+            [
+              79.7688,
+              11.7478
+            ],
+            [
+              79.7688,
+              11.7488
+            ],
+            [
+              79.76780000000001,
+              11.7488
+            ],
+            [
+              79.76780000000001,
+              11.7478
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0078",
+        "osm_id": "osm_way_ind_0078",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0079",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76790000000001,
+              11.7479
+            ],
+            [
+              79.7689,
+              11.7479
+            ],
+            [
+              79.7689,
+              11.748899999999999
+            ],
+            [
+              79.76790000000001,
+              11.748899999999999
+            ],
+            [
+              79.76790000000001,
+              11.7479
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0079",
+        "osm_id": "osm_way_ind_0079",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7096,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0080",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.768,
+              11.748
+            ],
+            [
+              79.76899999999999,
+              11.748
+            ],
+            [
+              79.76899999999999,
+              11.748999999999999
+            ],
+            [
+              79.768,
+              11.748999999999999
+            ],
+            [
+              79.768,
+              11.748
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0080",
+        "osm_id": "osm_way_ind_0080",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8895,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0081",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7681,
+              11.7481
+            ],
+            [
+              79.7691,
+              11.7481
+            ],
+            [
+              79.7691,
+              11.7491
+            ],
+            [
+              79.7681,
+              11.7491
+            ],
+            [
+              79.7681,
+              11.7481
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0081",
+        "osm_id": "osm_way_ind_0081",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0082",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76820000000001,
+              11.7482
+            ],
+            [
+              79.7692,
+              11.7482
+            ],
+            [
+              79.7692,
+              11.7492
+            ],
+            [
+              79.76820000000001,
+              11.7492
+            ],
+            [
+              79.76820000000001,
+              11.7482
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0082",
+        "osm_id": "osm_way_ind_0082",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7786,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0083",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76830000000001,
+              11.7483
+            ],
+            [
+              79.7693,
+              11.7483
+            ],
+            [
+              79.7693,
+              11.7493
+            ],
+            [
+              79.76830000000001,
+              11.7493
+            ],
+            [
+              79.76830000000001,
+              11.7483
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0083",
+        "osm_id": "osm_way_ind_0083",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9195,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0084",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7684,
+              11.7484
+            ],
+            [
+              79.76939999999999,
+              11.7484
+            ],
+            [
+              79.76939999999999,
+              11.7494
+            ],
+            [
+              79.7684,
+              11.7494
+            ],
+            [
+              79.7684,
+              11.7484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0084",
+        "osm_id": "osm_way_ind_0084",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7129,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0085",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7685,
+              11.7485
+            ],
+            [
+              79.7695,
+              11.7485
+            ],
+            [
+              79.7695,
+              11.7495
+            ],
+            [
+              79.7685,
+              11.7495
+            ],
+            [
+              79.7685,
+              11.7485
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0085",
+        "osm_id": "osm_way_ind_0085",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6164,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0086",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7686,
+              11.7486
+            ],
+            [
+              79.7696,
+              11.7486
+            ],
+            [
+              79.7696,
+              11.7496
+            ],
+            [
+              79.7686,
+              11.7496
+            ],
+            [
+              79.7686,
+              11.7486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0086",
+        "osm_id": "osm_way_ind_0086",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9088,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0087",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76870000000001,
+              11.7487
+            ],
+            [
+              79.7697,
+              11.7487
+            ],
+            [
+              79.7697,
+              11.749699999999999
+            ],
+            [
+              79.76870000000001,
+              11.749699999999999
+            ],
+            [
+              79.76870000000001,
+              11.7487
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0087",
+        "osm_id": "osm_way_ind_0087",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7972,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0088",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7688,
+              11.748800000000001
+            ],
+            [
+              79.76979999999999,
+              11.748800000000001
+            ],
+            [
+              79.76979999999999,
+              11.7498
+            ],
+            [
+              79.7688,
+              11.7498
+            ],
+            [
+              79.7688,
+              11.748800000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0088",
+        "osm_id": "osm_way_ind_0088",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9542,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0089",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7689,
+              11.7489
+            ],
+            [
+              79.76989999999999,
+              11.7489
+            ],
+            [
+              79.76989999999999,
+              11.7499
+            ],
+            [
+              79.7689,
+              11.7499
+            ],
+            [
+              79.7689,
+              11.7489
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0089",
+        "osm_id": "osm_way_ind_0089",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8023,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0090",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.769,
+              11.749
+            ],
+            [
+              79.77,
+              11.749
+            ],
+            [
+              79.77,
+              11.75
+            ],
+            [
+              79.769,
+              11.75
+            ],
+            [
+              79.769,
+              11.749
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0090",
+        "osm_id": "osm_way_ind_0090",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0091",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76910000000001,
+              11.7491
+            ],
+            [
+              79.7701,
+              11.7491
+            ],
+            [
+              79.7701,
+              11.7501
+            ],
+            [
+              79.76910000000001,
+              11.7501
+            ],
+            [
+              79.76910000000001,
+              11.7491
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0091",
+        "osm_id": "osm_way_ind_0091",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.5293,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0092",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76920000000001,
+              11.7492
+            ],
+            [
+              79.7702,
+              11.7492
+            ],
+            [
+              79.7702,
+              11.7502
+            ],
+            [
+              79.76920000000001,
+              11.7502
+            ],
+            [
+              79.76920000000001,
+              11.7492
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0092",
+        "osm_id": "osm_way_ind_0092",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9342,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0093",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7693,
+              11.7493
+            ],
+            [
+              79.77029999999999,
+              11.7493
+            ],
+            [
+              79.77029999999999,
+              11.7503
+            ],
+            [
+              79.7693,
+              11.7503
+            ],
+            [
+              79.7693,
+              11.7493
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0093",
+        "osm_id": "osm_way_ind_0093",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0094",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7694,
+              11.7494
+            ],
+            [
+              79.7704,
+              11.7494
+            ],
+            [
+              79.7704,
+              11.750399999999999
+            ],
+            [
+              79.7694,
+              11.750399999999999
+            ],
+            [
+              79.7694,
+              11.7494
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0094",
+        "osm_id": "osm_way_ind_0094",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7287,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0095",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76950000000001,
+              11.7495
+            ],
+            [
+              79.7705,
+              11.7495
+            ],
+            [
+              79.7705,
+              11.750499999999999
+            ],
+            [
+              79.76950000000001,
+              11.750499999999999
+            ],
+            [
+              79.76950000000001,
+              11.7495
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0095",
+        "osm_id": "osm_way_ind_0095",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6319,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0096",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76960000000001,
+              11.749600000000001
+            ],
+            [
+              79.7706,
+              11.749600000000001
+            ],
+            [
+              79.7706,
+              11.7506
+            ],
+            [
+              79.76960000000001,
+              11.7506
+            ],
+            [
+              79.76960000000001,
+              11.749600000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0096",
+        "osm_id": "osm_way_ind_0096",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.5826,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0097",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7697,
+              11.7497
+            ],
+            [
+              79.77069999999999,
+              11.7497
+            ],
+            [
+              79.77069999999999,
+              11.7507
+            ],
+            [
+              79.7697,
+              11.7507
+            ],
+            [
+              79.7697,
+              11.7497
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0097",
+        "osm_id": "osm_way_ind_0097",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9541,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0098",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7698,
+              11.7498
+            ],
+            [
+              79.7708,
+              11.7498
+            ],
+            [
+              79.7708,
+              11.7508
+            ],
+            [
+              79.7698,
+              11.7508
+            ],
+            [
+              79.7698,
+              11.7498
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0098",
+        "osm_id": "osm_way_ind_0098",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.899,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0099",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7699,
+              11.7499
+            ],
+            [
+              79.7709,
+              11.7499
+            ],
+            [
+              79.7709,
+              11.7509
+            ],
+            [
+              79.7699,
+              11.7509
+            ],
+            [
+              79.7699,
+              11.7499
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0099",
+        "osm_id": "osm_way_ind_0099",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9178,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0100",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77000000000001,
+              11.75
+            ],
+            [
+              79.771,
+              11.75
+            ],
+            [
+              79.771,
+              11.751
+            ],
+            [
+              79.77000000000001,
+              11.751
+            ],
+            [
+              79.77000000000001,
+              11.75
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0100",
+        "osm_id": "osm_way_ind_0100",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6245,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0101",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7701,
+              11.7501
+            ],
+            [
+              79.77109999999999,
+              11.7501
+            ],
+            [
+              79.77109999999999,
+              11.7511
+            ],
+            [
+              79.7701,
+              11.7511
+            ],
+            [
+              79.7701,
+              11.7501
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0101",
+        "osm_id": "osm_way_ind_0101",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9828,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0102",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7702,
+              11.7502
+            ],
+            [
+              79.7712,
+              11.7502
+            ],
+            [
+              79.7712,
+              11.751199999999999
+            ],
+            [
+              79.7702,
+              11.751199999999999
+            ],
+            [
+              79.7702,
+              11.7502
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0102",
+        "osm_id": "osm_way_ind_0102",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.923,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0103",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7703,
+              11.750300000000001
+            ],
+            [
+              79.7713,
+              11.750300000000001
+            ],
+            [
+              79.7713,
+              11.7513
+            ],
+            [
+              79.7703,
+              11.7513
+            ],
+            [
+              79.7703,
+              11.750300000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0103",
+        "osm_id": "osm_way_ind_0103",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0104",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77040000000001,
+              11.7504
+            ],
+            [
+              79.7714,
+              11.7504
+            ],
+            [
+              79.7714,
+              11.7514
+            ],
+            [
+              79.77040000000001,
+              11.7514
+            ],
+            [
+              79.77040000000001,
+              11.7504
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0104",
+        "osm_id": "osm_way_ind_0104",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9196,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0105",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7705,
+              11.7505
+            ],
+            [
+              79.77149999999999,
+              11.7505
+            ],
+            [
+              79.77149999999999,
+              11.7515
+            ],
+            [
+              79.7705,
+              11.7515
+            ],
+            [
+              79.7705,
+              11.7505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0105",
+        "osm_id": "osm_way_ind_0105",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 0.4008,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0106",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7706,
+              11.7506
+            ],
+            [
+              79.77159999999999,
+              11.7506
+            ],
+            [
+              79.77159999999999,
+              11.7516
+            ],
+            [
+              79.7706,
+              11.7516
+            ],
+            [
+              79.7706,
+              11.7506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0106",
+        "osm_id": "osm_way_ind_0106",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0107",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7707,
+              11.7507
+            ],
+            [
+              79.7717,
+              11.7507
+            ],
+            [
+              79.7717,
+              11.7517
+            ],
+            [
+              79.7707,
+              11.7517
+            ],
+            [
+              79.7707,
+              11.7507
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0107",
+        "osm_id": "osm_way_ind_0107",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6935,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0108",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77080000000001,
+              11.7508
+            ],
+            [
+              79.7718,
+              11.7508
+            ],
+            [
+              79.7718,
+              11.7518
+            ],
+            [
+              79.77080000000001,
+              11.7518
+            ],
+            [
+              79.77080000000001,
+              11.7508
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0108",
+        "osm_id": "osm_way_ind_0108",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8021,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0109",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77090000000001,
+              11.7509
+            ],
+            [
+              79.7719,
+              11.7509
+            ],
+            [
+              79.7719,
+              11.7519
+            ],
+            [
+              79.77090000000001,
+              11.7519
+            ],
+            [
+              79.77090000000001,
+              11.7509
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0109",
+        "osm_id": "osm_way_ind_0109",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8637,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0110",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.771,
+              11.751
+            ],
+            [
+              79.77199999999999,
+              11.751
+            ],
+            [
+              79.77199999999999,
+              11.751999999999999
+            ],
+            [
+              79.771,
+              11.751999999999999
+            ],
+            [
+              79.771,
+              11.751
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0110",
+        "osm_id": "osm_way_ind_0110",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0111",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7711,
+              11.751100000000001
+            ],
+            [
+              79.7721,
+              11.751100000000001
+            ],
+            [
+              79.7721,
+              11.7521
+            ],
+            [
+              79.7711,
+              11.7521
+            ],
+            [
+              79.7711,
+              11.751100000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0111",
+        "osm_id": "osm_way_ind_0111",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0112",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77120000000001,
+              11.7512
+            ],
+            [
+              79.7722,
+              11.7512
+            ],
+            [
+              79.7722,
+              11.7522
+            ],
+            [
+              79.77120000000001,
+              11.7522
+            ],
+            [
+              79.77120000000001,
+              11.7512
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0112",
+        "osm_id": "osm_way_ind_0112",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0113",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77130000000001,
+              11.7513
+            ],
+            [
+              79.7723,
+              11.7513
+            ],
+            [
+              79.7723,
+              11.7523
+            ],
+            [
+              79.77130000000001,
+              11.7523
+            ],
+            [
+              79.77130000000001,
+              11.7513
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0113",
+        "osm_id": "osm_way_ind_0113",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0114",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7714,
+              11.7514
+            ],
+            [
+              79.77239999999999,
+              11.7514
+            ],
+            [
+              79.77239999999999,
+              11.7524
+            ],
+            [
+              79.7714,
+              11.7524
+            ],
+            [
+              79.7714,
+              11.7514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0114",
+        "osm_id": "osm_way_ind_0114",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0115",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7715,
+              11.7515
+            ],
+            [
+              79.7725,
+              11.7515
+            ],
+            [
+              79.7725,
+              11.7525
+            ],
+            [
+              79.7715,
+              11.7525
+            ],
+            [
+              79.7715,
+              11.7515
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0115",
+        "osm_id": "osm_way_ind_0115",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0116",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7716,
+              11.7516
+            ],
+            [
+              79.7726,
+              11.7516
+            ],
+            [
+              79.7726,
+              11.7526
+            ],
+            [
+              79.7716,
+              11.7526
+            ],
+            [
+              79.7716,
+              11.7516
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0116",
+        "osm_id": "osm_way_ind_0116",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0117",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77170000000001,
+              11.7517
+            ],
+            [
+              79.7727,
+              11.7517
+            ],
+            [
+              79.7727,
+              11.752699999999999
+            ],
+            [
+              79.77170000000001,
+              11.752699999999999
+            ],
+            [
+              79.77170000000001,
+              11.7517
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0117",
+        "osm_id": "osm_way_ind_0117",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0118",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7718,
+              11.7518
+            ],
+            [
+              79.77279999999999,
+              11.7518
+            ],
+            [
+              79.77279999999999,
+              11.752799999999999
+            ],
+            [
+              79.7718,
+              11.752799999999999
+            ],
+            [
+              79.7718,
+              11.7518
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0118",
+        "osm_id": "osm_way_ind_0118",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0119",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7719,
+              11.751900000000001
+            ],
+            [
+              79.77289999999999,
+              11.751900000000001
+            ],
+            [
+              79.77289999999999,
+              11.7529
+            ],
+            [
+              79.7719,
+              11.7529
+            ],
+            [
+              79.7719,
+              11.751900000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0119",
+        "osm_id": "osm_way_ind_0119",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0120",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.772,
+              11.752
+            ],
+            [
+              79.773,
+              11.752
+            ],
+            [
+              79.773,
+              11.753
+            ],
+            [
+              79.772,
+              11.753
+            ],
+            [
+              79.772,
+              11.752
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0120",
+        "osm_id": "osm_way_ind_0120",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0121",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77210000000001,
+              11.7521
+            ],
+            [
+              79.7731,
+              11.7521
+            ],
+            [
+              79.7731,
+              11.7531
+            ],
+            [
+              79.77210000000001,
+              11.7531
+            ],
+            [
+              79.77210000000001,
+              11.7521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0121",
+        "osm_id": "osm_way_ind_0121",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0122",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77220000000001,
+              11.7522
+            ],
+            [
+              79.7732,
+              11.7522
+            ],
+            [
+              79.7732,
+              11.7532
+            ],
+            [
+              79.77220000000001,
+              11.7532
+            ],
+            [
+              79.77220000000001,
+              11.7522
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0122",
+        "osm_id": "osm_way_ind_0122",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0123",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7723,
+              11.7523
+            ],
+            [
+              79.77329999999999,
+              11.7523
+            ],
+            [
+              79.77329999999999,
+              11.7533
+            ],
+            [
+              79.7723,
+              11.7533
+            ],
+            [
+              79.7723,
+              11.7523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0123",
+        "osm_id": "osm_way_ind_0123",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0124",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7724,
+              11.7524
+            ],
+            [
+              79.7734,
+              11.7524
+            ],
+            [
+              79.7734,
+              11.7534
+            ],
+            [
+              79.7724,
+              11.7534
+            ],
+            [
+              79.7724,
+              11.7524
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0124",
+        "osm_id": "osm_way_ind_0124",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0125",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77250000000001,
+              11.7525
+            ],
+            [
+              79.7735,
+              11.7525
+            ],
+            [
+              79.7735,
+              11.753499999999999
+            ],
+            [
+              79.77250000000001,
+              11.753499999999999
+            ],
+            [
+              79.77250000000001,
+              11.7525
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0125",
+        "osm_id": "osm_way_ind_0125",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0126",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77260000000001,
+              11.752600000000001
+            ],
+            [
+              79.7736,
+              11.752600000000001
+            ],
+            [
+              79.7736,
+              11.7536
+            ],
+            [
+              79.77260000000001,
+              11.7536
+            ],
+            [
+              79.77260000000001,
+              11.752600000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0126",
+        "osm_id": "osm_way_ind_0126",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0127",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7727,
+              11.7527
+            ],
+            [
+              79.77369999999999,
+              11.7527
+            ],
+            [
+              79.77369999999999,
+              11.7537
+            ],
+            [
+              79.7727,
+              11.7537
+            ],
+            [
+              79.7727,
+              11.7527
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0127",
+        "osm_id": "osm_way_ind_0127",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0128",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7728,
+              11.7528
+            ],
+            [
+              79.7738,
+              11.7528
+            ],
+            [
+              79.7738,
+              11.7538
+            ],
+            [
+              79.7728,
+              11.7538
+            ],
+            [
+              79.7728,
+              11.7528
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0128",
+        "osm_id": "osm_way_ind_0128",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0129",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7729,
+              11.7529
+            ],
+            [
+              79.7739,
+              11.7529
+            ],
+            [
+              79.7739,
+              11.7539
+            ],
+            [
+              79.7729,
+              11.7539
+            ],
+            [
+              79.7729,
+              11.7529
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0129",
+        "osm_id": "osm_way_ind_0129",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0130",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77300000000001,
+              11.753
+            ],
+            [
+              79.774,
+              11.753
+            ],
+            [
+              79.774,
+              11.754
+            ],
+            [
+              79.77300000000001,
+              11.754
+            ],
+            [
+              79.77300000000001,
+              11.753
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0130",
+        "osm_id": "osm_way_ind_0130",
+        "event_id": "TN_SOUTHERN_FLOOD_2023",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    }
+  ]
+}

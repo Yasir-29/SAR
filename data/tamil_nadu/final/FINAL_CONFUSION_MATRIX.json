@@ -1,0 +1,41 @@
+{
+    "locked_test_confusion_matrix": [
+        [
+            598,
+            199,
+            138
+        ],
+        [
+            76,
+            39,
+            25
+        ],
+        [
+            22,
+            9,
+            6
+        ]
+    ],
+    "holdout_confusion_matrix": [
+        [
+            239,
+            81,
+            61
+        ],
+        [
+            24,
+            10,
+            9
+        ],
+        [
+            11,
+            2,
+            1
+        ]
+    ],
+    "class_labels": [
+        "0=INTACT",
+        "1=DAMAGED",
+        "2=DESTROYED"
+    ]
+}

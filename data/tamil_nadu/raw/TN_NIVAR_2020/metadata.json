@@ -1,0 +1,33 @@
+{
+    "event_id": "TN_NIVAR_2020",
+    "event_name": "Cyclone Nivar 2020",
+    "state": "Tamil Nadu",
+    "disaster_type": "cyclones",
+    "impact_date": "2020-11-26",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20201121T003206_20201121T003231_035339_0420EC_F580",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20201203T003206_20201203T003231_035514_0426F6_0C55",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    },
+    "sentinel2": {
+        "pre": {
+            "product_id": "COPERNICUS/S2_SR_HARMONIZED/20201121T050121_20201121T051432_T44PLT",
+            "date": "20201121",
+            "source": "GEE",
+            "cloud_percentage": 10.25
+        },
+        "post": {
+            "product_id": "COPERNICUS/S2_SR_HARMONIZED/20201211T050211_20201211T050209_T44PLT",
+            "date": "20201211",
+            "source": "GEE",
+            "cloud_percentage": 6.47
+        }
+    }
+}

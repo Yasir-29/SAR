@@ -1,0 +1,20 @@
+{
+    "building_id_overlap": {
+        "TRAIN_VS_VALIDATION": 0,
+        "TRAIN_VS_TEST": 0,
+        "TRAIN_VS_HOLDOUT": 0,
+        "VALIDATION_VS_TEST": 0,
+        "VALIDATION_VS_HOLDOUT": 0,
+        "TEST_VS_HOLDOUT": 0
+    },
+    "event_level_overlap": {
+        "holdout_events": [
+            "TN_SOUTHERN_FLOOD_2023",
+            "TN_BUREVI_2020"
+        ],
+        "train_holdout_event_overlap": 0,
+        "val_holdout_event_overlap": 0,
+        "test_holdout_event_overlap": 0
+    },
+    "leakage_audit_status": "ZERO_LEAKAGE_CONFIRMED"
+}

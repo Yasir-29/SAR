@@ -1,0 +1,16 @@
+{
+    "event_id": "TN_NADA_2016",
+    "event_name": "Cyclone Nada 2016",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20161118T003200_20161118T003225_013989_0168A8_257A",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20161212T003200_20161212T003225_014339_0173A0_B2A0",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    }
+}

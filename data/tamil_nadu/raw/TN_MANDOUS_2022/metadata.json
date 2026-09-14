@@ -1,0 +1,16 @@
+{
+    "event_id": "TN_MANDOUS_2022",
+    "event_name": "Cyclone Mandous 2022",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20221123T003222_20221123T003247_046014_0581C6_581E",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20221217T003220_20221217T003245_046364_058DB3_A74B",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    }
+}

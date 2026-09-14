@@ -1,0 +1,16 @@
+{
+    "event_id": "TN_OCKHI_2017",
+    "event_name": "Cyclone Ockhi 2017",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20171113T003257_20171113T003325_019239_020957_4E88",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20171207T003256_20171207T003324_019589_021456_3D9E",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    }
+}

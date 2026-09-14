@@ -1,0 +1,36 @@
+{
+  "train_samples": 5187,
+  "val_samples": 1111,
+  "test_samples": 1112,
+  "holdout_samples": 438,
+  "sample_building_ids": {
+    "train": [
+      "TN_MANDOUS_2022_022765",
+      "TN_MANDOUS_2022_008249",
+      "TN_FENGAL_2024_064276",
+      "TN_NADA_2016_010764",
+      "TN_VARDAH_2016_000014"
+    ],
+    "val": [
+      "TN_NIVAR_2020_088292",
+      "TN_VARDAH_2016_122057",
+      "TN_NIVAR_2020_039115",
+      "TN_NIVAR_2020_000302",
+      "TN_NIVAR_2020_032578"
+    ],
+    "test": [
+      "TN_MANDOUS_2022_033485",
+      "TN_NADA_2016_002066",
+      "TN_VARDAH_2016_138686",
+      "TN_NADA_2016_091829",
+      "TN_FENGAL_2024_059343"
+    ],
+    "holdout": [
+      "TN_SOUTHERN_FLOOD_2023_146885",
+      "TN_SOUTHERN_FLOOD_2023_158837",
+      "TN_SOUTHERN_FLOOD_2023_147306",
+      "TN_SOUTHERN_FLOOD_2023_158840",
+      "TN_SOUTHERN_FLOOD_2023_147683"
+    ]
+  }
+}

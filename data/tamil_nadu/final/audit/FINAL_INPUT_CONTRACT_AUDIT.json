@@ -1,0 +1,43 @@
+{
+    "channel_count": {
+        "sar_pre": 2,
+        "sar_post": 2,
+        "opt_pre": 4,
+        "opt_post": 4
+    },
+    "channel_ordering": {
+        "sar": [
+            "VV",
+            "VH"
+        ],
+        "opt": [
+            "R",
+            "G",
+            "B",
+            "NIR"
+        ]
+    },
+    "sentinel1_bands": [
+        "VV",
+        "VH"
+    ],
+    "sentinel2_bands": [
+        "B4",
+        "B3",
+        "B2",
+        "B8"
+    ],
+    "pre_post_ordering": "CHRONOLOGICAL_PRE_THEN_POST",
+    "normalization": "TRAIN_ONLY_MEAN_STD",
+    "scaling": "Z_SCORE_NORMALIZATION",
+    "spatial_resolution_meters": 10.0,
+    "chip_size": [
+        32,
+        32
+    ],
+    "datatype": "float32",
+    "nodata_handling": "NAN_TO_ZERO_CLEANING",
+    "geospatial_alignment": "EPSG:4326_TO_UTM",
+    "co_registration": "TIFF_RASTER_BOUNDS_ALIGNED",
+    "input_contract_audit_status": "PASS"
+}

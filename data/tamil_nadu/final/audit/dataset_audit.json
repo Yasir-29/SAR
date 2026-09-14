@@ -1,0 +1,7 @@
+{
+  "master_total": 7848,
+  "unique_buildings": 7848,
+  "discrepancy_note": "Expected ~7,850 records. Verified exactly 7,848 master rows in final_dataset.csv (100% unique building IDs, 0 duplicates, 0 missing values).",
+  "usable_supervised_records": 7848,
+  "audited_at": "2026-09-01T15:15:25.057392+00:00"
+}

@@ -1,0 +1,25 @@
+{
+    "xbd_s12_original_taxonomy": {
+        "0": "no-damage",
+        "1": "minor-damage",
+        "2": "major-damage",
+        "3": "destroyed"
+    },
+    "tamil_nadu_taxonomy": {
+        "0": "INTACT",
+        "1": "DAMAGED",
+        "2": "DESTROYED"
+    },
+    "mapping_rules": {
+        "no-damage": 0,
+        "minor-damage": 1,
+        "major-damage": 1,
+        "destroyed": 2
+    },
+    "tn_output_index_verification": {
+        "index_0": "INTACT (Verified)",
+        "index_1": "DAMAGED (Verified - maps both minor and major damage)",
+        "index_2": "DESTROYED (Verified)"
+    },
+    "mapping_audit_status": "VERIFIED_CORRECT"
+}

@@ -1,0 +1,3 @@
+product_id,download_time,file_path,checksum,status
+a4079b39-77d9-5dca-af10-0e3a5478f6dc,2026-08-30T23:25:15.871329,xbd-s12/data/xbd_s12/s1/guatemala-volcano_00000000_pre_disaster_s1.tif,MOCKED,CACHED
+b4c733ab-7d8a-5642-950a-679844ff890a,2026-08-30T23:25:15.871725,xbd-s12/data/xbd_s12/s1/guatemala-volcano_00000000_post_disaster_s1.tif,MOCKED,CACHED

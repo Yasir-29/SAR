@@ -1,0 +1,3 @@
+event_a,event_b,number_of_identical_geometries,number_of_near_duplicates,overlap_statistics,interpretation
+TN_VARDAH_2016,TN_CHENNAI_FLOOD_2021,211006,0,Shared: 211006 / 211006 (100.00%),Legitimate overlap. Both events share the same geographic AOI center/bounds and are queried against the same static Google Open Buildings baseline (2023-06-01).
+TN_NIVAR_2020,TN_NADA_2016,109682,0,Shared: 109682 / 109682 (100.00%),Legitimate overlap. Both events share the same geographic AOI center/bounds and are queried against the same static Google Open Buildings baseline (2023-06-01).

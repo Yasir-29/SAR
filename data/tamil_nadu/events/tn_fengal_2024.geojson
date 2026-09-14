@@ -1,0 +1,4767 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "event_id": "TN_FENGAL_2024",
+    "event_title": "Cyclone Fengal 2024",
+    "building_count": 80,
+    "created_at": "2026-09-01T13:40:51.156592+00:00"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00230",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.73039510721206,
+              11.746423311203245
+            ],
+            [
+              79.73072212767944,
+              11.746423311203245
+            ],
+            [
+              79.73072212767944,
+              11.746663937686538
+            ],
+            [
+              79.73039510721206,
+              11.746663937686538
+            ],
+            [
+              79.73039510721206,
+              11.746423311203245
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00230",
+        "osm_id": "900010530",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00231",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76663549773512,
+              11.77197890007785
+            ],
+            [
+              79.76694494555407,
+              11.77197890007785
+            ],
+            [
+              79.76694494555407,
+              11.772277231420288
+            ],
+            [
+              79.76663549773512,
+              11.772277231420288
+            ],
+            [
+              79.76663549773512,
+              11.77197890007785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00231",
+        "osm_id": "900010541",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5552,
+        "prediction_margin": 0.35,
+        "entropy": 0.9936,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00232",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.73706183309011,
+              11.75177586585146
+            ],
+            [
+              79.73730936288177,
+              11.75177586585146
+            ],
+            [
+              79.73730936288177,
+              11.752056091454875
+            ],
+            [
+              79.73706183309011,
+              11.752056091454875
+            ],
+            [
+              79.73706183309011,
+              11.75177586585146
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00232",
+        "osm_id": "900010552",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9991,
+        "prediction_margin": 0.35,
+        "entropy": 0.0071,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00233",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.73958101203324,
+              11.768628902352088
+            ],
+            [
+              79.73996730650406,
+              11.768628902352088
+            ],
+            [
+              79.73996730650406,
+              11.768860736562779
+            ],
+            [
+              79.73958101203324,
+              11.768860736562779
+            ],
+            [
+              79.73958101203324,
+              11.768628902352088
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00233",
+        "osm_id": "900010563",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4646,
+        "prediction_margin": 0.35,
+        "entropy": 1.0611,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00234",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.74911625479712,
+              11.752997058414566
+            ],
+            [
+              79.74936327577126,
+              11.752997058414566
+            ],
+            [
+              79.74936327577126,
+              11.753283503200093
+            ],
+            [
+              79.74911625479712,
+              11.753283503200093
+            ],
+            [
+              79.74911625479712,
+              11.752997058414566
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00234",
+        "osm_id": "900010574",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9992,
+        "prediction_margin": 0.35,
+        "entropy": 0.0068,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00235",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.74525751039864,
+              11.731276456291342
+            ],
+            [
+              79.74549757464568,
+              11.731276456291342
+            ],
+            [
+              79.74549757464568,
+              11.731573163231646
+            ],
+            [
+              79.74525751039864,
+              11.731573163231646
+            ],
+            [
+              79.74525751039864,
+              11.731276456291342
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00235",
+        "osm_id": "900010585",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9953,
+        "prediction_margin": 0.35,
+        "entropy": 0.03,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00236",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.74134097728523,
+              11.743054940988046
+            ],
+            [
+              79.74163777650375,
+              11.743054940988046
+            ],
+            [
+              79.74163777650375,
+              11.743293426447845
+            ],
+            [
+              79.74134097728523,
+              11.743293426447845
+            ],
+            [
+              79.74134097728523,
+              11.743054940988046
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00236",
+        "osm_id": "900010596",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00237",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76830478017862,
+              11.721287889950858
+            ],
+            [
+              79.76868478157058,
+              11.721287889950858
+            ],
+            [
+              79.76868478157058,
+              11.721524064693227
+            ],
+            [
+              79.76830478017862,
+              11.721524064693227
+            ],
+            [
+              79.76830478017862,
+              11.721287889950858
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00237",
+        "osm_id": "900010607",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6127,
+        "prediction_margin": 0.35,
+        "entropy": 0.9298,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00238",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77537880017063,
+              11.756252399975578
+            ],
+            [
+              79.77562737242017,
+              11.756252399975578
+            ],
+            [
+              79.77562737242017,
+              11.756469259856752
+            ],
+            [
+              79.77537880017063,
+              11.756469259856752
+            ],
+            [
+              79.77537880017063,
+              11.756252399975578
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00238",
+        "osm_id": "900010618",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9989,
+        "prediction_margin": 0.35,
+        "entropy": 0.0084,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00239",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.74232674991231,
+              11.750087299275574
+            ],
+            [
+              79.74261211106275,
+              11.750087299275574
+            ],
+            [
+              79.74261211106275,
+              11.750401110294238
+            ],
+            [
+              79.74232674991231,
+              11.750401110294238
+            ],
+            [
+              79.74232674991231,
+              11.750087299275574
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00239",
+        "osm_id": "900010629",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.9985,
+        "prediction_margin": 0.35,
+        "entropy": 0.0116,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00240",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7731829879503,
+              11.724569989183612
+            ],
+            [
+              79.77350183296564,
+              11.724569989183612
+            ],
+            [
+              79.77350183296564,
+              11.724789274785516
+            ],
+            [
+              79.7731829879503,
+              11.724789274785516
+            ],
+            [
+              79.7731829879503,
+              11.724569989183612
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00240",
+        "osm_id": "900010640",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4519,
+        "prediction_margin": 0.35,
+        "entropy": 1.058,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00241",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.73934006312794,
+              11.749140327943305
+            ],
+            [
+              79.73968236495537,
+              11.749140327943305
+            ],
+            [
+              79.73968236495537,
+              11.749355812312373
+            ],
+            [
+              79.73934006312794,
+              11.749355812312373
+            ],
+            [
+              79.73934006312794,
+              11.749140327943305
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00241",
+        "osm_id": "900010651",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6285,
+        "prediction_margin": 0.35,
+        "entropy": 0.9168,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00242",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.74628920376891,
+              11.773115111831988
+            ],
+            [
+              79.74667540016794,
+              11.773115111831988
+            ],
+            [
+              79.74667540016794,
+              11.773415071128614
+            ],
+            [
+              79.74628920376891,
+              11.773415071128614
+            ],
+            [
+              79.74628920376891,
+              11.773115111831988
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00242",
+        "osm_id": "900010662",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6566,
+        "prediction_margin": 0.35,
+        "entropy": 0.8812,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00243",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.77719531168523,
+              11.72175461675876
+            ],
+            [
+              79.77751956687604,
+              11.72175461675876
+            ],
+            [
+              79.77751956687604,
+              11.721991010481888
+            ],
+            [
+              79.77719531168523,
+              11.721991010481888
+            ],
+            [
+              79.77719531168523,
+              11.72175461675876
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00243",
+        "osm_id": "900010673",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6691,
+        "prediction_margin": 0.35,
+        "entropy": 0.8639,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00244",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.73381192863778,
+              11.779234406686859
+            ],
+            [
+              79.73415671377748,
+              11.779234406686859
+            ],
+            [
+              79.73415671377748,
+              11.779487534998184
+            ],
+            [
+              79.73381192863778,
+              11.779487534998184
+            ],
+            [
+              79.73381192863778,
+              11.779234406686859
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00244",
+        "osm_id": "900010684",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "HIGH_RISK_REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00245",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.74458375510288,
+              11.751821128822362
+            ],
+            [
+              79.74493621373394,
+              11.751821128822362
+            ],
+            [
+              79.74493621373394,
+              11.752029290050197
+            ],
+            [
+              79.74458375510288,
+              11.752029290050197
+            ],
+            [
+              79.74458375510288,
+              11.751821128822362
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00245",
+        "osm_id": "900010695",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.715,
+        "prediction_margin": 0.35,
+        "entropy": 0.795,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00246",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.74270800986446,
+              11.764176130661271
+            ],
+            [
+              79.74303976854668,
+              11.764176130661271
+            ],
+            [
+              79.74303976854668,
+              11.764401959919732
+            ],
+            [
+              79.74270800986446,
+              11.764401959919732
+            ],
+            [
+              79.74270800986446,
+              11.764176130661271
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00246",
+        "osm_id": "900010706",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7823,
+        "prediction_margin": 0.35,
+        "entropy": 0.6738,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00247",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.78639240264738,
+              11.751006591636443
+            ],
+            [
+              79.78666985189139,
+              11.751006591636443
+            ],
+            [
+              79.78666985189139,
+              11.751212565356624
+            ],
+            [
+              79.78639240264738,
+              11.751212565356624
+            ],
+            [
+              79.78639240264738,
+              11.751006591636443
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00247",
+        "osm_id": "900010717",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.999,
+        "prediction_margin": 0.35,
+        "entropy": 0.0076,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00248",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76910244461573,
+              11.751875384078012
+            ],
+            [
+              79.76940584897773,
+              11.751875384078012
+            ],
+            [
+              79.76940584897773,
+              11.752158647679092
+            ],
+            [
+              79.76910244461573,
+              11.752158647679092
+            ],
+            [
+              79.76910244461573,
+              11.751875384078012
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00248",
+        "osm_id": "900010728",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6593,
+        "prediction_margin": 0.35,
+        "entropy": 0.8753,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VERIFIED_TN_NIVAR_2020_00249",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7605969101557,
+              11.735924060324942
+            ],
+            [
+              79.76091223575523,
+              11.735924060324942
+            ],
+            [
+              79.76091223575523,
+              11.73620885742755
+            ],
+            [
+              79.7605969101557,
+              11.73620885742755
+            ],
+            [
+              79.7605969101557,
+              11.735924060324942
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "VERIFIED_TN_NIVAR_2020_00249",
+        "osm_id": "900010739",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6081,
+        "prediction_margin": 0.35,
+        "entropy": 0.9381,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "473808828",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7656082,
+              11.7513339
+            ],
+            [
+              79.7659172,
+              11.7511468
+            ],
+            [
+              79.7660412,
+              11.751105
+            ],
+            [
+              79.7664314,
+              11.7510294
+            ],
+            [
+              79.7664497,
+              11.7510811
+            ],
+            [
+              79.7664436,
+              11.7511189
+            ],
+            [
+              79.7663786,
+              11.7511408
+            ],
+            [
+              79.7660838,
+              11.7511965
+            ],
+            [
+              79.7659433,
+              11.7512536
+            ],
+            [
+              79.7656535,
+              11.7514222
+            ],
+            [
+              79.7656082,
+              11.7513339
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "473808828",
+        "osm_id": "473808828",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6594,
+        "prediction_margin": 0.35,
+        "entropy": 0.8769,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "474802325",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7655893,
+              11.7512366
+            ],
+            [
+              79.7656529,
+              11.7512033
+            ],
+            [
+              79.7653686,
+              11.7506833
+            ],
+            [
+              79.7653049,
+              11.7507167
+            ],
+            [
+              79.7655893,
+              11.7512366
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "474802325",
+        "osm_id": "474802325",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6379,
+        "prediction_margin": 0.35,
+        "entropy": 0.9036,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "838475000",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7656587,
+              11.7481633
+            ],
+            [
+              79.7657503,
+              11.7481608
+            ],
+            [
+              79.765741,
+              11.7478195
+            ],
+            [
+              79.7656493,
+              11.7478219
+            ],
+            [
+              79.7656587,
+              11.7481633
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "838475000",
+        "osm_id": "838475000",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5268,
+        "prediction_margin": 0.35,
+        "entropy": 1.0141,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "838475006",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7661495,
+              11.7482171
+            ],
+            [
+              79.7662309,
+              11.7482145
+            ],
+            [
+              79.7662242,
+              11.7480149
+            ],
+            [
+              79.7661428,
+              11.7480175
+            ],
+            [
+              79.7661495,
+              11.7482171
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "838475006",
+        "osm_id": "838475006",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6794,
+        "prediction_margin": 0.35,
+        "entropy": 0.8483,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "838475013",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7678058,
+              11.7485769
+            ],
+            [
+              79.7679245,
+              11.7485725
+            ],
+            [
+              79.7679138,
+              11.7482954
+            ],
+            [
+              79.7677951,
+              11.7482998
+            ],
+            [
+              79.7678058,
+              11.7485769
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "838475013",
+        "osm_id": "838475013",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5899,
+        "prediction_margin": 0.35,
+        "entropy": 0.9553,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "838475028",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7649895,
+              11.7486399
+            ],
+            [
+              79.7651102,
+              11.748638
+            ],
+            [
+              79.7651062,
+              11.7483925
+            ],
+            [
+              79.7649854,
+              11.7483944
+            ],
+            [
+              79.7649895,
+              11.7486399
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "838475028",
+        "osm_id": "838475028",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6338,
+        "prediction_margin": 0.35,
+        "entropy": 0.9066,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "838475067",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7661871,
+              11.7476617
+            ],
+            [
+              79.7662647,
+              11.7476586
+            ],
+            [
+              79.766258,
+              11.7474984
+            ],
+            [
+              79.7661804,
+              11.7475015
+            ],
+            [
+              79.7661871,
+              11.7476617
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "838475067",
+        "osm_id": "838475067",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6679,
+        "prediction_margin": 0.35,
+        "entropy": 0.8627,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "1067561608",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7685159,
+              11.7528494
+            ],
+            [
+              79.768784,
+              11.7530872
+            ],
+            [
+              79.768686,
+              11.7531931
+            ],
+            [
+              79.7684179,
+              11.7529553
+            ],
+            [
+              79.7685159,
+              11.7528494
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "1067561608",
+        "osm_id": "1067561608",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6283,
+        "prediction_margin": 0.35,
+        "entropy": 0.9164,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "1067561609",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7670476,
+              11.7520365
+            ],
+            [
+              79.7668196,
+              11.7520376
+            ],
+            [
+              79.7668198,
+              11.7520796
+            ],
+            [
+              79.7667799,
+              11.7520798
+            ],
+            [
+              79.7667646,
+              11.7520353
+            ],
+            [
+              79.7667954,
+              11.7520252
+            ],
+            [
+              79.766795,
+              11.7519458
+            ],
+            [
+              79.7667601,
+              11.751946
+            ],
+            [
+              79.7667599,
+              11.7519014
+            ],
+            [
+              79.7668551,
+              11.7519009
+            ],
+            [
+              79.766866,
+              11.7519324
+            ],
+            [
+              79.7669184,
+              11.7519321
+            ],
+            [
+              79.7670073,
+              11.7519028
+            ],
+            [
+              79.7670335,
+              11.7519026
+            ],
+            [
+              79.7670331,
+              11.7518186
+            ],
+            [
+              79.7671232,
+              11.7518182
+            ],
+            [
+              79.7671379,
+              11.7518608
+            ],
+            [
+              79.7671381,
+              11.7518995
+            ],
+            [
+              79.7671913,
+              11.7518992
+            ],
+            [
+              79.7671997,
+              11.7519234
+            ],
+            [
+              79.7672406,
+              11.7519098
+            ],
+            [
+              79.7672509,
+              11.7519399
+            ],
+            [
+              79.7672513,
+              11.7520118
+            ],
+            [
+              79.7672498,
+              11.7520118
+            ],
+            [
+              79.7671549,
+              11.7520431
+            ],
+            [
+              79.7671554,
+              11.7521305
+            ],
+            [
+              79.7670481,
+              11.752131
+            ],
+            [
+              79.7670476,
+              11.7520365
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "1067561609",
+        "osm_id": "1067561609",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4821,
+        "prediction_margin": 0.35,
+        "entropy": 1.0509,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "REVIEW",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0000",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76,
+              11.74
+            ],
+            [
+              79.761,
+              11.74
+            ],
+            [
+              79.761,
+              11.741
+            ],
+            [
+              79.76,
+              11.741
+            ],
+            [
+              79.76,
+              11.74
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0000",
+        "osm_id": "osm_way_ind_0000",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5343,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0001",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76010000000001,
+              11.7401
+            ],
+            [
+              79.7611,
+              11.7401
+            ],
+            [
+              79.7611,
+              11.7411
+            ],
+            [
+              79.76010000000001,
+              11.7411
+            ],
+            [
+              79.76010000000001,
+              11.7401
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0001",
+        "osm_id": "osm_way_ind_0001",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0002",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76020000000001,
+              11.7402
+            ],
+            [
+              79.7612,
+              11.7402
+            ],
+            [
+              79.7612,
+              11.7412
+            ],
+            [
+              79.76020000000001,
+              11.7412
+            ],
+            [
+              79.76020000000001,
+              11.7402
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0002",
+        "osm_id": "osm_way_ind_0002",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5833,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0003",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7603,
+              11.7403
+            ],
+            [
+              79.76129999999999,
+              11.7403
+            ],
+            [
+              79.76129999999999,
+              11.741299999999999
+            ],
+            [
+              79.7603,
+              11.741299999999999
+            ],
+            [
+              79.7603,
+              11.7403
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0003",
+        "osm_id": "osm_way_ind_0003",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9307,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0004",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7604,
+              11.740400000000001
+            ],
+            [
+              79.7614,
+              11.740400000000001
+            ],
+            [
+              79.7614,
+              11.7414
+            ],
+            [
+              79.7604,
+              11.7414
+            ],
+            [
+              79.7604,
+              11.740400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0004",
+        "osm_id": "osm_way_ind_0004",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8904,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0005",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76050000000001,
+              11.7405
+            ],
+            [
+              79.7615,
+              11.7405
+            ],
+            [
+              79.7615,
+              11.7415
+            ],
+            [
+              79.76050000000001,
+              11.7415
+            ],
+            [
+              79.76050000000001,
+              11.7405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0005",
+        "osm_id": "osm_way_ind_0005",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0006",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76060000000001,
+              11.7406
+            ],
+            [
+              79.7616,
+              11.7406
+            ],
+            [
+              79.7616,
+              11.7416
+            ],
+            [
+              79.76060000000001,
+              11.7416
+            ],
+            [
+              79.76060000000001,
+              11.7406
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0006",
+        "osm_id": "osm_way_ind_0006",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9757,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0007",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7607,
+              11.7407
+            ],
+            [
+              79.76169999999999,
+              11.7407
+            ],
+            [
+              79.76169999999999,
+              11.7417
+            ],
+            [
+              79.7607,
+              11.7417
+            ],
+            [
+              79.7607,
+              11.7407
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0007",
+        "osm_id": "osm_way_ind_0007",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9462,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0008",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7608,
+              11.7408
+            ],
+            [
+              79.7618,
+              11.7408
+            ],
+            [
+              79.7618,
+              11.7418
+            ],
+            [
+              79.7608,
+              11.7418
+            ],
+            [
+              79.7608,
+              11.7408
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0008",
+        "osm_id": "osm_way_ind_0008",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8448,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0009",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7609,
+              11.7409
+            ],
+            [
+              79.7619,
+              11.7409
+            ],
+            [
+              79.7619,
+              11.7419
+            ],
+            [
+              79.7609,
+              11.7419
+            ],
+            [
+              79.7609,
+              11.7409
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0009",
+        "osm_id": "osm_way_ind_0009",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0010",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76100000000001,
+              11.741
+            ],
+            [
+              79.762,
+              11.741
+            ],
+            [
+              79.762,
+              11.741999999999999
+            ],
+            [
+              79.76100000000001,
+              11.741999999999999
+            ],
+            [
+              79.76100000000001,
+              11.741
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0010",
+        "osm_id": "osm_way_ind_0010",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0011",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7611,
+              11.7411
+            ],
+            [
+              79.76209999999999,
+              11.7411
+            ],
+            [
+              79.76209999999999,
+              11.742099999999999
+            ],
+            [
+              79.7611,
+              11.742099999999999
+            ],
+            [
+              79.7611,
+              11.7411
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0011",
+        "osm_id": "osm_way_ind_0011",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9035,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0012",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7612,
+              11.741200000000001
+            ],
+            [
+              79.76219999999999,
+              11.741200000000001
+            ],
+            [
+              79.76219999999999,
+              11.7422
+            ],
+            [
+              79.7612,
+              11.7422
+            ],
+            [
+              79.7612,
+              11.741200000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0012",
+        "osm_id": "osm_way_ind_0012",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.4838,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0013",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7613,
+              11.7413
+            ],
+            [
+              79.7623,
+              11.7413
+            ],
+            [
+              79.7623,
+              11.7423
+            ],
+            [
+              79.7613,
+              11.7423
+            ],
+            [
+              79.7613,
+              11.7413
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0013",
+        "osm_id": "osm_way_ind_0013",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7981,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0014",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76140000000001,
+              11.7414
+            ],
+            [
+              79.7624,
+              11.7414
+            ],
+            [
+              79.7624,
+              11.7424
+            ],
+            [
+              79.76140000000001,
+              11.7424
+            ],
+            [
+              79.76140000000001,
+              11.7414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0014",
+        "osm_id": "osm_way_ind_0014",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0015",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7615,
+              11.7415
+            ],
+            [
+              79.76249999999999,
+              11.7415
+            ],
+            [
+              79.76249999999999,
+              11.7425
+            ],
+            [
+              79.7615,
+              11.7425
+            ],
+            [
+              79.7615,
+              11.7415
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0015",
+        "osm_id": "osm_way_ind_0015",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9828,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0016",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7616,
+              11.7416
+            ],
+            [
+              79.76259999999999,
+              11.7416
+            ],
+            [
+              79.76259999999999,
+              11.7426
+            ],
+            [
+              79.7616,
+              11.7426
+            ],
+            [
+              79.7616,
+              11.7416
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0016",
+        "osm_id": "osm_way_ind_0016",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DESTROYED",
+        "damage_prediction": "DESTROYED",
+        "confidence": 0.411,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.85,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0017",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7617,
+              11.7417
+            ],
+            [
+              79.7627,
+              11.7417
+            ],
+            [
+              79.7627,
+              11.7427
+            ],
+            [
+              79.7617,
+              11.7427
+            ],
+            [
+              79.7617,
+              11.7417
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0017",
+        "osm_id": "osm_way_ind_0017",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9174,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0018",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76180000000001,
+              11.7418
+            ],
+            [
+              79.7628,
+              11.7418
+            ],
+            [
+              79.7628,
+              11.742799999999999
+            ],
+            [
+              79.76180000000001,
+              11.742799999999999
+            ],
+            [
+              79.76180000000001,
+              11.7418
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0018",
+        "osm_id": "osm_way_ind_0018",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8853,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0019",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76190000000001,
+              11.7419
+            ],
+            [
+              79.7629,
+              11.7419
+            ],
+            [
+              79.7629,
+              11.742899999999999
+            ],
+            [
+              79.76190000000001,
+              11.742899999999999
+            ],
+            [
+              79.76190000000001,
+              11.7419
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0019",
+        "osm_id": "osm_way_ind_0019",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0020",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.762,
+              11.742
+            ],
+            [
+              79.76299999999999,
+              11.742
+            ],
+            [
+              79.76299999999999,
+              11.743
+            ],
+            [
+              79.762,
+              11.743
+            ],
+            [
+              79.762,
+              11.742
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0020",
+        "osm_id": "osm_way_ind_0020",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 0.5688,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0021",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7621,
+              11.7421
+            ],
+            [
+              79.7631,
+              11.7421
+            ],
+            [
+              79.7631,
+              11.7431
+            ],
+            [
+              79.7621,
+              11.7431
+            ],
+            [
+              79.7621,
+              11.7421
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0021",
+        "osm_id": "osm_way_ind_0021",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0022",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7622,
+              11.7422
+            ],
+            [
+              79.7632,
+              11.7422
+            ],
+            [
+              79.7632,
+              11.7432
+            ],
+            [
+              79.7622,
+              11.7432
+            ],
+            [
+              79.7622,
+              11.7422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0022",
+        "osm_id": "osm_way_ind_0022",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8963,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0023",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76230000000001,
+              11.7423
+            ],
+            [
+              79.7633,
+              11.7423
+            ],
+            [
+              79.7633,
+              11.7433
+            ],
+            [
+              79.76230000000001,
+              11.7433
+            ],
+            [
+              79.76230000000001,
+              11.7423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0023",
+        "osm_id": "osm_way_ind_0023",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0024",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7624,
+              11.7424
+            ],
+            [
+              79.76339999999999,
+              11.7424
+            ],
+            [
+              79.76339999999999,
+              11.7434
+            ],
+            [
+              79.7624,
+              11.7434
+            ],
+            [
+              79.7624,
+              11.7424
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0024",
+        "osm_id": "osm_way_ind_0024",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8029,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0025",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7625,
+              11.7425
+            ],
+            [
+              79.7635,
+              11.7425
+            ],
+            [
+              79.7635,
+              11.7435
+            ],
+            [
+              79.7625,
+              11.7435
+            ],
+            [
+              79.7625,
+              11.7425
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0025",
+        "osm_id": "osm_way_ind_0025",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0026",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7626,
+              11.7426
+            ],
+            [
+              79.7636,
+              11.7426
+            ],
+            [
+              79.7636,
+              11.743599999999999
+            ],
+            [
+              79.7626,
+              11.743599999999999
+            ],
+            [
+              79.7626,
+              11.7426
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0026",
+        "osm_id": "osm_way_ind_0026",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6306,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0027",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76270000000001,
+              11.742700000000001
+            ],
+            [
+              79.7637,
+              11.742700000000001
+            ],
+            [
+              79.7637,
+              11.7437
+            ],
+            [
+              79.76270000000001,
+              11.7437
+            ],
+            [
+              79.76270000000001,
+              11.742700000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0027",
+        "osm_id": "osm_way_ind_0027",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.945,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0028",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7628,
+              11.7428
+            ],
+            [
+              79.76379999999999,
+              11.7428
+            ],
+            [
+              79.76379999999999,
+              11.7438
+            ],
+            [
+              79.7628,
+              11.7438
+            ],
+            [
+              79.7628,
+              11.7428
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0028",
+        "osm_id": "osm_way_ind_0028",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.73,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0029",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7629,
+              11.7429
+            ],
+            [
+              79.76389999999999,
+              11.7429
+            ],
+            [
+              79.76389999999999,
+              11.7439
+            ],
+            [
+              79.7629,
+              11.7439
+            ],
+            [
+              79.7629,
+              11.7429
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0029",
+        "osm_id": "osm_way_ind_0029",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.746,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0030",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.763,
+              11.743
+            ],
+            [
+              79.764,
+              11.743
+            ],
+            [
+              79.764,
+              11.744
+            ],
+            [
+              79.763,
+              11.744
+            ],
+            [
+              79.763,
+              11.743
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0030",
+        "osm_id": "osm_way_ind_0030",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0031",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76310000000001,
+              11.7431
+            ],
+            [
+              79.7641,
+              11.7431
+            ],
+            [
+              79.7641,
+              11.7441
+            ],
+            [
+              79.76310000000001,
+              11.7441
+            ],
+            [
+              79.76310000000001,
+              11.7431
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0031",
+        "osm_id": "osm_way_ind_0031",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9264,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0032",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76320000000001,
+              11.7432
+            ],
+            [
+              79.7642,
+              11.7432
+            ],
+            [
+              79.7642,
+              11.7442
+            ],
+            [
+              79.76320000000001,
+              11.7442
+            ],
+            [
+              79.76320000000001,
+              11.7432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0032",
+        "osm_id": "osm_way_ind_0032",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0033",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7633,
+              11.7433
+            ],
+            [
+              79.76429999999999,
+              11.7433
+            ],
+            [
+              79.76429999999999,
+              11.744299999999999
+            ],
+            [
+              79.7633,
+              11.744299999999999
+            ],
+            [
+              79.7633,
+              11.7433
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0033",
+        "osm_id": "osm_way_ind_0033",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6789,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0034",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7634,
+              11.7434
+            ],
+            [
+              79.7644,
+              11.7434
+            ],
+            [
+              79.7644,
+              11.744399999999999
+            ],
+            [
+              79.7634,
+              11.744399999999999
+            ],
+            [
+              79.7634,
+              11.7434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0034",
+        "osm_id": "osm_way_ind_0034",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9735,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0035",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76350000000001,
+              11.743500000000001
+            ],
+            [
+              79.7645,
+              11.743500000000001
+            ],
+            [
+              79.7645,
+              11.7445
+            ],
+            [
+              79.76350000000001,
+              11.7445
+            ],
+            [
+              79.76350000000001,
+              11.743500000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0035",
+        "osm_id": "osm_way_ind_0035",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0036",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76360000000001,
+              11.7436
+            ],
+            [
+              79.7646,
+              11.7436
+            ],
+            [
+              79.7646,
+              11.7446
+            ],
+            [
+              79.76360000000001,
+              11.7446
+            ],
+            [
+              79.76360000000001,
+              11.7436
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0036",
+        "osm_id": "osm_way_ind_0036",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8292,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0037",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7637,
+              11.7437
+            ],
+            [
+              79.76469999999999,
+              11.7437
+            ],
+            [
+              79.76469999999999,
+              11.7447
+            ],
+            [
+              79.7637,
+              11.7447
+            ],
+            [
+              79.7637,
+              11.7437
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0037",
+        "osm_id": "osm_way_ind_0037",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "DAMAGED",
+        "damage_prediction": "DAMAGED",
+        "confidence": 1.0,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.1,
+        "prob_damaged": 0.85,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0038",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7638,
+              11.7438
+            ],
+            [
+              79.7648,
+              11.7438
+            ],
+            [
+              79.7648,
+              11.7448
+            ],
+            [
+              79.7638,
+              11.7448
+            ],
+            [
+              79.7638,
+              11.7438
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0038",
+        "osm_id": "osm_way_ind_0038",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9137,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0039",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7639,
+              11.7439
+            ],
+            [
+              79.7649,
+              11.7439
+            ],
+            [
+              79.7649,
+              11.7449
+            ],
+            [
+              79.7639,
+              11.7449
+            ],
+            [
+              79.7639,
+              11.7439
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0039",
+        "osm_id": "osm_way_ind_0039",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8976,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0040",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76400000000001,
+              11.744
+            ],
+            [
+              79.765,
+              11.744
+            ],
+            [
+              79.765,
+              11.745
+            ],
+            [
+              79.76400000000001,
+              11.745
+            ],
+            [
+              79.76400000000001,
+              11.744
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0040",
+        "osm_id": "osm_way_ind_0040",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8471,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0041",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7641,
+              11.7441
+            ],
+            [
+              79.76509999999999,
+              11.7441
+            ],
+            [
+              79.76509999999999,
+              11.745099999999999
+            ],
+            [
+              79.7641,
+              11.745099999999999
+            ],
+            [
+              79.7641,
+              11.7441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0041",
+        "osm_id": "osm_way_ind_0041",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.7963,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0042",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7642,
+              11.744200000000001
+            ],
+            [
+              79.7652,
+              11.744200000000001
+            ],
+            [
+              79.7652,
+              11.7452
+            ],
+            [
+              79.7642,
+              11.7452
+            ],
+            [
+              79.7642,
+              11.744200000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0042",
+        "osm_id": "osm_way_ind_0042",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9374,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0043",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7643,
+              11.7443
+            ],
+            [
+              79.7653,
+              11.7443
+            ],
+            [
+              79.7653,
+              11.7453
+            ],
+            [
+              79.7643,
+              11.7453
+            ],
+            [
+              79.7643,
+              11.7443
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0043",
+        "osm_id": "osm_way_ind_0043",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.6005,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0044",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76440000000001,
+              11.7444
+            ],
+            [
+              79.7654,
+              11.7444
+            ],
+            [
+              79.7654,
+              11.7454
+            ],
+            [
+              79.76440000000001,
+              11.7454
+            ],
+            [
+              79.76440000000001,
+              11.7444
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0044",
+        "osm_id": "osm_way_ind_0044",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9748,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0045",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7645,
+              11.7445
+            ],
+            [
+              79.76549999999999,
+              11.7445
+            ],
+            [
+              79.76549999999999,
+              11.7455
+            ],
+            [
+              79.7645,
+              11.7455
+            ],
+            [
+              79.7645,
+              11.7445
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0045",
+        "osm_id": "osm_way_ind_0045",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8325,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0046",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7646,
+              11.7446
+            ],
+            [
+              79.76559999999999,
+              11.7446
+            ],
+            [
+              79.76559999999999,
+              11.7456
+            ],
+            [
+              79.7646,
+              11.7456
+            ],
+            [
+              79.7646,
+              11.7446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0046",
+        "osm_id": "osm_way_ind_0046",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.8016,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0047",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7647,
+              11.7447
+            ],
+            [
+              79.7657,
+              11.7447
+            ],
+            [
+              79.7657,
+              11.7457
+            ],
+            [
+              79.7647,
+              11.7457
+            ],
+            [
+              79.7647,
+              11.7447
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0047",
+        "osm_id": "osm_way_ind_0047",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.5795,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0048",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76480000000001,
+              11.7448
+            ],
+            [
+              79.7658,
+              11.7448
+            ],
+            [
+              79.7658,
+              11.7458
+            ],
+            [
+              79.76480000000001,
+              11.7458
+            ],
+            [
+              79.76480000000001,
+              11.7448
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0048",
+        "osm_id": "osm_way_ind_0048",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.9942,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0049",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.76490000000001,
+              11.7449
+            ],
+            [
+              79.7659,
+              11.7449
+            ],
+            [
+              79.7659,
+              11.745899999999999
+            ],
+            [
+              79.76490000000001,
+              11.745899999999999
+            ],
+            [
+              79.76490000000001,
+              11.7449
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0049",
+        "osm_id": "osm_way_ind_0049",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.909,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "INDEPENDENT_TN_BLD_0050",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.765,
+              11.745000000000001
+            ],
+            [
+              79.76599999999999,
+              11.745000000000001
+            ],
+            [
+              79.76599999999999,
+              11.746
+            ],
+            [
+              79.765,
+              11.746
+            ],
+            [
+              79.765,
+              11.745000000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "building_id": "INDEPENDENT_TN_BLD_0050",
+        "osm_id": "osm_way_ind_0050",
+        "event_id": "TN_FENGAL_2024",
+        "prediction": "INTACT",
+        "damage_prediction": "INTACT",
+        "confidence": 0.958,
+        "prediction_margin": 0.35,
+        "entropy": 0.45,
+        "domain_shift_score": 0.1,
+        "prob_intact": 0.85,
+        "prob_damaged": 0.1,
+        "prob_destroyed": 0.05,
+        "coverage_ratio": 1.2,
+        "pre_product_id": "S2A_MSIL2A_20201114_TCI",
+        "post_product_id": "S2B_MSIL2A_20201129_TCI",
+        "s1_pre_id": "S1A_IW_GRDH_1SDV_20201115_PRE",
+        "s1_post_id": "S1A_IW_GRDH_1SDV_20201127_POST",
+        "s2_pre_id": "S2A_MSIL2A_20201114_TCI",
+        "s2_post_id": "S2B_MSIL2A_20201129_TCI",
+        "pre_date": "2020-11-15T00:24:12Z",
+        "post_date": "2020-11-27T00:24:13Z",
+        "temporal_delta_days": 12,
+        "review_status": "AUTOMATIC_CANDIDATE",
+        "model_version": "Phase 8.4 Champion",
+        "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db"
+      }
+    }
+  ]
+}

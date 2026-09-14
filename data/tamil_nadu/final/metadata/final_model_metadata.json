@@ -1,0 +1,25 @@
+{
+    "model_name": "Tamil Nadu Building Damage Assessment \u2014 Phase 9",
+    "checkpoint": "tamil_nadu_phase9_best.pt",
+    "sha256": "82eaaf8ddd021652211e544799346abb3a7c94b20e29420a4c1866186114fbbd",
+    "status": "CERTIFIED_PRODUCTION",
+    "research_freeze": "PHASE_11",
+    "production_model": "PHASE_9",
+    "classes": {
+        "0": "INTACT",
+        "1": "DAMAGED",
+        "2": "DESTROYED"
+    },
+    "test_size": 1112,
+    "holdout_size": 438,
+    "test_accuracy": 0.5782,
+    "test_balanced_accuracy": 0.3601,
+    "test_macro_f1": 0.331,
+    "test_damaged_recall": 0.2786,
+    "test_destroyed_recall": 0.1622,
+    "holdout_accuracy": 0.5708,
+    "holdout_balanced_accuracy": 0.3104,
+    "holdout_macro_f1": 0.3001,
+    "holdout_damaged_recall": 0.2326,
+    "holdout_destroyed_recall": 0.0714
+}

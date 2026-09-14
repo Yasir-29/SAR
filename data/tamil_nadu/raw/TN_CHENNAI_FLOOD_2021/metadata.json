@@ -1,0 +1,30 @@
+{
+    "event_id": "TN_CHENNAI_FLOOD_2021",
+    "event_name": "Chennai Floods 2021",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20211023T003148_20211023T003213_040239_04C461_42A6",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20211116T003147_20211116T003212_040589_04D094_DB41",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    },
+    "sentinel2": {
+        "pre": {
+            "product_id": "COPERNICUS/S2_SR_HARMONIZED/20211027T045911_20211027T050927_T44PMV",
+            "date": "20211027",
+            "source": "GEE",
+            "cloud_percentage": 12.7
+        },
+        "post": {
+            "product_id": "COPERNICUS/S2_SR_HARMONIZED/20211206T050201_20211206T050201_T44PMV",
+            "date": "20211206",
+            "source": "GEE",
+            "cloud_percentage": 11.47
+        }
+    }
+}

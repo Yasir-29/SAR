@@ -1,0 +1,31 @@
+{
+    "1_Majority_Class_Baseline": {
+        "test_acc": "84.08%",
+        "test_macro_f1": 0.3045,
+        "holdout_acc": "86.99%",
+        "holdout_macro_f1": 0.3101,
+        "destroyed_recall": "0.0%"
+    },
+    "2_Random_Classifier_Baseline": {
+        "test_acc": "33.33%",
+        "test_macro_f1": 0.31,
+        "holdout_acc": "33.33%",
+        "holdout_macro_f1": 0.31,
+        "destroyed_recall": "33.33%"
+    },
+    "3_Unweighted_CE_Baseline": {
+        "test_acc": "84.08%",
+        "test_macro_f1": 0.3045,
+        "holdout_acc": "86.99%",
+        "holdout_macro_f1": 0.3101,
+        "destroyed_recall": "0.0%"
+    },
+    "4_Final_FineTuned_TransferNet": {
+        "test_acc": "57.82%",
+        "test_macro_f1": 0.331,
+        "holdout_acc": "57.08%",
+        "holdout_macro_f1": 0.3001,
+        "test_destroyed_recall": "16.22%",
+        "holdout_destroyed_recall": "7.14%"
+    }
+}

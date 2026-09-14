@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamil Nadu Dual-Model Live Damage Assessment Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0b0f19; color: #fff; }
+        #map { width: 100%; height: calc(100vh - 60px); }
+        .header { height: 60px; background-color: #111827; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; box-sizing: border-box; border-bottom: 2px solid #1f2937; }
+        .title-container { display: flex; align-items: center; gap: 20px; }
+        .title { font-size: 18px; font-weight: bold; color: #3b82f6; }
+        .warning { font-size: 10px; color: #ef4444; max-width: 45%; text-align: right; line-height: 1.3; }
+        .info-panel { padding: 12px; background: rgba(17, 24, 39, 0.95); border: 1px solid #374151; border-radius: 5px; color: #f3f4f6; max-width: 300px; font-size: 13px; }
+        .info-panel h4 { margin: 0 0 8px 0; color: #3b82f6; }
+        .legend-item { display: flex; align-items: center; margin-bottom: 5px; }
+        .color-box { width: 12px; height: 12px; margin-right: 8px; border-radius: 3px; }
+        select { background: #1f2937; color: #fff; border: 1px solid #4b5563; padding: 5px 10px; border-radius: 4px; font-size: 13px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title-container">
+            <div class="title">CDSE Live Dual-Model Inference</div>
+            <div>
+                <label for="modelSelect" style="font-size: 13px; font-weight: 500; margin-right: 5px;">Active Model:</label>
+                <select id="modelSelect" onchange="updateMap()">
+                    <option value="6.0">Model A: Phase 6.0 Baseline (Dual-Stream CNN)</option>
+                    <option value="6.3">Model B: Phase 6.3 Transfer (ResNet34)</option>
+                </select>
+            </div>
+        </div>
+        <div class="warning">
+            WARNING: These predictions are experimental automated assessments. The current Tamil Nadu training labels are LEGACY_UNVERIFIED and therefore the system has not been validated for authoritative real-world building damage assessment.
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="predictions_data.js"></script>
+    <script>
+        var map = L.map('map').setView([11.75, 79.76], 13);
+        
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+        }).addTo(map);
+
+        var geojsonLayer = null;
+
+        function getColor(status, prediction) {
+            if (status === 'DATA_REVIEW' || status === 'TEMPORAL_REVIEW') return '#000000';
+            if (status === 'HIGH_RISK_REVIEW') return '#ef4444'; // Destroyed / High Risk
+            if (status === 'REVIEW') return '#eab308'; // Low confidence Review
+            
+            switch(prediction) {
+                case 'INTACT': return '#10b981';
+                case 'DAMAGED': return '#f59e0b';
+                case 'DESTROYED': return '#ef4444';
+                default: return '#9ca3af';
+            }
+        }
+
+        function updateMap() {
+            var selectedModel = document.getElementById('modelSelect').value;
+            if (geojsonLayer) {
+                map.removeLayer(geojsonLayer);
+            }
+            
+            geojsonLayer = L.geoJSON(predictionsData, {
+                pointToLayer: function(feature, latlng) {
+                    var props = feature.properties;
+                    var pred = selectedModel === '6.0' ? props.prediction_A : props.prediction_B;
+                    var status = selectedModel === '6.0' ? props.status_A : props.status_B;
+                    
+                    return L.circleMarker(latlng, {
+                        radius: 8,
+                        fillColor: getColor(status, pred),
+                        color: '#fff',
+                        weight: 1.5,
+                        opacity: 1,
+                        fillOpacity: 0.85
+                    });
+                },
+                onEachFeature: function(feature, layer) {
+                    var props = feature.properties;
+                    var isA = selectedModel === '6.0';
+                    var pred = isA ? props.prediction_A : props.prediction_B;
+                    var conf = isA ? props.confidence_A : props.confidence_B;
+                    var status = isA ? props.status_A : props.status_B;
+                    
+                    var p_int = isA ? props.prob_intact_A : props.prob_intact_B;
+                    var p_dmg = isA ? props.prob_damaged_A : props.prob_damaged_B;
+                    var p_dst = isA ? props.prob_destroyed_A : props.prob_destroyed_B;
+
+                    var popupHtml = `
+                        <div style="font-family: Arial, sans-serif; color: #1f2937; line-height: 1.4;">
+                            <h4 style="margin: 0 0 8px 0; color: #1e3a8a;">Building ID: ${props.building_id}</h4>
+                            <b>Model version:</b> ${selectedModel === '6.0' ? '6.0 Baseline' : '6.3 xBD-S12 Transfer'}<br/>
+                            <b>Prediction:</b> ${pred}<br/>
+                            <b>Confidence:</b> ${(conf * 100).toFixed(1)}%<br/>
+                            <b>Decision status:</b> <span style="color:${getColor(status, pred)}">${status}</span><br/>
+                            <hr style="margin: 8px 0; border: 0; border-top: 1px solid #e5e7eb;"/>
+                            <b>Probabilities:</b><br/>
+                            - Intact: ${(p_int * 100).toFixed(1)}%<br/>
+                            - Damaged: ${(p_dmg * 100).toFixed(1)}%<br/>
+                            - Destroyed: ${(p_dst * 100).toFixed(1)}%<br/>
+                            <hr style="margin: 8px 0; border: 0; border-top: 1px solid #e5e7eb;"/>
+                            <b>PRE Image:</b> ${props.pre_scene}<br/>
+                            <b>POST Image:</b> ${props.post_scene}<br/>
+                            <b>Time:</b> ${props.prediction_time}<br/>
+                            <div style="font-size: 8px; color: #ef4444; margin-top: 8px; line-height: 1.2;">
+                                Predictions are experimental. Training labels are LEGACY_UNVERIFIED.
+                            </div>
+                        </div>
+                    `;
+                    layer.bindPopup(popupHtml);
+                }
+            }).addTo(map);
+        }
+
+        // Initialize Map
+        updateMap();
+
+        // Add Legend Panel
+        var legend = L.control({position: 'topright'});
+        legend.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'info-panel');
+            div.innerHTML = `
+                <h4>Damage Legend</h4>
+                <div class="legend-item"><div class="color-box" style="background:#10b981;"></div>Intact</div>
+                <div class="legend-item"><div class="color-box" style="background:#f59e0b;"></div>Damaged</div>
+                <div class="legend-item"><div class="color-box" style="background:#ef4444;"></div>Destroyed / High Risk</div>
+                <div class="legend-item"><div class="color-box" style="background:#eab308;"></div>Low Confidence Review</div>
+                <div class="legend-item"><div class="color-box" style="background:#000000;"></div>Invalid Data / Temporal</div>
+            `;
+            return div;
+        };
+        legend.addTo(map);
+    </script>
+</body>
+</html>

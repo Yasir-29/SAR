@@ -1,0 +1,30 @@
+{
+    "event_id": "TN_BUREVI_2020",
+    "event_name": "Cyclone Burevi 2020",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20201121T003256_20201121T003321_035339_0420EC_79D9",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1B_IW_GRDH_1SDV_20201209T003225_20201209T003250_024618_02ED66_ECB6",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    },
+    "sentinel2": {
+        "pre": {
+            "product_id": "COPERNICUS/S2_SR_HARMONIZED/20201109T051029_20201109T052134_T43PHK",
+            "date": "20201109",
+            "source": "GEE",
+            "cloud_percentage": 1.09
+        },
+        "post": {
+            "product_id": "COPERNICUS/S2_SR_HARMONIZED/20201209T051209_20201209T051421_T43PHK",
+            "date": "20201209",
+            "source": "GEE",
+            "cloud_percentage": 17.37
+        }
+    }
+}

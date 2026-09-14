@@ -1,0 +1,34 @@
+{
+    "pretrained_checkpoint_path": "archive/phase6_3/models/best_xbd_s12_transfer_model.pt",
+    "checkpoint_sha256": "ad47460e9b6f36f9681131100ddf3bf9117f36f95ab704e659d8be516450058d",
+    "source_architecture": "SiameseUnetLateFusion / ResNet34 xBD-S12",
+    "target_architecture": "TamilNaduTransferNet (Dual-ResNet34 + Fusion MLP)",
+    "tensors_available": 436,
+    "tensors_successfully_transferred": 436,
+    "tensors_not_transferred": 0,
+    "shape_mismatches": 0,
+    "newly_initialized_layers": [],
+    "number_of_pretrained_parameters": 42794315,
+    "number_of_newly_initialized_parameters": 0,
+    "percentage_of_parameters_transferred": 100.0,
+    "before_training_parameter_hash": "3243b47fe41bcbd9bf44c99f439ac960367142a465966412e09b376ac7718a5d",
+    "after_training_parameter_hash": "b1a883ea71a7f13e6591ba9b0444e2fcd68ffb8a540db10fa2a77877929ae655",
+    "learning_rate_configuration": {
+        "backbone_lr": 0.0001,
+        "head_lr": 0.001,
+        "optimizer": "AdamW",
+        "weight_decay": 0.0001
+    },
+    "frozen_unfrozen_layers": {
+        "pre_encoder": "unfrozen (fine-tuned)",
+        "post_encoder": "unfrozen (fine-tuned)",
+        "head": "unfrozen (trained)"
+    },
+    "fine_tuning_configuration": {
+        "batch_size": 32,
+        "max_epochs": 20,
+        "scheduler": "CosineAnnealingLR",
+        "early_stopping_patience": 5
+    },
+    "transfer_audit_status": "PASS"
+}

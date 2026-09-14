@@ -1,0 +1,33 @@
+{
+    "event_id": "TN_MICHAUNG_2023",
+    "event_name": "Cyclone Michaung 2023",
+    "state": "Tamil Nadu",
+    "disaster_type": "extreme rainfall",
+    "impact_date": "2023-12-04",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20231130T003201_20231130T003226_051439_06353D_343D",
+            "date": "2023-11-30",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20240117T003158_20240117T003223_052139_064D5D_F7B4",
+            "date": "2024-01-17",
+            "source": "GEE"
+        }
+    },
+    "sentinel2": {
+        "pre": {
+            "product_id": "unavailable",
+            "date": "unavailable",
+            "source": "unavailable",
+            "cloud_percentage": "unavailable"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S2_SR_HARMONIZED/20240115T050141_20240115T051314_T44PMV",
+            "date": "2024-01-15",
+            "source": "GEE",
+            "cloud_percentage": 14.281286
+        }
+    }
+}

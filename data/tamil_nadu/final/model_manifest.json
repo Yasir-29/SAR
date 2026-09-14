@@ -1,0 +1,28 @@
+{
+  "model_name": "DualStreamUNet",
+  "checkpoint_path": "data/tamil_nadu/final/checkpoints/tamil_nadu_dual_stream_unet.pt",
+  "checkpoint_sha256": "66246bc471992f319c98ec40ef8782d031084ac35edefab47ef8efac090b8d42",
+  "total_parameters": 3139142,
+  "trained_from_scratch": true,
+  "input_streams": {
+    "stream_a": "Sentinel-1 SAR (PRE + POST VV/VH, 4 channels)",
+    "stream_b": "Sentinel-2 Optical (PRE + POST RGB, 6 channels)"
+  },
+  "bottleneck_fusion": "Multimodal Concatenation & Conv2D (512 -> 256 channels at 4x4)",
+  "decoder": "U-Net Transpose Convolution Upsampling with Skip Connections",
+  "output_heads": {
+    "spatial_segmentation": "Conv2d(64 -> 3, 32x32 resolution)",
+    "building_classification": "MaskGuidedROIPooling + Linear(64 -> 64 -> 3)"
+  },
+  "optimizer": "AdamW (lr=1e-3, weight_decay=1e-4)",
+  "scheduler": "CosineAnnealingLR (T_max=20)",
+  "epochs": 20,
+  "batch_size": 64,
+  "loss": "Focal Loss + Spatial Cross-Entropy",
+  "class_weights": [
+    0.39637780834479597,
+    2.643730886850153,
+    10.11111111111111
+  ],
+  "device": "mps"
+}

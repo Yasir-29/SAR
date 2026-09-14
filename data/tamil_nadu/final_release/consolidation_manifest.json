@@ -1,0 +1,18 @@
+{
+  "status": "PROJECT_FINAL_PRODUCTION_BUILD",
+  "model_name": "TamilNaduMultimodalChampion",
+  "architecture": "MultimodalSiameseNetwork",
+  "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db",
+  "single_start_script": "./start.sh",
+  "backend_url": "http://127.0.0.1:5001",
+  "frontend_url": "http://localhost:3000",
+  "map_basemap": "CARTO Dark Matter Raster Tiles (Token-Free)",
+  "osm_overpass_endpoint": "https://overpass-api.de/api/interpreter",
+  "sensors": [
+    "Sentinel-1 SAR (VV/VH)",
+    "Sentinel-2 Optical (RGB)"
+  ],
+  "temperature_scaling_T": 0.5,
+  "calibrated_ece": 0.0815,
+  "consolidated_at": "2026-09-01T09:12:13.702082+00:00"
+}

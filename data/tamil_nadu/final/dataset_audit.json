@@ -1,0 +1,33 @@
+{
+  "master_total": 7848,
+  "eligible_total": 7848,
+  "excluded_total": 0,
+  "exclusion_reasons": {},
+  "train_total": 5187,
+  "validation_total": 1111,
+  "test_total": 1112,
+  "holdout_total": 438,
+  "class_distribution": {
+    "train": {
+      "INTACT": 4362,
+      "DAMAGED": 654,
+      "DESTROYED": 171
+    },
+    "val": {
+      "INTACT": 934,
+      "DAMAGED": 140,
+      "DESTROYED": 37
+    },
+    "test": {
+      "INTACT": 935,
+      "DAMAGED": 140,
+      "DESTROYED": 37
+    },
+    "holdout": {
+      "INTACT": 381,
+      "DAMAGED": 43,
+      "DESTROYED": 14
+    }
+  },
+  "audited_at": "2026-09-01T14:07:54.131025+00:00"
+}

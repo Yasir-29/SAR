@@ -1,0 +1,46 @@
+{
+    "building_id": "TN_MANDOUS_2022_010416",
+    "source_building_id": "7M42J529+RCPJ",
+    "event_id": "TN_MANDOUS_2022",
+    "event_name": "Cyclone Mandous 2022",
+    "district": "Chengalpattu",
+    "state": "Tamil Nadu",
+    "disaster_type": "cyclones",
+    "impact_date": "2022-12-09",
+    "building_area_m2": 7138.14,
+    "building_source": "google_open_buildings",
+    "s1_pre_date": "1SDV",
+    "s1_post_date": "1SDV",
+    "s2_pre_date": "none",
+    "s2_post_date": "none",
+    "s1_available": true,
+    "s2_available": false,
+    "optical_available": false,
+    "chip_size": 32,
+    "resolution": 10.0,
+    "crs": "EPSG:32644",
+    "s1_pre_valid": 100.0,
+    "s1_post_valid": 100.0,
+    "s2_pre_valid": 0.0,
+    "s2_post_valid": 0.0,
+    "sar_pre_shape": [
+        2,
+        32,
+        32
+    ],
+    "sar_post_shape": [
+        2,
+        32,
+        32
+    ],
+    "optical_pre_shape": null,
+    "optical_post_shape": null,
+    "mask_shape": [
+        32,
+        32
+    ],
+    "building_mask_fraction": 0.087890625,
+    "sample_type": "SAR_ONLY",
+    "geometry_hash": "28089f1609a91686",
+    "existing_label_unverified": "none"
+}

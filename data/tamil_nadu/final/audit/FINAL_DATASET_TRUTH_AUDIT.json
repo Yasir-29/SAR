@@ -1,0 +1,31 @@
+{
+  "master_dataset_path": "data/tamil_nadu/final_dataset.csv",
+  "total_records": 7848,
+  "unique_building_ids": 7848,
+  "duplicate_rows": 0,
+  "missing_values": 0,
+  "class_distribution": {
+    "INTACT": 6612,
+    "DAMAGED": 977,
+    "DESTROYED": 259
+  },
+  "event_distribution": {
+    "TN_NADA_2016": 1053,
+    "TN_GAJA_2018": 1052,
+    "TN_MANDOUS_2022": 1050,
+    "TN_VARDAH_2016": 1043,
+    "TN_OCKHI_2017": 1040,
+    "TN_FENGAL_2024": 1033,
+    "TN_NIVAR_2020": 1025,
+    "TN_SOUTHERN_FLOOD_2023": 247,
+    "TN_BUREVI_2020": 191,
+    "TN_CHENNAI_FLOOD_2021": 114
+  },
+  "sar_pre_available": 7848,
+  "sar_post_available": 7848,
+  "optical_pre_available": 1330,
+  "optical_post_available": 1330,
+  "building_mask_available": 7848,
+  "label_source": "OSM Building Footprint Polygons + Copernicus Sentinel-1 SAR & Sentinel-2 Optical Observations",
+  "dataset_truth_verdict": "VERIFIED_REAL_IMAGERY_ZERO_SYNTHETIC_LEAKAGE"
+}

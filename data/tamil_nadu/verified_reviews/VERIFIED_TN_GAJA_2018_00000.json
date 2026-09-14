@@ -1,0 +1,60 @@
+{
+  "building_id": "VERIFIED_TN_GAJA_2018_00000",
+  "osm_id": "900000000",
+  "human_verdict": "CONFIRM DESTROYED",
+  "human_review": "CONFIRM DESTROYED",
+  "reviewer": "operator_test",
+  "review_timestamp": "2026-09-01T14:14:58.527399+00:00",
+  "model_prediction": "INTACT",
+  "model_probabilities": {
+    "INTACT": 0.3801,
+    "DAMAGED": 0.3717,
+    "DESTROYED": 0.2481
+  },
+  "confidence": 0.3801,
+  "margin": 0.0084,
+  "entropy": 1.0814,
+  "domain_shift": 0.5786,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          79.85643630660485,
+          10.76339758313521
+        ],
+        [
+          79.85682132330646,
+          10.76339758313521
+        ],
+        [
+          79.85682132330646,
+          10.763610926833087
+        ],
+        [
+          79.85643630660485,
+          10.763610926833087
+        ],
+        [
+          79.85643630660485,
+          10.76339758313521
+        ]
+      ]
+    ]
+  },
+  "s1_pre_scene": "S1A_IW_GRDH_1SDV_20181110_PRE",
+  "s1_post_scene": "S1A_IW_GRDH_1SDV_20181118_POST",
+  "s2_pre_scene": "S2A_MSIL2A_20181109_TCI",
+  "s2_post_scene": "S2B_MSIL2A_20181119_TCI",
+  "provenance": {
+    "model_name": "TamilNaduMultimodalChampion",
+    "model_version": "phase8_4",
+    "checkpoint_sha256": "f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db",
+    "locked_test_accuracy": "94.00%",
+    "locked_test_macro_f1": "93.51%",
+    "destroyed_recall": "100.0%",
+    "imagery_source": "Copernicus Dataspace Ecosystem (CDSE) / Sentinel-1 & Sentinel-2",
+    "source_mode": "CACHED",
+    "timestamp": "2026-09-01T14:14:58.527382+00:00"
+  }
+}

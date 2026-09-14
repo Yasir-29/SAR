@@ -1,0 +1,182 @@
+{
+    "MODEL_A_Sentinel1_Only": {
+        "accuracy": 59.23,
+        "macro_f1": 0.3393,
+        "weighted_f1": 0.6489,
+        "balanced_accuracy": 37.69,
+        "damaged_recall": 25.71,
+        "destroyed_recall": 21.62,
+        "per_class_recall": [
+            0.6574,
+            0.2571,
+            0.2162
+        ],
+        "confusion_matrix": [
+            [
+                614,
+                189,
+                131
+            ],
+            [
+                88,
+                36,
+                16
+            ],
+            [
+                25,
+                4,
+                8
+            ]
+        ]
+    },
+    "MODEL_B_Sentinel2_Only": {
+        "accuracy": 12.6,
+        "macro_f1": 0.0746,
+        "weighted_f1": 0.0282,
+        "balanced_accuracy": 33.33,
+        "damaged_recall": 100.0,
+        "destroyed_recall": 0.0,
+        "per_class_recall": [
+            0.0,
+            1.0,
+            0.0
+        ],
+        "confusion_matrix": [
+            [
+                0,
+                934,
+                0
+            ],
+            [
+                0,
+                140,
+                0
+            ],
+            [
+                0,
+                37,
+                0
+            ]
+        ]
+    },
+    "MODEL_C_Sentinel1_plus_Sentinel2": {
+        "accuracy": 59.23,
+        "macro_f1": 0.3393,
+        "weighted_f1": 0.6489,
+        "balanced_accuracy": 37.69,
+        "damaged_recall": 25.71,
+        "destroyed_recall": 21.62,
+        "per_class_recall": [
+            0.6574,
+            0.2571,
+            0.2162
+        ],
+        "confusion_matrix": [
+            [
+                614,
+                189,
+                131
+            ],
+            [
+                88,
+                36,
+                16
+            ],
+            [
+                25,
+                4,
+                8
+            ]
+        ]
+    },
+    "MODEL_D_PRE_Only": {
+        "accuracy": 55.54,
+        "macro_f1": 0.3163,
+        "weighted_f1": 0.625,
+        "balanced_accuracy": 34.04,
+        "damaged_recall": 27.14,
+        "destroyed_recall": 13.51,
+        "per_class_recall": [
+            0.6146,
+            0.2714,
+            0.1351
+        ],
+        "confusion_matrix": [
+            [
+                574,
+                218,
+                142
+            ],
+            [
+                79,
+                38,
+                23
+            ],
+            [
+                22,
+                10,
+                5
+            ]
+        ]
+    },
+    "MODEL_E_POST_Only": {
+        "accuracy": 55.54,
+        "macro_f1": 0.3153,
+        "weighted_f1": 0.6258,
+        "balanced_accuracy": 33.63,
+        "damaged_recall": 25.71,
+        "destroyed_recall": 13.51,
+        "per_class_recall": [
+            0.6167,
+            0.2571,
+            0.1351
+        ],
+        "confusion_matrix": [
+            [
+                576,
+                203,
+                155
+            ],
+            [
+                77,
+                36,
+                27
+            ],
+            [
+                25,
+                7,
+                5
+            ]
+        ]
+    },
+    "MODEL_F_PRE_plus_POST": {
+        "accuracy": 59.23,
+        "macro_f1": 0.3393,
+        "weighted_f1": 0.6489,
+        "balanced_accuracy": 37.69,
+        "damaged_recall": 25.71,
+        "destroyed_recall": 21.62,
+        "per_class_recall": [
+            0.6574,
+            0.2571,
+            0.2162
+        ],
+        "confusion_matrix": [
+            [
+                614,
+                189,
+                131
+            ],
+            [
+                88,
+                36,
+                16
+            ],
+            [
+                25,
+                4,
+                8
+            ]
+        ]
+    }
+}

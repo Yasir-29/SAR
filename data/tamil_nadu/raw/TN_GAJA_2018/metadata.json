@@ -1,0 +1,33 @@
+{
+    "event_id": "TN_GAJA_2018",
+    "event_name": "Cyclone Gaja 2018",
+    "state": "Tamil Nadu",
+    "disaster_type": "cyclones",
+    "impact_date": "2018-11-16",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20181108T003213_20181108T003238_024489_02AF7A_4E6C",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20181120T003213_20181120T003238_024664_02B5ED_EB05",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    },
+    "sentinel2": {
+        "pre": {
+            "product_id": "unavailable",
+            "date": "unavailable",
+            "source": "unavailable",
+            "cloud_percentage": "unavailable"
+        },
+        "post": {
+            "product_id": "unavailable",
+            "date": "unavailable",
+            "source": "unavailable",
+            "cloud_percentage": "unavailable"
+        }
+    }
+}

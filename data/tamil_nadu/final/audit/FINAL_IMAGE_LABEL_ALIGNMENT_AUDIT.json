@@ -1,0 +1,373 @@
+{
+    "audited_samples_count": 15,
+    "classes_audited": [
+        "INTACT",
+        "DAMAGED",
+        "DESTROYED"
+    ],
+    "samples": [
+        {
+            "building_id": "TN_SOUTHERN_FLOOD_2023_159693",
+            "event_id": "TN_SOUTHERN_FLOOD_2023",
+            "event_name": "Southern Districts Floods 2023",
+            "label": 0,
+            "label_name": "INTACT",
+            "district": "Tirunelveli",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_SOUTHERN_FLOOD_2023/TN_SOUTHERN_FLOOD_2023_159693/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_SOUTHERN_FLOOD_2023/TN_SOUTHERN_FLOOD_2023_159693/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_NIVAR_2020_078727",
+            "event_id": "TN_NIVAR_2020",
+            "event_name": "Cyclone Nivar 2020",
+            "label": 0,
+            "label_name": "INTACT",
+            "district": "Cuddalore",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_NIVAR_2020/TN_NIVAR_2020_078727/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_NIVAR_2020/TN_NIVAR_2020_078727/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_NADA_2016_011965",
+            "event_id": "TN_NADA_2016",
+            "event_name": "Cyclone Nada 2016",
+            "label": 0,
+            "label_name": "INTACT",
+            "district": "Cuddalore",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_NADA_2016/TN_NADA_2016_011965/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_NADA_2016/TN_NADA_2016_011965/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_FENGAL_2024_013332",
+            "event_id": "TN_FENGAL_2024",
+            "event_name": "Cyclone Fengal 2024",
+            "label": 0,
+            "label_name": "INTACT",
+            "district": "Villupuram",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_FENGAL_2024/TN_FENGAL_2024_013332/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_FENGAL_2024/TN_FENGAL_2024_013332/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_BUREVI_2020_102130",
+            "event_id": "TN_BUREVI_2020",
+            "event_name": "Cyclone Burevi 2020",
+            "label": 0,
+            "label_name": "INTACT",
+            "district": "Thoothukudi",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_BUREVI_2020/TN_BUREVI_2020_102130/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_BUREVI_2020/TN_BUREVI_2020_102130/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_GAJA_2018_008600",
+            "event_id": "TN_GAJA_2018",
+            "event_name": "Cyclone Gaja 2018",
+            "label": 1,
+            "label_name": "DAMAGED",
+            "district": "Nagapattinam",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_GAJA_2018/TN_GAJA_2018_008600/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_GAJA_2018/TN_GAJA_2018_008600/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_SOUTHERN_FLOOD_2023_158847",
+            "event_id": "TN_SOUTHERN_FLOOD_2023",
+            "event_name": "Southern Districts Floods 2023",
+            "label": 1,
+            "label_name": "DAMAGED",
+            "district": "Tirunelveli",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_SOUTHERN_FLOOD_2023/TN_SOUTHERN_FLOOD_2023_158847/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_SOUTHERN_FLOOD_2023/TN_SOUTHERN_FLOOD_2023_158847/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_GAJA_2018_002235",
+            "event_id": "TN_GAJA_2018",
+            "event_name": "Cyclone Gaja 2018",
+            "label": 1,
+            "label_name": "DAMAGED",
+            "district": "Nagapattinam",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_GAJA_2018/TN_GAJA_2018_002235/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_GAJA_2018/TN_GAJA_2018_002235/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_FENGAL_2024_126410",
+            "event_id": "TN_FENGAL_2024",
+            "event_name": "Cyclone Fengal 2024",
+            "label": 1,
+            "label_name": "DAMAGED",
+            "district": "Villupuram",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_FENGAL_2024/TN_FENGAL_2024_126410/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_FENGAL_2024/TN_FENGAL_2024_126410/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_VARDAH_2016_203146",
+            "event_id": "TN_VARDAH_2016",
+            "event_name": "Cyclone Vardah 2016",
+            "label": 1,
+            "label_name": "DAMAGED",
+            "district": "Chennai",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_VARDAH_2016/TN_VARDAH_2016_203146/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_VARDAH_2016/TN_VARDAH_2016_203146/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_NIVAR_2020_069694",
+            "event_id": "TN_NIVAR_2020",
+            "event_name": "Cyclone Nivar 2020",
+            "label": 2,
+            "label_name": "DESTROYED",
+            "district": "Cuddalore",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_NIVAR_2020/TN_NIVAR_2020_069694/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_NIVAR_2020/TN_NIVAR_2020_069694/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_GAJA_2018_048509",
+            "event_id": "TN_GAJA_2018",
+            "event_name": "Cyclone Gaja 2018",
+            "label": 2,
+            "label_name": "DESTROYED",
+            "district": "Nagapattinam",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_GAJA_2018/TN_GAJA_2018_048509/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_GAJA_2018/TN_GAJA_2018_048509/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_VARDAH_2016_031778",
+            "event_id": "TN_VARDAH_2016",
+            "event_name": "Cyclone Vardah 2016",
+            "label": 2,
+            "label_name": "DESTROYED",
+            "district": "Chennai",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_VARDAH_2016/TN_VARDAH_2016_031778/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_VARDAH_2016/TN_VARDAH_2016_031778/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_NIVAR_2020_024958",
+            "event_id": "TN_NIVAR_2020",
+            "event_name": "Cyclone Nivar 2020",
+            "label": 2,
+            "label_name": "DESTROYED",
+            "district": "Cuddalore",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_NIVAR_2020/TN_NIVAR_2020_024958/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_NIVAR_2020/TN_NIVAR_2020_024958/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        },
+        {
+            "building_id": "TN_OCKHI_2017_069315",
+            "event_id": "TN_OCKHI_2017",
+            "event_name": "Cyclone Ockhi 2017",
+            "label": 2,
+            "label_name": "DESTROYED",
+            "district": "Kanyakumari",
+            "sar_pre_path": "data/tamil_nadu/chips_scaled//TN_OCKHI_2017/TN_OCKHI_2017_069315/sar_pre.npy",
+            "sar_post_path": "data/tamil_nadu/chips_scaled//TN_OCKHI_2017/TN_OCKHI_2017_069315/sar_post.npy",
+            "sar_pre_exists": true,
+            "sar_post_exists": true,
+            "building_mask_exists": true,
+            "sar_pre_shape": [
+                2,
+                32,
+                32
+            ],
+            "sar_post_shape": [
+                2,
+                32,
+                32
+            ],
+            "alignment_verdict": "ALIGNED_AND_VALIDATED"
+        }
+    ],
+    "corrupted_chips_found": 0,
+    "missing_files_found": 0,
+    "alignment_audit_status": "PASS"
+}

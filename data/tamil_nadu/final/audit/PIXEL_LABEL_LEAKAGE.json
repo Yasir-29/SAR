@@ -1,0 +1,5 @@
+{
+  "RandomForest_Accuracy": 0.8345,
+  "LogisticRegression_Accuracy": 0.8408,
+  "DecisionTree_Accuracy": 0.7113
+}

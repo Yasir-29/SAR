@@ -1,0 +1,33 @@
+{
+    "event_id": "TN_VARDAH_2016",
+    "event_name": "Cyclone Vardah 2016",
+    "state": "Tamil Nadu",
+    "disaster_type": "cyclones",
+    "impact_date": "2016-12-12",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20161130T003135_20161130T003200_014164_016E0D_675E",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1B_IW_GRDH_1SDV_20161218T003051_20161218T003125_003443_005E20_4C67",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    },
+    "sentinel2": {
+        "pre": {
+            "product_id": "unavailable",
+            "date": "unavailable",
+            "source": "unavailable",
+            "cloud_percentage": "unavailable"
+        },
+        "post": {
+            "product_id": "unavailable",
+            "date": "unavailable",
+            "source": "unavailable",
+            "cloud_percentage": "unavailable"
+        }
+    }
+}

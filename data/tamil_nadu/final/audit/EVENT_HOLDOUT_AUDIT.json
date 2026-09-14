@@ -1,0 +1,12 @@
+{
+  "train_event_count": 8,
+  "holdout_event_count": 2,
+  "holdout_events": [
+    "TN_BUREVI_2020",
+    "TN_SOUTHERN_FLOOD_2023"
+  ],
+  "event_overlap_count": 0,
+  "building_id_train_test_overlap": 0,
+  "building_id_train_holdout_overlap": 0,
+  "status": "ZERO_EVENT_LEAKAGE"
+}

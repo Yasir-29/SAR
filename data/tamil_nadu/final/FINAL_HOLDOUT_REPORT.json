@@ -1,0 +1,71 @@
+{
+    "num_samples": 438,
+    "accuracy": 57.08,
+    "ci_95": "52.4% - 61.63%",
+    "macro_f1": 0.3001,
+    "weighted_f1": 0.65,
+    "balanced_accuracy": 31.04,
+    "macro_precision": 0.3313,
+    "macro_recall": 0.3104,
+    "precision_per_class": [
+        0.8723,
+        0.1075,
+        0.0141
+    ],
+    "recall_per_class": [
+        0.6273,
+        0.2326,
+        0.0714
+    ],
+    "f1_per_class": [
+        0.7298,
+        0.1471,
+        0.0235
+    ],
+    "intact_f1": 0.7298,
+    "damaged_f1": 0.1471,
+    "destroyed_f1": 0.0235,
+    "intact_recall": 62.73,
+    "damaged_recall": 23.26,
+    "destroyed_recall": 7.14,
+    "confusion_matrix": [
+        [
+            239,
+            81,
+            61
+        ],
+        [
+            24,
+            10,
+            9
+        ],
+        [
+            11,
+            2,
+            1
+        ]
+    ],
+    "calibration_ece": 0.1816,
+    "actual_class_counts": {
+        "0_INTACT": 381,
+        "1_DAMAGED": 43,
+        "2_DESTROYED": 14
+    },
+    "predicted_class_counts": {
+        "0": 274,
+        "1": 93,
+        "2": 71
+    },
+    "event_wise_performance": {
+        "Southern Districts Floods 2023": {
+            "count": 247,
+            "accuracy": 63.97,
+            "macro_f1": 0.3389
+        },
+        "Cyclone Burevi 2020": {
+            "count": 191,
+            "accuracy": 48.17,
+            "macro_f1": 0.2532
+        }
+    }
+}

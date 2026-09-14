@@ -1,0 +1,48 @@
+{
+    "investigated": 5,
+    "usable": 5,
+    "rejected": 0,
+    "s1_pre_count": 5,
+    "s1_post_count": 5,
+    "s2_pre_count": 1,
+    "s2_post_count": 1,
+    "total_tiffs": 24,
+    "total_size_mb": 457.8,
+    "details": {
+        "TN_CHENNAI_FLOOD_2015": {
+            "s1_pre": "PASS",
+            "s1_post": "PASS",
+            "s2_pre": "FAIL",
+            "s2_post": "FAIL",
+            "source": "GEE"
+        },
+        "TN_VARDAH_2016": {
+            "s1_pre": "PASS",
+            "s1_post": "PASS",
+            "s2_pre": "FAIL",
+            "s2_post": "FAIL",
+            "source": "GEE"
+        },
+        "TN_GAJA_2018": {
+            "s1_pre": "PASS",
+            "s1_post": "PASS",
+            "s2_pre": "FAIL",
+            "s2_post": "FAIL",
+            "source": "GEE"
+        },
+        "TN_NIVAR_2020": {
+            "s1_pre": "PASS",
+            "s1_post": "PASS",
+            "s2_pre": "PASS",
+            "s2_post": "PASS",
+            "source": "GEE"
+        },
+        "TN_MICHAUNG_2023": {
+            "s1_pre": "PASS",
+            "s1_post": "PASS",
+            "s2_pre": "FAIL",
+            "s2_post": "FAIL",
+            "source": "GEE"
+        }
+    }
+}

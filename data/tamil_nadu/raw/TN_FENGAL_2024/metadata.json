@@ -1,0 +1,16 @@
+{
+    "event_id": "TN_FENGAL_2024",
+    "event_name": "Cyclone Fengal 2024",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20241112T003223_20241112T003248_056514_06EDA5_9877",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20241206T003221_20241206T003246_056864_06FB8D_9FDB",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    }
+}

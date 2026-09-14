@@ -1,0 +1,33 @@
+{
+    "event_id": "TN_CHENNAI_FLOOD_2015",
+    "event_name": "Chennai Floods 2015",
+    "state": "Tamil Nadu",
+    "disaster_type": "floods",
+    "impact_date": "2015-12-01",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20151031T003131_20151031T003200_008389_00BD95_33F3",
+            "date": "2015-10-31",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20151206T003120_20151206T003149_008914_00CC1F_BEF9",
+            "date": "2015-12-06",
+            "source": "GEE"
+        }
+    },
+    "sentinel2": {
+        "pre": {
+            "product_id": "unavailable",
+            "date": "unavailable",
+            "source": "unavailable",
+            "cloud_percentage": "unavailable"
+        },
+        "post": {
+            "product_id": "unavailable",
+            "date": "unavailable",
+            "source": "unavailable",
+            "cloud_percentage": "unavailable"
+        }
+    }
+}

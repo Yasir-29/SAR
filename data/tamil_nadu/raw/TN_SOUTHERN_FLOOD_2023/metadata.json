@@ -1,0 +1,16 @@
+{
+    "event_id": "TN_SOUTHERN_FLOOD_2023",
+    "event_name": "Southern Districts Floods 2023",
+    "sentinel1": {
+        "pre": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20231205T004122_20231205T004147_051512_0637C8_0902",
+            "date": "1SDV",
+            "source": "GEE"
+        },
+        "post": {
+            "product_id": "COPERNICUS/S1_GRD/S1A_IW_GRDH_1SDV_20231229T004121_20231229T004146_051862_0643F2_C079",
+            "date": "1SDV",
+            "source": "GEE"
+        }
+    }
+}

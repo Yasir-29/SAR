@@ -1,0 +1,14 @@
+{
+    "num_samples": 30,
+    "epochs": 40,
+    "final_loss": 0.010127,
+    "final_accuracy": 100.0,
+    "prediction_distribution": {
+        "0": 28,
+        "1": 1,
+        "2": 1
+    },
+    "mean_grad_norm": 5.3514,
+    "parameter_changes_l2": 255.9746,
+    "sanity_overfit_status": "PASS"
+}

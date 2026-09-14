@@ -1,0 +1,11 @@
+{
+  "0": "INTACT",
+  "1": "DAMAGED",
+  "2": "DESTROYED",
+  "original_tn_labels": [0, 1, 2],
+  "normalized_labels": [0, 1, 2],
+  "xbd_compatible_labels": [0, 1, 2],
+  "final_class_indices": [0, 1, 2],
+  "class_names": ["INTACT", "DAMAGED", "DESTROYED"],
+  "mapping_verification": "PASS"
+}

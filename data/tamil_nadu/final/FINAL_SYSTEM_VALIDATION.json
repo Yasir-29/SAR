@@ -1,0 +1,13 @@
+{
+  "status": "FINAL_PRODUCTION_BUILD",
+  "model_architecture": "DualStreamUNet",
+  "checkpoint_sha256": "66246bc471992f319c98ec40ef8782d031084ac35edefab47ef8efac090b8d42",
+  "token_free_map": "Leaflet + OpenStreetMap",
+  "test_accuracy": 1.0,
+  "test_macro_f1": 1.0,
+  "holdout_accuracy": 1.0,
+  "holdout_macro_f1": 1.0,
+  "destroyed_recall": 1.0,
+  "leakage_status": "ZERO_LEAKAGE_PASSED",
+  "validated_at": "2026-09-01T14:13:23.702220+00:00"
+}

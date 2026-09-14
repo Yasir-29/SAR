@@ -1,0 +1,30 @@
+{
+    "train_count": 5187,
+    "val_count": 1111,
+    "test_count": 1112,
+    "holdout_count": 438,
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "train_holdout_overlap": 0,
+    "val_test_overlap": 0,
+    "val_holdout_overlap": 0,
+    "test_holdout_overlap": 0,
+    "train_events": [
+        "Cyclone Ockhi 2017",
+        "Cyclone Gaja 2018",
+        "Cyclone Nada 2016",
+        "Cyclone Fengal 2024",
+        "Cyclone Nivar 2020",
+        "Chennai Floods 2021",
+        "Cyclone Vardah 2016",
+        "Cyclone Mandous 2022"
+    ],
+    "holdout_events": [
+        "Cyclone Burevi 2020",
+        "Southern Districts Floods 2023"
+    ],
+    "holdout_event_overlap": 0,
+    "code_leakage_detected": false,
+    "target_leakage_status": "NONE",
+    "leakage_audit_status": "PASS"
+}

@@ -1,0 +1,54 @@
+{
+    "building_id": "TN_CHENNAI_FLOOD_2021_143611",
+    "source_building_id": "7M52478Q+X34Q",
+    "event_id": "TN_CHENNAI_FLOOD_2021",
+    "event_name": "Chennai Floods 2021",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "disaster_type": "floods",
+    "impact_date": "2021-11-07",
+    "building_area_m2": 26.05,
+    "building_source": "google_open_buildings",
+    "s1_pre_date": "1SDV",
+    "s1_post_date": "1SDV",
+    "s2_pre_date": "20211027",
+    "s2_post_date": "20211206",
+    "s1_available": true,
+    "s2_available": true,
+    "optical_available": true,
+    "chip_size": 32,
+    "resolution": 10.0,
+    "crs": "EPSG:32644",
+    "s1_pre_valid": 100.0,
+    "s1_post_valid": 100.0,
+    "s2_pre_valid": 100.0,
+    "s2_post_valid": 100.0,
+    "sar_pre_shape": [
+        2,
+        32,
+        32
+    ],
+    "sar_post_shape": [
+        2,
+        32,
+        32
+    ],
+    "optical_pre_shape": [
+        4,
+        32,
+        32
+    ],
+    "optical_post_shape": [
+        4,
+        32,
+        32
+    ],
+    "mask_shape": [
+        32,
+        32
+    ],
+    "building_mask_fraction": 0.0009765625,
+    "sample_type": "MULTIMODAL",
+    "geometry_hash": "f6dfc19a2114e005",
+    "existing_label_unverified": "none"
+}

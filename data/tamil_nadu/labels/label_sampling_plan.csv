@@ -1,0 +1,11 @@
+event_id,candidate_count,target_review_count,selected_count,reason
+TN_VARDAH_2016,211006,1100,1100,Spatially balanced gridded target sample to represent district baseline
+TN_GAJA_2018,69642,1100,1100,Spatially balanced gridded target sample to represent district baseline
+TN_NIVAR_2020,109682,1100,1100,Spatially balanced gridded target sample to represent district baseline
+TN_MANDOUS_2022,34393,1100,1100,Spatially balanced gridded target sample to represent district baseline
+TN_SOUTHERN_FLOOD_2023,171959,1100,1100,Spatially balanced gridded target sample to represent district baseline
+TN_OCKHI_2017,74731,1100,1100,Spatially balanced gridded target sample to represent district baseline
+TN_FENGAL_2024,145824,1100,1100,Spatially balanced gridded target sample to represent district baseline
+TN_CHENNAI_FLOOD_2021,211006,1100,1100,Spatially balanced gridded target sample to represent district baseline
+TN_BUREVI_2020,102266,1100,1100,Spatially balanced gridded target sample to represent district baseline
+TN_NADA_2016,109682,1100,1100,Spatially balanced gridded target sample to represent district baseline

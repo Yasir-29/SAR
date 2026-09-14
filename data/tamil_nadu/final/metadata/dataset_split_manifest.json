@@ -1,0 +1,30 @@
+{
+    "dataset_name": "Tamil Nadu Disaster Building Damage Dataset",
+    "total_records": 7848,
+    "splits": {
+        "TRAIN": {
+            "count": 5187,
+            "intact": 4362,
+            "damaged": 654,
+            "destroyed": 171
+        },
+        "VALIDATION": {
+            "count": 1111,
+            "intact": 934,
+            "damaged": 140,
+            "destroyed": 37
+        },
+        "LOCKED_TEST": {
+            "count": 1112,
+            "intact": 935,
+            "damaged": 140,
+            "destroyed": 37
+        },
+        "INDEPENDENT_HOLDOUT": {
+            "count": 438,
+            "intact": 381,
+            "damaged": 43,
+            "destroyed": 14
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "total_records": 7848,
+    "split_sizes": {
+        "train": 5187,
+        "val": 1111,
+        "test": 1112,
+        "holdout": 438
+    },
+    "unique_building_ids": 7848,
+    "duplicate_records": 0,
+    "split_overlaps": {
+        "train_val": 0,
+        "train_test": 0,
+        "train_holdout": 0,
+        "val_test": 0,
+        "val_holdout": 0,
+        "test_holdout": 0
+    },
+    "total_split_overlaps": 0,
+    "missing_labels": 0,
+    "invalid_class_labels": [],
+    "missing_sar_pre": 0,
+    "missing_sar_post": 0,
+    "missing_opt_pre": 6518,
+    "missing_opt_post": 6518,
+    "missing_footprints": 0,
+    "missing_files_disk": 0,
+    "class_distribution": {
+        "INTACT": 6612,
+        "DAMAGED": 977,
+        "DESTROYED": 259
+    },
+    "label_indices_distribution": {
+        "0": 6612,
+        "1": 977,
+        "2": 259
+    },
+    "target_leakage_detected": false,
+    "synthetic_imagery_detected": false,
+    "audit_status": "PASS"
+}

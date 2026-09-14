@@ -1,0 +1,11 @@
+{
+  "train_count": 5187,
+  "validation_count": 1111,
+  "test_count": 1112,
+  "holdout_count": 438,
+  "total_count": 7848,
+  "holdout_events": [
+    "TN_SOUTHERN_FLOOD_2023",
+    "TN_BUREVI_2020"
+  ]
+}

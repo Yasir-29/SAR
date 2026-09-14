@@ -1,0 +1,101 @@
+[
+    {
+        "product_id": "aeda24b1-87fb-50d8-8e88-e89128228177",
+        "product_name": "S1A_IW_GRDH_1SDV_20201016T003207_20201016T003232_034814_040EC0_2B43.SAFE",
+        "acquisition_time": "2020-10-16T00:32:07.368000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((80.427635 11.533451, 80.737991 13.045386, 78.445503 13.487428, 78.14917 11.979296, 80.427635 11.533451)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(aeda24b1-87fb-50d8-8e88-e89128228177)/$value"
+    },
+    {
+        "product_id": "1b764485-222b-578c-bd87-c704521a4931",
+        "product_name": "S1A_IW_GRDH_1SDV_20201215T003205_20201215T003230_035689_042CFB_B52A.SAFE",
+        "acquisition_time": "2020-12-15T00:32:05.996000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((80.427277 11.533572, 80.737656 13.045597, 78.445068 13.487641, 78.14872 11.979419, 80.427277 11.533572)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(1b764485-222b-578c-bd87-c704521a4931)/$value"
+    },
+    {
+        "product_id": "9b0f9b14-aba3-5670-b02e-00237ed1d510",
+        "product_name": "S1A_IW_GRDH_1SDV_20201109T003207_20201109T003232_035164_041AD2_C278.SAFE",
+        "acquisition_time": "2020-11-09T00:32:07.116000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((80.427452 11.533556, 80.737846 13.045486, 78.445366 13.487571, 78.149002 11.979442, 80.427452 11.533556)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(9b0f9b14-aba3-5670-b02e-00237ed1d510)/$value"
+    },
+    {
+        "product_id": "a4079b39-77d9-5dca-af10-0e3a5478f6dc",
+        "product_name": "S1A_IW_GRDH_1SDV_20201128T125057_20201128T125122_035449_0424BF_FF8A.SAFE",
+        "acquisition_time": "2020-11-28T12:50:57.969000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((79.276482 11.701527, 81.543144 12.144478, 81.249817 13.653149, 78.969063 13.213998, 79.276482 11.701527)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a4079b39-77d9-5dca-af10-0e3a5478f6dc)/$value"
+    },
+    {
+        "product_id": "adff5f95-0b3a-587c-a31d-731a7a2fbb51",
+        "product_name": "S1A_IW_GRDH_1SDV_20201128T125032_20201128T125057_035449_0424BF_66C7.SAFE",
+        "acquisition_time": "2020-11-28T12:50:32.970000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((79.586609 10.189359, 81.84082 10.636158, 81.543167 12.144388, 79.276505 11.701437, 79.586609 10.189359)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(adff5f95-0b3a-587c-a31d-731a7a2fbb51)/$value"
+    },
+    {
+        "product_id": "b4c733ab-7d8a-5642-950a-679844ff890a",
+        "product_name": "S1B_IW_GRDH_1SDV_20201204T125001_20201204T125026_024553_02EB3A_0661.SAFE",
+        "acquisition_time": "2020-12-04T12:50:01.710000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((79.452545 10.835662, 81.709091 11.280287, 81.413574 12.788795, 79.143921 12.347996, 79.452545 10.835662)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b4c733ab-7d8a-5642-950a-679844ff890a)/$value"
+    },
+    {
+        "product_id": "d18a4ab9-2e15-5e30-8ea1-5bb7786c25ae",
+        "product_name": "S1A_IW_GRDH_1SDV_20201203T003206_20201203T003231_035514_0426F6_0C55.SAFE",
+        "acquisition_time": "2020-12-03T00:32:06.364000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((80.427719 11.533532, 80.738091 13.045467, 78.445503 13.487523, 78.14917 11.979391, 80.427719 11.533532)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(d18a4ab9-2e15-5e30-8ea1-5bb7786c25ae)/$value"
+    },
+    {
+        "product_id": "073cf10f-8e34-57fa-9b25-b7e93919da5f",
+        "product_name": "S1A_IW_GRDH_1SDV_20201028T003207_20201028T003232_034989_0414CB_EE56.SAFE",
+        "acquisition_time": "2020-10-28T00:32:07.344000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((80.427773 11.533527, 80.738152 13.04546, 78.445656 13.487522, 78.149315 11.979392, 80.427773 11.533527)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(073cf10f-8e34-57fa-9b25-b7e93919da5f)/$value"
+    },
+    {
+        "product_id": "40ffd03a-865b-56aa-a22c-a4de6e273cc9",
+        "product_name": "S1A_IW_GRDH_1SDV_20201121T003206_20201121T003231_035339_0420EC_F580.SAFE",
+        "acquisition_time": "2020-11-21T00:32:06.827000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((80.427513 11.53356, 80.737923 13.04549, 78.445435 13.487585, 78.149063 11.979457, 80.427513 11.53356)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(40ffd03a-865b-56aa-a22c-a4de6e273cc9)/$value"
+    },
+    {
+        "product_id": "3684fed1-a5a2-5989-952d-ad2413ee4607",
+        "product_name": "S1A_IW_GRDH_1SDV_20201004T003207_20201004T003232_034639_0408AD_D580.SAFE",
+        "acquisition_time": "2020-10-04T00:32:07.163000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((80.427673 11.533429, 80.738037 13.045416, 78.445549 13.487464, 78.149216 11.97928, 80.427673 11.533429)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(3684fed1-a5a2-5989-952d-ad2413ee4607)/$value"
+    },
+    {
+        "product_id": "91fb6fa5-f376-5410-a4bf-ecd198a6d6d3",
+        "product_name": "S1B_IW_GRDH_1SDV_20201209T003131_20201209T003200_024618_02ED66_86ED.SAFE",
+        "acquisition_time": "2020-12-09T00:31:31.791000Z",
+        "platform": "Sentinel-1",
+        "polarization": "VV,VH",
+        "footprint": "geography'SRID=4326;MULTIPOLYGON (((80.284874 10.836937, 80.645218 12.592587, 78.373039 13.032784, 78.028137 11.281545, 80.284874 10.836937)))'",
+        "download_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(91fb6fa5-f376-5410-a4bf-ecd198a6d6d3)/$value"
+    }
+]

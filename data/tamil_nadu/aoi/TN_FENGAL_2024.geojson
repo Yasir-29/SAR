@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "event_id": "TN_FENGAL_2024",
+        "name": "Cyclone Fengal 2024 AOI",
+        "center_lat": 11.94,
+        "center_lon": 79.81,
+        "size_deg": 0.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.735,
+              11.865
+            ],
+            [
+              79.885,
+              11.865
+            ],
+            [
+              79.885,
+              12.014999999999999
+            ],
+            [
+              79.735,
+              12.014999999999999
+            ],
+            [
+              79.735,
+              11.865
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "model_name": "TamilNaduTransferNet",
+    "architecture": "Siamese Dual-ResNet34 + Fusion MLP",
+    "checkpoint_path": "data/tamil_nadu/final/checkpoints/tamil_nadu_xbd_s12_final_production.pt",
+    "checkpoint_sha256": "11dded375c26a430a4e344c8cd7335bb99e08f974cb168becd7be87214644cd5",
+    "total_parameters": 42760195,
+    "transfer_initialization_source": "archive/phase6_3/models/best_xbd_s12_transfer_model.pt",
+    "class_mapping": {
+        "0": "INTACT",
+        "1": "DAMAGED",
+        "2": "DESTROYED"
+    },
+    "certification_status": "SCIENTIFICALLY_VALIDATED"
+}
