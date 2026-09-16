@@ -1,0 +1,297 @@
+{
+    "fn_damaged_count": 104,
+    "fn_destroyed_count": 29,
+    "fp_intact_as_damaged_count": 189,
+    "fp_intact_as_destroyed_count": 131,
+    "confusion_damaged_destroyed_count": 20,
+    "confidence_by_class": {
+        "INTACT": {
+            "total_count": 934,
+            "mean_confidence": 0.41084161400794983,
+            "median_confidence": 0.3874882459640503,
+            "std_confidence": 0.08399197459220886,
+            "mean_conf_when_correct": 0.4109129309654236,
+            "mean_conf_when_incorrect": 0.4107048511505127
+        },
+        "DAMAGED": {
+            "total_count": 140,
+            "mean_confidence": 0.4221644699573517,
+            "median_confidence": 0.38444575667381287,
+            "std_confidence": 0.11413868516683578,
+            "mean_conf_when_correct": 0.4225431978702545,
+            "mean_conf_when_incorrect": 0.422033429145813
+        },
+        "DESTROYED": {
+            "total_count": 37,
+            "mean_confidence": 0.4235920310020447,
+            "median_confidence": 0.3912065625190735,
+            "std_confidence": 0.11003416776657104,
+            "mean_conf_when_correct": 0.4519217908382416,
+            "mean_conf_when_incorrect": 0.41577693819999695
+        }
+    },
+    "regional_breakdown": {
+        "Chennai": {
+            "sample_count": 159,
+            "accuracy": 59.12,
+            "intact_recall": 62.41,
+            "damaged_recall": 43.48,
+            "destroyed_recall": 33.33
+        },
+        "Villupuram": {
+            "sample_count": 154,
+            "accuracy": 53.9,
+            "intact_recall": 57.48,
+            "damaged_recall": 42.11,
+            "destroyed_recall": 25.0
+        },
+        "Chengalpattu": {
+            "sample_count": 169,
+            "accuracy": 53.25,
+            "intact_recall": 58.78,
+            "damaged_recall": 20.0,
+            "destroyed_recall": 0.0
+        },
+        "Nagapattinam": {
+            "sample_count": 166,
+            "accuracy": 69.88,
+            "intact_recall": 80.28,
+            "damaged_recall": 11.11,
+            "destroyed_recall": 0.0
+        },
+        "Cuddalore": {
+            "sample_count": 306,
+            "accuracy": 55.88,
+            "intact_recall": 62.11,
+            "damaged_recall": 19.51,
+            "destroyed_recall": 44.44
+        },
+        "Kanyakumari": {
+            "sample_count": 157,
+            "accuracy": 66.24,
+            "intact_recall": 76.56,
+            "damaged_recall": 20.83,
+            "destroyed_recall": 20.0
+        }
+    },
+    "sar_intensity_analysis": {
+        "avg_diff_magnitude_correct": 2.4536092502367897,
+        "avg_diff_magnitude_incorrect": 2.522068009997572
+    },
+    "sample_fn_damaged": [
+        {
+            "index": 8,
+            "building_id": "TN_FENGAL_2024_004421",
+            "event_id": "TN_FENGAL_2024",
+            "district": "Villupuram",
+            "true_label": 1,
+            "pred_label": 0,
+            "probs": [
+                0.4094419479370117,
+                0.2815976142883301,
+                0.3089604377746582
+            ],
+            "max_conf": 0.4094419479370117
+        },
+        {
+            "index": 13,
+            "building_id": "TN_NADA_2016_090709",
+            "event_id": "TN_NADA_2016",
+            "district": "Cuddalore",
+            "true_label": 1,
+            "pred_label": 0,
+            "probs": [
+                0.38984423875808716,
+                0.3788779675960541,
+                0.23127785325050354
+            ],
+            "max_conf": 0.38984423875808716
+        },
+        {
+            "index": 21,
+            "building_id": "TN_VARDAH_2016_206189",
+            "event_id": "TN_VARDAH_2016",
+            "district": "Chennai",
+            "true_label": 1,
+            "pred_label": 0,
+            "probs": [
+                0.6208834052085876,
+                0.12171190977096558,
+                0.2574046552181244
+            ],
+            "max_conf": 0.6208834052085876
+        },
+        {
+            "index": 23,
+            "building_id": "TN_GAJA_2018_069035",
+            "event_id": "TN_GAJA_2018",
+            "district": "Nagapattinam",
+            "true_label": 1,
+            "pred_label": 0,
+            "probs": [
+                0.4383530020713806,
+                0.42359432578086853,
+                0.13805262744426727
+            ],
+            "max_conf": 0.4383530020713806
+        },
+        {
+            "index": 25,
+            "building_id": "TN_NIVAR_2020_107900",
+            "event_id": "TN_NIVAR_2020",
+            "district": "Cuddalore",
+            "true_label": 1,
+            "pred_label": 2,
+            "probs": [
+                0.25832903385162354,
+                0.30284586548805237,
+                0.43882516026496887
+            ],
+            "max_conf": 0.43882516026496887
+        }
+    ],
+    "sample_fn_destroyed": [
+        {
+            "index": 51,
+            "building_id": "TN_FENGAL_2024_085970",
+            "event_id": "TN_FENGAL_2024",
+            "district": "Villupuram",
+            "true_label": 2,
+            "pred_label": 0,
+            "probs": [
+                0.38720738887786865,
+                0.2799167037010193,
+                0.33287593722343445
+            ],
+            "max_conf": 0.38720738887786865
+        },
+        {
+            "index": 128,
+            "building_id": "TN_GAJA_2018_001101",
+            "event_id": "TN_GAJA_2018",
+            "district": "Nagapattinam",
+            "true_label": 2,
+            "pred_label": 0,
+            "probs": [
+                0.39774367213249207,
+                0.30424967408180237,
+                0.29800665378570557
+            ],
+            "max_conf": 0.39774367213249207
+        },
+        {
+            "index": 184,
+            "building_id": "TN_FENGAL_2024_036099",
+            "event_id": "TN_FENGAL_2024",
+            "district": "Villupuram",
+            "true_label": 2,
+            "pred_label": 1,
+            "probs": [
+                0.37838777899742126,
+                0.3802087604999542,
+                0.2414034903049469
+            ],
+            "max_conf": 0.3802087604999542
+        },
+        {
+            "index": 249,
+            "building_id": "TN_GAJA_2018_054887",
+            "event_id": "TN_GAJA_2018",
+            "district": "Nagapattinam",
+            "true_label": 2,
+            "pred_label": 0,
+            "probs": [
+                0.3912065625190735,
+                0.275165855884552,
+                0.33362752199172974
+            ],
+            "max_conf": 0.3912065625190735
+        },
+        {
+            "index": 349,
+            "building_id": "TN_FENGAL_2024_054372",
+            "event_id": "TN_FENGAL_2024",
+            "district": "Villupuram",
+            "true_label": 2,
+            "pred_label": 0,
+            "probs": [
+                0.3527088761329651,
+                0.34404265880584717,
+                0.30324846506118774
+            ],
+            "max_conf": 0.3527088761329651
+        }
+    ],
+    "sample_fp_intact": [
+        {
+            "index": 0,
+            "building_id": "TN_NIVAR_2020_088292",
+            "event_id": "TN_NIVAR_2020",
+            "district": "Cuddalore",
+            "true_label": 0,
+            "pred_label": 1,
+            "probs": [
+                0.3393157720565796,
+                0.39325031638145447,
+                0.26743394136428833
+            ],
+            "max_conf": 0.39325031638145447
+        },
+        {
+            "index": 3,
+            "building_id": "TN_NIVAR_2020_000302",
+            "event_id": "TN_NIVAR_2020",
+            "district": "Cuddalore",
+            "true_label": 0,
+            "pred_label": 1,
+            "probs": [
+                0.35018107295036316,
+                0.3775355815887451,
+                0.2722834050655365
+            ],
+            "max_conf": 0.3775355815887451
+        },
+        {
+            "index": 7,
+            "building_id": "TN_FENGAL_2024_009388",
+            "event_id": "TN_FENGAL_2024",
+            "district": "Villupuram",
+            "true_label": 0,
+            "pred_label": 1,
+            "probs": [
+                0.3914262354373932,
+                0.4747617542743683,
+                0.13381202518939972
+            ],
+            "max_conf": 0.4747617542743683
+        },
+        {
+            "index": 14,
+            "building_id": "TN_MANDOUS_2022_020244",
+            "event_id": "TN_MANDOUS_2022",
+            "district": "Chengalpattu",
+            "true_label": 0,
+            "pred_label": 1,
+            "probs": [
+                0.33092448115348816,
+                0.34590885043144226,
+                0.32316669821739197
+            ],
+            "max_conf": 0.34590885043144226
+        },
+        {
+            "index": 27,
+            "building_id": "TN_MANDOUS_2022_011834",
+            "event_id": "TN_MANDOUS_2022",
+            "district": "Chengalpattu",
+            "true_label": 0,
+            "pred_label": 1,
+            "probs": [
+                0.3414674699306488,
+                0.401151180267334,
+                0.2573813199996948
+            ],
+            "max_conf": 0.401151180267334
+        }
+    ]
+}

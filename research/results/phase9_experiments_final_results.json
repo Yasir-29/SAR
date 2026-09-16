@@ -1,0 +1,730 @@
+{
+    "production_model_selected": "Baseline_Phase9",
+    "promotion_occurred": false,
+    "checkpoint_path": "data/tamil_nadu/final/checkpoints/tamil_nadu_phase9_best.pt",
+    "checkpoint_sha256": "82eaaf8ddd021652211e544799346abb3a7c94b20e29420a4c1866186114fbbd",
+    "validation_comparison": {
+        "Baseline_Phase9": {
+            "accuracy": 59.23,
+            "macro_f1": 0.3393,
+            "weighted_f1": 0.6489,
+            "balanced_accuracy": 37.69,
+            "precision_per_class": [
+                0.8446,
+                0.1572,
+                0.0516
+            ],
+            "recall_per_class": [
+                0.6574,
+                0.2571,
+                0.2162
+            ],
+            "f1_per_class": [
+                0.7393,
+                0.1951,
+                0.0833
+            ],
+            "intact_f1": 0.7393,
+            "damaged_f1": 0.1951,
+            "destroyed_f1": 0.0833,
+            "intact_recall": 65.74,
+            "damaged_recall": 25.71,
+            "destroyed_recall": 21.62,
+            "confusion_matrix": [
+                [
+                    614,
+                    189,
+                    131
+                ],
+                [
+                    88,
+                    36,
+                    16
+                ],
+                [
+                    25,
+                    4,
+                    8
+                ]
+            ],
+            "calibration_ece": 0.2035
+        },
+        "Exp1_WeightedCE": {
+            "accuracy": 69.94,
+            "macro_f1": 0.3381,
+            "weighted_f1": 0.7131,
+            "balanced_accuracy": 34.06,
+            "precision_per_class": [
+                0.8444,
+                0.1421,
+                0.0294
+            ],
+            "recall_per_class": [
+                0.8019,
+                0.1929,
+                0.027
+            ],
+            "f1_per_class": [
+                0.8226,
+                0.1636,
+                0.0282
+            ],
+            "intact_f1": 0.8226,
+            "damaged_f1": 0.1636,
+            "destroyed_f1": 0.0282,
+            "intact_recall": 80.19,
+            "damaged_recall": 19.29,
+            "destroyed_recall": 2.7,
+            "confusion_matrix": [
+                [
+                    749,
+                    156,
+                    29
+                ],
+                [
+                    109,
+                    27,
+                    4
+                ],
+                [
+                    29,
+                    7,
+                    1
+                ]
+            ],
+            "calibration_ece": 0.0791
+        },
+        "Exp2_FocalLoss": {
+            "accuracy": 65.8,
+            "macro_f1": 0.3356,
+            "weighted_f1": 0.6904,
+            "balanced_accuracy": 34.44,
+            "precision_per_class": [
+                0.8482,
+                0.1504,
+                0.0208
+            ],
+            "recall_per_class": [
+                0.742,
+                0.2643,
+                0.027
+            ],
+            "f1_per_class": [
+                0.7915,
+                0.1917,
+                0.0235
+            ],
+            "intact_f1": 0.7915,
+            "damaged_f1": 0.1917,
+            "destroyed_f1": 0.0235,
+            "intact_recall": 74.2,
+            "damaged_recall": 26.43,
+            "destroyed_recall": 2.7,
+            "confusion_matrix": [
+                [
+                    693,
+                    198,
+                    43
+                ],
+                [
+                    99,
+                    37,
+                    4
+                ],
+                [
+                    25,
+                    11,
+                    1
+                ]
+            ],
+            "calibration_ece": 0.1298
+        },
+        "Exp3_Augmentations_WeightedCE": {
+            "accuracy": 80.65,
+            "macro_f1": 0.3368,
+            "weighted_f1": 0.7648,
+            "balanced_accuracy": 34.41,
+            "precision_per_class": [
+                0.8435,
+                0.1905,
+                0.0
+            ],
+            "recall_per_class": [
+                0.9465,
+                0.0857,
+                0.0
+            ],
+            "f1_per_class": [
+                0.892,
+                0.1182,
+                0.0
+            ],
+            "intact_f1": 0.892,
+            "damaged_f1": 0.1182,
+            "destroyed_f1": 0.0,
+            "intact_recall": 94.65,
+            "damaged_recall": 8.57,
+            "destroyed_recall": 0.0,
+            "confusion_matrix": [
+                [
+                    884,
+                    50,
+                    0
+                ],
+                [
+                    128,
+                    12,
+                    0
+                ],
+                [
+                    36,
+                    1,
+                    0
+                ]
+            ],
+            "calibration_ece": 0.4443
+        },
+        "Exp4_CosineAnnealing_WeightedCE": {
+            "accuracy": 70.48,
+            "macro_f1": 0.3437,
+            "weighted_f1": 0.7167,
+            "balanced_accuracy": 35.05,
+            "precision_per_class": [
+                0.8456,
+                0.1374,
+                0.05
+            ],
+            "recall_per_class": [
+                0.8148,
+                0.1286,
+                0.1081
+            ],
+            "f1_per_class": [
+                0.8299,
+                0.1328,
+                0.0684
+            ],
+            "intact_f1": 0.8299,
+            "damaged_f1": 0.1328,
+            "destroyed_f1": 0.0684,
+            "intact_recall": 81.48,
+            "damaged_recall": 12.86,
+            "destroyed_recall": 10.81,
+            "confusion_matrix": [
+                [
+                    761,
+                    107,
+                    66
+                ],
+                [
+                    112,
+                    18,
+                    10
+                ],
+                [
+                    27,
+                    6,
+                    4
+                ]
+            ],
+            "calibration_ece": 0.335
+        },
+        "Exp5_AttentionFusion_WeightedCE": {
+            "accuracy": 77.77,
+            "macro_f1": 0.3581,
+            "weighted_f1": 0.7509,
+            "balanced_accuracy": 35.66,
+            "precision_per_class": [
+                0.8408,
+                0.1447,
+                0.125
+            ],
+            "recall_per_class": [
+                0.9101,
+                0.0786,
+                0.0811
+            ],
+            "f1_per_class": [
+                0.874,
+                0.1019,
+                0.0984
+            ],
+            "intact_f1": 0.874,
+            "damaged_f1": 0.1019,
+            "destroyed_f1": 0.0984,
+            "intact_recall": 91.01,
+            "damaged_recall": 7.86,
+            "destroyed_recall": 8.11,
+            "confusion_matrix": [
+                [
+                    850,
+                    63,
+                    21
+                ],
+                [
+                    129,
+                    11,
+                    0
+                ],
+                [
+                    32,
+                    2,
+                    3
+                ]
+            ],
+            "calibration_ece": 0.3962
+        },
+        "Baseline_Phase9_Tuned": {
+            "accuracy": 81.01,
+            "macro_f1": 0.3672,
+            "weighted_f1": 0.7699,
+            "balanced_accuracy": 36.28,
+            "precision_per_class": [
+                0.8446,
+                0.24,
+                0.1667
+            ],
+            "recall_per_class": [
+                0.9486,
+                0.0857,
+                0.0541
+            ],
+            "f1_per_class": [
+                0.8936,
+                0.1263,
+                0.0816
+            ],
+            "intact_f1": 0.8936,
+            "damaged_f1": 0.1263,
+            "destroyed_f1": 0.0816,
+            "intact_recall": 94.86,
+            "damaged_recall": 8.57,
+            "destroyed_recall": 5.41,
+            "confusion_matrix": [
+                [
+                    886,
+                    38,
+                    10
+                ],
+                [
+                    128,
+                    12,
+                    0
+                ],
+                [
+                    35,
+                    0,
+                    2
+                ]
+            ],
+            "calibration_ece": 0.2035
+        }
+    },
+    "ablation_results": {
+        "Ablation_Full_Multimodal": {
+            "accuracy": 59.23,
+            "macro_f1": 0.3393,
+            "weighted_f1": 0.6489,
+            "balanced_accuracy": 37.69,
+            "precision_per_class": [
+                0.8446,
+                0.1572,
+                0.0516
+            ],
+            "recall_per_class": [
+                0.6574,
+                0.2571,
+                0.2162
+            ],
+            "f1_per_class": [
+                0.7393,
+                0.1951,
+                0.0833
+            ],
+            "intact_f1": 0.7393,
+            "damaged_f1": 0.1951,
+            "destroyed_f1": 0.0833,
+            "intact_recall": 65.74,
+            "damaged_recall": 25.71,
+            "destroyed_recall": 21.62,
+            "confusion_matrix": [
+                [
+                    614,
+                    189,
+                    131
+                ],
+                [
+                    88,
+                    36,
+                    16
+                ],
+                [
+                    25,
+                    4,
+                    8
+                ]
+            ],
+            "calibration_ece": 0.2035
+        },
+        "Ablation_PRE_Only": {
+            "accuracy": 55.54,
+            "macro_f1": 0.3163,
+            "weighted_f1": 0.625,
+            "balanced_accuracy": 34.04,
+            "precision_per_class": [
+                0.8504,
+                0.1429,
+                0.0294
+            ],
+            "recall_per_class": [
+                0.6146,
+                0.2714,
+                0.1351
+            ],
+            "f1_per_class": [
+                0.7135,
+                0.1872,
+                0.0483
+            ],
+            "intact_f1": 0.7135,
+            "damaged_f1": 0.1872,
+            "destroyed_f1": 0.0483,
+            "intact_recall": 61.46,
+            "damaged_recall": 27.14,
+            "destroyed_recall": 13.51,
+            "confusion_matrix": [
+                [
+                    574,
+                    218,
+                    142
+                ],
+                [
+                    79,
+                    38,
+                    23
+                ],
+                [
+                    22,
+                    10,
+                    5
+                ]
+            ],
+            "calibration_ece": 0.1678
+        },
+        "Ablation_POST_Only": {
+            "accuracy": 55.54,
+            "macro_f1": 0.3153,
+            "weighted_f1": 0.6258,
+            "balanced_accuracy": 33.63,
+            "precision_per_class": [
+                0.8496,
+                0.1463,
+                0.0267
+            ],
+            "recall_per_class": [
+                0.6167,
+                0.2571,
+                0.1351
+            ],
+            "f1_per_class": [
+                0.7146,
+                0.1865,
+                0.0446
+            ],
+            "intact_f1": 0.7146,
+            "damaged_f1": 0.1865,
+            "destroyed_f1": 0.0446,
+            "intact_recall": 61.67,
+            "damaged_recall": 25.71,
+            "destroyed_recall": 13.51,
+            "confusion_matrix": [
+                [
+                    576,
+                    203,
+                    155
+                ],
+                [
+                    77,
+                    36,
+                    27
+                ],
+                [
+                    25,
+                    7,
+                    5
+                ]
+            ],
+            "calibration_ece": 0.1711
+        },
+        "Ablation_Change_Only": {
+            "accuracy": 48.33,
+            "macro_f1": 0.3026,
+            "weighted_f1": 0.5723,
+            "balanced_accuracy": 37.09,
+            "precision_per_class": [
+                0.8524,
+                0.1507,
+                0.0411
+            ],
+            "recall_per_class": [
+                0.5257,
+                0.2357,
+                0.3514
+            ],
+            "f1_per_class": [
+                0.6503,
+                0.1838,
+                0.0737
+            ],
+            "intact_f1": 0.6503,
+            "damaged_f1": 0.1838,
+            "destroyed_f1": 0.0737,
+            "intact_recall": 52.57,
+            "damaged_recall": 23.57,
+            "destroyed_recall": 35.14,
+            "confusion_matrix": [
+                [
+                    491,
+                    180,
+                    263
+                ],
+                [
+                    67,
+                    33,
+                    40
+                ],
+                [
+                    18,
+                    6,
+                    13
+                ]
+            ],
+            "calibration_ece": 0.1624
+        },
+        "Ablation_POST_Zeroed": {
+            "accuracy": 68.41,
+            "macro_f1": 0.3448,
+            "weighted_f1": 0.7042,
+            "balanced_accuracy": 35.24,
+            "precision_per_class": [
+                0.8387,
+                0.1608,
+                0.0426
+            ],
+            "recall_per_class": [
+                0.7848,
+                0.1643,
+                0.1081
+            ],
+            "f1_per_class": [
+                0.8108,
+                0.1625,
+                0.0611
+            ],
+            "intact_f1": 0.8108,
+            "damaged_f1": 0.1625,
+            "destroyed_f1": 0.0611,
+            "intact_recall": 78.48,
+            "damaged_recall": 16.43,
+            "destroyed_recall": 10.81,
+            "confusion_matrix": [
+                [
+                    733,
+                    117,
+                    84
+                ],
+                [
+                    111,
+                    23,
+                    6
+                ],
+                [
+                    30,
+                    3,
+                    4
+                ]
+            ],
+            "calibration_ece": 0.3219
+        },
+        "Ablation_POST_Shuffled": {
+            "accuracy": 53.92,
+            "macro_f1": 0.3138,
+            "weighted_f1": 0.6126,
+            "balanced_accuracy": 35.18,
+            "precision_per_class": [
+                0.8465,
+                0.1377,
+                0.0388
+            ],
+            "recall_per_class": [
+                0.5964,
+                0.2429,
+                0.2162
+            ],
+            "f1_per_class": [
+                0.6997,
+                0.1757,
+                0.0658
+            ],
+            "intact_f1": 0.6997,
+            "damaged_f1": 0.1757,
+            "destroyed_f1": 0.0658,
+            "intact_recall": 59.64,
+            "damaged_recall": 24.29,
+            "destroyed_recall": 21.62,
+            "confusion_matrix": [
+                [
+                    557,
+                    207,
+                    170
+                ],
+                [
+                    78,
+                    34,
+                    28
+                ],
+                [
+                    23,
+                    6,
+                    8
+                ]
+            ],
+            "calibration_ece": 0.1483
+        },
+        "Label_Shuffled_Control": {
+            "accuracy": 78.04,
+            "macro_f1": 0.3599,
+            "weighted_f1": 0.7545,
+            "balanced_accuracy": 35.97,
+            "precision_per_class": [
+                0.8444,
+                0.1667,
+                0.1
+            ],
+            "recall_per_class": [
+                0.9122,
+                0.0857,
+                0.0811
+            ],
+            "f1_per_class": [
+                0.877,
+                0.1132,
+                0.0896
+            ],
+            "intact_f1": 0.877,
+            "damaged_f1": 0.1132,
+            "destroyed_f1": 0.0896,
+            "intact_recall": 91.22,
+            "damaged_recall": 8.57,
+            "destroyed_recall": 8.11,
+            "confusion_matrix": [
+                [
+                    852,
+                    57,
+                    25
+                ],
+                [
+                    126,
+                    12,
+                    2
+                ],
+                [
+                    31,
+                    3,
+                    3
+                ]
+            ],
+            "calibration_ece": 0.1025
+        }
+    },
+    "final_locked_test_metrics": {
+        "accuracy": 57.82,
+        "macro_f1": 0.331,
+        "weighted_f1": 0.6439,
+        "balanced_accuracy": 36.01,
+        "precision_per_class": [
+            0.8592,
+            0.1579,
+            0.0355
+        ],
+        "recall_per_class": [
+            0.6396,
+            0.2786,
+            0.1622
+        ],
+        "f1_per_class": [
+            0.7333,
+            0.2016,
+            0.0583
+        ],
+        "intact_f1": 0.7333,
+        "damaged_f1": 0.2016,
+        "destroyed_f1": 0.0583,
+        "intact_recall": 63.96,
+        "damaged_recall": 27.86,
+        "destroyed_recall": 16.22,
+        "confusion_matrix": [
+            [
+                598,
+                199,
+                138
+            ],
+            [
+                76,
+                39,
+                25
+            ],
+            [
+                22,
+                9,
+                6
+            ]
+        ],
+        "calibration_ece": 0.1816
+    },
+    "final_unseen_holdout_metrics": {
+        "accuracy": 57.08,
+        "macro_f1": 0.3001,
+        "weighted_f1": 0.65,
+        "balanced_accuracy": 31.04,
+        "precision_per_class": [
+            0.8723,
+            0.1075,
+            0.0141
+        ],
+        "recall_per_class": [
+            0.6273,
+            0.2326,
+            0.0714
+        ],
+        "f1_per_class": [
+            0.7298,
+            0.1471,
+            0.0235
+        ],
+        "intact_f1": 0.7298,
+        "damaged_f1": 0.1471,
+        "destroyed_f1": 0.0235,
+        "intact_recall": 62.73,
+        "damaged_recall": 23.26,
+        "destroyed_recall": 7.14,
+        "confusion_matrix": [
+            [
+                239,
+                81,
+                61
+            ],
+            [
+                24,
+                10,
+                9
+            ],
+            [
+                11,
+                2,
+                1
+            ]
+        ],
+        "calibration_ece": 0.1816
+    }
+}

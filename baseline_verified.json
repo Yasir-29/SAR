@@ -1,0 +1,35 @@
+{
+    "audit_status": "PASSED_EXACT_MATCH",
+    "checkpoint_path": "data/tamil_nadu/final/checkpoints/tamil_nadu_phase9_best.pt",
+    "checkpoint_sha256": "82eaaf8ddd021652211e544799346abb3a7c94b20e29420a4c1866186114fbbd",
+    "sample_count": 1111,
+    "accuracy": 59.23,
+    "ci_95": "56.34% - 62.12%",
+    "macro_f1": 0.3393,
+    "weighted_f1": 0.6489,
+    "balanced_accuracy": 37.69,
+    "intact_recall": 65.74,
+    "damaged_recall": 25.71,
+    "destroyed_recall": 21.62,
+    "intact_f1": 0.7393,
+    "damaged_f1": 0.1951,
+    "destroyed_f1": 0.0833,
+    "calibration_ece": 0.2035,
+    "confusion_matrix": [
+        [
+            614,
+            189,
+            131
+        ],
+        [
+            88,
+            36,
+            16
+        ],
+        [
+            25,
+            4,
+            8
+        ]
+    ]
+}

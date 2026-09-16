@@ -1,0 +1,1013 @@
+{
+    "production_model_selected": "Baseline_Phase9",
+    "promotion_occurred": false,
+    "checkpoint_path": "data/tamil_nadu/final/checkpoints/tamil_nadu_phase9_best.pt",
+    "checkpoint_sha256": "82eaaf8ddd021652211e544799346abb3a7c94b20e29420a4c1866186114fbbd",
+    "baseline_val_metrics": {
+        "accuracy": 59.23,
+        "macro_f1": 0.3393,
+        "weighted_f1": 0.6489,
+        "balanced_accuracy": 37.69,
+        "precision_per_class": [
+            0.8446,
+            0.1572,
+            0.0516
+        ],
+        "recall_per_class": [
+            0.6574,
+            0.2571,
+            0.2162
+        ],
+        "f1_per_class": [
+            0.7393,
+            0.1951,
+            0.0833
+        ],
+        "intact_f1": 0.7393,
+        "damaged_f1": 0.1951,
+        "destroyed_f1": 0.0833,
+        "intact_recall": 65.74,
+        "damaged_recall": 25.71,
+        "destroyed_recall": 21.62,
+        "confusion_matrix": [
+            [
+                614,
+                189,
+                131
+            ],
+            [
+                88,
+                36,
+                16
+            ],
+            [
+                25,
+                4,
+                8
+            ]
+        ],
+        "calibration_ece": 0.2035
+    },
+    "candidate_multiseed_summary": {
+        "Candidate_WeightedCE": {
+            "mean_macro_f1": 0.3348,
+            "std_macro_f1": 0.0227,
+            "mean_accuracy": 72.31,
+            "mean_damaged_recall": 14.29,
+            "mean_destroyed_recall": 9.01,
+            "mean_ece": 0.2322,
+            "per_seed_metrics": [
+                {
+                    "accuracy": 65.44,
+                    "macro_f1": 0.3593,
+                    "weighted_f1": 0.6953,
+                    "balanced_accuracy": 38.94,
+                    "precision_per_class": [
+                        0.8612,
+                        0.1734,
+                        0.058
+                    ],
+                    "recall_per_class": [
+                        0.7377,
+                        0.2143,
+                        0.2162
+                    ],
+                    "f1_per_class": [
+                        0.7947,
+                        0.1917,
+                        0.0914
+                    ],
+                    "intact_f1": 0.7947,
+                    "damaged_f1": 0.1917,
+                    "destroyed_f1": 0.0914,
+                    "intact_recall": 73.77,
+                    "damaged_recall": 21.43,
+                    "destroyed_recall": 21.62,
+                    "confusion_matrix": [
+                        [
+                            689,
+                            135,
+                            110
+                        ],
+                        [
+                            90,
+                            30,
+                            20
+                        ],
+                        [
+                            21,
+                            8,
+                            8
+                        ]
+                    ],
+                    "calibration_ece": 0.0435
+                },
+                {
+                    "accuracy": 84.07,
+                    "macro_f1": 0.3045,
+                    "weighted_f1": 0.7679,
+                    "balanced_accuracy": 33.33,
+                    "precision_per_class": [
+                        0.8407,
+                        0.0,
+                        0.0
+                    ],
+                    "recall_per_class": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    "f1_per_class": [
+                        0.9134,
+                        0.0,
+                        0.0
+                    ],
+                    "intact_f1": 0.9134,
+                    "damaged_f1": 0.0,
+                    "destroyed_f1": 0.0,
+                    "intact_recall": 100.0,
+                    "damaged_recall": 0.0,
+                    "destroyed_recall": 0.0,
+                    "confusion_matrix": [
+                        [
+                            934,
+                            0,
+                            0
+                        ],
+                        [
+                            140,
+                            0,
+                            0
+                        ],
+                        [
+                            37,
+                            0,
+                            0
+                        ]
+                    ],
+                    "calibration_ece": 0.4943
+                },
+                {
+                    "accuracy": 67.42,
+                    "macro_f1": 0.3405,
+                    "weighted_f1": 0.7023,
+                    "balanced_accuracy": 34.53,
+                    "precision_per_class": [
+                        0.8515,
+                        0.15,
+                        0.029
+                    ],
+                    "recall_per_class": [
+                        0.7677,
+                        0.2143,
+                        0.0541
+                    ],
+                    "f1_per_class": [
+                        0.8074,
+                        0.1765,
+                        0.0377
+                    ],
+                    "intact_f1": 0.8074,
+                    "damaged_f1": 0.1765,
+                    "destroyed_f1": 0.0377,
+                    "intact_recall": 76.77,
+                    "damaged_recall": 21.43,
+                    "destroyed_recall": 5.41,
+                    "confusion_matrix": [
+                        [
+                            717,
+                            159,
+                            58
+                        ],
+                        [
+                            101,
+                            30,
+                            9
+                        ],
+                        [
+                            24,
+                            11,
+                            2
+                        ]
+                    ],
+                    "calibration_ece": 0.1587
+                }
+            ]
+        },
+        "Candidate_FocalLoss": {
+            "mean_macro_f1": 0.3395,
+            "std_macro_f1": 0.0153,
+            "mean_accuracy": 67.3,
+            "mean_damaged_recall": 19.52,
+            "mean_destroyed_recall": 8.11,
+            "mean_ece": 0.22,
+            "per_seed_metrics": [
+                {
+                    "accuracy": 68.23,
+                    "macro_f1": 0.337,
+                    "weighted_f1": 0.7017,
+                    "balanced_accuracy": 34.19,
+                    "precision_per_class": [
+                        0.8403,
+                        0.1422,
+                        0.0345
+                    ],
+                    "recall_per_class": [
+                        0.7773,
+                        0.2214,
+                        0.027
+                    ],
+                    "f1_per_class": [
+                        0.8076,
+                        0.1732,
+                        0.0303
+                    ],
+                    "intact_f1": 0.8076,
+                    "damaged_f1": 0.1732,
+                    "destroyed_f1": 0.0303,
+                    "intact_recall": 77.73,
+                    "damaged_recall": 22.14,
+                    "destroyed_recall": 2.7,
+                    "confusion_matrix": [
+                        [
+                            726,
+                            182,
+                            26
+                        ],
+                        [
+                            107,
+                            31,
+                            2
+                        ],
+                        [
+                            31,
+                            5,
+                            1
+                        ]
+                    ],
+                    "calibration_ece": 0.2147
+                },
+                {
+                    "accuracy": 64.0,
+                    "macro_f1": 0.3221,
+                    "weighted_f1": 0.6764,
+                    "balanced_accuracy": 33.6,
+                    "precision_per_class": [
+                        0.8323,
+                        0.1705,
+                        0.0309
+                    ],
+                    "recall_per_class": [
+                        0.7388,
+                        0.1071,
+                        0.1622
+                    ],
+                    "f1_per_class": [
+                        0.7828,
+                        0.1316,
+                        0.0519
+                    ],
+                    "intact_f1": 0.7828,
+                    "damaged_f1": 0.1316,
+                    "destroyed_f1": 0.0519,
+                    "intact_recall": 73.88,
+                    "damaged_recall": 10.71,
+                    "destroyed_recall": 16.22,
+                    "confusion_matrix": [
+                        [
+                            690,
+                            71,
+                            173
+                        ],
+                        [
+                            110,
+                            15,
+                            15
+                        ],
+                        [
+                            29,
+                            2,
+                            6
+                        ]
+                    ],
+                    "calibration_ece": 0.2265
+                },
+                {
+                    "accuracy": 69.67,
+                    "macro_f1": 0.3593,
+                    "weighted_f1": 0.7168,
+                    "balanced_accuracy": 36.64,
+                    "precision_per_class": [
+                        0.8528,
+                        0.1791,
+                        0.0426
+                    ],
+                    "recall_per_class": [
+                        0.788,
+                        0.2571,
+                        0.0541
+                    ],
+                    "f1_per_class": [
+                        0.8191,
+                        0.2111,
+                        0.0476
+                    ],
+                    "intact_f1": 0.8191,
+                    "damaged_f1": 0.2111,
+                    "destroyed_f1": 0.0476,
+                    "intact_recall": 78.8,
+                    "damaged_recall": 25.71,
+                    "destroyed_recall": 5.41,
+                    "confusion_matrix": [
+                        [
+                            736,
+                            159,
+                            39
+                        ],
+                        [
+                            98,
+                            36,
+                            6
+                        ],
+                        [
+                            29,
+                            6,
+                            2
+                        ]
+                    ],
+                    "calibration_ece": 0.2187
+                }
+            ]
+        },
+        "Candidate_MultiScale": {
+            "mean_macro_f1": 0.3057,
+            "std_macro_f1": 0.0017,
+            "mean_accuracy": 83.92,
+            "mean_damaged_recall": 0.24,
+            "mean_destroyed_recall": 0.0,
+            "mean_ece": 0.4506,
+            "per_seed_metrics": [
+                {
+                    "accuracy": 84.07,
+                    "macro_f1": 0.3045,
+                    "weighted_f1": 0.7679,
+                    "balanced_accuracy": 33.33,
+                    "precision_per_class": [
+                        0.8407,
+                        0.0,
+                        0.0
+                    ],
+                    "recall_per_class": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    "f1_per_class": [
+                        0.9134,
+                        0.0,
+                        0.0
+                    ],
+                    "intact_f1": 0.9134,
+                    "damaged_f1": 0.0,
+                    "destroyed_f1": 0.0,
+                    "intact_recall": 100.0,
+                    "damaged_recall": 0.0,
+                    "destroyed_recall": 0.0,
+                    "confusion_matrix": [
+                        [
+                            934,
+                            0,
+                            0
+                        ],
+                        [
+                            140,
+                            0,
+                            0
+                        ],
+                        [
+                            37,
+                            0,
+                            0
+                        ]
+                    ],
+                    "calibration_ece": 0.4895
+                },
+                {
+                    "accuracy": 84.07,
+                    "macro_f1": 0.3045,
+                    "weighted_f1": 0.7679,
+                    "balanced_accuracy": 33.33,
+                    "precision_per_class": [
+                        0.8407,
+                        0.0,
+                        0.0
+                    ],
+                    "recall_per_class": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    "f1_per_class": [
+                        0.9134,
+                        0.0,
+                        0.0
+                    ],
+                    "intact_f1": 0.9134,
+                    "damaged_f1": 0.0,
+                    "destroyed_f1": 0.0,
+                    "intact_recall": 100.0,
+                    "damaged_recall": 0.0,
+                    "destroyed_recall": 0.0,
+                    "confusion_matrix": [
+                        [
+                            934,
+                            0,
+                            0
+                        ],
+                        [
+                            140,
+                            0,
+                            0
+                        ],
+                        [
+                            37,
+                            0,
+                            0
+                        ]
+                    ],
+                    "calibration_ece": 0.5033
+                },
+                {
+                    "accuracy": 83.62,
+                    "macro_f1": 0.3081,
+                    "weighted_f1": 0.7673,
+                    "balanced_accuracy": 33.36,
+                    "precision_per_class": [
+                        0.8406,
+                        0.1429,
+                        0.0
+                    ],
+                    "recall_per_class": [
+                        0.9936,
+                        0.0071,
+                        0.0
+                    ],
+                    "f1_per_class": [
+                        0.9107,
+                        0.0136,
+                        0.0
+                    ],
+                    "intact_f1": 0.9107,
+                    "damaged_f1": 0.0136,
+                    "destroyed_f1": 0.0,
+                    "intact_recall": 99.36,
+                    "damaged_recall": 0.71,
+                    "destroyed_recall": 0.0,
+                    "confusion_matrix": [
+                        [
+                            928,
+                            6,
+                            0
+                        ],
+                        [
+                            139,
+                            1,
+                            0
+                        ],
+                        [
+                            37,
+                            0,
+                            0
+                        ]
+                    ],
+                    "calibration_ece": 0.3591
+                }
+            ]
+        },
+        "Candidate_Hierarchical": {
+            "mean_macro_f1": 0.3467,
+            "std_macro_f1": 0.0109,
+            "mean_accuracy": 76.6,
+            "mean_damaged_recall": 11.67,
+            "mean_destroyed_recall": 3.61,
+            "mean_ece": 0.1014,
+            "per_seed_metrics": [
+                {
+                    "accuracy": 78.94,
+                    "macro_f1": 0.3521,
+                    "weighted_f1": 0.7569,
+                    "balanced_accuracy": 35.26,
+                    "precision_per_class": [
+                        0.8413,
+                        0.1864,
+                        0.08
+                    ],
+                    "recall_per_class": [
+                        0.9251,
+                        0.0786,
+                        0.0541
+                    ],
+                    "f1_per_class": [
+                        0.8812,
+                        0.1106,
+                        0.0645
+                    ],
+                    "intact_f1": 0.8812,
+                    "damaged_f1": 0.1106,
+                    "destroyed_f1": 0.0645,
+                    "intact_recall": 92.51,
+                    "damaged_recall": 7.86,
+                    "destroyed_recall": 5.41,
+                    "confusion_matrix": [
+                        [
+                            864,
+                            47,
+                            23
+                        ],
+                        [
+                            129,
+                            11,
+                            0
+                        ],
+                        [
+                            34,
+                            1,
+                            2
+                        ]
+                    ],
+                    "calibration_ece": 0.1334
+                },
+                {
+                    "accuracy": 76.69,
+                    "macro_f1": 0.3565,
+                    "weighted_f1": 0.7541,
+                    "balanced_accuracy": 35.87,
+                    "precision_per_class": [
+                        0.8505,
+                        0.2143,
+                        0.0
+                    ],
+                    "recall_per_class": [
+                        0.8833,
+                        0.1929,
+                        0.0
+                    ],
+                    "f1_per_class": [
+                        0.8666,
+                        0.203,
+                        0.0
+                    ],
+                    "intact_f1": 0.8666,
+                    "damaged_f1": 0.203,
+                    "destroyed_f1": 0.0,
+                    "intact_recall": 88.33,
+                    "damaged_recall": 19.29,
+                    "destroyed_recall": 0.0,
+                    "confusion_matrix": [
+                        [
+                            825,
+                            94,
+                            15
+                        ],
+                        [
+                            113,
+                            27,
+                            0
+                        ],
+                        [
+                            32,
+                            5,
+                            0
+                        ]
+                    ],
+                    "calibration_ece": 0.0833
+                },
+                {
+                    "accuracy": 74.17,
+                    "macro_f1": 0.3314,
+                    "weighted_f1": 0.7305,
+                    "balanced_accuracy": 33.36,
+                    "precision_per_class": [
+                        0.8387,
+                        0.1111,
+                        0.0444
+                    ],
+                    "recall_per_class": [
+                        0.8683,
+                        0.0786,
+                        0.0541
+                    ],
+                    "f1_per_class": [
+                        0.8532,
+                        0.0921,
+                        0.0488
+                    ],
+                    "intact_f1": 0.8532,
+                    "damaged_f1": 0.0921,
+                    "destroyed_f1": 0.0488,
+                    "intact_recall": 86.83,
+                    "damaged_recall": 7.86,
+                    "destroyed_recall": 5.41,
+                    "confusion_matrix": [
+                        [
+                            811,
+                            83,
+                            40
+                        ],
+                        [
+                            126,
+                            11,
+                            3
+                        ],
+                        [
+                            30,
+                            5,
+                            2
+                        ]
+                    ],
+                    "calibration_ece": 0.0874
+                }
+            ]
+        },
+        "Candidate_SignedDiff": {
+            "mean_macro_f1": 0.3221,
+            "std_macro_f1": 0.0073,
+            "mean_accuracy": 73.03,
+            "mean_damaged_recall": 15.24,
+            "mean_destroyed_recall": 0.0,
+            "mean_ece": 0.353,
+            "per_seed_metrics": [
+                {
+                    "accuracy": 79.3,
+                    "macro_f1": 0.3143,
+                    "weighted_f1": 0.7514,
+                    "balanced_accuracy": 32.66,
+                    "precision_per_class": [
+                        0.8389,
+                        0.0882,
+                        0.0
+                    ],
+                    "recall_per_class": [
+                        0.9368,
+                        0.0429,
+                        0.0
+                    ],
+                    "f1_per_class": [
+                        0.8852,
+                        0.0577,
+                        0.0
+                    ],
+                    "intact_f1": 0.8852,
+                    "damaged_f1": 0.0577,
+                    "destroyed_f1": 0.0,
+                    "intact_recall": 93.68,
+                    "damaged_recall": 4.29,
+                    "destroyed_recall": 0.0,
+                    "confusion_matrix": [
+                        [
+                            875,
+                            59,
+                            0
+                        ],
+                        [
+                            134,
+                            6,
+                            0
+                        ],
+                        [
+                            34,
+                            3,
+                            0
+                        ]
+                    ],
+                    "calibration_ece": 0.4192
+                },
+                {
+                    "accuracy": 66.25,
+                    "macro_f1": 0.3203,
+                    "weighted_f1": 0.6872,
+                    "balanced_accuracy": 33.35,
+                    "precision_per_class": [
+                        0.8385,
+                        0.1273,
+                        0.0
+                    ],
+                    "recall_per_class": [
+                        0.7505,
+                        0.25,
+                        0.0
+                    ],
+                    "f1_per_class": [
+                        0.7921,
+                        0.1687,
+                        0.0
+                    ],
+                    "intact_f1": 0.7921,
+                    "damaged_f1": 0.1687,
+                    "destroyed_f1": 0.0,
+                    "intact_recall": 75.05,
+                    "damaged_recall": 25.0,
+                    "destroyed_recall": 0.0,
+                    "confusion_matrix": [
+                        [
+                            701,
+                            233,
+                            0
+                        ],
+                        [
+                            105,
+                            35,
+                            0
+                        ],
+                        [
+                            30,
+                            7,
+                            0
+                        ]
+                    ],
+                    "calibration_ece": 0.2965
+                },
+                {
+                    "accuracy": 73.54,
+                    "macro_f1": 0.3318,
+                    "weighted_f1": 0.7307,
+                    "balanced_accuracy": 33.81,
+                    "precision_per_class": [
+                        0.8438,
+                        0.1353,
+                        0.0
+                    ],
+                    "recall_per_class": [
+                        0.8501,
+                        0.1643,
+                        0.0
+                    ],
+                    "f1_per_class": [
+                        0.8469,
+                        0.1484,
+                        0.0
+                    ],
+                    "intact_f1": 0.8469,
+                    "damaged_f1": 0.1484,
+                    "destroyed_f1": 0.0,
+                    "intact_recall": 85.01,
+                    "damaged_recall": 16.43,
+                    "destroyed_recall": 0.0,
+                    "confusion_matrix": [
+                        [
+                            794,
+                            140,
+                            0
+                        ],
+                        [
+                            117,
+                            23,
+                            0
+                        ],
+                        [
+                            30,
+                            7,
+                            0
+                        ]
+                    ],
+                    "calibration_ece": 0.3432
+                }
+            ]
+        },
+        "Candidate_AttentionFusion": {
+            "mean_macro_f1": 0.3452,
+            "std_macro_f1": 0.0123,
+            "mean_accuracy": 70.06,
+            "mean_damaged_recall": 11.91,
+            "mean_destroyed_recall": 15.32,
+            "mean_ece": 0.3291,
+            "per_seed_metrics": [
+                {
+                    "accuracy": 70.21,
+                    "macro_f1": 0.3353,
+                    "weighted_f1": 0.7093,
+                    "balanced_accuracy": 33.67,
+                    "precision_per_class": [
+                        0.8344,
+                        0.1046,
+                        0.0652
+                    ],
+                    "recall_per_class": [
+                        0.8148,
+                        0.1143,
+                        0.0811
+                    ],
+                    "f1_per_class": [
+                        0.8245,
+                        0.1092,
+                        0.0723
+                    ],
+                    "intact_f1": 0.8245,
+                    "damaged_f1": 0.1092,
+                    "destroyed_f1": 0.0723,
+                    "intact_recall": 81.48,
+                    "damaged_recall": 11.43,
+                    "destroyed_recall": 8.11,
+                    "confusion_matrix": [
+                        [
+                            761,
+                            134,
+                            39
+                        ],
+                        [
+                            120,
+                            16,
+                            4
+                        ],
+                        [
+                            31,
+                            3,
+                            3
+                        ]
+                    ],
+                    "calibration_ece": 0.3282
+                },
+                {
+                    "accuracy": 64.36,
+                    "macro_f1": 0.3377,
+                    "weighted_f1": 0.6802,
+                    "balanced_accuracy": 38.27,
+                    "precision_per_class": [
+                        0.8431,
+                        0.1379,
+                        0.0615
+                    ],
+                    "recall_per_class": [
+                        0.7366,
+                        0.1143,
+                        0.2973
+                    ],
+                    "f1_per_class": [
+                        0.7863,
+                        0.125,
+                        0.1019
+                    ],
+                    "intact_f1": 0.7863,
+                    "damaged_f1": 0.125,
+                    "destroyed_f1": 0.1019,
+                    "intact_recall": 73.66,
+                    "damaged_recall": 11.43,
+                    "destroyed_recall": 29.73,
+                    "confusion_matrix": [
+                        [
+                            688,
+                            100,
+                            146
+                        ],
+                        [
+                            102,
+                            16,
+                            22
+                        ],
+                        [
+                            26,
+                            0,
+                            11
+                        ]
+                    ],
+                    "calibration_ece": 0.2811
+                },
+                {
+                    "accuracy": 75.61,
+                    "macro_f1": 0.3626,
+                    "weighted_f1": 0.7452,
+                    "balanced_accuracy": 36.22,
+                    "precision_per_class": [
+                        0.8461,
+                        0.1731,
+                        0.0769
+                    ],
+                    "recall_per_class": [
+                        0.8769,
+                        0.1286,
+                        0.0811
+                    ],
+                    "f1_per_class": [
+                        0.8612,
+                        0.1475,
+                        0.0789
+                    ],
+                    "intact_f1": 0.8612,
+                    "damaged_f1": 0.1475,
+                    "destroyed_f1": 0.0789,
+                    "intact_recall": 87.69,
+                    "damaged_recall": 12.86,
+                    "destroyed_recall": 8.11,
+                    "confusion_matrix": [
+                        [
+                            819,
+                            83,
+                            32
+                        ],
+                        [
+                            118,
+                            18,
+                            4
+                        ],
+                        [
+                            31,
+                            3,
+                            3
+                        ]
+                    ],
+                    "calibration_ece": 0.3781
+                }
+            ]
+        }
+    },
+    "final_locked_test_metrics": {
+        "accuracy": 57.82,
+        "macro_f1": 0.331,
+        "weighted_f1": 0.6439,
+        "balanced_accuracy": 36.01,
+        "precision_per_class": [
+            0.8592,
+            0.1579,
+            0.0355
+        ],
+        "recall_per_class": [
+            0.6396,
+            0.2786,
+            0.1622
+        ],
+        "f1_per_class": [
+            0.7333,
+            0.2016,
+            0.0583
+        ],
+        "intact_f1": 0.7333,
+        "damaged_f1": 0.2016,
+        "destroyed_f1": 0.0583,
+        "intact_recall": 63.96,
+        "damaged_recall": 27.86,
+        "destroyed_recall": 16.22,
+        "confusion_matrix": [
+            [
+                598,
+                199,
+                138
+            ],
+            [
+                76,
+                39,
+                25
+            ],
+            [
+                22,
+                9,
+                6
+            ]
+        ],
+        "calibration_ece": 0.1816
+    },
+    "final_unseen_holdout_metrics": {
+        "accuracy": 57.08,
+        "macro_f1": 0.3001,
+        "weighted_f1": 0.65,
+        "balanced_accuracy": 31.04,
+        "precision_per_class": [
+            0.8723,
+            0.1075,
+            0.0141
+        ],
+        "recall_per_class": [
+            0.6273,
+            0.2326,
+            0.0714
+        ],
+        "f1_per_class": [
+            0.7298,
+            0.1471,
+            0.0235
+        ],
+        "intact_f1": 0.7298,
+        "damaged_f1": 0.1471,
+        "destroyed_f1": 0.0235,
+        "intact_recall": 62.73,
+        "damaged_recall": 23.26,
+        "destroyed_recall": 7.14,
+        "confusion_matrix": [
+            [
+                239,
+                81,
+                61
+            ],
+            [
+                24,
+                10,
+                9
+            ],
+            [
+                11,
+                2,
+                1
+            ]
+        ],
+        "calibration_ece": 0.1816
+    }
+}

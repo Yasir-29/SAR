@@ -29,3 +29,8 @@ __pycache__/
 
 # Split temporary work
 *.tmp
+
+# Model checkpoints
+*.pt
+!*.pt.part_*
+research/phase9_accuracy_improvement/checkpoints/
