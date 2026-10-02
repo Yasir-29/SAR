@@ -34,3 +34,7 @@ __pycache__/
 *.pt
 !*.pt.part_*
 research/phase9_accuracy_improvement/checkpoints/
+
+# Backend generated data & images
+backend/data/
+

@@ -102,12 +102,15 @@ interface StreetViewResponse {
   reason?: string;
   image_url?: string;
   date?: string;
+  label?: string;
   pano_id?: string;
   copyright?: string;
   heading?: number;
   pitch?: number;
   fov?: number;
-  location?: { latitude: number; longitude: number };
+  requested_location?: { latitude: number; longitude: number };
+  panorama_location?: { latitude: number; longitude: number };
+  panorama_distance_meters?: number;
 }
 
 interface SatelliteData {
@@ -136,8 +139,10 @@ interface ManualLocationAnalysisResult {
   event_name: string;
   event_date: string;
   search_location: { latitude: number; longitude: number };
+  exact_building_found: boolean;
   footprint_matched: boolean;
   matched_building_id?: string | null;
+  nearest_building?: { building_id: string; distance_meters: number } | null;
   distance_meters?: number | null;
   location_message: string;
   street_view: StreetViewResponse;
@@ -161,8 +166,8 @@ export default function TamilNaduDisasterAssessmentApp() {
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   // Manual Coordinate Search State
-  const [manualLat, setManualLat] = useState<string>("13.082700");
-  const [manualLon, setManualLon] = useState<string>("80.270700");
+  const [manualLat, setManualLat] = useState<string>("10.583960");
+  const [manualLon, setManualLon] = useState<string>("79.712520");
   const [searchQueryLocation, setSearchQueryLocation] = useState<{ lat: number; lon: number } | null>(null);
   const [manualResult, setManualResult] = useState<ManualLocationAnalysisResult | null>(null);
   const [manualSearching, setManualSearching] = useState<boolean>(false);
@@ -204,7 +209,7 @@ export default function TamilNaduDisasterAssessmentApp() {
           const list = data.events || [];
           setEvents(list);
           if (list.length > 0) {
-            const firstId = list.find((e: EventRegistryItem) => e.event_id === "TN_CHENNAI_FLOOD_2021")?.event_id || list[0].event_id;
+            const firstId = list.find((e: EventRegistryItem) => e.event_id === "TN_GAJA_2018")?.event_id || list[0].event_id;
             setSelectedEventId(firstId);
           }
         }
@@ -351,7 +356,7 @@ export default function TamilNaduDisasterAssessmentApp() {
         setManualResult(locData);
         setStreetView(locData.street_view);
 
-        // If footprint matched to an existing building, highlight that feature
+        // If exact building footprint matched, select that feature
         if (locData.footprint_matched && locData.matched_building_id && buildingCollection?.features) {
           const matchFeat = buildingCollection.features.find(
             f => String(f.properties.building_id || f.properties.osm_id) === String(locData.matched_building_id)
@@ -404,7 +409,7 @@ export default function TamilNaduDisasterAssessmentApp() {
   const fetchSatelliteImagery = async (lat: number, lon: number) => {
     setSatLoading(true);
     try {
-      const evDate = eventSummary?.pre_date?.split("T")[0] || "2021-10-25";
+      const evDate = eventSummary?.pre_date?.split("T")[0] || "2018-11-10";
       const res = await fetch(`${FASTAPI_URL}/api/satellite/before-after`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -421,13 +426,13 @@ export default function TamilNaduDisasterAssessmentApp() {
       if (res.ok) {
         const data = await res.json();
         setSatellite({
-          before: data.before || { available: false, reason: "No suitable satellite imagery found." },
-          after: data.after || { available: false, reason: "No suitable satellite imagery found." },
+          before: data.before || { available: false, reason: "No suitable Copernicus imagery found for this event/location." },
+          after: data.after || { available: false, reason: "No suitable Copernicus imagery found for this event/location." },
         });
       } else {
         setSatellite({
-          before: { available: false, reason: "Suitable Sentinel-2 imagery unavailable for this location/date." },
-          after: { available: false, reason: "Suitable Sentinel-2 imagery unavailable for this location/date." }
+          before: { available: false, reason: "No suitable Copernicus imagery found for this event/location." },
+          after: { available: false, reason: "No suitable Copernicus imagery found for this event/location." }
         });
       }
     } catch (e) {
@@ -633,7 +638,7 @@ export default function TamilNaduDisasterAssessmentApp() {
                       step="0.000001"
                       value={manualLat}
                       onChange={(e) => setManualLat(e.target.value)}
-                      placeholder="13.082700"
+                      placeholder="10.583960"
                       className="w-full bg-slate-900 border border-slate-800 rounded-xl px-2.5 py-1.5 text-xs text-slate-100 font-mono focus:outline-none focus:border-sky-500"
                       required
                     />
@@ -648,7 +653,7 @@ export default function TamilNaduDisasterAssessmentApp() {
                       step="0.000001"
                       value={manualLon}
                       onChange={(e) => setManualLon(e.target.value)}
-                      placeholder="80.270700"
+                      placeholder="79.712520"
                       className="w-full bg-slate-900 border border-slate-800 rounded-xl px-2.5 py-1.5 text-xs text-slate-100 font-mono focus:outline-none focus:border-sky-500"
                       required
                     />
@@ -799,7 +804,7 @@ export default function TamilNaduDisasterAssessmentApp() {
                 {eventSummary?.event_name || "Tamil Nadu GIS Map"}
               </span>
               <span className="text-[10px] text-slate-400 font-mono block">
-                OpenStreetMap Geographic Base Layer
+                OPENSTREETMAP (Geographic Base Layer)
               </span>
             </div>
           </div>
@@ -812,25 +817,29 @@ export default function TamilNaduDisasterAssessmentApp() {
                 <div>
                   <div className="flex items-center space-x-2">
                     <MapPin className="w-5 h-5 text-sky-400" />
-                    <h2 className="text-lg font-extrabold text-slate-100 font-mono">
+                    <h2 className="text-lg font-extrabold text-slate-100 font-mono tracking-wide">
                       DISASTER LOCATION ASSESSMENT
                     </h2>
                   </div>
-                  <p className="text-xs text-slate-400 mt-1">
-                    Event: <span className="text-sky-300 font-semibold">{eventSummary?.event_name}</span> | Date: <span className="text-slate-200 font-mono">{eventSummary?.pre_date?.split("T")[0]}</span> | Coords: <span className="text-sky-300 font-mono">{searchQueryLocation ? `${searchQueryLocation.lat.toFixed(6)}, ${searchQueryLocation.lon.toFixed(6)}` : "Dataset Location"}</span>
-                  </p>
+                  <div className="text-xs text-slate-400 mt-1 space-x-3 font-mono">
+                    <span>Event: <strong className="text-sky-300 font-semibold">{manualResult?.event_name || eventSummary?.event_name}</strong></span>
+                    <span>•</span>
+                    <span>Event date: <strong className="text-slate-200">{manualResult?.event_date || eventSummary?.pre_date?.split("T")[0]}</strong></span>
+                    <span>•</span>
+                    <span>Requested coordinates: <strong className="text-sky-300">{searchQueryLocation ? `${searchQueryLocation.lat.toFixed(6)}, ${searchQueryLocation.lon.toFixed(6)}` : "Dataset Location"}</strong></span>
+                  </div>
                 </div>
 
                 <div className="flex items-center space-x-3">
                   <div className="text-right">
-                    <span className="text-[10px] text-slate-500 uppercase font-bold block">Ground Truth</span>
+                    <span className="text-[10px] text-slate-500 uppercase font-bold block">GROUND TRUTH</span>
                     <span className={`px-3 py-1 rounded-xl text-xs font-black border ${getDamageBadgeStyle(manualResult ? manualResult.ground_truth : (selectedBuilding?.properties?.ground_truth || selectedBuilding?.properties?.prediction))}`}>
                       {manualResult ? manualResult.ground_truth : (selectedBuilding?.properties?.ground_truth || selectedBuilding?.properties?.prediction || "UNAVAILABLE")}
                     </span>
                   </div>
 
                   <div className="text-right">
-                    <span className="text-[10px] text-slate-500 uppercase font-bold block">Model Prediction</span>
+                    <span className="text-[10px] text-slate-500 uppercase font-bold block">MODEL PREDICTION</span>
                     <span className={`px-3 py-1 rounded-xl text-xs font-black border ${getDamageBadgeStyle(manualResult ? manualResult.model_prediction : selectedBuilding?.properties?.prediction)}`}>
                       {manualResult ? manualResult.model_prediction : (selectedBuilding?.properties?.prediction || "unavailable")}
                     </span>
@@ -838,36 +847,56 @@ export default function TamilNaduDisasterAssessmentApp() {
                 </div>
               </div>
 
-              {/* FOOTPRINT / MATCH STATUS BANNER */}
-              {manualResult && (
-                <div className={`p-4 rounded-2xl border text-xs font-mono flex items-center justify-between ${
-                  manualResult.footprint_matched
-                    ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-300"
-                    : "bg-amber-500/10 border-amber-500/30 text-amber-300"
-                }`}>
-                  <div className="flex items-center space-x-2">
-                    <Info className="w-4 h-4 shrink-0" />
-                    <span>{manualResult.location_message}</span>
+              {/* BUILDING SECTION */}
+              <div className="bg-slate-900/90 rounded-2xl p-4 border border-slate-800 text-xs font-mono space-y-2">
+                <span className="text-[11px] font-bold text-sky-400 uppercase tracking-wider block">BUILDING</span>
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 text-slate-300">
+                  <div className="flex items-center space-x-4">
+                    <span>
+                      Exact building: <strong className={manualResult ? (manualResult.exact_building_found ? "text-emerald-400" : "text-amber-400") : "text-emerald-400"}>
+                        {manualResult ? (manualResult.exact_building_found ? `Found (${manualResult.matched_building_id})` : "Not Found") : `Found (${selectedBuilding?.properties?.building_id || selectedBuilding?.properties?.osm_id})`}
+                      </strong>
+                    </span>
+
+                    {manualResult?.nearest_building && (
+                      <span>
+                        Nearest building: <strong className="text-sky-300">{manualResult.nearest_building.building_id}</strong> (Distance: {manualResult.nearest_building.distance_meters} m)
+                      </span>
+                    )}
                   </div>
-                  {manualResult.distance_meters && (
-                    <span className="font-bold text-slate-300">Offset: {manualResult.distance_meters}m</span>
+
+                  {manualResult?.nearest_building && (
+                    <button
+                      onClick={() => {
+                        if (buildingCollection?.features) {
+                          const matchFeat = buildingCollection.features.find(
+                            f => String(f.properties.building_id || f.properties.osm_id) === String(manualResult.nearest_building?.building_id)
+                          );
+                          if (matchFeat) handleSelectBuilding(matchFeat);
+                        }
+                      }}
+                      className="px-3 py-1 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-500/40 text-[11px] font-bold transition-colors shrink-0"
+                    >
+                      Select Nearest Building
+                    </button>
                   )}
                 </div>
-              )}
+                <p className="text-[11px] text-slate-400">{manualResult?.location_message || "Exact building polygon retrieved from spatial database."}</p>
+              </div>
 
-              {/* GRID: STREET VIEW vs SATELLITE COMPARISON */}
+              {/* GRID: GOOGLE STREET VIEW vs COPERNICUS SENTINEL */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                {/* GOOGLE STREET VIEW STATIC API PANEL */}
+                {/* GOOGLE STREET VIEW PANEL */}
                 <div className="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-3xl p-5 space-y-4 shadow-xl flex flex-col justify-between">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-extrabold text-slate-200 flex items-center">
                         <Compass className="w-4 h-4 text-sky-400 mr-2" />
-                        Google Street View (Street-Level Imagery)
+                        GOOGLE STREET VIEW
                       </h3>
                       {streetView?.available ? (
                         <span className="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-lg border border-emerald-500/20 font-bold">
-                          Available ({streetView.date || "2025"})
+                          CURRENT STREET VIEW ({streetView.date || "Captured"})
                         </span>
                       ) : (
                         <span className="text-[10px] bg-rose-500/10 text-rose-400 px-2 py-0.5 rounded-lg border border-rose-500/20 font-bold">
@@ -901,12 +930,43 @@ export default function TamilNaduDisasterAssessmentApp() {
                       )}
                     </div>
 
+                    {/* STREET VIEW PANORAMA METADATA & DISTANCE */}
+                    {streetView?.available && (
+                      <div className="bg-slate-950/90 rounded-2xl p-3 border border-slate-800 text-[11px] text-slate-300 space-y-1 font-mono">
+                        <p className="flex justify-between">
+                          <span className="text-slate-500">Classification:</span>
+                          <span className="font-bold text-emerald-400">CURRENT STREET VIEW</span>
+                        </p>
+                        <p className="flex justify-between">
+                          <span className="text-slate-500">Captured:</span>
+                          <span className="font-bold text-slate-200">{streetView.date || "Current"}</span>
+                        </p>
+                        {searchQueryLocation && (
+                          <p className="flex justify-between">
+                            <span className="text-slate-500">Requested:</span>
+                            <span className="font-bold text-slate-200">{searchQueryLocation.lat.toFixed(6)}, {searchQueryLocation.lon.toFixed(6)}</span>
+                          </p>
+                        )}
+                        {streetView.panorama_location && (
+                          <p className="flex justify-between">
+                            <span className="text-slate-500">Street View panorama:</span>
+                            <span className="font-bold text-slate-200">{streetView.panorama_location.latitude.toFixed(6)}, {streetView.panorama_location.longitude.toFixed(6)}</span>
+                          </p>
+                        )}
+                        {streetView.panorama_distance_meters !== undefined && (
+                          <p className="flex justify-between">
+                            <span className="text-slate-500">Distance:</span>
+                            <span className="font-bold text-sky-300">{streetView.panorama_distance_meters} m</span>
+                          </p>
+                        )}
+                      </div>
+                    )}
+
                     {/* HISTORICAL STREET VIEW NOTICE */}
                     <div className="bg-slate-950/80 rounded-2xl p-3 border border-slate-800 text-[11px] text-slate-400 space-y-1 font-mono">
-                      <span className="text-[10px] font-bold text-slate-500 uppercase block mb-1">Historical Street View (Before/After)</span>
-                      <p className="text-slate-400 leading-tight">
-                        Historical Street View imagery before/after this event is not available through the configured Street View service.
-                      </p>
+                      <span className="text-[10px] font-bold text-slate-500 uppercase block mb-1">HISTORICAL STREET VIEW</span>
+                      <p className="flex justify-between"><span className="text-slate-500">Historical Before:</span> <span className="text-amber-400 font-bold">Unavailable</span></p>
+                      <p className="flex justify-between"><span className="text-slate-500">Historical After:</span> <span className="text-amber-400 font-bold">Unavailable</span></p>
                     </div>
                   </div>
 
@@ -936,13 +996,13 @@ export default function TamilNaduDisasterAssessmentApp() {
                   )}
                 </div>
 
-                {/* COPERNICUS SENTINEL-2 SATELLITE BEFORE/AFTER & CHANGE */}
+                {/* COPERNICUS SENTINEL SATELLITE BEFORE/AFTER */}
                 <div className="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-3xl p-5 space-y-4 shadow-xl flex flex-col justify-between">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-extrabold text-slate-200 flex items-center">
                         <Eye className="w-4 h-4 text-sky-400 mr-2" />
-                        Copernicus Sentinel-2 Satellite Imagery
+                        COPERNICUS SENTINEL
                       </h3>
                       <div className="flex items-center space-x-1 bg-slate-950 p-1 rounded-xl border border-slate-800 text-[10px]">
                         <button
@@ -979,12 +1039,12 @@ export default function TamilNaduDisasterAssessmentApp() {
                         onMouseUp={handleMouseUp}
                         onMouseMove={handleMouseMove}
                       >
-                        <img src={satellite.after.image_url} alt="After Satellite" className="w-full h-full object-cover" />
+                        <img src={satellite.after.image_url} alt="After Sentinel Satellite" className="w-full h-full object-cover" />
                         <div
                           className="absolute inset-0 h-full overflow-hidden border-r-2 border-white shadow-2xl"
                           style={{ width: `${sliderPos}%` }}
                         >
-                          <img src={satellite.before.image_url} alt="Before Satellite" className="w-full h-full object-cover" style={{ width: "100%", height: "100%" }} />
+                          <img src={satellite.before.image_url} alt="Before Sentinel Satellite" className="w-full h-full object-cover" style={{ width: "100%", height: "100%" }} />
                         </div>
                         <div
                           className="absolute top-0 bottom-0 w-1 bg-white cursor-col-resize shadow-[0_0_15px_rgba(255,255,255,0.8)]"
@@ -995,24 +1055,39 @@ export default function TamilNaduDisasterAssessmentApp() {
                       <div className="aspect-video bg-slate-950 rounded-2xl p-6 flex flex-col items-center justify-center text-center space-y-2 border border-slate-800">
                         <AlertTriangle className="w-8 h-8 text-amber-400 opacity-70" />
                         <p className="text-xs font-bold text-slate-300">
-                          No suitable satellite imagery found.
+                          {satellite?.before?.reason || satellite?.after?.reason || "No suitable Copernicus Sentinel image found for this event/location."}
                         </p>
                       </div>
                     )}
                   </div>
 
-                  {/* MODEL COMPATIBILITY & METADATA NOTE */}
+                  {/* SATELLITE METADATA GRID */}
+                  {satellite?.before?.available && satellite?.after?.available && (
+                    <div className="grid grid-cols-2 gap-3 text-[11px] font-mono">
+                      <div className="bg-slate-950 rounded-2xl p-3 border border-slate-800 space-y-1">
+                        <span className="text-xs font-bold text-sky-400 block mb-1">COPERNICUS SENTINEL — BEFORE DISASTER</span>
+                        <p className="flex justify-between"><span className="text-slate-500">Acquisition:</span><span className="font-bold text-slate-200">{satellite.before.acquisition_date?.split("T")[0]}</span></p>
+                        <p className="flex justify-between"><span className="text-slate-500">Cloud:</span><span className="font-bold text-slate-200">{satellite.before.cloud_cover}%</span></p>
+                        <p className="truncate text-[10px] text-slate-400" title={satellite.before.product_id}>Product: {satellite.before.product_id}</p>
+                      </div>
+
+                      <div className="bg-slate-950 rounded-2xl p-3 border border-slate-800 space-y-1">
+                        <span className="text-xs font-bold text-indigo-400 block mb-1">COPERNICUS SENTINEL — AFTER DISASTER</span>
+                        <p className="flex justify-between"><span className="text-slate-500">Acquisition:</span><span className="font-bold text-slate-200">{satellite.after.acquisition_date?.split("T")[0]}</span></p>
+                        <p className="flex justify-between"><span className="text-slate-500">Cloud:</span><span className="font-bold text-slate-200">{satellite.after.cloud_cover}%</span></p>
+                        <p className="truncate text-[10px] text-slate-400" title={satellite.after.product_id}>Product: {satellite.after.product_id}</p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* DAMAGE ASSESSMENT / MODEL STATUS NOTE */}
                   <div className="bg-slate-950 rounded-2xl p-3 border border-slate-800 text-[11px] text-slate-400 space-y-1 font-mono">
-                    <p className="flex justify-between">
-                      <span>Model Preprocessing Compatibility:</span>
-                      <span className={manualResult?.footprint_matched || selectedBuilding ? "text-emerald-400 font-bold" : "text-amber-400 font-bold"}>
-                        {manualResult?.footprint_matched || selectedBuilding ? "xBD Paired Crop (Compatible)" : "Model inference unavailable"}
-                      </span>
-                    </p>
-                    <p className="text-slate-400 text-[10px]">
-                      {manualResult?.model_status_note || "Model requires xBD-compatible paired building patches."}
-                    </p>
+                    <span className="text-[11px] font-bold text-purple-400 uppercase tracking-wider block mb-1">DAMAGE ASSESSMENT</span>
+                    <p className="flex justify-between"><span className="text-slate-500">Ground Truth:</span> <span className="font-bold text-slate-200">{manualResult ? manualResult.ground_truth : (selectedBuilding?.properties?.ground_truth || selectedBuilding?.properties?.prediction || "UNAVAILABLE")}</span></p>
+                    <p className="flex justify-between"><span className="text-slate-500">Model Prediction:</span> <span className="font-bold text-slate-200">{manualResult ? manualResult.model_prediction : (selectedBuilding?.properties?.prediction || "unavailable")}</span></p>
+                    <p className="flex justify-between"><span className="text-slate-500">Confidence:</span> <span className="font-bold text-slate-200">{manualResult?.model_confidence ? `${(manualResult.model_confidence * 100).toFixed(1)}%` : "unavailable"}</span></p>
                   </div>
+
                 </div>
               </div>
             </div>

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+requests
+python-dotenv
+pydantic
+pydantic-settings
+numpy
+Pillow
+shapely
+pyproj
+torch
+pytest
+httpx
