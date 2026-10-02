@@ -111,16 +111,16 @@ export default function LeafletMap({ data, selectedFeature, onSelectBuilding, fi
     const geojsonLayer = L.geoJSON({ type: 'FeatureCollection', features: filteredFeatures } as any, {
       style: (feature) => {
         const pred = feature?.properties?.prediction || feature?.properties?.damage_prediction;
-        let color = '#94a3b8'; // Neutral Gray
-        if (pred === 'INTACT') color = '#10b981'; // Green
-        else if (pred === 'DAMAGED') color = '#f59e0b'; // Amber/Orange
-        else if (pred === 'DESTROYED') color = '#ef4444'; // Red
+        let color = '#737373'; // Medium Gray default
+        if (pred === 'INTACT') color = '#e5e5e5'; // Light Gray
+        else if (pred === 'DAMAGED') color = '#525252'; // Dark Gray
+        else if (pred === 'DESTROYED') color = '#171717'; // Black
 
         return {
           fillColor: color,
-          fillOpacity: 0.65,
-          color: '#ffffff',
-          weight: 1.2,
+          fillOpacity: 0.75,
+          color: '#000000',
+          weight: 1.5,
           opacity: 0.9,
         };
       },
@@ -135,9 +135,9 @@ export default function LeafletMap({ data, selectedFeature, onSelectBuilding, fi
         const conf = props.confidence ? `${(props.confidence * 100).toFixed(1)}%` : 'N/A';
 
         layer.bindTooltip(
-          `<div class="font-sans text-xs font-semibold px-1 py-0.5">
-            <div class="text-cyan-400 font-bold">${bldId}</div>
-            <div class="text-slate-200 font-normal mt-0.5">Status: <span class="font-bold">${pred}</span> (${conf})</div>
+          `<div class="font-sans text-xs font-semibold px-1 py-0.5 text-black">
+            <div class="font-bold border-b border-neutral-300 pb-0.5">${bldId}</div>
+            <div class="font-normal mt-0.5">Status: <span class="font-bold">${pred}</span> (${conf})</div>
           </div>`,
           { sticky: true, className: 'leaflet-custom-tooltip' }
         );
@@ -176,10 +176,11 @@ export default function LeafletMap({ data, selectedFeature, onSelectBuilding, fi
       html: `<div style="
         width: 24px;
         height: 24px;
-        background: #0284c7;
+        background: #000000;
         border: 2px solid #ffffff;
         border-radius: 50%;
-        box-shadow: 0 0 12px #38bdf8;
+        box-shadow: 0 0 8px #000000;
+        background-color: #000000;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -192,7 +193,7 @@ export default function LeafletMap({ data, selectedFeature, onSelectBuilding, fi
     });
 
     const searchMarker = L.marker([searchQueryLocation.lat, searchQueryLocation.lon], { icon: searchIcon })
-      .bindTooltip('Searched Location', { permanent: true, direction: 'top', className: 'text-xs bg-slate-900 text-sky-400 font-bold border border-sky-500' })
+      .bindTooltip('Searched Location', { permanent: true, direction: 'top', className: 'text-xs bg-black text-white font-bold border border-black' })
       .addTo(map);
 
     searchMarkerRef.current = searchMarker;

@@ -15,34 +15,26 @@ import {
   ShieldCheck,
   RefreshCw,
   Search,
-  Sparkles,
   ChevronDown,
   ChevronUp,
-  Sliders,
   Eye,
-  FileJson,
-  FileText,
-  ShieldAlert,
-  Info,
   Globe,
   Database,
   RotateCcw,
   RotateCw,
-  Maximize2,
   Building2,
   Compass,
-  ArrowRight,
-  Award,
   BarChart3,
-  Navigation
+  Navigation,
+  ShieldAlert
 } from "lucide-react";
 
 // Dynamic import Leaflet map for Next.js SSR compatibility
 const LeafletMap = dynamic(() => import("../components/ui/leaflet-map"), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-full min-h-[500px] bg-slate-950 rounded-2xl flex flex-col items-center justify-center text-slate-500 text-xs border border-slate-800">
-      <RefreshCw className="w-8 h-8 text-sky-400 animate-spin mb-2" />
+    <div className="w-full h-full min-h-[500px] bg-neutral-100 rounded-2xl flex flex-col items-center justify-center text-neutral-600 text-xs border border-neutral-300">
+      <RefreshCw className="w-8 h-8 text-black animate-spin mb-2" />
       <span>Loading Interactive OpenStreetMap GIS Platform...</span>
     </div>
   ),
@@ -193,7 +185,6 @@ export default function TamilNaduDisasterAssessmentApp() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [isDemoMode, setIsDemoMode] = useState<boolean>(false);
-  const [showMethodology, setShowMethodology] = useState<boolean>(false);
 
   const isDraggingRef = useRef<boolean>(false);
   const FLASK_URL = process.env.NEXT_PUBLIC_FLASK_URL || "http://127.0.0.1:5001";
@@ -458,13 +449,13 @@ export default function TamilNaduDisasterAssessmentApp() {
   const getDamageBadgeStyle = (status?: string) => {
     switch (status) {
       case "INTACT":
-        return "bg-emerald-500/20 text-emerald-400 border-emerald-500/50";
+        return "bg-neutral-100 text-neutral-800 border-neutral-300";
       case "DAMAGED":
-        return "bg-amber-500/20 text-amber-400 border-amber-500/50";
+        return "bg-neutral-300 text-neutral-900 border-neutral-400";
       case "DESTROYED":
-        return "bg-rose-500/20 text-rose-400 border-rose-500/50";
+        return "bg-black text-white border-black";
       default:
-        return "bg-slate-800 text-slate-300 border-slate-700";
+        return "bg-neutral-100 text-neutral-700 border-neutral-200";
     }
   };
 
@@ -477,18 +468,18 @@ export default function TamilNaduDisasterAssessmentApp() {
   }) || [];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans flex flex-col selection:bg-sky-500 selection:text-white">
+    <div className="min-h-screen bg-neutral-50 text-neutral-900 font-sans flex flex-col selection:bg-black selection:text-white">
       {/* 1. HEADER BAR */}
-      <header className="bg-slate-900/90 border-b border-slate-800 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 sticky top-0 z-30 backdrop-blur-md">
+      <header className="bg-white border-b border-neutral-200 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 sticky top-0 z-30">
         <div className="flex items-center space-x-3">
-          <div className="p-2.5 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-400">
-            <Satellite className="w-6 h-6 animate-pulse" />
+          <div className="p-2.5 rounded-xl bg-black text-white">
+            <Satellite className="w-6 h-6" />
           </div>
           <div>
-            <h1 className="text-xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-indigo-300 to-purple-400 uppercase">
+            <h1 className="text-xl font-black tracking-tight text-black uppercase">
               Tamil Nadu Disaster Building-Damage Assessment Platform
             </h1>
-            <p className="text-xs text-slate-400 font-medium">
+            <p className="text-xs text-neutral-600 font-medium">
               Real GIS Map • OpenStreetMap • Google Street View • Copernicus Sentinel-2 • Certified xBD AI Model
             </p>
           </div>
@@ -496,109 +487,45 @@ export default function TamilNaduDisasterAssessmentApp() {
 
         <div className="flex items-center space-x-3">
           {isDemoMode ? (
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold bg-amber-500/10 text-amber-400 border border-amber-500/30">
-              <ShieldAlert className="w-3.5 h-3.5 mr-1.5" />
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-neutral-100 text-neutral-900 border border-neutral-300">
+              <ShieldAlert className="w-3.5 h-3.5 mr-1.5 text-black" />
               DEMO MODE
             </span>
           ) : (
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
-              <ShieldCheck className="w-3.5 h-3.5 mr-1.5" />
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-black text-white border border-black">
+              <ShieldCheck className="w-3.5 h-3.5 mr-1.5 text-white" />
               PRODUCTION (REAL APIS)
             </span>
           )}
-
-          <button
-            onClick={() => setShowMethodology(!showMethodology)}
-            className="inline-flex items-center px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-sky-300 border border-slate-700 transition-colors"
-          >
-            <Award className="w-3.5 h-3.5 mr-1.5" />
-            Research Methodology
-          </button>
         </div>
       </header>
 
-      {/* RESEARCH METHODOLOGY MODAL / DRAWER */}
-      {showMethodology && (
-        <section className="bg-slate-900 border-b border-slate-800 p-6 space-y-4 animate-in slide-in-from-top-4 duration-300">
-          <div className="max-w-7xl mx-auto space-y-4">
-            <div className="flex items-center justify-between">
-              <h2 className="text-lg font-extrabold text-sky-400 flex items-center">
-                <Award className="w-5 h-5 mr-2 text-sky-400" />
-                Certified Model Methodology & Fixed Research Metrics (Phase 9 Baseline)
-              </h2>
-              <button
-                onClick={() => setShowMethodology(false)}
-                className="text-xs text-slate-400 hover:text-white px-2 py-1 bg-slate-800 rounded-lg"
-              >
-                Close
-              </button>
-            </div>
-
-            <p className="text-xs text-slate-300 leading-relaxed">
-              This platform evaluates building structural damage using the certified Phase-9 xBD transfer learning architecture (<code className="text-sky-300 bg-slate-950 px-1 py-0.5 rounded">tamil_nadu_phase9_best.pt</code>). Published evaluation metrics on certified splits remain frozen for research transparency:
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
-              <div className="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-2">
-                <span className="text-sky-400 font-bold block border-b border-slate-800 pb-1">Validation Set</span>
-                <div className="space-y-1 text-slate-300">
-                  <p className="flex justify-between"><span>Accuracy:</span><span className="font-bold text-white">59.23%</span></p>
-                  <p className="flex justify-between"><span>Macro-F1:</span><span className="font-bold text-white">0.3393</span></p>
-                  <p className="flex justify-between"><span>Weighted-F1:</span><span className="font-bold text-white">0.6489</span></p>
-                  <p className="flex justify-between"><span>Balanced Acc:</span><span className="font-bold text-white">37.69%</span></p>
-                </div>
-              </div>
-
-              <div className="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-2">
-                <span className="text-indigo-400 font-bold block border-b border-slate-800 pb-1">Locked Test Set</span>
-                <div className="space-y-1 text-slate-300">
-                  <p className="flex justify-between"><span>Accuracy:</span><span className="font-bold text-white">57.82%</span></p>
-                  <p className="flex justify-between"><span>Macro-F1:</span><span className="font-bold text-white">0.3310</span></p>
-                  <p className="flex justify-between"><span>Weighted-F1:</span><span className="font-bold text-white">0.6439</span></p>
-                  <p className="flex justify-between"><span>Balanced Acc:</span><span className="font-bold text-white">36.01%</span></p>
-                </div>
-              </div>
-
-              <div className="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-2">
-                <span className="text-purple-400 font-bold block border-b border-slate-800 pb-1">Unseen Holdout Set</span>
-                <div className="space-y-1 text-slate-300">
-                  <p className="flex justify-between"><span>Accuracy:</span><span className="font-bold text-white">57.08%</span></p>
-                  <p className="flex justify-between"><span>Macro-F1:</span><span className="font-bold text-white">0.3001</span></p>
-                  <p className="flex justify-between"><span>Weighted-F1:</span><span className="font-bold text-white">0.6500</span></p>
-                  <p className="flex justify-between"><span>Balanced Acc:</span><span className="font-bold text-white">31.04%</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* ERROR ALERT */}
       {error && (
-        <div className="bg-rose-500/10 border-b border-rose-500/30 text-rose-300 px-6 py-3 flex items-center justify-between text-xs">
+        <div className="bg-neutral-100 border-b border-neutral-300 text-neutral-900 px-6 py-3 flex items-center justify-between text-xs font-mono">
           <div className="flex items-center space-x-2">
-            <AlertTriangle className="w-4 h-4 text-rose-400 shrink-0" />
+            <AlertTriangle className="w-4 h-4 text-black shrink-0" />
             <span>{error}</span>
           </div>
-          <button onClick={() => setError(null)} className="font-bold hover:underline">Dismiss</button>
+          <button onClick={() => setError(null)} className="font-bold underline hover:text-black">Dismiss</button>
         </div>
       )}
 
       {/* MAIN LAYOUT: SIDEBAR + MAP + BOTTOM DETAILS PANEL */}
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-0">
         {/* 2. SIDEBAR (EVENT SELECTOR, MANUAL SEARCH, STATISTICS, BUILDING LIST) */}
-        <aside className="lg:col-span-3 bg-slate-900 border-r border-slate-800 p-5 space-y-6 flex flex-col justify-between overflow-y-auto max-h-[calc(100vh-73px)]">
+        <aside className="lg:col-span-3 bg-white border-r border-neutral-200 p-5 space-y-6 flex flex-col justify-between overflow-y-auto max-h-[calc(100vh-73px)]">
           <div className="space-y-6">
             {/* EXISTING EVENT SELECTOR */}
             <div className="space-y-2">
-              <label className="block text-xs font-extrabold uppercase tracking-wider text-slate-400 flex items-center">
-                <Globe className="w-4 h-4 text-sky-400 mr-1.5" />
+              <label className="block text-xs font-extrabold uppercase tracking-wider text-neutral-700 flex items-center">
+                <Globe className="w-4 h-4 text-black mr-1.5" />
                 Selected Disaster Event
               </label>
               <select
                 value={selectedEventId}
                 onChange={(e) => setSelectedEventId(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2.5 text-sm text-slate-100 font-medium focus:outline-none focus:border-sky-500 transition-colors"
+                className="w-full bg-neutral-50 border border-neutral-300 rounded-xl px-3 py-2.5 text-sm text-neutral-900 font-medium focus:outline-none focus:border-black transition-colors"
               >
                 {events.map((ev) => (
                   <option key={ev.event_id} value={ev.event_id}>
@@ -608,21 +535,21 @@ export default function TamilNaduDisasterAssessmentApp() {
               </select>
 
               {eventSummary && (
-                <div className="text-[11px] text-slate-400 font-mono flex justify-between bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800/80">
+                <div className="text-[11px] text-neutral-600 font-mono flex justify-between bg-neutral-50 px-3 py-1.5 rounded-lg border border-neutral-200">
                   <span>Event Date:</span>
-                  <span className="font-bold text-sky-300">{eventSummary.pre_date?.split("T")[0]}</span>
+                  <span className="font-bold text-black">{eventSummary.pre_date?.split("T")[0]}</span>
                 </div>
               )}
             </div>
 
             {/* MANUAL LATITUDE / LONGITUDE LOCATION SEARCH PANEL */}
-            <div className="bg-slate-950 rounded-2xl p-4 border border-sky-500/30 space-y-3 shadow-lg shadow-sky-500/5">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-2">
-                <h3 className="text-xs font-bold text-sky-300 flex items-center">
-                  <Navigation className="w-4 h-4 text-sky-400 mr-1.5" />
+            <div className="bg-neutral-50 rounded-2xl p-4 border border-neutral-200 space-y-3">
+              <div className="flex items-center justify-between border-b border-neutral-200 pb-2">
+                <h3 className="text-xs font-bold text-black flex items-center">
+                  <Navigation className="w-4 h-4 text-black mr-1.5" />
                   Manual Location Search
                 </h3>
-                <span className="text-[10px] bg-sky-500/10 text-sky-400 px-2 py-0.5 rounded font-mono">
+                <span className="text-[10px] bg-neutral-200 text-black px-2 py-0.5 rounded font-mono font-bold">
                   GIS Target
                 </span>
               </div>
@@ -630,7 +557,7 @@ export default function TamilNaduDisasterAssessmentApp() {
               <form onSubmit={handleManualSearch} className="space-y-3">
                 <div className="grid grid-cols-2 gap-2">
                   <div>
-                    <label className="block text-[10px] font-bold text-slate-400 uppercase mb-1">
+                    <label className="block text-[10px] font-bold text-neutral-600 uppercase mb-1">
                       Latitude (-90 to 90)
                     </label>
                     <input
@@ -639,13 +566,13 @@ export default function TamilNaduDisasterAssessmentApp() {
                       value={manualLat}
                       onChange={(e) => setManualLat(e.target.value)}
                       placeholder="10.583960"
-                      className="w-full bg-slate-900 border border-slate-800 rounded-xl px-2.5 py-1.5 text-xs text-slate-100 font-mono focus:outline-none focus:border-sky-500"
+                      className="w-full bg-white border border-neutral-300 rounded-xl px-2.5 py-1.5 text-xs text-neutral-900 font-mono focus:outline-none focus:border-black"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[10px] font-bold text-slate-400 uppercase mb-1">
+                    <label className="block text-[10px] font-bold text-neutral-600 uppercase mb-1">
                       Longitude (-180 to 180)
                     </label>
                     <input
@@ -654,7 +581,7 @@ export default function TamilNaduDisasterAssessmentApp() {
                       value={manualLon}
                       onChange={(e) => setManualLon(e.target.value)}
                       placeholder="79.712520"
-                      className="w-full bg-slate-900 border border-slate-800 rounded-xl px-2.5 py-1.5 text-xs text-slate-100 font-mono focus:outline-none focus:border-sky-500"
+                      className="w-full bg-white border border-neutral-300 rounded-xl px-2.5 py-1.5 text-xs text-neutral-900 font-mono focus:outline-none focus:border-black"
                       required
                     />
                   </div>
@@ -663,7 +590,7 @@ export default function TamilNaduDisasterAssessmentApp() {
                 <button
                   type="submit"
                   disabled={manualSearching}
-                  className="w-full bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-extrabold py-2 px-3 rounded-xl text-xs flex items-center justify-center transition-all disabled:opacity-50 shadow-md shadow-sky-500/10"
+                  className="w-full bg-black hover:bg-neutral-800 text-white font-extrabold py-2 px-3 rounded-xl text-xs flex items-center justify-center transition-all disabled:opacity-50"
                 >
                   {manualSearching ? (
                     <>
@@ -682,36 +609,36 @@ export default function TamilNaduDisasterAssessmentApp() {
 
             {/* EVENT STATISTICS */}
             {eventSummary && (
-              <div className="bg-slate-950 rounded-2xl p-4 border border-slate-800 space-y-3 shadow-inner">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-2">
-                  <h3 className="text-xs font-bold text-slate-300 flex items-center">
-                    <BarChart3 className="w-4 h-4 text-sky-400 mr-1.5" />
+              <div className="bg-neutral-50 rounded-2xl p-4 border border-neutral-200 space-y-3">
+                <div className="flex items-center justify-between border-b border-neutral-200 pb-2">
+                  <h3 className="text-xs font-bold text-black flex items-center">
+                    <BarChart3 className="w-4 h-4 text-black mr-1.5" />
                     Event Damage Statistics
                   </h3>
-                  <span className="text-[10px] bg-sky-500/10 text-sky-400 px-2 py-0.5 rounded font-mono">
+                  <span className="text-[10px] bg-neutral-200 text-black px-2 py-0.5 rounded font-mono font-bold">
                     Dataset Derived
                   </span>
                 </div>
 
                 <div className="grid grid-cols-2 gap-2 text-xs">
-                  <div className="bg-emerald-500/10 border border-emerald-500/20 p-2.5 rounded-xl text-center">
-                    <span className="text-[10px] text-emerald-400 uppercase font-bold block">INTACT</span>
-                    <span className="text-lg font-black text-emerald-300">{eventSummary.intact_count}</span>
+                  <div className="bg-neutral-100 border border-neutral-300 p-2.5 rounded-xl text-center">
+                    <span className="text-[10px] text-neutral-700 uppercase font-bold block">INTACT</span>
+                    <span className="text-lg font-black text-black">{eventSummary.intact_count}</span>
                   </div>
 
-                  <div className="bg-amber-500/10 border border-amber-500/20 p-2.5 rounded-xl text-center">
-                    <span className="text-[10px] text-amber-400 uppercase font-bold block">DAMAGED</span>
-                    <span className="text-lg font-black text-amber-300">{eventSummary.damaged_count}</span>
+                  <div className="bg-neutral-200 border border-neutral-400 p-2.5 rounded-xl text-center">
+                    <span className="text-[10px] text-neutral-800 uppercase font-bold block">DAMAGED</span>
+                    <span className="text-lg font-black text-black">{eventSummary.damaged_count}</span>
                   </div>
 
-                  <div className="bg-rose-500/10 border border-rose-500/20 p-2.5 rounded-xl text-center">
-                    <span className="text-[10px] text-rose-400 uppercase font-bold block">DESTROYED</span>
-                    <span className="text-lg font-black text-rose-300">{eventSummary.destroyed_count}</span>
+                  <div className="bg-black border border-black p-2.5 rounded-xl text-center">
+                    <span className="text-[10px] text-neutral-300 uppercase font-bold block">DESTROYED</span>
+                    <span className="text-lg font-black text-white">{eventSummary.destroyed_count}</span>
                   </div>
 
-                  <div className="bg-slate-800 border border-slate-700 p-2.5 rounded-xl text-center">
-                    <span className="text-[10px] text-slate-400 uppercase font-bold block">TOTAL</span>
-                    <span className="text-lg font-black text-slate-200">{eventSummary.total_buildings}</span>
+                  <div className="bg-white border border-neutral-300 p-2.5 rounded-xl text-center">
+                    <span className="text-[10px] text-neutral-600 uppercase font-bold block">TOTAL</span>
+                    <span className="text-lg font-black text-black">{eventSummary.total_buildings}</span>
                   </div>
                 </div>
               </div>
@@ -720,25 +647,25 @@ export default function TamilNaduDisasterAssessmentApp() {
             {/* BUILDING SEARCH & LIST */}
             <div className="space-y-3">
               <div className="relative">
-                <Search className="w-4 h-4 absolute left-3 top-3 text-slate-500" />
+                <Search className="w-4 h-4 absolute left-3 top-3 text-neutral-500" />
                 <input
                   type="text"
                   placeholder="Filter building ID..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-sky-500"
+                  className="w-full bg-neutral-50 border border-neutral-300 rounded-xl pl-9 pr-3 py-2 text-xs text-neutral-900 focus:outline-none focus:border-black"
                 />
               </div>
 
-              <div className="flex items-center space-x-1 bg-slate-950 p-1 rounded-xl border border-slate-800">
+              <div className="flex items-center space-x-1 bg-neutral-100 p-1 rounded-xl border border-neutral-200">
                 {["ALL", "INTACT", "DAMAGED", "DESTROYED"].map((st) => (
                   <button
                     key={st}
                     onClick={() => setFilterStatus(st)}
                     className={`flex-1 py-1 rounded-lg text-[10px] font-extrabold transition-all ${
                       filterStatus === st
-                        ? "bg-sky-500 text-white shadow-sm"
-                        : "text-slate-400 hover:text-slate-200"
+                        ? "bg-black text-white shadow-sm"
+                        : "text-neutral-600 hover:text-black"
                     }`}
                   >
                     {st}
@@ -747,7 +674,7 @@ export default function TamilNaduDisasterAssessmentApp() {
               </div>
 
               <div className="space-y-2">
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">
+                <span className="text-xs font-bold text-neutral-700 uppercase tracking-wider block">
                   Event Buildings ({filteredBuildings.length})
                 </span>
 
@@ -763,8 +690,8 @@ export default function TamilNaduDisasterAssessmentApp() {
                         onClick={() => handleSelectBuilding(f)}
                         className={`w-full text-left px-3 py-2 rounded-xl border text-xs flex items-center justify-between transition-all ${
                           isSel
-                            ? "bg-sky-500/10 border-sky-500 text-sky-300 font-bold"
-                            : "bg-slate-950/60 border-slate-800/80 text-slate-400 hover:bg-slate-800"
+                            ? "bg-neutral-100 border-black text-black font-bold"
+                            : "bg-white border-neutral-200 text-neutral-700 hover:bg-neutral-50"
                         }`}
                       >
                         <span className="truncate font-mono">{bId}</span>
@@ -779,16 +706,16 @@ export default function TamilNaduDisasterAssessmentApp() {
             </div>
           </div>
 
-          <div className="pt-4 border-t border-slate-800 text-[11px] text-slate-500 font-mono space-y-1">
+          <div className="pt-4 border-t border-neutral-200 text-[11px] text-neutral-500 font-mono space-y-1">
             <p>Dataset: Tamil Nadu Cyclone & Flood Archive</p>
             <p>Map Base: OpenStreetMap Tiles</p>
           </div>
         </aside>
 
         {/* 3. MAIN MAP & DISASTER LOCATION ASSESSMENT PANEL */}
-        <main className="lg:col-span-9 flex flex-col bg-slate-950 relative overflow-y-auto max-h-[calc(100vh-73px)]">
+        <main className="lg:col-span-9 flex flex-col bg-neutral-50 relative overflow-y-auto max-h-[calc(100vh-73px)]">
           {/* MAIN INTERACTIVE MAP */}
-          <div className="w-full h-[520px] relative border-b border-slate-800 shrink-0">
+          <div className="w-full h-[520px] relative border-b border-neutral-200 shrink-0">
             <LeafletMap
               data={buildingCollection}
               selectedFeature={selectedBuilding}
@@ -798,12 +725,12 @@ export default function TamilNaduDisasterAssessmentApp() {
             />
 
             {/* MAP OVERLAY BADGE */}
-            <div className="absolute top-4 left-4 z-[1000] bg-slate-900/90 backdrop-blur border border-slate-800 px-3 py-2 rounded-xl text-xs space-y-0.5 shadow-xl">
-              <span className="font-bold text-sky-400 block flex items-center">
-                <Globe className="w-3.5 h-3.5 mr-1" />
+            <div className="absolute top-4 left-4 z-[1000] bg-white border border-neutral-200 px-3 py-2 rounded-xl text-xs space-y-0.5 shadow-sm">
+              <span className="font-bold text-black block flex items-center">
+                <Globe className="w-3.5 h-3.5 mr-1 text-black" />
                 {eventSummary?.event_name || "Tamil Nadu GIS Map"}
               </span>
-              <span className="text-[10px] text-slate-400 font-mono block">
+              <span className="text-[10px] text-neutral-600 font-mono block">
                 OPENSTREETMAP (Geographic Base Layer)
               </span>
             </div>
@@ -811,35 +738,35 @@ export default function TamilNaduDisasterAssessmentApp() {
 
           {/* 4. DISASTER LOCATION ASSESSMENT RESULT PANEL */}
           {(manualResult || selectedBuilding) ? (
-            <div className="p-6 space-y-6 bg-slate-950 flex-1">
+            <div className="p-6 space-y-6 bg-neutral-50 flex-1">
               {/* HEADER INFO BAR */}
-              <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-800 pb-4 gap-4">
+              <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-neutral-200 pb-4 gap-4">
                 <div>
                   <div className="flex items-center space-x-2">
-                    <MapPin className="w-5 h-5 text-sky-400" />
-                    <h2 className="text-lg font-extrabold text-slate-100 font-mono tracking-wide">
+                    <MapPin className="w-5 h-5 text-black" />
+                    <h2 className="text-lg font-extrabold text-black font-mono tracking-wide">
                       DISASTER LOCATION ASSESSMENT
                     </h2>
                   </div>
-                  <div className="text-xs text-slate-400 mt-1 space-x-3 font-mono">
-                    <span>Event: <strong className="text-sky-300 font-semibold">{manualResult?.event_name || eventSummary?.event_name}</strong></span>
+                  <div className="text-xs text-neutral-600 mt-1 space-x-3 font-mono">
+                    <span>Event: <strong className="text-black font-semibold">{manualResult?.event_name || eventSummary?.event_name}</strong></span>
                     <span>•</span>
-                    <span>Event date: <strong className="text-slate-200">{manualResult?.event_date || eventSummary?.pre_date?.split("T")[0]}</strong></span>
+                    <span>Event date: <strong className="text-neutral-900">{manualResult?.event_date || eventSummary?.pre_date?.split("T")[0]}</strong></span>
                     <span>•</span>
-                    <span>Requested coordinates: <strong className="text-sky-300">{searchQueryLocation ? `${searchQueryLocation.lat.toFixed(6)}, ${searchQueryLocation.lon.toFixed(6)}` : "Dataset Location"}</strong></span>
+                    <span>Requested coordinates: <strong className="text-black">{searchQueryLocation ? `${searchQueryLocation.lat.toFixed(6)}, ${searchQueryLocation.lon.toFixed(6)}` : "Dataset Location"}</strong></span>
                   </div>
                 </div>
 
                 <div className="flex items-center space-x-3">
                   <div className="text-right">
-                    <span className="text-[10px] text-slate-500 uppercase font-bold block">GROUND TRUTH</span>
+                    <span className="text-[10px] text-neutral-500 uppercase font-bold block">GROUND TRUTH</span>
                     <span className={`px-3 py-1 rounded-xl text-xs font-black border ${getDamageBadgeStyle(manualResult ? manualResult.ground_truth : (selectedBuilding?.properties?.ground_truth || selectedBuilding?.properties?.prediction))}`}>
                       {manualResult ? manualResult.ground_truth : (selectedBuilding?.properties?.ground_truth || selectedBuilding?.properties?.prediction || "UNAVAILABLE")}
                     </span>
                   </div>
 
                   <div className="text-right">
-                    <span className="text-[10px] text-slate-500 uppercase font-bold block">MODEL PREDICTION</span>
+                    <span className="text-[10px] text-neutral-500 uppercase font-bold block">MODEL PREDICTION</span>
                     <span className={`px-3 py-1 rounded-xl text-xs font-black border ${getDamageBadgeStyle(manualResult ? manualResult.model_prediction : selectedBuilding?.properties?.prediction)}`}>
                       {manualResult ? manualResult.model_prediction : (selectedBuilding?.properties?.prediction || "unavailable")}
                     </span>
@@ -848,19 +775,19 @@ export default function TamilNaduDisasterAssessmentApp() {
               </div>
 
               {/* BUILDING SECTION */}
-              <div className="bg-slate-900/90 rounded-2xl p-4 border border-slate-800 text-xs font-mono space-y-2">
-                <span className="text-[11px] font-bold text-sky-400 uppercase tracking-wider block">BUILDING</span>
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 text-slate-300">
+              <div className="bg-white rounded-2xl p-4 border border-neutral-200 text-xs font-mono space-y-2">
+                <span className="text-[11px] font-bold text-black uppercase tracking-wider block">BUILDING</span>
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 text-neutral-800">
                   <div className="flex items-center space-x-4">
                     <span>
-                      Exact building: <strong className={manualResult ? (manualResult.exact_building_found ? "text-emerald-400" : "text-amber-400") : "text-emerald-400"}>
+                      Exact building: <strong className="text-black">
                         {manualResult ? (manualResult.exact_building_found ? `Found (${manualResult.matched_building_id})` : "Not Found") : `Found (${selectedBuilding?.properties?.building_id || selectedBuilding?.properties?.osm_id})`}
                       </strong>
                     </span>
 
                     {manualResult?.nearest_building && (
                       <span>
-                        Nearest building: <strong className="text-sky-300">{manualResult.nearest_building.building_id}</strong> (Distance: {manualResult.nearest_building.distance_meters} m)
+                        Nearest building: <strong className="text-black">{manualResult.nearest_building.building_id}</strong> (Distance: {manualResult.nearest_building.distance_meters} m)
                       </span>
                     )}
                   </div>
@@ -875,40 +802,40 @@ export default function TamilNaduDisasterAssessmentApp() {
                           if (matchFeat) handleSelectBuilding(matchFeat);
                         }
                       }}
-                      className="px-3 py-1 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-500/40 text-[11px] font-bold transition-colors shrink-0"
+                      className="px-3 py-1 rounded-xl bg-white hover:bg-neutral-100 text-black border border-neutral-300 text-[11px] font-bold transition-colors shrink-0"
                     >
                       Select Nearest Building
                     </button>
                   )}
                 </div>
-                <p className="text-[11px] text-slate-400">{manualResult?.location_message || "Exact building polygon retrieved from spatial database."}</p>
+                <p className="text-[11px] text-neutral-600">{manualResult?.location_message || "Exact building polygon retrieved from spatial database."}</p>
               </div>
 
               {/* GRID: GOOGLE STREET VIEW vs COPERNICUS SENTINEL */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                 {/* GOOGLE STREET VIEW PANEL */}
-                <div className="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-3xl p-5 space-y-4 shadow-xl flex flex-col justify-between">
+                <div className="lg:col-span-5 bg-white border border-neutral-200 rounded-3xl p-5 space-y-4 shadow-sm flex flex-col justify-between">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <h3 className="text-sm font-extrabold text-slate-200 flex items-center">
-                        <Compass className="w-4 h-4 text-sky-400 mr-2" />
-                        GOOGLE STREET VIEW
+                      <h3 className="text-sm font-extrabold text-black flex items-center">
+                        <Compass className="w-4 h-4 text-black mr-2" />
+                        GOOGLE STREET VIEW: Current Street-Level Context
                       </h3>
                       {streetView?.available ? (
-                        <span className="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-lg border border-emerald-500/20 font-bold">
+                        <span className="text-[10px] bg-neutral-100 text-neutral-900 px-2 py-0.5 rounded-lg border border-neutral-300 font-bold">
                           CURRENT STREET VIEW ({streetView.date || "Captured"})
                         </span>
                       ) : (
-                        <span className="text-[10px] bg-rose-500/10 text-rose-400 px-2 py-0.5 rounded-lg border border-rose-500/20 font-bold">
+                        <span className="text-[10px] bg-neutral-200 text-neutral-700 px-2 py-0.5 rounded-lg border border-neutral-300 font-bold">
                           Unavailable
                         </span>
                       )}
                     </div>
 
-                    <div className="aspect-video bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 relative flex items-center justify-center">
+                    <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden border border-neutral-200 relative flex items-center justify-center">
                       {svLoading ? (
-                        <div className="text-center space-y-2 text-slate-500 text-xs">
-                          <RefreshCw className="w-6 h-6 animate-spin mx-auto text-sky-400" />
+                        <div className="text-center space-y-2 text-neutral-600 text-xs">
+                          <RefreshCw className="w-6 h-6 animate-spin mx-auto text-black" />
                           <span>Checking Google Street View API...</span>
                         </div>
                       ) : streetView?.available && streetView.image_url ? (
@@ -919,11 +846,11 @@ export default function TamilNaduDisasterAssessmentApp() {
                         />
                       ) : (
                         <div className="p-6 text-center space-y-2">
-                          <AlertTriangle className="w-8 h-8 text-amber-400 mx-auto opacity-70" />
-                          <p className="text-xs font-bold text-slate-300">
+                          <AlertTriangle className="w-8 h-8 text-neutral-500 mx-auto" />
+                          <p className="text-xs font-bold text-neutral-800">
                             Street View imagery is not available at this location.
                           </p>
-                          <p className="text-[10px] text-slate-500">
+                          <p className="text-[10px] text-neutral-500">
                             No panorama recorded by Google Street View near coordinates.
                           </p>
                         </div>
@@ -932,61 +859,61 @@ export default function TamilNaduDisasterAssessmentApp() {
 
                     {/* STREET VIEW PANORAMA METADATA & DISTANCE */}
                     {streetView?.available && (
-                      <div className="bg-slate-950/90 rounded-2xl p-3 border border-slate-800 text-[11px] text-slate-300 space-y-1 font-mono">
+                      <div className="bg-neutral-50 rounded-2xl p-3 border border-neutral-200 text-[11px] text-neutral-800 space-y-1 font-mono">
                         <p className="flex justify-between">
-                          <span className="text-slate-500">Classification:</span>
-                          <span className="font-bold text-emerald-400">CURRENT STREET VIEW</span>
+                          <span className="text-neutral-500">Classification:</span>
+                          <span className="font-bold text-black">CURRENT STREET VIEW</span>
                         </p>
                         <p className="flex justify-between">
-                          <span className="text-slate-500">Captured:</span>
-                          <span className="font-bold text-slate-200">{streetView.date || "Current"}</span>
+                          <span className="text-neutral-500">Captured:</span>
+                          <span className="font-bold text-neutral-900">{streetView.date || "Current"}</span>
                         </p>
                         {searchQueryLocation && (
                           <p className="flex justify-between">
-                            <span className="text-slate-500">Requested:</span>
-                            <span className="font-bold text-slate-200">{searchQueryLocation.lat.toFixed(6)}, {searchQueryLocation.lon.toFixed(6)}</span>
+                            <span className="text-neutral-500">Requested:</span>
+                            <span className="font-bold text-neutral-900">{searchQueryLocation.lat.toFixed(6)}, {searchQueryLocation.lon.toFixed(6)}</span>
                           </p>
                         )}
                         {streetView.panorama_location && (
                           <p className="flex justify-between">
-                            <span className="text-slate-500">Street View panorama:</span>
-                            <span className="font-bold text-slate-200">{streetView.panorama_location.latitude.toFixed(6)}, {streetView.panorama_location.longitude.toFixed(6)}</span>
+                            <span className="text-neutral-500">Street View panorama:</span>
+                            <span className="font-bold text-neutral-900">{streetView.panorama_location.latitude.toFixed(6)}, {streetView.panorama_location.longitude.toFixed(6)}</span>
                           </p>
                         )}
                         {streetView.panorama_distance_meters !== undefined && (
                           <p className="flex justify-between">
-                            <span className="text-slate-500">Distance:</span>
-                            <span className="font-bold text-sky-300">{streetView.panorama_distance_meters} m</span>
+                            <span className="text-neutral-500">Distance:</span>
+                            <span className="font-bold text-black">{streetView.panorama_distance_meters} m</span>
                           </p>
                         )}
                       </div>
                     )}
 
                     {/* HISTORICAL STREET VIEW NOTICE */}
-                    <div className="bg-slate-950/80 rounded-2xl p-3 border border-slate-800 text-[11px] text-slate-400 space-y-1 font-mono">
-                      <span className="text-[10px] font-bold text-slate-500 uppercase block mb-1">HISTORICAL STREET VIEW</span>
-                      <p className="flex justify-between"><span className="text-slate-500">Historical Before:</span> <span className="text-amber-400 font-bold">Unavailable</span></p>
-                      <p className="flex justify-between"><span className="text-slate-500">Historical After:</span> <span className="text-amber-400 font-bold">Unavailable</span></p>
+                    <div className="bg-white rounded-2xl p-3 border border-neutral-200 text-[11px] text-neutral-700 space-y-1 font-mono">
+                      <span className="text-[10px] font-bold text-neutral-500 uppercase block mb-1">HISTORICAL STREET VIEW</span>
+                      <p className="flex justify-between"><span className="text-neutral-500">Historical Before:</span> <span className="text-black font-bold">Unavailable through configured API</span></p>
+                      <p className="flex justify-between"><span className="text-neutral-500">Historical After:</span> <span className="text-black font-bold">Unavailable through configured API</span></p>
                     </div>
                   </div>
 
                   {streetView?.available && (
-                    <div className="flex items-center justify-between pt-2 border-t border-slate-800">
-                      <span className="text-[11px] text-slate-400 font-mono">
+                    <div className="flex items-center justify-between pt-2 border-t border-neutral-200">
+                      <span className="text-[11px] text-neutral-600 font-mono">
                         Heading: {svHeading}°
                       </span>
 
                       <div className="flex items-center space-x-2">
                         <button
                           onClick={() => handleStreetViewRotate(-45)}
-                          className="p-2 bg-slate-950 hover:bg-slate-800 rounded-xl border border-slate-800 text-slate-300 text-xs flex items-center"
+                          className="p-2 bg-white hover:bg-neutral-100 rounded-xl border border-neutral-300 text-black text-xs flex items-center"
                           title="Rotate Left 45°"
                         >
                           <RotateCcw className="w-3.5 h-3.5 mr-1" /> Left
                         </button>
                         <button
                           onClick={() => handleStreetViewRotate(45)}
-                          className="p-2 bg-slate-950 hover:bg-slate-800 rounded-xl border border-slate-800 text-slate-300 text-xs flex items-center"
+                          className="p-2 bg-white hover:bg-neutral-100 rounded-xl border border-neutral-300 text-black text-xs flex items-center"
                           title="Rotate Right 45°"
                         >
                           <RotateCw className="w-3.5 h-3.5 mr-1" /> Right
@@ -997,29 +924,29 @@ export default function TamilNaduDisasterAssessmentApp() {
                 </div>
 
                 {/* COPERNICUS SENTINEL SATELLITE BEFORE/AFTER */}
-                <div className="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-3xl p-5 space-y-4 shadow-xl flex flex-col justify-between">
+                <div className="lg:col-span-7 bg-white border border-neutral-200 rounded-3xl p-5 space-y-4 shadow-sm flex flex-col justify-between">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <h3 className="text-sm font-extrabold text-slate-200 flex items-center">
-                        <Eye className="w-4 h-4 text-sky-400 mr-2" />
-                        COPERNICUS SENTINEL
+                      <h3 className="text-sm font-extrabold text-black flex items-center">
+                        <Eye className="w-4 h-4 text-black mr-2" />
+                        Copernicus Sentinel — Before / After
                       </h3>
-                      <div className="flex items-center space-x-1 bg-slate-950 p-1 rounded-xl border border-slate-800 text-[10px]">
+                      <div className="flex items-center space-x-1 bg-neutral-100 p-1 rounded-xl border border-neutral-200 text-[10px]">
                         <button
                           onClick={() => setSliderMode("SPLIT")}
-                          className={`px-2.5 py-1 rounded-lg font-bold ${sliderMode === "SPLIT" ? "bg-sky-500 text-white" : "text-slate-400"}`}
+                          className={`px-2.5 py-1 rounded-lg font-bold ${sliderMode === "SPLIT" ? "bg-black text-white" : "text-neutral-600"}`}
                         >
                           Split Slider
                         </button>
                         <button
                           onClick={() => setSliderMode("BEFORE")}
-                          className={`px-2.5 py-1 rounded-lg font-bold ${sliderMode === "BEFORE" ? "bg-sky-500 text-white" : "text-slate-400"}`}
+                          className={`px-2.5 py-1 rounded-lg font-bold ${sliderMode === "BEFORE" ? "bg-black text-white" : "text-neutral-600"}`}
                         >
                           Before
                         </button>
                         <button
                           onClick={() => setSliderMode("AFTER")}
-                          className={`px-2.5 py-1 rounded-lg font-bold ${sliderMode === "AFTER" ? "bg-sky-500 text-white" : "text-slate-400"}`}
+                          className={`px-2.5 py-1 rounded-lg font-bold ${sliderMode === "AFTER" ? "bg-black text-white" : "text-neutral-600"}`}
                         >
                           After
                         </button>
@@ -1028,33 +955,33 @@ export default function TamilNaduDisasterAssessmentApp() {
 
                     {/* SATELLITE DISPLAY */}
                     {satLoading ? (
-                      <div className="aspect-video bg-slate-950 rounded-2xl flex flex-col items-center justify-center text-slate-500 text-xs border border-slate-800">
-                        <RefreshCw className="w-6 h-6 animate-spin text-sky-400 mb-2" />
+                      <div className="aspect-video bg-neutral-100 rounded-2xl flex flex-col items-center justify-center text-neutral-600 text-xs border border-neutral-200">
+                        <RefreshCw className="w-6 h-6 animate-spin text-black mb-2" />
                         <span>Searching Copernicus Data Space Ecosystem...</span>
                       </div>
                     ) : satellite?.before?.available && satellite?.after?.available ? (
                       <div
-                        className="relative w-full aspect-video bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 select-none cursor-col-resize"
+                        className="relative w-full aspect-video bg-neutral-100 rounded-2xl overflow-hidden border border-neutral-300 select-none cursor-col-resize"
                         onMouseDown={handleMouseDown}
                         onMouseUp={handleMouseUp}
                         onMouseMove={handleMouseMove}
                       >
                         <img src={satellite.after.image_url} alt="After Sentinel Satellite" className="w-full h-full object-cover" />
                         <div
-                          className="absolute inset-0 h-full overflow-hidden border-r-2 border-white shadow-2xl"
+                          className="absolute inset-0 h-full overflow-hidden border-r-2 border-black"
                           style={{ width: `${sliderPos}%` }}
                         >
                           <img src={satellite.before.image_url} alt="Before Sentinel Satellite" className="w-full h-full object-cover" style={{ width: "100%", height: "100%" }} />
                         </div>
                         <div
-                          className="absolute top-0 bottom-0 w-1 bg-white cursor-col-resize shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+                          className="absolute top-0 bottom-0 w-1 bg-black cursor-col-resize"
                           style={{ left: `${sliderPos}%` }}
                         />
                       </div>
                     ) : (
-                      <div className="aspect-video bg-slate-950 rounded-2xl p-6 flex flex-col items-center justify-center text-center space-y-2 border border-slate-800">
-                        <AlertTriangle className="w-8 h-8 text-amber-400 opacity-70" />
-                        <p className="text-xs font-bold text-slate-300">
+                      <div className="aspect-video bg-neutral-100 rounded-2xl p-6 flex flex-col items-center justify-center text-center space-y-2 border border-neutral-200">
+                        <AlertTriangle className="w-8 h-8 text-neutral-500" />
+                        <p className="text-xs font-bold text-neutral-800">
                           {satellite?.before?.reason || satellite?.after?.reason || "No suitable Copernicus Sentinel image found for this event/location."}
                         </p>
                       </div>
@@ -1064,37 +991,37 @@ export default function TamilNaduDisasterAssessmentApp() {
                   {/* SATELLITE METADATA GRID */}
                   {satellite?.before?.available && satellite?.after?.available && (
                     <div className="grid grid-cols-2 gap-3 text-[11px] font-mono">
-                      <div className="bg-slate-950 rounded-2xl p-3 border border-slate-800 space-y-1">
-                        <span className="text-xs font-bold text-sky-400 block mb-1">COPERNICUS SENTINEL — BEFORE DISASTER</span>
-                        <p className="flex justify-between"><span className="text-slate-500">Acquisition:</span><span className="font-bold text-slate-200">{satellite.before.acquisition_date?.split("T")[0]}</span></p>
-                        <p className="flex justify-between"><span className="text-slate-500">Cloud:</span><span className="font-bold text-slate-200">{satellite.before.cloud_cover}%</span></p>
-                        <p className="truncate text-[10px] text-slate-400" title={satellite.before.product_id}>Product: {satellite.before.product_id}</p>
+                      <div className="bg-neutral-50 rounded-2xl p-3 border border-neutral-200 space-y-1">
+                        <span className="text-xs font-bold text-black block mb-1">COPERNICUS SENTINEL — BEFORE DISASTER</span>
+                        <p className="flex justify-between"><span className="text-neutral-500">Acquisition:</span><span className="font-bold text-neutral-900">{satellite.before.acquisition_date?.split("T")[0]}</span></p>
+                        <p className="flex justify-between"><span className="text-neutral-500">Cloud:</span><span className="font-bold text-neutral-900">{satellite.before.cloud_cover}%</span></p>
+                        <p className="truncate text-[10px] text-neutral-600" title={satellite.before.product_id}>Product: {satellite.before.product_id}</p>
                       </div>
 
-                      <div className="bg-slate-950 rounded-2xl p-3 border border-slate-800 space-y-1">
-                        <span className="text-xs font-bold text-indigo-400 block mb-1">COPERNICUS SENTINEL — AFTER DISASTER</span>
-                        <p className="flex justify-between"><span className="text-slate-500">Acquisition:</span><span className="font-bold text-slate-200">{satellite.after.acquisition_date?.split("T")[0]}</span></p>
-                        <p className="flex justify-between"><span className="text-slate-500">Cloud:</span><span className="font-bold text-slate-200">{satellite.after.cloud_cover}%</span></p>
-                        <p className="truncate text-[10px] text-slate-400" title={satellite.after.product_id}>Product: {satellite.after.product_id}</p>
+                      <div className="bg-neutral-50 rounded-2xl p-3 border border-neutral-200 space-y-1">
+                        <span className="text-xs font-bold text-black block mb-1">COPERNICUS SENTINEL — AFTER DISASTER</span>
+                        <p className="flex justify-between"><span className="text-neutral-500">Acquisition:</span><span className="font-bold text-neutral-900">{satellite.after.acquisition_date?.split("T")[0]}</span></p>
+                        <p className="flex justify-between"><span className="text-neutral-500">Cloud:</span><span className="font-bold text-neutral-900">{satellite.after.cloud_cover}%</span></p>
+                        <p className="truncate text-[10px] text-neutral-600" title={satellite.after.product_id}>Product: {satellite.after.product_id}</p>
                       </div>
                     </div>
                   )}
 
                   {/* DAMAGE ASSESSMENT / MODEL STATUS NOTE */}
-                  <div className="bg-slate-950 rounded-2xl p-3 border border-slate-800 text-[11px] text-slate-400 space-y-1 font-mono">
-                    <span className="text-[11px] font-bold text-purple-400 uppercase tracking-wider block mb-1">DAMAGE ASSESSMENT</span>
-                    <p className="flex justify-between"><span className="text-slate-500">Ground Truth:</span> <span className="font-bold text-slate-200">{manualResult ? manualResult.ground_truth : (selectedBuilding?.properties?.ground_truth || selectedBuilding?.properties?.prediction || "UNAVAILABLE")}</span></p>
-                    <p className="flex justify-between"><span className="text-slate-500">Model Prediction:</span> <span className="font-bold text-slate-200">{manualResult ? manualResult.model_prediction : (selectedBuilding?.properties?.prediction || "unavailable")}</span></p>
-                    <p className="flex justify-between"><span className="text-slate-500">Confidence:</span> <span className="font-bold text-slate-200">{manualResult?.model_confidence ? `${(manualResult.model_confidence * 100).toFixed(1)}%` : "unavailable"}</span></p>
+                  <div className="bg-neutral-50 rounded-2xl p-3 border border-neutral-200 text-[11px] text-neutral-700 space-y-1 font-mono">
+                    <span className="text-[11px] font-bold text-black uppercase tracking-wider block mb-1">DAMAGE ASSESSMENT</span>
+                    <p className="flex justify-between"><span className="text-neutral-500">Ground Truth:</span> <span className="font-bold text-black">{manualResult ? manualResult.ground_truth : (selectedBuilding?.properties?.ground_truth || selectedBuilding?.properties?.prediction || "UNAVAILABLE")}</span></p>
+                    <p className="flex justify-between"><span className="text-neutral-500">Model Prediction:</span> <span className="font-bold text-black">{manualResult ? manualResult.model_prediction : (selectedBuilding?.properties?.prediction || "unavailable")}</span></p>
+                    <p className="flex justify-between"><span className="text-neutral-500">Confidence:</span> <span className="font-bold text-black">{manualResult?.model_confidence ? `${(manualResult.model_confidence * 100).toFixed(1)}%` : "unavailable"}</span></p>
                   </div>
 
                 </div>
               </div>
             </div>
           ) : (
-            <div className="p-12 text-center text-slate-500 space-y-2">
-              <Building2 className="w-10 h-10 mx-auto text-slate-700" />
-              <p className="text-sm font-bold text-slate-400">Select an event building or enter manual coordinates to run location assessment.</p>
+            <div className="p-12 text-center text-neutral-500 space-y-2">
+              <Building2 className="w-10 h-10 mx-auto text-neutral-400" />
+              <p className="text-sm font-bold text-neutral-700">Select an event building or enter manual coordinates to run location assessment.</p>
             </div>
           )}
         </main>
