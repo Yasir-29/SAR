@@ -1,26 +1,65 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect, useRef } from 'react';
-import dynamic from 'next/dynamic';
-import { Shield, RefreshCw, Layers, Info, Search, AlertTriangle, Activity, Satellite, CheckCircle, Clock, Globe, Download, X, Eye, EyeOff, Terminal, Compass, Play, ZoomIn, Maximize2, ShieldAlert, Cpu, Calendar, MapPin, Hash, Sparkles, Check, HelpCircle, Ban, Sliders, SplitSquareVertical, ToggleLeft, ToggleRight, Grid, FileText, BarChart3, Database, GitCompare, Thermometer, ShieldCheck, Gauge, Flame, ListOrdered, Award, Lock, Loader2, ImageOff, Radio, Focus } from 'lucide-react';
+import React, { useState, useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
+import {
+  Satellite,
+  Calendar,
+  MapPin,
+  Cloud,
+  Layers,
+  Activity,
+  AlertTriangle,
+  CheckCircle2,
+  Clock,
+  ShieldCheck,
+  RefreshCw,
+  Search,
+  Sparkles,
+  ChevronDown,
+  ChevronUp,
+  Sliders,
+  Eye,
+  FileJson,
+  FileText,
+  ShieldAlert,
+  Info,
+  Globe,
+  Database,
+  RotateCcw,
+  RotateCw,
+  Maximize2,
+  Building2,
+  Compass,
+  ArrowRight,
+  Award,
+  BarChart3,
+  Navigation
+} from "lucide-react";
 
-const LeafletMap = dynamic(() => import('../components/ui/leaflet-map'), { ssr: false });
+// Dynamic import Leaflet map for Next.js SSR compatibility
+const LeafletMap = dynamic(() => import("../components/ui/leaflet-map"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full min-h-[500px] bg-slate-950 rounded-2xl flex flex-col items-center justify-center text-slate-500 text-xs border border-slate-800">
+      <RefreshCw className="w-8 h-8 text-sky-400 animate-spin mb-2" />
+      <span>Loading Interactive OpenStreetMap GIS Platform...</span>
+    </div>
+  ),
+});
 
-interface EventMetadata {
+interface EventRegistryItem {
   event_id: string;
   event_name: string;
   disaster_type: string;
   location: string;
   pre_date: string;
   post_date: string;
-  building_count: number;
-  ground_truth_status: string;
+  building_count?: number;
+  assessment_geojson?: string;
+  ground_truth_status?: string;
   accuracy?: string;
   macro_f1?: string;
-  domain_policy?: string;
-  assessment_geojson: string;
-  source_dataset: string;
-  model_version: string;
 }
 
 interface EventSummary {
@@ -34,1107 +73,956 @@ interface EventSummary {
   intact_count: number;
   damaged_count: number;
   destroyed_count: number;
-  ground_truth_status: string;
-  accuracy?: string;
-  macro_f1?: string;
-  model_version?: string;
-}
-
-interface BuildingProperty {
-  building_id?: string;
-  osm_id?: number | string;
-  event_id?: string;
-  osm_type?: string;
-  building?: string;
-  name?: string;
-  damage_prediction?: string;
-  prediction?: string;
-  prediction_class?: number;
-  confidence?: number;
-  entropy?: number;
-  prediction_margin?: number;
-  prob_intact?: number;
-  prob_damaged?: number;
-  prob_destroyed?: number;
-  decision_status?: string;
-  review_status?: string;
-  priority?: string;
-  domain_shift_score?: number;
-  coverage_ratio?: number;
-  pre_product_id?: string;
-  post_product_id?: string;
-  pre_date?: string;
-  post_date?: string;
-  temporal_delta_days?: number;
-  model_version?: string;
-  checkpoint_sha256?: string;
-  prediction_timestamp?: string;
-  distance_m?: number;
-  ground_truth?: {
-    status?: string;
-    label?: string;
-  };
-}
-
-interface InspectionPayload {
-  status: string;
-  osm_id: string | number;
-  building_id: string;
-  geometry: any;
-  centroid: { latitude: number; longitude: number };
-  bounds: number[];
-  area_sq_meters: number;
-  prediction: string;
-  class_id: number;
-  confidence: number;
-  margin: number;
-  entropy: number;
-  domain_shift: number;
-  review_status: string;
-  probabilities?: {
-    INTACT: number;
-    DAMAGED: number;
-    DESTROYED: number;
-  };
-  ground_truth?: {
-    status?: string;
-    label?: string;
-  };
-  imagery: {
-    s1_pre?: string;
-    s1_post?: string;
-    s1_pre_vv?: string;
-    s1_post_vv?: string;
-    s1_pre_vh?: string;
-    s1_post_vh?: string;
-    s1_vv_change?: string;
-    s1_vh_change?: string;
-    s2_pre?: string;
-    s2_post?: string;
-    s2_change?: string;
-    pre_scene_id?: string;
-    post_scene_id?: string;
-    pre_date?: string;
-    post_date?: string;
-    temporal_delta_days?: number;
-    s2_pre_scene_id?: string;
-    s2_post_scene_id?: string;
-    s2_status?: string;
-  };
-  provenance: {
-    model_name: string;
-    model_version: string;
-    checkpoint_sha256: string;
-    timestamp: string;
-  };
+  ground_truth_status?: string;
 }
 
 interface GeoJSONFeature {
-  type: 'Feature';
+  type: "Feature";
   id?: string | number;
-  properties: BuildingProperty;
+  properties: {
+    building_id?: string;
+    osm_id?: number | string;
+    prediction?: string;
+    damage_prediction?: string;
+    ground_truth?: string;
+    confidence?: number;
+    latitude?: number;
+    longitude?: number;
+    [key: string]: any;
+  };
   geometry: {
-    type: 'Polygon' | 'Point';
+    type: "Polygon" | "Point";
     coordinates: any;
   };
 }
 
-interface GeoJSONData {
-  type: 'FeatureCollection';
-  features: GeoJSONFeature[];
-  metadata?: any;
+interface StreetViewResponse {
+  available: boolean;
+  building_id?: string;
+  reason?: string;
+  image_url?: string;
+  date?: string;
+  pano_id?: string;
+  copyright?: string;
+  heading?: number;
+  pitch?: number;
+  fov?: number;
+  location?: { latitude: number; longitude: number };
 }
 
-export default function Home() {
-  const [eventsList, setEventsList] = useState<EventMetadata[]>([]);
-  const [selectedEventId, setSelectedEventId] = useState<string>('TN_CHENNAI_FLOOD_2021');
+interface SatelliteData {
+  before: {
+    available: boolean;
+    acquisition_date?: string;
+    product_id?: string;
+    cloud_cover?: number;
+    image_url?: string;
+    reason?: string;
+  };
+  after: {
+    available: boolean;
+    acquisition_date?: string;
+    product_id?: string;
+    cloud_cover?: number;
+    image_url?: string;
+    reason?: string;
+  };
+  difference_url?: string;
+}
+
+interface ManualLocationAnalysisResult {
+  status: string;
+  event_id: string;
+  event_name: string;
+  event_date: string;
+  search_location: { latitude: number; longitude: number };
+  footprint_matched: boolean;
+  matched_building_id?: string | null;
+  distance_meters?: number | null;
+  location_message: string;
+  street_view: StreetViewResponse;
+  historical_street_view: {
+    before: { available: boolean; reason: string; image_url?: string; date?: string };
+    after: { available: boolean; reason: string; image_url?: string; date?: string };
+  };
+  ground_truth: string;
+  model_prediction: string;
+  model_confidence?: number | null;
+  model_status_note?: string | null;
+}
+
+export default function TamilNaduDisasterAssessmentApp() {
+  // Event Discovery State
+  const [events, setEvents] = useState<EventRegistryItem[]>([]);
+  const [selectedEventId, setSelectedEventId] = useState<string>("TN_CHENNAI_FLOOD_2021");
   const [eventSummary, setEventSummary] = useState<EventSummary | null>(null);
+  const [buildingCollection, setBuildingCollection] = useState<{ type: "FeatureCollection"; features: GeoJSONFeature[] } | null>(null);
+  const [filterStatus, setFilterStatus] = useState<string>("ALL");
+  const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const [damageData, setDamageData] = useState<GeoJSONData | null>(null);
-  const [selectedFeature, setSelectedFeature] = useState<GeoJSONFeature | null>(null);
-  const [inspectionData, setInspectionData] = useState<InspectionPayload | null>(null);
-  const [isInspectionLoading, setIsInspectionLoading] = useState(false);
-  const [activeTab, setActiveTab] = useState<'s2_pre' | 's2_post' | 's2_change' | 's1_vv' | 's1_vh'>('s2_pre');
-  const [imageErrorState, setImageErrorState] = useState<Record<string, { failed: boolean; reason: string; status: number }>>({});
-
-  const [verifiedStats, setVerifiedStats] = useState<any>(null);
-  const [reviewMessage, setReviewMessage] = useState<string | null>(null);
-  const [searchId, setSearchId] = useState('');
-  const [searchLat, setSearchLat] = useState('');
-  const [searchLon, setSearchLon] = useState('');
+  // Manual Coordinate Search State
+  const [manualLat, setManualLat] = useState<string>("13.082700");
+  const [manualLon, setManualLon] = useState<string>("80.270700");
   const [searchQueryLocation, setSearchQueryLocation] = useState<{ lat: number; lon: number } | null>(null);
-  const [filterStatus, setFilterStatus] = useState<string>('ALL');
-  const [mapStatus, setMapStatus] = useState<string>('Loading Event Registry & Map Data...');
-  const [searchRadius, setSearchRadius] = useState<number>(100);
-  const searchAbortRef = useRef<AbortController | null>(null);
+  const [manualResult, setManualResult] = useState<ManualLocationAnalysisResult | null>(null);
+  const [manualSearching, setManualSearching] = useState<boolean>(false);
 
-  const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:5001';
+  // Selected Building State
+  const [selectedBuilding, setSelectedBuilding] = useState<GeoJSONFeature | null>(null);
+  const [buildingInspection, setBuildingInspection] = useState<any>(null);
 
-  // Centralized Building Focus Function
-  const focusBuilding = (feature: GeoJSONFeature, searchLocation?: { lat: number; lon: number } | null) => {
-    if (!feature) return;
-    setSelectedFeature(feature);
-    if (searchLocation) {
-      setSearchQueryLocation(searchLocation);
-    }
-  };
+  // Google Street View State
+  const [streetView, setStreetView] = useState<StreetViewResponse | null>(null);
+  const [svLoading, setSvLoading] = useState<boolean>(false);
+  const [svHeading, setSvHeading] = useState<number>(0);
+  const [svPitch, setSvPitch] = useState<number>(0);
+  const [svFov, setSvFov] = useState<number>(90);
 
-  // Startup Version Marker
+  // Copernicus Satellite Imagery State
+  const [satellite, setSatellite] = useState<SatelliteData | null>(null);
+  const [satLoading, setSatLoading] = useState<boolean>(false);
+  const [sliderMode, setSliderMode] = useState<"SPLIT" | "BEFORE" | "AFTER" | "CHANGE">("SPLIT");
+  const [sliderPos, setSliderPos] = useState<number>(50);
+
+  // App UI State
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
+  const [isDemoMode, setIsDemoMode] = useState<boolean>(false);
+  const [showMethodology, setShowMethodology] = useState<boolean>(false);
+
+  const isDraggingRef = useRef<boolean>(false);
+  const FLASK_URL = process.env.NEXT_PUBLIC_FLASK_URL || "http://127.0.0.1:5001";
+  const FASTAPI_URL = process.env.NEXT_PUBLIC_FASTAPI_URL || "http://127.0.0.1:8000";
+
+  // 1. Fetch Event Registry on Mount
   useEffect(() => {
-    console.log("[APP BUILD] frontend coordinate-search version = FINAL-FAST-SEARCH-001");
-    console.log("[API CONFIG] API_BASE =", API_BASE);
-  }, []);
-
-  const [noResultRadiusNotice, setNoResultRadiusNotice] = useState<{ lat: number; lon: number; radius: number; nearestDistStr?: string | null } | null>(null);
-
-  const handleCoordinateSearch = async (overrideRadius?: number, event?: React.FormEvent) => {
-    if (event) {
-      event.preventDefault();
-    }
-
-    const t_click = performance.now();
-    const iso_click = new Date().toISOString();
-    console.log("[UI SEARCH CLICK] HANDLE_COORDINATE_SEARCH_ENTERED");
-    console.log("[UI SEARCH] CLICK", t_click, iso_click);
-
-    let lat: number = NaN;
-    let lon: number = NaN;
-
-    const currentRadius = overrideRadius || 100;
-
-    // Check if input is in searchId input or searchLat/searchLon
-    const rawInput = (searchId && (searchId.includes(',') || searchId.includes(' '))) ? searchId : `${searchLat}, ${searchLon}`;
-    const cleanStr = rawInput.replace(/,/g, ' ').trim();
-    const parts = cleanStr.split(/\s+/).filter(Boolean);
-
-    if (parts.length >= 2) {
-      lat = parseFloat(parts[0]);
-      lon = parseFloat(parts[1]);
-    } else {
-      lat = parseFloat(searchLat);
-      lon = parseFloat(searchLon);
-    }
-
-    if (isNaN(lat) || lat < -90 || lat > 90) {
-      alert("Invalid latitude! Must be a number between -90 and +90 degrees.");
-      return;
-    }
-    if (isNaN(lon) || lon < -180 || lon > 180) {
-      alert("Invalid longitude! Must be a number between -180 and +180 degrees.");
-      return;
-    }
-
-    // Abort any pending search request
-    if (searchAbortRef.current) {
-      searchAbortRef.current.abort();
-    }
-    searchAbortRef.current = new AbortController();
-
-    // Set UI loading state immediately
-    setNoResultRadiusNotice(null);
-    setMapStatus(`Searching for nearest building within ${currentRadius} m of (${lat.toFixed(4)}, ${lon.toFixed(4)})...`);
-    setIsInspectionLoading(true);
-
-    const t_req_start = performance.now();
-    const iso_req_start = new Date().toISOString();
-    console.log("[UI SEARCH] FETCH_START", t_req_start, iso_req_start);
-
-    try {
-      const res = await fetch(`${API_BASE}/building/nearest?lat=${lat}&lon=${lon}&radius=${currentRadius}`, {
-        signal: searchAbortRef.current.signal
-      });
-
-      const t_res_rec = performance.now();
-      const iso_res_rec = new Date().toISOString();
-      console.log("[UI SEARCH] RESPONSE", t_res_rec, iso_res_rec);
-
-      const payload = await safeJsonParse(res);
-
-      if (res.ok && payload && payload.found && payload.building) {
-        const bldData = payload.building;
-        setInspectionData(bldData);
-        const featId = String(bldData.building_id || bldData.osm_id);
-        const matchingFeat = damageData?.features?.find(f => 
-          String(f.properties?.building_id || f.properties?.osm_id || f.id) === featId
-        );
-
-        const targetFeat: GeoJSONFeature = matchingFeat || {
-          type: 'Feature',
-          id: bldData.building_id || bldData.osm_id,
-          properties: {
-            building_id: bldData.building_id,
-            osm_id: bldData.osm_id,
-            damage_prediction: bldData.prediction,
-            confidence: bldData.confidence,
-            distance_m: payload.distance_m
-          },
-          geometry: bldData.geometry
-        };
-
-        focusBuilding(targetFeat, { lat, lon });
-        const distStr = payload.distance_m < 1000 ? `${payload.distance_m} m` : `${(payload.distance_m / 1000).toFixed(2)} km`;
-        setMapStatus(`Nearest building: ${distStr} from (${lat.toFixed(4)}, ${lon.toFixed(4)})`);
-      } else {
-        const distM = payload?.nearest_distance_m || payload?.distance_m;
-        const nearestStr = distM ? (distM < 1000 ? `${distM} m` : `${(distM / 1000).toFixed(2)} km`) : null;
-        const msg = `No building found within ${currentRadius} m.${nearestStr ? ` Nearest building is ${nearestStr} away.` : ''}`;
-        setMapStatus(msg);
-        setNoResultRadiusNotice({ lat, lon, radius: currentRadius, nearestDistStr: nearestStr });
-      }
-
-      const t_render = performance.now();
-      const iso_render = new Date().toISOString();
-      console.log("[UI SEARCH] RENDER_COMPLETE", t_render, iso_render);
-
-      const click_to_fetch = t_req_start - t_click;
-      const fetch_to_response = t_res_rec - t_req_start;
-      const response_to_render = t_render - t_res_rec;
-      const total_duration = t_render - t_click;
-
-      console.log(`[UI SEARCH TIMING BREAKDOWN]
-        click_to_fetch     : ${click_to_fetch.toFixed(2)} ms
-        fetch_to_response  : ${fetch_to_response.toFixed(2)} ms
-        response_to_render : ${response_to_render.toFixed(2)} ms
-        total_user_duration: ${total_duration.toFixed(2)} ms`);
-
-    } catch (e: any) {
-      if (e.name === 'AbortError') return;
-      console.error("Coordinate search error:", e);
-      setMapStatus(`Unable to connect to the disaster-analysis server. API: ${API_BASE} | Endpoint: /building/nearest | Status: connection failed`);
-    } finally {
-      setIsInspectionLoading(false);
-    }
-  };
-
-  const safeJsonParse = async (res: Response) => {
-    const text = await res.text();
-    const sanitized = text.replace(/:\s*NaN\b/g, ': null').replace(/:\s*undefined\b/g, ': null');
-    return JSON.parse(sanitized);
-  };
-
-  useEffect(() => {
-    fetchEventsList();
-    fetchVerifiedReviews();
-  }, []);
-
-  useEffect(() => {
-    if (selectedEventId) {
-      loadEventDataset(selectedEventId);
-    }
-  }, [selectedEventId]);
-
-  const fetchEventsList = async () => {
-    try {
-      const res = await fetch(`${API_BASE}/events`);
-      if (res.ok) {
-        const data = await safeJsonParse(res);
-        setEventsList(data.events || []);
-      }
-    } catch (e) {
-      console.error("Error fetching event registry:", e);
-    }
-  };
-
-  const loadEventDataset = async (eventId: string) => {
-    setMapStatus(`Loading ${eventId} dataset...`);
-    setSelectedFeature(null);
-    setInspectionData(null);
-    setImageErrorState({});
-    try {
-      const [resBld, resSum] = await Promise.all([
-        fetch(`${API_BASE}/events/${eventId}/buildings`),
-        fetch(`${API_BASE}/events/${eventId}/summary`)
-      ]);
-
-      if (resBld.ok) {
-        const geojson: GeoJSONData = await safeJsonParse(resBld);
-        const count = geojson?.features?.length || 0;
-        setDamageData(geojson);
-        setMapStatus(`Event Active: ${eventId} (${count} Buildings Loaded)`);
-      }
-
-      if (resSum.ok) {
-        const sumData: EventSummary = await safeJsonParse(resSum);
-        setEventSummary(sumData);
-      }
-    } catch (e) {
-      console.error(`Error loading dataset for ${eventId}:`, e);
-      setMapStatus(`Failed to load ${eventId} dataset`);
-    }
-  };
-
-  const fetchVerifiedReviews = async () => {
-    try {
-      const res = await fetch(`${API_BASE}/verified-reviews`);
-      if (res.ok) {
-        const vData = await safeJsonParse(res);
-        setVerifiedStats(vData.feedback_loop);
-      }
-    } catch (e) {
-      console.error("Error fetching verified reviews:", e);
-    }
-  };
-
-  const handleSelectFilter = (status: string) => {
-    setFilterStatus(status);
-    if (selectedFeature && status !== 'ALL') {
-      const pred = selectedFeature.properties.prediction || selectedFeature.properties.damage_prediction;
-      if (pred !== status) {
-        setSelectedFeature(null);
-        setInspectionData(null);
-      }
-    }
-  };
-
-  const handleSelectBuilding = async (feature: GeoJSONFeature) => {
-    console.log('[INSPECTOR] Clicked building feature:', feature);
-    setSelectedFeature(feature);
-    setIsInspectionLoading(true);
-    setReviewMessage(null);
-    setImageErrorState({});
-
-    const props = feature.properties || {};
-    const bldId = String(props.building_id || props.osm_id || feature.id || '');
-    const osmId = String(props.osm_id || props.building_id || feature.id || bldId);
-
-    let coords: [number, number] = [79.765, 11.750];
-    if (feature.geometry && feature.geometry.coordinates) {
-      if (feature.geometry.type === 'Point') {
-        coords = [feature.geometry.coordinates[0], feature.geometry.coordinates[1]];
-      } else if (feature.geometry.type === 'Polygon' && feature.geometry.coordinates[0] && feature.geometry.coordinates[0][0]) {
-        coords = [feature.geometry.coordinates[0][0][0], feature.geometry.coordinates[0][0][1]];
-      }
-    }
-
-    const fallbackPayload: InspectionPayload = {
-      status: 'success',
-      osm_id: osmId,
-      building_id: bldId,
-      geometry: feature.geometry,
-      centroid: { latitude: coords[1], longitude: coords[0] },
-      bounds: [coords[0], coords[1], coords[0], coords[1]],
-      area_sq_meters: props.coverage_ratio ? props.coverage_ratio * 100 : 120.0,
-      prediction: props.prediction || props.damage_prediction || 'INTACT',
-      class_id: props.prediction_class ?? 0,
-      confidence: props.confidence ?? 0.85,
-      margin: props.prediction_margin ?? 0.35,
-      entropy: props.entropy ?? 0.45,
-      domain_shift: props.domain_shift_score ?? 0.10,
-      review_status: props.review_status || 'AUTOMATIC_CANDIDATE',
-      probabilities: {
-        INTACT: props.prob_intact ?? (props.prediction === 'INTACT' ? 0.85 : 0.10),
-        DAMAGED: props.prob_damaged ?? (props.prediction === 'DAMAGED' ? 0.85 : 0.10),
-        DESTROYED: props.prob_destroyed ?? (props.prediction === 'DESTROYED' ? 0.85 : 0.05)
-      },
-      ground_truth: props.ground_truth,
-      imagery: {
-        s2_pre: props.pre_product_id || '',
-        s2_post: props.post_product_id || '',
-        s2_change: '',
-        pre_scene_id: props.pre_product_id || 'S1A_IW_GRDH_1SDV_20201115_PRE',
-        post_scene_id: props.post_product_id || 'S1A_IW_GRDH_1SDV_20201127_POST',
-        pre_date: props.pre_date || '2020-11-15T00:24:12Z',
-        post_date: props.post_date || '2020-11-27T00:24:13Z',
-        temporal_delta_days: props.temporal_delta_days || 12,
-        s2_pre_scene_id: 'S2A_MSIL2A_20201114_TCI',
-        s2_post_scene_id: 'S2B_MSIL2A_20201129_TCI',
-        s2_status: 'AVAILABLE'
-      },
-      provenance: {
-        model_name: 'TamilNaduMultimodalChampion',
-        model_version: props.model_version || 'Phase 8.4 Champion',
-        checkpoint_sha256: props.checkpoint_sha256 || 'f5761006f3526f8ff9aa3a1d6487b7842c964fad99938cddf747cd1a1cba85db',
-        timestamp: props.prediction_timestamp || new Date().toISOString()
+    const fetchEvents = async () => {
+      try {
+        const res = await fetch(`${FLASK_URL}/events`);
+        if (res.ok) {
+          const data = await res.json();
+          const list = data.events || [];
+          setEvents(list);
+          if (list.length > 0) {
+            const firstId = list.find((e: EventRegistryItem) => e.event_id === "TN_CHENNAI_FLOOD_2021")?.event_id || list[0].event_id;
+            setSelectedEventId(firstId);
+          }
+        }
+      } catch (e) {
+        console.error("Failed to load events registry:", e);
       }
     };
 
-    try {
-      const targetId = bldId || osmId;
-      if (targetId) {
-        const resInsp = await fetch(`${API_BASE}/events/${selectedEventId}/building/${targetId}`);
-        if (resInsp.ok) {
-          const data: InspectionPayload = await safeJsonParse(resInsp);
-          setInspectionData(data);
-        } else {
-          setInspectionData(fallbackPayload);
+    const checkHealth = async () => {
+      try {
+        const res = await fetch(`${FASTAPI_URL}/health`);
+        if (res.ok) {
+          const data = await res.json();
+          setIsDemoMode(data.mock_satellite_api ?? false);
         }
-      } else {
-        setInspectionData(fallbackPayload);
+      } catch (e) {
+        setIsDemoMode(true);
       }
-    } catch (e) {
-      console.error("[INSPECTOR] Error loading building details, using fallback:", e);
-      setInspectionData(fallbackPayload);
-    } finally {
-      setIsInspectionLoading(false);
-    }
-  };
+    };
 
-  const submitHumanReview = async (verdict: string) => {
-    if (!inspectionData) return;
-    const bId = inspectionData.building_id || inspectionData.osm_id;
+    fetchEvents();
+    checkHealth();
+  }, []);
+
+  // 2. Load Selected Event Summary & Buildings
+  useEffect(() => {
+    if (!selectedEventId) return;
+
+    const loadEventData = async () => {
+      setLoading(true);
+      setError(null);
+      setSelectedBuilding(null);
+      setManualResult(null);
+      setSearchQueryLocation(null);
+      setStreetView(null);
+      setSatellite(null);
+
+      try {
+        // Fetch Summary
+        const sumRes = await fetch(`${FLASK_URL}/events/${selectedEventId}/summary`);
+        if (sumRes.ok) {
+          const sumData = await sumRes.json();
+          setEventSummary(sumData);
+        }
+
+        // Fetch Buildings GeoJSON
+        const bldRes = await fetch(`${FLASK_URL}/events/${selectedEventId}/buildings`);
+        if (bldRes.ok) {
+          const bldData = await bldRes.json();
+          setBuildingCollection(bldData);
+          
+          // Auto-select first building if available
+          if (bldData.features && bldData.features.length > 0) {
+            handleSelectBuilding(bldData.features[0]);
+          }
+        }
+      } catch (e: any) {
+        setError(`Failed to load event data: ${e.message}`);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadEventData();
+  }, [selectedEventId]);
+
+  // 3. Handle Building Selection (Workflow A)
+  const handleSelectBuilding = async (feature: GeoJSONFeature) => {
+    setManualResult(null);
+    setSelectedBuilding(feature);
+    const props = feature.properties;
+    const bId = String(props.building_id || props.osm_id || "BLD_001");
+
+    // Extract Centroid Lat/Lon
+    let lat: number | undefined = props.latitude;
+    let lon: number | undefined = props.longitude;
+
+    if (lat === undefined || lon === undefined) {
+      if (feature.geometry.type === "Point" && Array.isArray(feature.geometry.coordinates)) {
+        lon = feature.geometry.coordinates[0];
+        lat = feature.geometry.coordinates[1];
+      } else if (feature.geometry.type === "Polygon" && Array.isArray(feature.geometry.coordinates)) {
+        const ring = feature.geometry.coordinates[0];
+        let sumLat = 0, sumLon = 0;
+        ring.forEach((c: number[]) => { sumLon += c[0]; sumLat += c[1]; });
+        lat = sumLat / ring.length;
+        lon = sumLon / ring.length;
+      }
+    }
+
+    if (lat !== undefined && lon !== undefined) {
+      setSearchQueryLocation({ lat, lon });
+      fetchStreetView(bId, lat, lon, svHeading, svPitch, svFov);
+      fetchSatelliteImagery(lat, lon);
+    }
+
+    // Fetch Full Building Inspection Details
     try {
-      const res = await fetch(`${API_BASE}/building/${bId}/review`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ review: verdict, reviewer: "Operator Inspector" })
-      });
-      if (res.ok) {
-        setReviewMessage(`Verified Label Saved: ${verdict}`);
-        setTimeout(() => setReviewMessage(null), 4000);
-        await fetchVerifiedReviews();
+      const inspRes = await fetch(`${FLASK_URL}/building/${bId}`);
+      if (inspRes.ok) {
+        const inspData = await inspRes.json();
+        setBuildingInspection(inspData);
       }
     } catch (e) {
-      console.error("Failed to submit review:", e);
+      console.error("Building inspection error:", e);
     }
   };
 
-  const handleSearch = (e: React.FormEvent) => {
+  // 4. Handle Manual Latitude/Longitude Location Search (Workflow B)
+  const handleManualSearch = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!searchId.trim() || !damageData) return;
+    setError(null);
 
-    const matched = damageData.features.find(f => {
-      const id = String(f.properties.building_id || f.properties.osm_id || f.id || '');
-      return id.toLowerCase().includes(searchId.toLowerCase());
-    });
+    const latNum = parseFloat(manualLat);
+    const lonNum = parseFloat(manualLon);
 
-    if (matched) {
-      handleSelectBuilding(matched);
-    } else {
-      alert(`Building ${searchId} not found in ${selectedEventId}.`);
+    if (isNaN(latNum) || latNum < -90 || latNum > 90) {
+      setError("Latitude must be a valid number between -90.0 and 90.0 degrees.");
+      return;
     }
-  };
+    if (isNaN(lonNum) || lonNum < -180 || lonNum > 180) {
+      setError("Longitude must be a valid number between -180.0 and 180.0 degrees.");
+      return;
+    }
 
-  const resolveImageUrl = (rawVal?: string, endpointPath?: string) => {
-    if (!rawVal && !endpointPath) return null;
-    if (rawVal && (rawVal.startsWith('data:image/') || rawVal.startsWith('http://') || rawVal.startsWith('https://'))) {
-      return rawVal;
-    }
-    if (rawVal && (rawVal.includes('/') || rawVal.includes('.'))) {
-      return `${API_BASE}/media/${rawVal}`;
-    }
-    if (endpointPath && inspectionData) {
-      const bId = inspectionData.building_id || inspectionData.osm_id;
-      return `${API_BASE}/events/${selectedEventId}/building/${bId}/imagery/${endpointPath}`;
-    }
-    return null;
-  };
+    setManualSearching(true);
+    setSelectedBuilding(null);
+    setSearchQueryLocation({ lat: latNum, lon: lonNum });
 
-  const handleImageError = (tabKey: string, url: string | null) => {
-    console.error(`[IMAGERY ERROR] event=${selectedEventId} building=${inspectionData?.building_id} tab=${tabKey} url=${url}`);
-    setImageErrorState(prev => ({
-      ...prev,
-      [tabKey]: {
-        failed: true,
-        reason: 'Optical imagery unavailable for this building scene.',
-        status: 404
+    try {
+      // Step A: Backend Location Analysis (Event + Coords + Spatial Lookup + StreetView)
+      const locRes = await fetch(`${FLASK_URL}/api/location/analyze`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          event_id: selectedEventId,
+          latitude: latNum,
+          longitude: lonNum
+        })
+      });
+
+      if (locRes.ok) {
+        const locData: ManualLocationAnalysisResult = await locRes.json();
+        setManualResult(locData);
+        setStreetView(locData.street_view);
+
+        // If footprint matched to an existing building, highlight that feature
+        if (locData.footprint_matched && locData.matched_building_id && buildingCollection?.features) {
+          const matchFeat = buildingCollection.features.find(
+            f => String(f.properties.building_id || f.properties.osm_id) === String(locData.matched_building_id)
+          );
+          if (matchFeat) {
+            setSelectedBuilding(matchFeat);
+          }
+        }
       }
-    }));
+
+      // Step B: Fetch Satellite Imagery for Searched Location
+      await fetchSatelliteImagery(latNum, lonNum);
+    } catch (err: any) {
+      setError(`Location search failed: ${err.message}`);
+    } finally {
+      setManualSearching(false);
+    }
   };
 
-  const handleImageLoadSuccess = (tabKey: string, url: string | null) => {
-    console.log(`[IMAGERY] event=${selectedEventId} building=${inspectionData?.building_id} tab=${tabKey} url=${url} status=200 Content-Type=image/png`);
+  // 5. Fetch Google Street View static imagery & metadata
+  const fetchStreetView = async (bId: string, lat: number, lon: number, heading: number, pitch: number, fov: number) => {
+    setSvLoading(true);
+    try {
+      const res = await fetch(`${FLASK_URL}/api/buildings/${bId}/streetview?lat=${lat}&lon=${lon}&heading=${heading}&pitch=${pitch}&fov=${fov}`);
+      const data = await res.json();
+      setStreetView(data);
+    } catch (e) {
+      setStreetView({ available: false, reason: "Street View service unavailable" });
+    } finally {
+      setSvLoading(false);
+    }
   };
 
-  const exportGeoJSON = () => {
-    if (!damageData) return;
-    const blob = new Blob([JSON.stringify(damageData, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${selectedEventId.toLowerCase()}_assessments.geojson`;
-    a.click();
+  // Rotate / Tilt Street View
+  const handleStreetViewRotate = (deltaHeading: number) => {
+    const newHeading = (svHeading + deltaHeading + 360) % 360;
+    setSvHeading(newHeading);
+    if (selectedBuilding) {
+      const props = selectedBuilding.properties;
+      const bId = String(props.building_id || props.osm_id || "BLD_001");
+      const lat = props.latitude || 13.0827;
+      const lon = props.longitude || 80.2707;
+      fetchStreetView(bId, lat, lon, newHeading, svPitch, svFov);
+    } else if (searchQueryLocation) {
+      fetchStreetView("manual_coord", searchQueryLocation.lat, searchQueryLocation.lon, newHeading, svPitch, svFov);
+    }
   };
 
-  const exportCSV = () => {
-    if (!damageData) return;
-    const headers = ["building_id", "osm_id", "event_id", "latitude", "longitude", "area_m2", "prediction", "confidence", "prob_intact", "prob_damaged", "prob_destroyed", "review_status"];
-    const rows = damageData.features.map(f => {
-      const p = f.properties;
-      const coords = f.geometry.type === 'Point' ? f.geometry.coordinates : f.geometry.coordinates[0][0];
-      return [
-        p.building_id || p.osm_id || f.id,
-        p.osm_id || '',
-        selectedEventId,
-        coords[1],
-        coords[0],
-        p.coverage_ratio || '',
-        p.prediction || p.damage_prediction || '',
-        p.confidence || '',
-        p.prob_intact || '',
-        p.prob_damaged || '',
-        p.prob_destroyed || '',
-        p.review_status || 'AUTOMATIC_CANDIDATE'
-      ].join(',');
-    });
-    const csvContent = [headers.join(','), ...rows].join('\n');
-    const blob = new Blob([csvContent], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${selectedEventId.toLowerCase()}_assessments.csv`;
-    a.click();
+  // 6. Fetch Copernicus Sentinel-2 Before/After Satellite Imagery
+  const fetchSatelliteImagery = async (lat: number, lon: number) => {
+    setSatLoading(true);
+    try {
+      const evDate = eventSummary?.pre_date?.split("T")[0] || "2021-10-25";
+      const res = await fetch(`${FASTAPI_URL}/api/satellite/before-after`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          latitude: lat,
+          longitude: lon,
+          disaster_date: evDate,
+          before_days: 30,
+          after_days: 30,
+          cloud_cover_max: 30
+        })
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setSatellite({
+          before: data.before || { available: false, reason: "No suitable satellite imagery found." },
+          after: data.after || { available: false, reason: "No suitable satellite imagery found." },
+        });
+      } else {
+        setSatellite({
+          before: { available: false, reason: "Suitable Sentinel-2 imagery unavailable for this location/date." },
+          after: { available: false, reason: "Suitable Sentinel-2 imagery unavailable for this location/date." }
+        });
+      }
+    } catch (e) {
+      setSatellite({
+        before: { available: false, reason: "Copernicus API error" },
+        after: { available: false, reason: "Copernicus API error" }
+      });
+    } finally {
+      setSatLoading(false);
+    }
   };
 
-  const liveCount = damageData?.features.length || 0;
-  const intactLive = damageData?.features.filter(f => (f.properties.prediction || f.properties.damage_prediction) === 'INTACT').length || 0;
-  const damagedLive = damageData?.features.filter(f => (f.properties.prediction || f.properties.damage_prediction) === 'DAMAGED').length || 0;
-  const destroyedLive = damageData?.features.filter(f => (f.properties.prediction || f.properties.damage_prediction) === 'DESTROYED').length || 0;
+  // Slider Mouse Handlers
+  const handleMouseDown = () => { isDraggingRef.current = true; };
+  const handleMouseUp = () => { isDraggingRef.current = false; };
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isDraggingRef.current) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
+    setSliderPos((x / rect.width) * 100);
+  };
+
+  const getDamageBadgeStyle = (status?: string) => {
+    switch (status) {
+      case "INTACT":
+        return "bg-emerald-500/20 text-emerald-400 border-emerald-500/50";
+      case "DAMAGED":
+        return "bg-amber-500/20 text-amber-400 border-amber-500/50";
+      case "DESTROYED":
+        return "bg-rose-500/20 text-rose-400 border-rose-500/50";
+      default:
+        return "bg-slate-800 text-slate-300 border-slate-700";
+    }
+  };
+
+  // Filter buildings by search query
+  const filteredBuildings = buildingCollection?.features?.filter((f) => {
+    if (!searchQuery) return true;
+    const bId = String(f.properties.building_id || f.properties.osm_id || "").toLowerCase();
+    const pred = (f.properties.prediction || f.properties.damage_prediction || "").toLowerCase();
+    return bId.includes(searchQuery.toLowerCase()) || pred.includes(searchQuery.toLowerCase());
+  }) || [];
 
   return (
-    <div className="flex flex-col h-screen bg-slate-950 text-slate-50 font-sans">
-      {/* Header Bar with Event Selector */}
-      <header className="h-16 border-b border-slate-800 bg-slate-900/90 backdrop-blur px-6 flex items-center justify-between shrink-0">
-        <div className="flex items-center gap-4">
-          <div className="p-2 bg-emerald-600/20 text-emerald-400 rounded-lg border border-emerald-500/30">
-            <Lock className="w-5 h-5" />
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans flex flex-col selection:bg-sky-500 selection:text-white">
+      {/* 1. HEADER BAR */}
+      <header className="bg-slate-900/90 border-b border-slate-800 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 sticky top-0 z-30 backdrop-blur-md">
+        <div className="flex items-center space-x-3">
+          <div className="p-2.5 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-400">
+            <Satellite className="w-6 h-6 animate-pulse" />
           </div>
           <div>
-            <h1 className="text-base font-semibold tracking-tight text-white flex items-center gap-2">
-              Tamil Nadu Disaster Assessment & Event Archive
-              <span className="text-xs px-2 py-0.5 rounded bg-emerald-900/60 border border-emerald-700/50 text-emerald-300 font-normal flex items-center gap-1">
-                <Globe className="w-3 h-3 text-emerald-400" />
-                Token-Free Leaflet Map
-              </span>
+            <h1 className="text-xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-indigo-300 to-purple-400 uppercase">
+              Tamil Nadu Disaster Building-Damage Assessment Platform
             </h1>
-            <p className="text-xs text-slate-400">
-              Sentinel-1 SAR + Sentinel-2 Optical Multi-Event Archive System
+            <p className="text-xs text-slate-400 font-medium">
+              Real GIS Map • OpenStreetMap • Google Street View • Copernicus Sentinel-2 • Certified xBD AI Model
             </p>
           </div>
         </div>
 
-        {/* Disaster Event Selector */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800">
-            <Calendar className="w-4 h-4 text-cyan-400" />
-            <span className="text-xs text-slate-400 font-medium">Disaster Event:</span>
-            <select
-              value={selectedEventId}
-              onChange={(e) => setSelectedEventId(e.target.value)}
-              className="bg-transparent text-xs font-semibold text-cyan-300 focus:outline-none cursor-pointer pr-2"
-            >
-              {eventsList.map((ev) => (
-                <option key={ev.event_id} value={ev.event_id} className="bg-slate-900 text-white">
-                  {ev.event_name} ({ev.building_count} Bldgs)
-                </option>
-              ))}
-            </select>
-          </div>
+        <div className="flex items-center space-x-3">
+          {isDemoMode ? (
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold bg-amber-500/10 text-amber-400 border border-amber-500/30">
+              <ShieldAlert className="w-3.5 h-3.5 mr-1.5" />
+              DEMO MODE
+            </span>
+          ) : (
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+              <ShieldCheck className="w-3.5 h-3.5 mr-1.5" />
+              PRODUCTION (REAL APIS)
+            </span>
+          )}
 
           <button
-            onClick={exportGeoJSON}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium text-xs transition"
+            onClick={() => setShowMethodology(!showMethodology)}
+            className="inline-flex items-center px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-sky-300 border border-slate-700 transition-colors"
           >
-            <Download className="w-3.5 h-3.5 text-cyan-400" />
-            GeoJSON
-          </button>
-          <button
-            onClick={exportCSV}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium text-xs transition"
-          >
-            <FileText className="w-3.5 h-3.5 text-emerald-400" />
-            CSV
+            <Award className="w-3.5 h-3.5 mr-1.5" />
+            Research Methodology
           </button>
         </div>
       </header>
 
-      {/* Main Workspace */}
-      <div className="flex-1 flex overflow-hidden">
-        {/* Sidebar */}
-        <aside className="w-80 border-r border-slate-800 bg-slate-900/50 flex flex-col shrink-0 overflow-y-auto">
-          {/* Event Summary Banner */}
-          {eventSummary && (
-            <div className="p-4 bg-slate-950/80 border-b border-slate-800 space-y-2 text-xs">
-              <div className="flex items-center justify-between">
-                <span className="font-bold text-cyan-300 uppercase tracking-wider">{eventSummary.event_name}</span>
-                <span className="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">{eventSummary.disaster_type}</span>
+      {/* RESEARCH METHODOLOGY MODAL / DRAWER */}
+      {showMethodology && (
+        <section className="bg-slate-900 border-b border-slate-800 p-6 space-y-4 animate-in slide-in-from-top-4 duration-300">
+          <div className="max-w-7xl mx-auto space-y-4">
+            <div className="flex items-center justify-between">
+              <h2 className="text-lg font-extrabold text-sky-400 flex items-center">
+                <Award className="w-5 h-5 mr-2 text-sky-400" />
+                Certified Model Methodology & Fixed Research Metrics (Phase 9 Baseline)
+              </h2>
+              <button
+                onClick={() => setShowMethodology(false)}
+                className="text-xs text-slate-400 hover:text-white px-2 py-1 bg-slate-800 rounded-lg"
+              >
+                Close
+              </button>
+            </div>
+
+            <p className="text-xs text-slate-300 leading-relaxed">
+              This platform evaluates building structural damage using the certified Phase-9 xBD transfer learning architecture (<code className="text-sky-300 bg-slate-950 px-1 py-0.5 rounded">tamil_nadu_phase9_best.pt</code>). Published evaluation metrics on certified splits remain frozen for research transparency:
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
+              <div className="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-2">
+                <span className="text-sky-400 font-bold block border-b border-slate-800 pb-1">Validation Set</span>
+                <div className="space-y-1 text-slate-300">
+                  <p className="flex justify-between"><span>Accuracy:</span><span className="font-bold text-white">59.23%</span></p>
+                  <p className="flex justify-between"><span>Macro-F1:</span><span className="font-bold text-white">0.3393</span></p>
+                  <p className="flex justify-between"><span>Weighted-F1:</span><span className="font-bold text-white">0.6489</span></p>
+                  <p className="flex justify-between"><span>Balanced Acc:</span><span className="font-bold text-white">37.69%</span></p>
+                </div>
               </div>
-              <p className="text-slate-400"><MapPin className="w-3 h-3 inline text-slate-500 mr-1" />{eventSummary.location}</p>
-              
-              {/* Ground Truth / Domain Notice */}
-              <div className="mt-2 p-2 rounded bg-slate-900 border border-slate-800 text-[11px]">
-                {eventSummary.ground_truth_status === 'VERIFIED_GROUND_TRUTH' ? (
-                  <p className="text-emerald-300 font-medium flex items-center gap-1">
-                    <CheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                    Verified Accuracy: <span className="font-bold text-white">{eventSummary.accuracy}</span>
-                  </p>
-                ) : (
-                  <p className="text-amber-300/90 font-medium flex items-center gap-1">
-                    <ShieldAlert className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                    Domain: <span className="font-semibold text-white">External Domain Inference</span>
-                  </p>
-                )}
+
+              <div className="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-2">
+                <span className="text-indigo-400 font-bold block border-b border-slate-800 pb-1">Locked Test Set</span>
+                <div className="space-y-1 text-slate-300">
+                  <p className="flex justify-between"><span>Accuracy:</span><span className="font-bold text-white">57.82%</span></p>
+                  <p className="flex justify-between"><span>Macro-F1:</span><span className="font-bold text-white">0.3310</span></p>
+                  <p className="flex justify-between"><span>Weighted-F1:</span><span className="font-bold text-white">0.6439</span></p>
+                  <p className="flex justify-between"><span>Balanced Acc:</span><span className="font-bold text-white">36.01%</span></p>
+                </div>
+              </div>
+
+              <div className="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-2">
+                <span className="text-purple-400 font-bold block border-b border-slate-800 pb-1">Unseen Holdout Set</span>
+                <div className="space-y-1 text-slate-300">
+                  <p className="flex justify-between"><span>Accuracy:</span><span className="font-bold text-white">57.08%</span></p>
+                  <p className="flex justify-between"><span>Macro-F1:</span><span className="font-bold text-white">0.3001</span></p>
+                  <p className="flex justify-between"><span>Weighted-F1:</span><span className="font-bold text-white">0.6500</span></p>
+                  <p className="flex justify-between"><span>Balanced Acc:</span><span className="font-bold text-white">31.04%</span></p>
+                </div>
               </div>
             </div>
-          )}
+          </div>
+        </section>
+      )}
 
-          {/* Search Field & Latitude/Longitude Locator */}
-          <div className="p-4 border-b border-slate-800 space-y-3">
-            <form onSubmit={handleSearch} className="flex gap-2">
-              <div className="relative flex-1">
-                <Search className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" />
-                <input
-                  type="text"
-                  placeholder="Search Building ID..."
-                  value={searchId}
-                  onChange={(e) => setSearchId(e.target.value)}
-                  className="w-full bg-slate-900 border border-slate-800 rounded-lg pl-8 pr-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
-                />
-              </div>
-              <button type="submit" className="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 rounded-lg text-xs font-medium text-white transition">
-                Find
-              </button>
-            </form>
+      {/* ERROR ALERT */}
+      {error && (
+        <div className="bg-rose-500/10 border-b border-rose-500/30 text-rose-300 px-6 py-3 flex items-center justify-between text-xs">
+          <div className="flex items-center space-x-2">
+            <AlertTriangle className="w-4 h-4 text-rose-400 shrink-0" />
+            <span>{error}</span>
+          </div>
+          <button onClick={() => setError(null)} className="font-bold hover:underline">Dismiss</button>
+        </div>
+      )}
 
-            {/* Latitude & Longitude Search */}
-            <div className="p-2.5 bg-slate-950/80 rounded-lg border border-slate-800 space-y-2">
-              <div className="text-[11px] font-semibold text-slate-300 flex items-center gap-1.5">
-                <Compass className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Locate Building by Coordinates</span>
-              </div>
-              <div className="grid grid-cols-2 gap-2">
-                <div>
-                  <label className="text-[10px] text-slate-400 block mb-0.5">Latitude</label>
-                  <input
-                    type="number"
-                    step="any"
-                    placeholder="11.740000"
-                    value={searchLat}
-                    onChange={(e) => setSearchLat(e.target.value)}
-                    className="w-full bg-slate-900 border border-slate-800 rounded px-2 py-1 text-xs font-mono text-cyan-300 placeholder-slate-600 focus:outline-none focus:border-cyan-500"
-                  />
-                </div>
-                <div>
-                  <label className="text-[10px] text-slate-400 block mb-0.5">Longitude</label>
-                  <input
-                    type="number"
-                    step="any"
-                    placeholder="79.760000"
-                    value={searchLon}
-                    onChange={(e) => setSearchLon(e.target.value)}
-                    className="w-full bg-slate-900 border border-slate-800 rounded px-2 py-1 text-xs font-mono text-cyan-300 placeholder-slate-600 focus:outline-none focus:border-cyan-500"
-                  />
-                </div>
-              </div>
-              <button
-                type="button"
-                onClick={() => handleCoordinateSearch(100)}
-                className="w-full py-1.5 bg-cyan-600 hover:bg-cyan-500 rounded text-xs font-bold text-white transition flex items-center justify-center gap-1.5 shadow"
+      {/* MAIN LAYOUT: SIDEBAR + MAP + BOTTOM DETAILS PANEL */}
+      <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-0">
+        {/* 2. SIDEBAR (EVENT SELECTOR, MANUAL SEARCH, STATISTICS, BUILDING LIST) */}
+        <aside className="lg:col-span-3 bg-slate-900 border-r border-slate-800 p-5 space-y-6 flex flex-col justify-between overflow-y-auto max-h-[calc(100vh-73px)]">
+          <div className="space-y-6">
+            {/* EXISTING EVENT SELECTOR */}
+            <div className="space-y-2">
+              <label className="block text-xs font-extrabold uppercase tracking-wider text-slate-400 flex items-center">
+                <Globe className="w-4 h-4 text-sky-400 mr-1.5" />
+                Selected Disaster Event
+              </label>
+              <select
+                value={selectedEventId}
+                onChange={(e) => setSelectedEventId(e.target.value)}
+                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2.5 text-sm text-slate-100 font-medium focus:outline-none focus:border-sky-500 transition-colors"
               >
-                <Focus className="w-3.5 h-3.5" />
-                LOCATE BUILDING (100m)
-              </button>
-              {noResultRadiusNotice && (
-                <div className="p-2.5 bg-amber-950/40 border border-amber-800/60 rounded-lg text-xs space-y-2">
-                  <div className="text-amber-300 font-medium">
-                    No building found within {noResultRadiusNotice.radius} m.
-                  </div>
-                  {noResultRadiusNotice.nearestDistStr && (
-                    <div className="text-slate-300 text-[11px]">
-                      Nearest known building: <span className="font-bold text-amber-400">{noResultRadiusNotice.nearestDistStr}</span> away.
-                    </div>
-                  )}
-                  <button
-                    type="button"
-                    onClick={() => handleCoordinateSearch(5000)}
-                    className="w-full py-1.5 bg-amber-600 hover:bg-amber-500 text-white font-bold rounded text-xs transition shadow flex items-center justify-center gap-1"
-                  >
-                    <Focus className="w-3.5 h-3.5" />
-                    Search within 5 km
-                  </button>
+                {events.map((ev) => (
+                  <option key={ev.event_id} value={ev.event_id}>
+                    {ev.event_name} ({ev.disaster_type})
+                  </option>
+                ))}
+              </select>
+
+              {eventSummary && (
+                <div className="text-[11px] text-slate-400 font-mono flex justify-between bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800/80">
+                  <span>Event Date:</span>
+                  <span className="font-bold text-sky-300">{eventSummary.pre_date?.split("T")[0]}</span>
                 </div>
               )}
             </div>
-          </div>
 
-          {/* Damage Filters (Part E Fix) */}
-          <div className="p-4 border-b border-slate-800 space-y-4">
-            <h2 className="text-xs font-semibold text-slate-400 uppercase tracking-wider flex items-center justify-between">
-              <span>Building Damage Filters</span>
-              <span className="text-emerald-400 font-semibold">{liveCount} Total</span>
-            </h2>
-
-            <div className="grid grid-cols-2 gap-2">
-              <button onClick={() => handleSelectFilter('ALL')} className={`p-2.5 border rounded-lg text-left transition ${filterStatus === 'ALL' ? 'bg-slate-800 border-blue-500 shadow-md' : 'bg-slate-800/40 border-slate-800'}`}>
-                <div className="text-xs text-slate-400 font-medium">ALL</div>
-                <div className="text-lg font-bold text-white mt-0.5">{liveCount}</div>
-              </button>
-              <button onClick={() => handleSelectFilter('INTACT')} className={`p-2.5 border rounded-lg text-left transition ${filterStatus === 'INTACT' ? 'bg-emerald-950 border-emerald-500 shadow-md' : 'bg-emerald-950/30 border-emerald-800/40'}`}>
-                <div className="text-xs text-emerald-400 font-medium">INTACT</div>
-                <div className="text-lg font-bold text-emerald-300 mt-0.5">{intactLive}</div>
-              </button>
-              <button onClick={() => handleSelectFilter('DAMAGED')} className={`p-2.5 border rounded-lg text-left transition ${filterStatus === 'DAMAGED' ? 'bg-amber-950 border-amber-500 shadow-md' : 'bg-amber-950/30 border-amber-800/40'}`}>
-                <div className="text-xs text-amber-400 font-medium">DAMAGED</div>
-                <div className="text-lg font-bold text-amber-300 mt-0.5">{damagedLive}</div>
-              </button>
-              <button onClick={() => handleSelectFilter('DESTROYED')} className={`p-2.5 border rounded-lg text-left transition ${filterStatus === 'DESTROYED' ? 'bg-red-950 border-red-500 shadow-md' : 'bg-red-950/30 border-red-800/40'}`}>
-                <div className="text-xs text-red-400 font-medium">DESTROYED</div>
-                <div className="text-lg font-bold text-red-300 mt-0.5">{destroyedLive}</div>
-              </button>
-            </div>
-
-            {/* Map Legend */}
-            <div className="p-3 bg-slate-900 rounded-lg border border-slate-800 space-y-2 text-xs">
-              <div className="font-medium text-slate-300 mb-1">Damage Color Coding</div>
-              <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-emerald-500"></span><span className="text-slate-300">INTACT (Green)</span></div>
-              <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-amber-500"></span><span className="text-slate-300">DAMAGED (Orange/Amber)</span></div>
-              <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-red-500"></span><span className="text-slate-300">DESTROYED (Red)</span></div>
-            </div>
-          </div>
-        </aside>
-
-        {/* Center Leaflet Map */}
-        <main className="flex-1 relative h-full w-full bg-slate-950 overflow-hidden">
-          <LeafletMap
-            data={damageData}
-            selectedFeature={selectedFeature}
-            onSelectBuilding={handleSelectBuilding}
-            filterStatus={filterStatus}
-            searchQueryLocation={searchQueryLocation}
-          />
-
-          {/* Telemetry Overlay */}
-          <div className="absolute top-4 left-16 z-[1000] px-3 py-1.5 bg-slate-900/90 border border-slate-800 backdrop-blur rounded-lg text-xs font-medium text-emerald-300 flex items-center gap-2 shadow-lg">
-            <Activity className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
-            <span>{mapStatus}</span>
-          </div>
-        </main>
-
-        {/* Building Visual Evidence Inspector Drawer */}
-        {selectedFeature && (
-          <aside className="w-[500px] border-l border-slate-800 bg-slate-900/95 backdrop-blur flex flex-col shrink-0 z-[1000] overflow-y-auto shadow-2xl">
-            <div className="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900 sticky top-0 z-10">
-              <div className="flex items-center gap-2">
-                <Award className="w-4 h-4 text-emerald-400" />
-                <h2 className="text-sm font-bold text-white uppercase tracking-wider">Building Visual Inspector</h2>
+            {/* MANUAL LATITUDE / LONGITUDE LOCATION SEARCH PANEL */}
+            <div className="bg-slate-950 rounded-2xl p-4 border border-sky-500/30 space-y-3 shadow-lg shadow-sky-500/5">
+              <div className="flex items-center justify-between border-b border-slate-800 pb-2">
+                <h3 className="text-xs font-bold text-sky-300 flex items-center">
+                  <Navigation className="w-4 h-4 text-sky-400 mr-1.5" />
+                  Manual Location Search
+                </h3>
+                <span className="text-[10px] bg-sky-500/10 text-sky-400 px-2 py-0.5 rounded font-mono">
+                  GIS Target
+                </span>
               </div>
-              <button onClick={() => setSelectedFeature(null)} className="p-1 rounded hover:bg-slate-800 text-slate-400 hover:text-white transition">
-                <X className="w-4 h-4" />
-              </button>
-            </div>
 
-            {isInspectionLoading ? (
-              <div className="p-12 text-center text-slate-400 space-y-3 flex flex-col items-center justify-center">
-                <Loader2 className="w-6 h-6 text-blue-500 animate-spin" />
-                <p className="text-xs font-medium">Loading building evidence & satellite chips...</p>
-              </div>
-            ) : inspectionData ? (
-              <div className="p-5 space-y-5 text-xs">
-                {/* Part G — Rescue-Oriented Presentation Card */}
-                <div className="p-4 bg-slate-950 rounded-xl border border-blue-900/40 space-y-2.5 shadow-inner">
-                  <div className="flex items-center justify-between border-b border-slate-800 pb-2">
-                    <span className="font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
-                      <Shield className="w-4 h-4 text-blue-400" />
-                      Building Response Information
-                    </span>
-                    <span className="text-[11px] px-2 py-0.5 rounded bg-blue-950 text-blue-300 font-mono border border-blue-800/50">
-                      {inspectionData.review_status}
-                    </span>
+              <form onSubmit={handleManualSearch} className="space-y-3">
+                <div className="grid grid-cols-2 gap-2">
+                  <div>
+                    <label className="block text-[10px] font-bold text-slate-400 uppercase mb-1">
+                      Latitude (-90 to 90)
+                    </label>
+                    <input
+                      type="number"
+                      step="0.000001"
+                      value={manualLat}
+                      onChange={(e) => setManualLat(e.target.value)}
+                      placeholder="13.082700"
+                      className="w-full bg-slate-900 border border-slate-800 rounded-xl px-2.5 py-1.5 text-xs text-slate-100 font-mono focus:outline-none focus:border-sky-500"
+                      required
+                    />
                   </div>
 
-                  <div className="grid grid-cols-2 gap-2 text-xs pt-1">
-                    <div>
-                      <span className="text-slate-400 text-[11px]">Building ID:</span>
-                      <p className="font-mono text-cyan-300 font-bold truncate">{inspectionData.building_id}</p>
-                    </div>
-                    <div>
-                      <span className="text-slate-400 text-[11px]">Location:</span>
-                      <p className="font-mono text-slate-200">{inspectionData.centroid?.latitude?.toFixed(6)}, {inspectionData.centroid?.longitude?.toFixed(6)}</p>
-                    </div>
-                    <div>
-                      <span className="text-slate-400 text-[11px]">Damage Status:</span>
-                      <p className={`font-bold text-xs ${
-                        inspectionData.prediction === 'INTACT' ? 'text-emerald-400' :
-                        inspectionData.prediction === 'DAMAGED' ? 'text-amber-400' : 'text-red-400'
-                      }`}>
-                        {inspectionData.prediction}
-                      </p>
-                    </div>
-                    <div>
-                      <span className="text-slate-400 text-[11px]">Confidence:</span>
-                      <p className="font-bold text-white">{(inspectionData.confidence * 100).toFixed(1)}%</p>
-                    </div>
-                  </div>
-
-                  <div className="p-2.5 bg-slate-900 rounded-lg border border-slate-800 text-[11px] text-slate-300 leading-relaxed mt-2 flex items-start gap-2">
-                    <Info className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Operator Notice:</strong> Use optical imagery to identify the building and surrounding structures. Model prediction is decision support and requires human verification for high-risk cases.
-                    </span>
-                  </div>
-                </div>
-
-                {/* Calibrated Class Probabilities */}
-                {inspectionData.probabilities && (
-                  <div className="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
-                    <span className="font-semibold text-slate-300 block">Calibrated Class Probabilities ($T^*=0.50$)</span>
-                    <div className="space-y-1.5">
-                      <div className="flex justify-between text-xs">
-                        <span className="text-emerald-400 font-medium">INTACT:</span>
-                        <span className="font-mono font-bold text-emerald-300">{(inspectionData.probabilities.INTACT * 100).toFixed(1)}%</span>
-                      </div>
-                      <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                        <div className="bg-emerald-500 h-full" style={{ width: `${inspectionData.probabilities.INTACT * 100}%` }}></div>
-                      </div>
-                      <div className="flex justify-between text-xs pt-1">
-                        <span className="text-amber-400 font-medium">DAMAGED:</span>
-                        <span className="font-mono font-bold text-amber-300">{(inspectionData.probabilities.DAMAGED * 100).toFixed(1)}%</span>
-                      </div>
-                      <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                        <div className="bg-amber-500 h-full" style={{ width: `${inspectionData.probabilities.DAMAGED * 100}%` }}></div>
-                      </div>
-                      <div className="flex justify-between text-xs pt-1">
-                        <span className="text-red-400 font-medium">DESTROYED:</span>
-                        <span className="font-mono font-bold text-red-300">{(inspectionData.probabilities.DESTROYED * 100).toFixed(1)}%</span>
-                      </div>
-                      <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                        <div className="bg-red-500 h-full" style={{ width: `${inspectionData.probabilities.DESTROYED * 100}%` }}></div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {/* Part A — High-Resolution Sentinel-2 Optical Building View */}
-                <div className="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="font-bold text-white flex items-center gap-1.5">
-                      <Satellite className="w-4 h-4 text-cyan-400" />
-                      Satellite Visual Evidence
-                    </span>
-                    <span className="text-[11px] text-slate-400">Footprint Overlaid Context View</span>
-                  </div>
-
-                  {/* Imagery Tabs Header */}
-                  <div className="flex bg-slate-900 p-1 rounded-lg gap-1 border border-slate-800">
-                    <button
-                      onClick={() => setActiveTab('s2_pre')}
-                      className={`flex-1 py-1 text-[11px] font-medium rounded transition ${activeTab === 's2_pre' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'}`}
-                    >
-                      S2 PRE
-                    </button>
-                    <button
-                      onClick={() => setActiveTab('s2_post')}
-                      className={`flex-1 py-1 text-[11px] font-medium rounded transition ${activeTab === 's2_post' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'}`}
-                    >
-                      S2 POST
-                    </button>
-                    <button
-                      onClick={() => setActiveTab('s2_change')}
-                      className={`flex-1 py-1 text-[11px] font-medium rounded transition ${activeTab === 's2_change' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'}`}
-                    >
-                      CHANGE
-                    </button>
-                    <button
-                      onClick={() => setActiveTab('s1_vv')}
-                      className={`flex-1 py-1 text-[11px] font-medium rounded transition ${activeTab === 's1_vv' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'}`}
-                    >
-                      S1 VV
-                    </button>
-                    <button
-                      onClick={() => setActiveTab('s1_vh')}
-                      className={`flex-1 py-1 text-[11px] font-medium rounded transition ${activeTab === 's1_vh' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'}`}
-                    >
-                      S1 VH
-                    </button>
-                  </div>
-
-                  {/* Imagery Display Container */}
-                  <div className="aspect-square bg-slate-900 rounded-lg overflow-hidden border border-slate-800 flex flex-col justify-between p-3 relative shadow-inner">
-                    {/* S2 PRE TAB */}
-                    {activeTab === 's2_pre' && (
-                      <>
-                        <div className="text-[11px] text-slate-300 space-y-0.5 z-10 bg-slate-900/80 p-2 rounded border border-slate-800/80">
-                          <p className="font-semibold text-cyan-400">SENTINEL-2 PRE-DISASTER OPTICAL RGB</p>
-                          <p>Scene: <span className="font-mono text-white">{inspectionData.imagery?.s2_pre_scene_id || 'S2A_MSIL2A_20201114_TCI'}</span></p>
-                          <p>Acquired: <span className="font-mono text-white">{inspectionData.imagery?.pre_date}</span></p>
-                        </div>
-                        <div className="flex-1 my-2 bg-slate-950 rounded border border-slate-800 flex items-center justify-center overflow-hidden relative">
-                          {imageErrorState['s2_pre']?.failed ? (
-                            <div className="p-3 text-center space-y-1 text-[11px]">
-                              <ImageOff className="w-5 h-5 text-amber-400 mx-auto" />
-                              <p className="font-semibold text-amber-300">OPTICAL IMAGERY UNAVAILABLE</p>
-                              <p className="text-slate-400 text-[10px]">Reason: {imageErrorState['s2_pre'].reason}</p>
-                            </div>
-                          ) : (
-                            <img
-                              src={resolveImageUrl(inspectionData.imagery?.s2_pre, 's2/pre') || ''}
-                              alt="Sentinel-2 PRE Optical RGB"
-                              className="w-full h-full object-cover rounded"
-                              onLoad={() => handleImageLoadSuccess('s2_pre', resolveImageUrl(inspectionData.imagery?.s2_pre, 's2/pre'))}
-                              onError={() => handleImageError('s2_pre', resolveImageUrl(inspectionData.imagery?.s2_pre, 's2/pre'))}
-                            />
-                          )}
-                          <div className="absolute bottom-2 right-2 bg-slate-900/90 text-cyan-300 border border-cyan-700/60 px-2 py-0.5 rounded text-[10px] font-mono flex items-center gap-1">
-                            <Focus className="w-3 h-3 text-cyan-400" /> Building Footprint Overlay
-                          </div>
-                        </div>
-                      </>
-                    )}
-
-                    {/* S2 POST TAB */}
-                    {activeTab === 's2_post' && (
-                      <>
-                        <div className="text-[11px] text-slate-300 space-y-0.5 z-10 bg-slate-900/80 p-2 rounded border border-slate-800/80">
-                          <p className="font-semibold text-amber-400">SENTINEL-2 POST-DISASTER OPTICAL RGB</p>
-                          <p>Scene: <span className="font-mono text-white">{inspectionData.imagery?.s2_post_scene_id || 'S2B_MSIL2A_20201129_TCI'}</span></p>
-                          <p>Acquired: <span className="font-mono text-white">{inspectionData.imagery?.post_date}</span></p>
-                        </div>
-                        <div className="flex-1 my-2 bg-slate-950 rounded border border-slate-800 flex items-center justify-center overflow-hidden relative">
-                          {imageErrorState['s2_post']?.failed ? (
-                            <div className="p-3 text-center space-y-1 text-[11px]">
-                              <ImageOff className="w-5 h-5 text-amber-400 mx-auto" />
-                              <p className="font-semibold text-amber-300">OPTICAL IMAGERY UNAVAILABLE</p>
-                              <p className="text-slate-400 text-[10px]">Reason: {imageErrorState['s2_post'].reason}</p>
-                            </div>
-                          ) : (
-                            <img
-                              src={resolveImageUrl(inspectionData.imagery?.s2_post, 's2/post') || ''}
-                              alt="Sentinel-2 POST Optical RGB"
-                              className="w-full h-full object-cover rounded"
-                              onLoad={() => handleImageLoadSuccess('s2_post', resolveImageUrl(inspectionData.imagery?.s2_post, 's2/post'))}
-                              onError={() => handleImageError('s2_post', resolveImageUrl(inspectionData.imagery?.s2_post, 's2/post'))}
-                            />
-                          )}
-                          <div className="absolute bottom-2 right-2 bg-slate-900/90 text-cyan-300 border border-cyan-700/60 px-2 py-0.5 rounded text-[10px] font-mono flex items-center gap-1">
-                            <Focus className="w-3 h-3 text-cyan-400" /> Building Footprint Overlay
-                          </div>
-                        </div>
-                      </>
-                    )}
-
-                    {/* S2 CHANGE TAB */}
-                    {activeTab === 's2_change' && (
-                      <>
-                        <div className="text-[11px] text-slate-300 space-y-0.5 z-10 bg-slate-900/80 p-2 rounded border border-slate-800/80">
-                          <p className="font-semibold text-emerald-400">OPTICAL TEMPORAL DIFFERENCE (POST - PRE)</p>
-                          <p>Temporal Delta: <span className="font-mono text-white">{inspectionData.imagery?.temporal_delta_days} Days</span></p>
-                        </div>
-                        <div className="flex-1 my-2 bg-slate-950 rounded border border-slate-800 flex items-center justify-center overflow-hidden">
-                          {imageErrorState['s2_change']?.failed ? (
-                            <div className="p-3 text-center space-y-1 text-[11px]">
-                              <ImageOff className="w-5 h-5 text-amber-400 mx-auto" />
-                              <p className="font-semibold text-amber-300">Sentinel-2 change imagery unavailable</p>
-                              <p className="text-slate-400 text-[10px]">Reason: {imageErrorState['s2_change'].reason}</p>
-                            </div>
-                          ) : (
-                            <img
-                              src={resolveImageUrl(inspectionData.imagery?.s2_change, 's2/change') || ''}
-                              alt="Sentinel-2 Optical Change"
-                              className="w-full h-full object-cover rounded"
-                              onLoad={() => handleImageLoadSuccess('s2_change', resolveImageUrl(inspectionData.imagery?.s2_change, 's2/change'))}
-                              onError={() => handleImageError('s2_change', resolveImageUrl(inspectionData.imagery?.s2_change, 's2/change'))}
-                            />
-                          )}
-                        </div>
-                      </>
-                    )}
-
-                    {/* S1 VV TAB */}
-                    {activeTab === 's1_vv' && (
-                      <>
-                        <div className="text-[11px] text-slate-300 space-y-0.5 z-10 bg-slate-900/80 p-2 rounded border border-slate-800/80">
-                          <p className="font-semibold text-purple-400">SENTINEL-1 SAR (VV POLARIZATION RADAR)</p>
-                          <p>Scene: <span className="font-mono text-white">{inspectionData.imagery?.pre_scene_id || 'S1A_IW_GRDH_1SDV_20201115_PRE'}</span></p>
-                        </div>
-                        <div className="flex-1 my-2 bg-slate-950 rounded border border-slate-800 flex items-center justify-center overflow-hidden">
-                          {imageErrorState['s1_vv']?.failed ? (
-                            <div className="p-3 text-center space-y-1 text-[11px]">
-                              <ImageOff className="w-5 h-5 text-purple-400 mx-auto" />
-                              <p className="font-semibold text-purple-300">SAR VV imagery unavailable</p>
-                              <p className="text-slate-400 text-[10px]">Reason: {imageErrorState['s1_vv'].reason}</p>
-                            </div>
-                          ) : (
-                            <img
-                              src={resolveImageUrl(inspectionData.imagery?.s1_pre_vv || inspectionData.imagery?.s1_pre, 's1/vv/pre') || ''}
-                              alt="Sentinel-1 VV Radar"
-                              className="w-full h-full object-cover rounded"
-                              onLoad={() => handleImageLoadSuccess('s1_vv', resolveImageUrl(inspectionData.imagery?.s1_pre_vv, 's1/vv/pre'))}
-                              onError={() => handleImageError('s1_vv', resolveImageUrl(inspectionData.imagery?.s1_pre_vv, 's1/vv/pre'))}
-                            />
-                          )}
-                        </div>
-                      </>
-                    )}
-
-                    {/* S1 VH TAB */}
-                    {activeTab === 's1_vh' && (
-                      <>
-                        <div className="text-[11px] text-slate-300 space-y-0.5 z-10 bg-slate-900/80 p-2 rounded border border-slate-800/80">
-                          <p className="font-semibold text-pink-400">SENTINEL-1 SAR (VH POLARIZATION RADAR)</p>
-                          <p>Scene: <span className="font-mono text-white">{inspectionData.imagery?.post_scene_id || 'S1A_IW_GRDH_1SDV_20201127_POST'}</span></p>
-                        </div>
-                        <div className="flex-1 my-2 bg-slate-950 rounded border border-slate-800 flex items-center justify-center overflow-hidden">
-                          {imageErrorState['s1_vh']?.failed ? (
-                            <div className="p-3 text-center space-y-1 text-[11px]">
-                              <ImageOff className="w-5 h-5 text-pink-400 mx-auto" />
-                              <p className="font-semibold text-pink-300">SAR VH imagery unavailable</p>
-                              <p className="text-slate-400 text-[10px]">Reason: {imageErrorState['s1_vh'].reason}</p>
-                            </div>
-                          ) : (
-                            <img
-                              src={resolveImageUrl(inspectionData.imagery?.s1_pre_vh, 's1/vh/pre') || ''}
-                              alt="Sentinel-1 VH Radar"
-                              className="w-full h-full object-cover rounded"
-                              onLoad={() => handleImageLoadSuccess('s1_vh', resolveImageUrl(inspectionData.imagery?.s1_pre_vh, 's1/vh/pre'))}
-                              onError={() => handleImageError('s1_vh', resolveImageUrl(inspectionData.imagery?.s1_pre_vh, 's1/vh/pre'))}
-                            />
-                          )}
-                        </div>
-                      </>
-                    )}
-                  </div>
-                </div>
-
-                {/* Part B — Separate Model Input Section */}
-                <div className="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-3">
-                  <div className="flex items-center justify-between border-b border-slate-800 pb-2">
-                    <span className="font-bold text-purple-300 uppercase tracking-wider flex items-center gap-1.5">
-                      <Cpu className="w-4 h-4 text-purple-400" />
-                      MODEL INPUT
-                    </span>
-                    <span className="text-[10px] font-mono text-purple-400 bg-purple-950/60 px-2 py-0.5 rounded border border-purple-800/40">
-                      S2 RGB [1,3,32,32]
-                    </span>
-                  </div>
-
-                  <p className="text-[11px] text-slate-400 leading-relaxed">
-                    This is the 32×32 image tensor used by the neural network.
-                  </p>
-
-                  <div className="w-32 h-32 mx-auto bg-slate-900 rounded-lg border border-slate-800 overflow-hidden flex items-center justify-center p-1">
-                    <img
-                      src={resolveImageUrl(inspectionData.imagery?.s2_pre, 's2/pre') || ''}
-                      alt="32x32 Model Input Tensor Chip"
-                      className="w-full h-full object-cover rounded border border-slate-800"
+                  <div>
+                    <label className="block text-[10px] font-bold text-slate-400 uppercase mb-1">
+                      Longitude (-180 to 180)
+                    </label>
+                    <input
+                      type="number"
+                      step="0.000001"
+                      value={manualLon}
+                      onChange={(e) => setManualLon(e.target.value)}
+                      placeholder="80.270700"
+                      className="w-full bg-slate-900 border border-slate-800 rounded-xl px-2.5 py-1.5 text-xs text-slate-100 font-mono focus:outline-none focus:border-sky-500"
+                      required
                     />
                   </div>
                 </div>
 
-                {/* Operator Human Review Verdict */}
-                <div className="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
-                  <span className="font-semibold text-slate-300 block">Operator Human Review</span>
-                  {reviewMessage && <div className="p-2 bg-emerald-950 text-emerald-300 border border-emerald-800 rounded font-medium">{reviewMessage}</div>}
-                  <div className="grid grid-cols-3 gap-1.5 pt-1">
-                    {['CONFIRM INTACT', 'CONFIRM DAMAGED', 'CONFIRM DESTROYED'].map((v) => (
-                      <button
-                        key={v}
-                        onClick={() => submitHumanReview(v)}
-                        className="py-1.5 px-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded text-[11px] font-medium transition text-center"
-                      >
-                        {v.replace('CONFIRM ', '')}
-                      </button>
-                    ))}
+                <button
+                  type="submit"
+                  disabled={manualSearching}
+                  className="w-full bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-extrabold py-2 px-3 rounded-xl text-xs flex items-center justify-center transition-all disabled:opacity-50 shadow-md shadow-sky-500/10"
+                >
+                  {manualSearching ? (
+                    <>
+                      <RefreshCw className="w-3.5 h-3.5 mr-1.5 animate-spin" />
+                      Searching Location...
+                    </>
+                  ) : (
+                    <>
+                      <Search className="w-3.5 h-3.5 mr-1.5" />
+                      Search Location
+                    </>
+                  )}
+                </button>
+              </form>
+            </div>
+
+            {/* EVENT STATISTICS */}
+            {eventSummary && (
+              <div className="bg-slate-950 rounded-2xl p-4 border border-slate-800 space-y-3 shadow-inner">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-2">
+                  <h3 className="text-xs font-bold text-slate-300 flex items-center">
+                    <BarChart3 className="w-4 h-4 text-sky-400 mr-1.5" />
+                    Event Damage Statistics
+                  </h3>
+                  <span className="text-[10px] bg-sky-500/10 text-sky-400 px-2 py-0.5 rounded font-mono">
+                    Dataset Derived
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div className="bg-emerald-500/10 border border-emerald-500/20 p-2.5 rounded-xl text-center">
+                    <span className="text-[10px] text-emerald-400 uppercase font-bold block">INTACT</span>
+                    <span className="text-lg font-black text-emerald-300">{eventSummary.intact_count}</span>
+                  </div>
+
+                  <div className="bg-amber-500/10 border border-amber-500/20 p-2.5 rounded-xl text-center">
+                    <span className="text-[10px] text-amber-400 uppercase font-bold block">DAMAGED</span>
+                    <span className="text-lg font-black text-amber-300">{eventSummary.damaged_count}</span>
+                  </div>
+
+                  <div className="bg-rose-500/10 border border-rose-500/20 p-2.5 rounded-xl text-center">
+                    <span className="text-[10px] text-rose-400 uppercase font-bold block">DESTROYED</span>
+                    <span className="text-lg font-black text-rose-300">{eventSummary.destroyed_count}</span>
+                  </div>
+
+                  <div className="bg-slate-800 border border-slate-700 p-2.5 rounded-xl text-center">
+                    <span className="text-[10px] text-slate-400 uppercase font-bold block">TOTAL</span>
+                    <span className="text-lg font-black text-slate-200">{eventSummary.total_buildings}</span>
                   </div>
                 </div>
               </div>
-            ) : (
-              <div className="p-8 text-center text-slate-400">
-                <AlertTriangle className="w-6 h-6 text-amber-400 mx-auto mb-2" />
-                <p className="font-semibold text-slate-300">Assessment Data Unavailable</p>
-                <p className="text-xs text-slate-400 mt-1">Unable to retrieve building inspection details.</p>
-              </div>
             )}
-          </aside>
-        )}
+
+            {/* BUILDING SEARCH & LIST */}
+            <div className="space-y-3">
+              <div className="relative">
+                <Search className="w-4 h-4 absolute left-3 top-3 text-slate-500" />
+                <input
+                  type="text"
+                  placeholder="Filter building ID..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-sky-500"
+                />
+              </div>
+
+              <div className="flex items-center space-x-1 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                {["ALL", "INTACT", "DAMAGED", "DESTROYED"].map((st) => (
+                  <button
+                    key={st}
+                    onClick={() => setFilterStatus(st)}
+                    className={`flex-1 py-1 rounded-lg text-[10px] font-extrabold transition-all ${
+                      filterStatus === st
+                        ? "bg-sky-500 text-white shadow-sm"
+                        : "text-slate-400 hover:text-slate-200"
+                    }`}
+                  >
+                    {st}
+                  </button>
+                ))}
+              </div>
+
+              <div className="space-y-2">
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">
+                  Event Buildings ({filteredBuildings.length})
+                </span>
+
+                <div className="max-h-48 overflow-y-auto space-y-1.5 pr-1">
+                  {filteredBuildings.map((f, idx) => {
+                    const bId = String(f.properties.building_id || f.properties.osm_id || `BLD_${idx}`);
+                    const pred = f.properties.prediction || f.properties.damage_prediction || "UNKNOWN";
+                    const isSel = String(selectedBuilding?.properties?.building_id || selectedBuilding?.properties?.osm_id) === bId;
+
+                    return (
+                      <button
+                        key={bId}
+                        onClick={() => handleSelectBuilding(f)}
+                        className={`w-full text-left px-3 py-2 rounded-xl border text-xs flex items-center justify-between transition-all ${
+                          isSel
+                            ? "bg-sky-500/10 border-sky-500 text-sky-300 font-bold"
+                            : "bg-slate-950/60 border-slate-800/80 text-slate-400 hover:bg-slate-800"
+                        }`}
+                      >
+                        <span className="truncate font-mono">{bId}</span>
+                        <span className={`px-2 py-0.5 rounded text-[10px] font-bold border ${getDamageBadgeStyle(pred)}`}>
+                          {pred}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-4 border-t border-slate-800 text-[11px] text-slate-500 font-mono space-y-1">
+            <p>Dataset: Tamil Nadu Cyclone & Flood Archive</p>
+            <p>Map Base: OpenStreetMap Tiles</p>
+          </div>
+        </aside>
+
+        {/* 3. MAIN MAP & DISASTER LOCATION ASSESSMENT PANEL */}
+        <main className="lg:col-span-9 flex flex-col bg-slate-950 relative overflow-y-auto max-h-[calc(100vh-73px)]">
+          {/* MAIN INTERACTIVE MAP */}
+          <div className="w-full h-[520px] relative border-b border-slate-800 shrink-0">
+            <LeafletMap
+              data={buildingCollection}
+              selectedFeature={selectedBuilding}
+              onSelectBuilding={handleSelectBuilding}
+              filterStatus={filterStatus}
+              searchQueryLocation={searchQueryLocation}
+            />
+
+            {/* MAP OVERLAY BADGE */}
+            <div className="absolute top-4 left-4 z-[1000] bg-slate-900/90 backdrop-blur border border-slate-800 px-3 py-2 rounded-xl text-xs space-y-0.5 shadow-xl">
+              <span className="font-bold text-sky-400 block flex items-center">
+                <Globe className="w-3.5 h-3.5 mr-1" />
+                {eventSummary?.event_name || "Tamil Nadu GIS Map"}
+              </span>
+              <span className="text-[10px] text-slate-400 font-mono block">
+                OpenStreetMap Geographic Base Layer
+              </span>
+            </div>
+          </div>
+
+          {/* 4. DISASTER LOCATION ASSESSMENT RESULT PANEL */}
+          {(manualResult || selectedBuilding) ? (
+            <div className="p-6 space-y-6 bg-slate-950 flex-1">
+              {/* HEADER INFO BAR */}
+              <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-800 pb-4 gap-4">
+                <div>
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="w-5 h-5 text-sky-400" />
+                    <h2 className="text-lg font-extrabold text-slate-100 font-mono">
+                      DISASTER LOCATION ASSESSMENT
+                    </h2>
+                  </div>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Event: <span className="text-sky-300 font-semibold">{eventSummary?.event_name}</span> | Date: <span className="text-slate-200 font-mono">{eventSummary?.pre_date?.split("T")[0]}</span> | Coords: <span className="text-sky-300 font-mono">{searchQueryLocation ? `${searchQueryLocation.lat.toFixed(6)}, ${searchQueryLocation.lon.toFixed(6)}` : "Dataset Location"}</span>
+                  </p>
+                </div>
+
+                <div className="flex items-center space-x-3">
+                  <div className="text-right">
+                    <span className="text-[10px] text-slate-500 uppercase font-bold block">Ground Truth</span>
+                    <span className={`px-3 py-1 rounded-xl text-xs font-black border ${getDamageBadgeStyle(manualResult ? manualResult.ground_truth : (selectedBuilding?.properties?.ground_truth || selectedBuilding?.properties?.prediction))}`}>
+                      {manualResult ? manualResult.ground_truth : (selectedBuilding?.properties?.ground_truth || selectedBuilding?.properties?.prediction || "UNAVAILABLE")}
+                    </span>
+                  </div>
+
+                  <div className="text-right">
+                    <span className="text-[10px] text-slate-500 uppercase font-bold block">Model Prediction</span>
+                    <span className={`px-3 py-1 rounded-xl text-xs font-black border ${getDamageBadgeStyle(manualResult ? manualResult.model_prediction : selectedBuilding?.properties?.prediction)}`}>
+                      {manualResult ? manualResult.model_prediction : (selectedBuilding?.properties?.prediction || "unavailable")}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* FOOTPRINT / MATCH STATUS BANNER */}
+              {manualResult && (
+                <div className={`p-4 rounded-2xl border text-xs font-mono flex items-center justify-between ${
+                  manualResult.footprint_matched
+                    ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-300"
+                    : "bg-amber-500/10 border-amber-500/30 text-amber-300"
+                }`}>
+                  <div className="flex items-center space-x-2">
+                    <Info className="w-4 h-4 shrink-0" />
+                    <span>{manualResult.location_message}</span>
+                  </div>
+                  {manualResult.distance_meters && (
+                    <span className="font-bold text-slate-300">Offset: {manualResult.distance_meters}m</span>
+                  )}
+                </div>
+              )}
+
+              {/* GRID: STREET VIEW vs SATELLITE COMPARISON */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                {/* GOOGLE STREET VIEW STATIC API PANEL */}
+                <div className="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-3xl p-5 space-y-4 shadow-xl flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-sm font-extrabold text-slate-200 flex items-center">
+                        <Compass className="w-4 h-4 text-sky-400 mr-2" />
+                        Google Street View (Street-Level Imagery)
+                      </h3>
+                      {streetView?.available ? (
+                        <span className="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-lg border border-emerald-500/20 font-bold">
+                          Available ({streetView.date || "2025"})
+                        </span>
+                      ) : (
+                        <span className="text-[10px] bg-rose-500/10 text-rose-400 px-2 py-0.5 rounded-lg border border-rose-500/20 font-bold">
+                          Unavailable
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="aspect-video bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 relative flex items-center justify-center">
+                      {svLoading ? (
+                        <div className="text-center space-y-2 text-slate-500 text-xs">
+                          <RefreshCw className="w-6 h-6 animate-spin mx-auto text-sky-400" />
+                          <span>Checking Google Street View API...</span>
+                        </div>
+                      ) : streetView?.available && streetView.image_url ? (
+                        <img
+                          src={streetView.image_url}
+                          alt="Google Street View Real Imagery"
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="p-6 text-center space-y-2">
+                          <AlertTriangle className="w-8 h-8 text-amber-400 mx-auto opacity-70" />
+                          <p className="text-xs font-bold text-slate-300">
+                            Street View imagery is not available at this location.
+                          </p>
+                          <p className="text-[10px] text-slate-500">
+                            No panorama recorded by Google Street View near coordinates.
+                          </p>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* HISTORICAL STREET VIEW NOTICE */}
+                    <div className="bg-slate-950/80 rounded-2xl p-3 border border-slate-800 text-[11px] text-slate-400 space-y-1 font-mono">
+                      <span className="text-[10px] font-bold text-slate-500 uppercase block mb-1">Historical Street View (Before/After)</span>
+                      <p className="text-slate-400 leading-tight">
+                        Historical Street View imagery before/after this event is not available through the configured Street View service.
+                      </p>
+                    </div>
+                  </div>
+
+                  {streetView?.available && (
+                    <div className="flex items-center justify-between pt-2 border-t border-slate-800">
+                      <span className="text-[11px] text-slate-400 font-mono">
+                        Heading: {svHeading}°
+                      </span>
+
+                      <div className="flex items-center space-x-2">
+                        <button
+                          onClick={() => handleStreetViewRotate(-45)}
+                          className="p-2 bg-slate-950 hover:bg-slate-800 rounded-xl border border-slate-800 text-slate-300 text-xs flex items-center"
+                          title="Rotate Left 45°"
+                        >
+                          <RotateCcw className="w-3.5 h-3.5 mr-1" /> Left
+                        </button>
+                        <button
+                          onClick={() => handleStreetViewRotate(45)}
+                          className="p-2 bg-slate-950 hover:bg-slate-800 rounded-xl border border-slate-800 text-slate-300 text-xs flex items-center"
+                          title="Rotate Right 45°"
+                        >
+                          <RotateCw className="w-3.5 h-3.5 mr-1" /> Right
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* COPERNICUS SENTINEL-2 SATELLITE BEFORE/AFTER & CHANGE */}
+                <div className="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-3xl p-5 space-y-4 shadow-xl flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-sm font-extrabold text-slate-200 flex items-center">
+                        <Eye className="w-4 h-4 text-sky-400 mr-2" />
+                        Copernicus Sentinel-2 Satellite Imagery
+                      </h3>
+                      <div className="flex items-center space-x-1 bg-slate-950 p-1 rounded-xl border border-slate-800 text-[10px]">
+                        <button
+                          onClick={() => setSliderMode("SPLIT")}
+                          className={`px-2.5 py-1 rounded-lg font-bold ${sliderMode === "SPLIT" ? "bg-sky-500 text-white" : "text-slate-400"}`}
+                        >
+                          Split Slider
+                        </button>
+                        <button
+                          onClick={() => setSliderMode("BEFORE")}
+                          className={`px-2.5 py-1 rounded-lg font-bold ${sliderMode === "BEFORE" ? "bg-sky-500 text-white" : "text-slate-400"}`}
+                        >
+                          Before
+                        </button>
+                        <button
+                          onClick={() => setSliderMode("AFTER")}
+                          className={`px-2.5 py-1 rounded-lg font-bold ${sliderMode === "AFTER" ? "bg-sky-500 text-white" : "text-slate-400"}`}
+                        >
+                          After
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* SATELLITE DISPLAY */}
+                    {satLoading ? (
+                      <div className="aspect-video bg-slate-950 rounded-2xl flex flex-col items-center justify-center text-slate-500 text-xs border border-slate-800">
+                        <RefreshCw className="w-6 h-6 animate-spin text-sky-400 mb-2" />
+                        <span>Searching Copernicus Data Space Ecosystem...</span>
+                      </div>
+                    ) : satellite?.before?.available && satellite?.after?.available ? (
+                      <div
+                        className="relative w-full aspect-video bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 select-none cursor-col-resize"
+                        onMouseDown={handleMouseDown}
+                        onMouseUp={handleMouseUp}
+                        onMouseMove={handleMouseMove}
+                      >
+                        <img src={satellite.after.image_url} alt="After Satellite" className="w-full h-full object-cover" />
+                        <div
+                          className="absolute inset-0 h-full overflow-hidden border-r-2 border-white shadow-2xl"
+                          style={{ width: `${sliderPos}%` }}
+                        >
+                          <img src={satellite.before.image_url} alt="Before Satellite" className="w-full h-full object-cover" style={{ width: "100%", height: "100%" }} />
+                        </div>
+                        <div
+                          className="absolute top-0 bottom-0 w-1 bg-white cursor-col-resize shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+                          style={{ left: `${sliderPos}%` }}
+                        />
+                      </div>
+                    ) : (
+                      <div className="aspect-video bg-slate-950 rounded-2xl p-6 flex flex-col items-center justify-center text-center space-y-2 border border-slate-800">
+                        <AlertTriangle className="w-8 h-8 text-amber-400 opacity-70" />
+                        <p className="text-xs font-bold text-slate-300">
+                          No suitable satellite imagery found.
+                        </p>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* MODEL COMPATIBILITY & METADATA NOTE */}
+                  <div className="bg-slate-950 rounded-2xl p-3 border border-slate-800 text-[11px] text-slate-400 space-y-1 font-mono">
+                    <p className="flex justify-between">
+                      <span>Model Preprocessing Compatibility:</span>
+                      <span className={manualResult?.footprint_matched || selectedBuilding ? "text-emerald-400 font-bold" : "text-amber-400 font-bold"}>
+                        {manualResult?.footprint_matched || selectedBuilding ? "xBD Paired Crop (Compatible)" : "Model inference unavailable"}
+                      </span>
+                    </p>
+                    <p className="text-slate-400 text-[10px]">
+                      {manualResult?.model_status_note || "Model requires xBD-compatible paired building patches."}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="p-12 text-center text-slate-500 space-y-2">
+              <Building2 className="w-10 h-10 mx-auto text-slate-700" />
+              <p className="text-sm font-bold text-slate-400">Select an event building or enter manual coordinates to run location assessment.</p>
+            </div>
+          )}
+        </main>
       </div>
     </div>
   );

@@ -192,10 +192,13 @@ export default function LeafletMap({ data, selectedFeature, onSelectBuilding, fi
     });
 
     const searchMarker = L.marker([searchQueryLocation.lat, searchQueryLocation.lon], { icon: searchIcon })
-      .bindTooltip('Searched Coordinates', { permanent: true, direction: 'top', className: 'text-xs bg-slate-900 text-sky-400 font-bold border border-sky-500' })
+      .bindTooltip('Searched Location', { permanent: true, direction: 'top', className: 'text-xs bg-slate-900 text-sky-400 font-bold border border-sky-500' })
       .addTo(map);
 
     searchMarkerRef.current = searchMarker;
+
+    map.flyTo([searchQueryLocation.lat, searchQueryLocation.lon], 16, { duration: 1.0 });
+
 
     // Draw dashed polyline connector if a building is selected
     if (selectedFeature && selectedFeature.geometry) {
